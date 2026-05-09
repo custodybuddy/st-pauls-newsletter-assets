@@ -28,6 +28,23 @@
 - Gold divider/accent
 - Spacious section padding
 
+## Standard Section Flow (Spring 2026 v12)
+
+1. Hero Banner
+2. Branding Card
+3. Greetings Friends
+4. Our Mission
+5. Relationships Ministry
+6. Did You Know?
+7. Our Mission in the Community
+8. Experiencing God
+9. Focus on Finances / Stewardship
+10. Youth Support Funds Available
+11. Upcoming Events
+12. We Are So Thankful For
+13. Reflection
+14. Footer
+
 ## Email-Safe Rules
 
 - Table-based layout
@@ -43,3 +60,9 @@
 - Body: `#E2E8F0` or `#CBD5E1`
 - Accent: `#D4AF37` or `#F0D98C`
 - Do not use dark text colors on dark navy backgrounds
+
+## Current Live CTA Endpoints Used in v12
+
+- Website: `https://stpaulsingersoll.ca/`
+- Donate (newsletter button): `https://www.paypal.com/donate?token=7JycWwOqurV8yR8cSGzOx9WFfF0ER4R5_7uOJ-NRbF5n8qxeU-mRXbJu5Ngpch1N-BqxdXLH-ha1219J`
+- YouTube: `https://www.youtube.com/channel/UCCTGFWFR4Z3svvSyZ08rE_g/videos`

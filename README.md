@@ -2,6 +2,15 @@
 
 Production assets and templates for St. Paul's "What's Up, St. Paul's?" newsletters.
 
+## Current Baseline
+
+- Latest working source analyzed: `newsletters/working/spring 2026 newsletter final-EDITED-v12.html`
+- Current file highlights:
+  - Full table-based email layout
+  - Inline styles and absolute URLs
+  - St. Paul's navy/gold palette with serif heading hierarchy
+  - Section icons sourced from `https://custodybuddy.com/stpauls/icons/`
+
 ## Project Structure
 
 - `newsletters/approved/`
@@ -33,8 +42,8 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 
 ## Production Workflow
 
-1. Start from the latest file in `newsletters/approved/`.
-2. Copy it to `newsletters/working/` with the next version suffix.
+1. Start from the latest approved source (or latest assigned working version).
+2. Copy to `newsletters/working/` with the next version suffix.
 3. Apply only requested changes and preserve approved copy when required.
 4. Validate email-safe HTML and contrast rules.
 5. Save the completed issue into `newsletters/approved/` once approved.

@@ -615,3 +615,15 @@ When in doubt:
 3. Preserve links and image URLs.
 4. Fix only the requested section.
 5. Keep the St. Paul’s navy/gold visual identity consistent.
+
+---
+
+## 23. Current Newsletter Baseline (As of 2026-05-09)
+
+Latest working newsletter file in this repository:
+
+```text
+newsletters/working/spring 2026 newsletter final-EDITED-v12.html
+```
+
+When asked to "analyze current spring newsletter," use this v12 file unless the user specifies a newer version.

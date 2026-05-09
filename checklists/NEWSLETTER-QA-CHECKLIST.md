@@ -4,9 +4,10 @@ Use this checklist for every newsletter update in this repo.
 
 ## 1) Before Editing
 
-- Confirm the latest approved source file.
+- Confirm the latest approved source file or assigned working version.
+- Current working baseline: `newsletters/working/spring 2026 newsletter final-EDITED-v12.html`.
 - Do not overwrite approved files.
-- Create a new versioned file (example: `spring-newsletter-EDITED-v2.html`).
+- Create a new versioned file (example: `spring-newsletter-EDITED-v13.html`).
 - Confirm scope: only the requested section(s), unless told otherwise.
 - If copy is approved/verbatim, preserve wording exactly.
 
@@ -67,7 +68,7 @@ Use this checklist for every newsletter update in this repo.
 
 ## 6) Icons and Links
 
-- Use icon/link source file: `st-pauls-icons-and-important-links-UPDATED.md`.
+- Use icon/link source file: `resources/links/st-pauls-icons-and-important-links.md`.
 - Use PNG icons for email compatibility.
 - Keep icon style consistent (minimal navy/gold church style).
 - Use recommended icon sizes:
@@ -76,7 +77,7 @@ Use this checklist for every newsletter update in this repo.
   - Card: `48`
   - Footer: `20-28`
   - CTA: `18-24`
-- Use stable public links for footer/CTA.
+- Use stable public links for footer/CTA unless a dated or campaign link is explicitly requested.
 - Treat bulletin/event links as time-sensitive; verify currency or fallback to stable pages.
 
 ## 7) Copy and Scope Protection
