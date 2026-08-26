@@ -22,9 +22,9 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 - `resources/links/`
   - Link and icon mapping libraries used during production.
 - `templates/`
-  - Reusable newsletter base templates (email-safe and Canva-friendly).
+  - Historical and previously generated HTML references. Do not use these as the structural source for a new issue unless the user explicitly assigns one.
 - `snippets/`
-  - Reusable section HTML blocks (hero, footer, events, CTA rows).
+  - Reserved for future reusable section blocks; currently empty except for its placeholder file.
 - `checklists/`
   - QA and production checklists.
 - `docs/`

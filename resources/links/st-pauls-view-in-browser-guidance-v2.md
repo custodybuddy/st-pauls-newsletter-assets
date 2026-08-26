@@ -20,9 +20,9 @@ When selected, the link opens the web version hosted by the email service provid
 
 Use the visible link in the template with this neutral placeholder:
 
-\`[VIEW_IN_BROWSER_URL]\`
+`[VIEW_IN_BROWSER_URL]`
 
-Before sending, replace that placeholder with the **exact hosted-email / browser-version merge tag supplied by the ESP**. The merge tag varies by provider, so do not hard-code a generic URL and do not leave \`href="#"\` in a production send.
+Before sending, replace that placeholder with the **exact hosted-email / browser-version merge tag supplied by the ESP**. The merge tag varies by provider, so do not hard-code a generic URL and do not leave `href="#"` in a production send.
 
 Recommended placement:
 
@@ -31,16 +31,15 @@ Recommended placement:
 
 ## Email-safe HTML pattern
 
-\`\`\`html
+```html
 <p style="margin:0; font-family:Arial, sans-serif; font-size:12px; line-height:1.5; color:#64748B;">
   Having trouble viewing this email?
   <a href="[VIEW_IN_BROWSER_URL]" style="color:#0A1C2C; text-decoration:underline; font-weight:700;">View it in your browser</a>.
 </p>
-\`\`\`
+```
 
 ## Pre-send check
 
-1. Replace every \`[VIEW_IN_BROWSER_URL]\` placeholder with the ESP merge tag.
+1. Replace every `[VIEW_IN_BROWSER_URL]` placeholder with the ESP merge tag.
 2. Send a test email and select the link to confirm it opens the correct hosted issue.
 3. Confirm the hosted page shows the intended images, formatting, personalization, and dynamic content.
-

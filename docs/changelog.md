@@ -55,7 +55,7 @@ Use this file to track production changes by issue and version.
 
 ## 2026-05-09 (v12 documentation sync)
 
-- Analyzed `newsletters/working/spring 2026 newsletter final-EDITED-v12.html`.
+- Analyzed `newsletters/working/spring 2026 newsletter final-EDITED-v12.html`; that historical v12 file is not retained in the current repository tree.
 - Updated all project Markdown documentation files to reflect v12 section flow and assets.
 - Updated icon/link reference with live URLs used in v12, including banner/supporting images and active CTA endpoints.
 - Updated README/style/checklist references to point to current baseline working file.

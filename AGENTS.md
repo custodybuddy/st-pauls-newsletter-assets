@@ -131,7 +131,7 @@ Use this pattern for major email sections:
 </table>
 ```
 
-For mobile responsiveness, use simple stacking classes only if the template already includes media queries.
+For every new issue, include simple mobile stacking classes and a small mobile media query as progressive enhancement. The table structure must remain readable even when a client ignores the media query.
 
 ---
 
@@ -271,12 +271,12 @@ The current v3 set has no dedicated gratitude, reflection, feedback, team-avatar
 ### 8.3 Icon sizing
 
 ```text
-Section header icon: 64px or 72px
-Feature icon: 80px
-Card icon: 48px
-Footer icon: 20px–28px
-CTA icon: 18px–24px
+Main brand icon: 72px–96px
+Major section icon: 64px–82px
+Supporting card icon: 44px–64px
 ```
+
+Do not assign footer or CTA icon sizes until an approved v3 asset exists for that role.
 
 ### 8.4 Icon HTML pattern
 
@@ -293,7 +293,7 @@ CTA icon: 18px–24px
 - Use navy icons on light backgrounds.
 - Use white or gold icons on dark navy backgrounds.
 - Do not mix emoji headers and PNG icon headers unless the user asks for a casual style.
-- Keep icons visually consistent: minimal, navy/gold, clean, and church-appropriate.
+- Keep icons visually consistent with the glossy enamel v3 family: navy, gold, cream/white, bold outlined shapes, subtle highlights, and soft shadows.
 
 ---
 
