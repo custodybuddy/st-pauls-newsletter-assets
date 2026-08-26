@@ -1,27 +1,32 @@
 # St. Paul’s Newsletter Icon + Important Link Library
 
-This file reflects the links and icon/image assets currently used in:
-`newsletters/working/spring 2026 newsletter final-EDITED-v12.html`
+This file is the section-level companion to the canonical URL list:
+`resources/links/st-pauls-new-icon-reference-list.md`.
+
+The Spring 2026 v12 media links are retained below as historical context, but its retired icon URLs must not be reused.
 
 ## Icon Base URL
 
-`https://custodybuddy.com/stpauls/icons/`
+`https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/`
 
-## Section Icon Map (Spring 2026 v12)
+## Canonical Section Icon Map
 
 | Newsletter Section | Icon URL |
 |---|---|
-| Branding / Main Title | `https://custodybuddy.com/stpauls/icons/heart-cross-floral-icon.png` |
-| Greetings Friends | `https://custodybuddy.com/stpauls/icons/greetings-friends-blessing-hand-with-radiant-cross.png` |
-| Our Mission | `https://custodybuddy.com/stpauls/icons/our-mission-compass-heart-cross-icon.png` |
-| Ministry Spotlight | `https://custodybuddy.com/stpauls/icons/ministry-focus-hands-cradling-the-cross.png` |
-| Did You Know? | `https://custodybuddy.com/stpauls/icons/did-you-know-open-book-question-icon.png` |
-| Mission in Community | `https://custodybuddy.com/stpauls/icons/community-mission-teaching-ministry-icon.png` |
-| Experiencing God | `https://custodybuddy.com/stpauls/icons/experience-god-icon.png` |
-| Focus on Finances | `https://custodybuddy.com/stpauls/icons/finance-icon.png` |
-| Upcoming Events | `https://custodybuddy.com/stpauls/icons/calendar-cross-icon.png` |
-| Thankful Section | `https://custodybuddy.com/stpauls/icons/thankful-grateful-icon.png` |
-| Reflection | `https://custodybuddy.com/stpauls/icons/cross-above-wings-icon.png` |
+| Branding / Main Title | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/01-branding-main-title.png` |
+| Greetings Friends | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/02-pastoral-note-greetings.png` |
+| Our Mission | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/03-our-mission.png` |
+| Ministry Spotlight | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/04-ministry-spotlight-relationships.png` |
+| Did You Know? | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/05-did-you-know-community-discernment.png` |
+| Mission in Community | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/06-mission-in-the-community.png` |
+| Experiencing God | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/07-biblical-foundations-experiencing-god.png` |
+| Focus on Finances | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/08-stewardship-focus-on-finances.png` |
+| Upcoming Events | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/09-upcoming-events-calendar.png` |
+| Thankful Section | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/10-gratitude-thankful.png` |
+| Reflection | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/11-reflection-spiritual-close.png` |
+| Feedback CTA | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/12-feedback.png` |
+| Footer website | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/23-social-website.png` |
+| Footer YouTube | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/22-social-youtube.png` |
 
 ## Non-Icon Images Used in v12
 
@@ -55,10 +60,11 @@ https://214-rrom9k8axuyo6f70kx1lyobvconhmvmxbrhnicy.canva-cdn.email/9388b4772a0a
 ## Email-Safe Icon HTML Snippet
 
 ```html
-<img src="https://custodybuddy.com/stpauls/icons/our-mission-compass-heart-cross-icon.png" alt="Mission icon" width="64" style="display:block; border:0; outline:none; text-decoration:none;">
+<img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/03-our-mission.png" alt="Mission icon" width="64" style="display:block; border:0; outline:none; text-decoration:none;">
 ```
 
 ## Notes
 
 - Time-sensitive bulletin/event links should be re-verified before sending each issue.
 - For new issues, default to stable page URLs unless a dated link is explicitly required.
+- The `assets/icons/new/` image files must be committed and deployed by GitHub Pages before their hosted URLs can load in sent email.

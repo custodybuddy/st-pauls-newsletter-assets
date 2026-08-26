@@ -1,6 +1,6 @@
 # St. Paul’s New Icon Reference List
 
-Use these absolute GitHub Pages URLs when linking to the PNG icons in email HTML, Canva planning files, or other newsletter resources.
+Use these absolute GitHub Pages URLs when linking to the PNG icons in email HTML, Canva planning files, or other newsletter resources. This is the canonical icon URL list for the repository.
 
 ## Icon Base URL
 

@@ -2,6 +2,13 @@
 
 Use this file to track production changes by issue and version.
 
+## 2026-08-26 (new icon library sync)
+
+- Set `assets/icons/new/` as the canonical PNG icon library.
+- Set the GitHub Pages `assets/icons/new/` URL as the required source for new or replaced newsletter icons.
+- Added the reference list and visual map under `resources/links/`.
+- Updated production documentation and instructions to retire the prior `custodybuddy.com/stpauls/icons/` path.
+
 ## 2026-05-09
 
 - Reorganized repository structure for production workflow.

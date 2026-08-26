@@ -68,7 +68,8 @@ Use this checklist for every newsletter update in this repo.
 
 ## 6) Icons and Links
 
-- Use icon/link source file: `resources/links/st-pauls-icons-and-important-links.md`.
+- Use icon/link source file: `resources/links/st-pauls-new-icon-reference-list.md`.
+- Use only `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/` for new or replaced icon images.
 - Use PNG icons for email compatibility.
 - Keep icon style consistent (minimal navy/gold church style).
 - Use recommended icon sizes:

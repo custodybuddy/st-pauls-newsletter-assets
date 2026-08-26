@@ -54,6 +54,13 @@
 - `role="presentation"` and `border="0" cellpadding="0" cellspacing="0"` on layout tables
 - No Grid/Flexbox/JavaScript/forms
 
+## Canonical Icon Library
+
+- Base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/`
+- Use `resources/links/st-pauls-new-icon-reference-list.md` to select a section, CTA, team, or footer icon.
+- Use `resources/links/st-pauls-new-icon-visual-map-v1.html` for a visual, copy-ready mapping guide.
+- Do not use the retired icon host in new or updated newsletter HTML.
+
 ## Dark Section Contrast
 
 - Heading: `#FFFFFF`

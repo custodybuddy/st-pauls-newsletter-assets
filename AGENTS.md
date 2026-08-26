@@ -227,33 +227,38 @@ We Are So Thankful For
 
 ## 8. Icon System
 
-Use the icon library in:
+Use the canonical icon library in:
 
 ```text
-st-pauls-icons-and-important-links-UPDATED.md
+resources/links/st-pauls-new-icon-reference-list.md
 ```
 
 ### 8.1 Icon base URL
 
 ```text
-https://custodybuddy.com/stpauls/icons/
+https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/
 ```
 
 ### 8.2 Recommended section icons
 
 | Newsletter Section | Icon Filename |
 |---|---|
-| Branding / Main Title | `heart-cross-floral-icon.png` |
-| Greetings Friends | `greetings-friends-blessing-hand-with-radiant-cross.png` |
-| Our Mission | `our-mission-compass-heart-cross-icon.png` |
-| Ministry Spotlight | `ministry-focus-hands-cradling-the-cross.png` |
-| Did You Know? | `did-you-know-open-book-question-icon.png` |
-| Our Mission in the Community | `community-mission-teaching-ministry-icon.png` |
-| Experiencing God | `experience-god-icon.png` |
-| Focus on Finances | `finance-icon.png` |
-| Upcoming Events | `calendar-cross-icon.png` |
-| Gratitude / Thankful Section | `thankful-grateful-icon.png` |
-| Reflection / Spiritual Close | `cross-above-wings-icon.png` |
+| Branding / Main Title | `01-branding-main-title.png` |
+| Greetings Friends / Pastoral Note | `02-pastoral-note-greetings.png` or `greetings-friends.png` |
+| Our Mission | `03-our-mission.png` |
+| Ministry Spotlight / Relationships | `04-ministry-spotlight-relationships.png` |
+| Did You Know? / Community Discernment | `05-did-you-know-community-discernment.png` |
+| Our Mission in the Community | `06-mission-in-the-community.png` |
+| Biblical Foundations / Experiencing God | `07-biblical-foundations-experiencing-god.png` |
+| Focus on Finances / Stewardship | `08-stewardship-focus-on-finances.png` |
+| Upcoming Events | `09-upcoming-events-calendar.png` |
+| Gratitude / Thankful Section | `10-gratitude-thankful.png` |
+| Reflection / Spiritual Close | `11-reflection-spiritual-close.png` |
+| Feedback CTA | `12-feedback.png` |
+| Worship / Celebration | `13-worship-celebration-ministry.png` |
+| Compassionate Care | `14-compassionate-care-ministry.png` |
+| Team spotlight | `18-team-avatar-variant-a.png` |
+| Footer social links | `21-social-facebook.png`, `22-social-youtube.png`, `23-social-website.png` |
 
 ### 8.3 Icon sizing
 
@@ -268,12 +273,13 @@ CTA icon: 18px–24px
 ### 8.4 Icon HTML pattern
 
 ```html
-<img src="https://custodybuddy.com/stpauls/icons/our-mission-compass-heart-cross-icon.png" alt="Mission icon" width="64" style="display:block; border:0; outline:none; text-decoration:none;">
+<img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/03-our-mission.png" alt="Mission icon" width="64" style="display:block; border:0; outline:none; text-decoration:none;">
 ```
 
 ### 8.5 Icon usage rules
 
 - Use PNG icons for email compatibility.
+- Use only the canonical GitHub Pages URLs above for new or updated icon images; do not use the retired `custodybuddy.com/stpauls/icons/` path.
 - Use descriptive `alt` text for meaningful icons.
 - Use `alt=""` for decorative-only icons.
 - Use navy icons on light backgrounds.

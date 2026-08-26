@@ -9,7 +9,7 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
   - Full table-based email layout
   - Inline styles and absolute URLs
   - St. Paul's navy/gold palette with serif heading hierarchy
-  - Section icons sourced from `https://custodybuddy.com/stpauls/icons/`
+  - Section icons sourced from `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/`
 
 ## Project Structure
 
@@ -19,8 +19,8 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
   - In-progress versioned edits (`*-EDITED-v2.html`, `*-EDITED-v3.html`).
 - `newsletters/archive/`
   - Historical issues not currently being edited.
-- `resources/icons/`
-  - Canonical PNG icon library for newsletter sections and CTAs.
+- `assets/icons/new/`
+  - Canonical PNG icon library for newsletter sections, CTAs, and footer social links.
 - `resources/links/`
   - Link and icon mapping libraries used during production.
 - `templates/`
@@ -52,6 +52,7 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 ## Key References
 
 - QA checklist: `checklists/NEWSLETTER-QA-CHECKLIST.md`
-- Link/icon library: `resources/links/st-pauls-icons-and-important-links.md`
+- Canonical icon URL list: `resources/links/st-pauls-new-icon-reference-list.md`
+- Visual icon map: `resources/links/st-pauls-new-icon-visual-map-v1.html`
 - Brand tokens: `docs/style-guide.md`
 - Change log: `docs/changelog.md`
