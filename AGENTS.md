@@ -382,6 +382,14 @@ YouTube:
 https://www.youtube.com/channel/UCCTGFWFR4Z3svvSyZ08rE_g/videos
 ```
 
+Project live preview base URL:
+
+```text
+https://custodybuddy.github.io/st-pauls-newsletter-assets/
+```
+
+Append a repository-relative HTML path to this base URL to create a deployed preview link. Only committed and GitHub Pages–deployed files will be available at the live URL.
+
 ### 11.2 CTA button text
 
 Use clear, short button text:

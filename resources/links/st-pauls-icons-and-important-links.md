@@ -8,6 +8,12 @@ For the expanded, website-verified ministry and CTA directory, use:
 
 The Spring 2026 v12 media links are retained below as historical context, but its retired icon URLs must not be reused.
 
+## Live Preview Base URL
+
+`https://custodybuddy.github.io/st-pauls-newsletter-assets/`
+
+Append a repository-relative HTML path to create a public preview URL. Live previews update only after the file is committed, pushed, and deployed through GitHub Pages.
+
 ## Icon Base URL
 
 `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/`

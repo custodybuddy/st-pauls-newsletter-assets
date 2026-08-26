@@ -4,6 +4,12 @@ Verified against the public St. Paul’s Presbyterian Church website on **2026-0
 
 Use this file when selecting stable destinations for newsletter buttons, footer links, ministry spotlights, and supporting copy. Recheck time-sensitive pages before each send.
 
+## Project Live Preview Base URL
+
+`https://custodybuddy.github.io/st-pauls-newsletter-assets/`
+
+Use this base for deployed newsletter and resource previews. Append the repository-relative HTML path to the base URL. A local file will not appear at the public URL until it has been committed, pushed, and deployed through GitHub Pages.
+
 ## Core Church Information
 
 | Field | Website-listed information |

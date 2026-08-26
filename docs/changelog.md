@@ -2,6 +2,11 @@
 
 Use this file to track production changes by issue and version.
 
+## 2026-08-26 (live preview base URL)
+
+- Added `https://custodybuddy.github.io/st-pauls-newsletter-assets/` as the canonical base URL for deployed newsletter and resource previews.
+- Documented that repository-relative HTML paths become available after GitHub Pages deployment.
+
 ## 2026-08-26 (website data and stable links)
 
 - Reviewed the public St. Paul’s website for current church data and reusable destinations.
