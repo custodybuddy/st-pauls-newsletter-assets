@@ -54,6 +54,7 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 - QA checklist: `checklists/NEWSLETTER-QA-CHECKLIST.md`
 - Canonical icon URL list: `resources/links/st-pauls-new-icon-reference-list.md`
 - Visual icon map: `resources/links/st-pauls-new-icon-visual-map-v1.html`
+- Website data and stable link directory: `resources/links/st-pauls-website-data-and-links-v1.md`
 - View-in-browser guidance: `resources/links/st-pauls-view-in-browser-guidance-v2.md`
 - Brand tokens: `docs/style-guide.md`
 - Change log: `docs/changelog.md`

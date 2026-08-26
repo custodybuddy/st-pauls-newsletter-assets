@@ -3,6 +3,9 @@
 This file is the section-level companion to the canonical URL list:
 `resources/links/st-pauls-new-icon-reference-list.md`.
 
+For the expanded, website-verified ministry and CTA directory, use:
+`resources/links/st-pauls-website-data-and-links-v1.md`.
+
 The Spring 2026 v12 media links are retained below as historical context, but its retired icon URLs must not be reused.
 
 ## Icon Base URL

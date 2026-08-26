@@ -2,6 +2,12 @@
 
 Use this file to track production changes by issue and version.
 
+## 2026-08-26 (website data and stable links)
+
+- Reviewed the public St. Paul’s website for current church data and reusable destinations.
+- Added a verified directory covering core church information, CTA links, ministry pages, social accounts, and recurring newsletter themes.
+- Documented which calendar and bulletin URLs must be treated as time-sensitive.
+
 ## 2026-08-26 (donation destination update)
 
 - Updated the current Donate Now / Give Now CTA destination to `https://www.stpaulsingersoll.ca/contact-us/donate`.

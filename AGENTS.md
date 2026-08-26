@@ -357,7 +357,8 @@ depending on hierarchy.
 Use the link library in:
 
 ```text
-st-pauls-icons-and-important-links-UPDATED.md
+resources/links/st-pauls-icons-and-important-links.md
+resources/links/st-pauls-website-data-and-links-v1.md
 ```
 
 ### 11.1 Stable links
