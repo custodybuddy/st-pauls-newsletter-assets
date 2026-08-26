@@ -2,7 +2,7 @@
 
 Verified against the public St. Paul’s Presbyterian Church website on **2026-08-26**.
 
-Use this file when selecting stable destinations for newsletter buttons, footer links, ministry spotlights, and supporting copy. Recheck time-sensitive pages before each send.
+Use this file with `docs/st-pauls-comprehensive-newsletter-template.md` when selecting stable destinations for newsletter buttons, footer links, ministry spotlights, and supporting copy. The comprehensive template controls structure and editorial treatment. Recheck time-sensitive pages before each send.
 
 ## Project Live Preview Base URL
 

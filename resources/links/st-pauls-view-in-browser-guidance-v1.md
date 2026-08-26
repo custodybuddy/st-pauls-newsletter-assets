@@ -1,5 +1,7 @@
 # Add View in Browser Links
 
+> **Superseded guidance:** Use `docs/st-pauls-comprehensive-newsletter-template.md` with `resources/links/st-pauls-view-in-browser-guidance-v2.md` for new newsletters. This v1 file is retained for history only.
+
 ## Purpose
 
 A **View in browser** link gives recipients a hosted web copy of the newsletter when their email app cannot display the design reliably. It is especially helpful when images are blocked, the layout is simplified, or the recipient uses a limited email client.
@@ -24,8 +26,8 @@ Before sending, replace that placeholder with the **exact hosted-email / browser
 
 Recommended placement:
 
-1. A quiet utility line at the top of the email, before the hero.
-2. A repeat link in the footer for recipients who scroll to the end.
+1. A discreet link in the footer.
+2. A top utility link only when specifically requested for that issue.
 
 ## Email-safe HTML pattern
 
@@ -41,4 +43,3 @@ Recommended placement:
 1. Replace every \`[VIEW_IN_BROWSER_URL]\` placeholder with the ESP merge tag.
 2. Send a test email and select the link to confirm it opens the correct hosted issue.
 3. Confirm the hosted page shows the intended images, formatting, personalization, and dynamic content.
-
