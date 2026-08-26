@@ -2,6 +2,17 @@
 
 Use this file to track production changes by issue and version.
 
+## 2026-08-26 (view in browser placement)
+
+- Removed the top “Having trouble viewing this email?” utility section from the current versioned templates.
+- Retained a discreet footer browser link, using the ESP merge-tag placeholder.
+
+## 2026-08-26 (view in browser support)
+
+- Added ESP-neutral View in browser guidance and an email-safe, reusable link pattern.
+- Added versioned templates with a visible top utility link and footer fallback.
+- Added a production requirement to replace the browser-link placeholder with the ESP's hosted-email merge tag and verify it in a test send.
+
 ## 2026-08-26 (new icon library sync)
 
 - Set `assets/icons/new/` as the canonical PNG icon library.

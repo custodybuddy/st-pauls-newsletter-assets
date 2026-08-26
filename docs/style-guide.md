@@ -54,6 +54,13 @@
 - `role="presentation"` and `border="0" cellpadding="0" cellspacing="0"` on layout tables
 - No Grid/Flexbox/JavaScript/forms
 
+## View in Browser Links
+
+- Place a discreet **View in browser** link in the footer. Add one above the hero only when specifically requested.
+- Replace `[VIEW_IN_BROWSER_URL]` with the exact hosted-email merge tag from the ESP before sending.
+- Do not send a placeholder `href="#"`; send a test email and verify the hosted version.
+- Use `resources/links/st-pauls-view-in-browser-guidance-v2.md` for the reusable HTML pattern and checklist.
+
 ## Canonical Icon Library
 
 - Base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/`

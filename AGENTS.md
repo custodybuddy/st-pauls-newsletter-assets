@@ -397,7 +397,16 @@ Contact Us
 Learn More
 ```
 
-### 11.3 Time-sensitive links
+### 11.3 View in browser links
+
+Use a discreet **View in browser** link in the footer. Add a top utility link only when it is specifically requested for that issue. This gives recipients an ESP-hosted web version when their email app cannot display the design reliably.
+
+- Use the ESP's exact hosted-email merge tag in place of `[VIEW_IN_BROWSER_URL]`.
+- Never send a browser link with `href="#"` or a generic hard-coded URL.
+- Test the merge tag in a delivered email; the hosted version should retain the intended layout, images, personalization, and supported dynamic content.
+- Use `resources/links/st-pauls-view-in-browser-guidance-v2.md` for the email-safe HTML pattern and pre-send checks.
+
+### 11.4 Time-sensitive links
 
 Bulletin and event links from website snapshots are time-sensitive.
 
