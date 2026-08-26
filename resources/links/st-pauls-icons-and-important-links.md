@@ -38,13 +38,13 @@ https://custodybuddy.com/stpauls/april-newsletter/join_us.png
 https://214-rrom9k8axuyo6f70kx1lyobvconhmvmxbrhnicy.canva-cdn.email/9388b4772a0af8beb9d6103b3a7f271f.png
 ```
 
-## Current CTA / Footer Links Used in v12
+## Current CTA / Footer Links Used in v13
 
 | Label | URL |
 |---|---|
 | Website | `https://stpaulsingersoll.ca/` |
 | YouTube Videos | `https://www.youtube.com/channel/UCCTGFWFR4Z3svvSyZ08rE_g/videos` |
-| Donate CTA (active in v12) | `https://www.paypal.com/donate?token=7JycWwOqurV8yR8cSGzOx9WFfF0ER4R5_7uOJ-NRbF5n8qxeU-mRXbJu5Ngpch1N-BqxdXLH-ha1219J` |
+| Donate / Give Now CTA | `https://www.stpaulsingersoll.ca/contact-us/donate` |
 
 ## Stable Public Link Set (Preferred for Reuse)
 

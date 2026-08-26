@@ -28,7 +28,7 @@
 - Gold divider/accent
 - Spacious section padding
 
-## Standard Section Flow (Spring 2026 v12)
+## Standard Section Flow (Spring 2026 v13)
 
 1. Hero Banner
 2. Branding Card
@@ -75,8 +75,8 @@
 - Accent: `#D4AF37` or `#F0D98C`
 - Do not use dark text colors on dark navy backgrounds
 
-## Current Live CTA Endpoints Used in v12
+## Current Live CTA Endpoints Used in v13
 
 - Website: `https://stpaulsingersoll.ca/`
-- Donate (newsletter button): `https://www.paypal.com/donate?token=7JycWwOqurV8yR8cSGzOx9WFfF0ER4R5_7uOJ-NRbF5n8qxeU-mRXbJu5Ngpch1N-BqxdXLH-ha1219J`
+- Donate / Give Now: `https://www.stpaulsingersoll.ca/contact-us/donate`
 - YouTube: `https://www.youtube.com/channel/UCCTGFWFR4Z3svvSyZ08rE_g/videos`

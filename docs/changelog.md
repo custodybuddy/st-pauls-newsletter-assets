@@ -2,6 +2,12 @@
 
 Use this file to track production changes by issue and version.
 
+## 2026-08-26 (donation destination update)
+
+- Updated the current Donate Now / Give Now CTA destination to `https://www.stpaulsingersoll.ca/contact-us/donate`.
+- Created the Spring 2026 v13 working newsletter and template v4 with matching standard and Outlook VML button links.
+- Updated the current baseline and donation-link documentation.
+
 ## 2026-08-26 (view in browser placement)
 
 - Removed the top “Having trouble viewing this email?” utility section from the current versioned templates.

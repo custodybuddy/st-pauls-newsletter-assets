@@ -638,7 +638,7 @@ When in doubt:
 Latest working newsletter file in this repository:
 
 ```text
-newsletters/working/spring 2026 newsletter final-EDITED-v12.html
+newsletters/working/spring 2026 newsletter final-EDITED-v13.html
 ```
 
-When asked to "analyze current spring newsletter," use this v12 file unless the user specifies a newer version.
+When asked to "analyze current spring newsletter," use this v13 file unless the user specifies a newer version.

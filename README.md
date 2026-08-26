@@ -4,7 +4,7 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 
 ## Current Baseline
 
-- Latest working source analyzed: `newsletters/working/spring 2026 newsletter final-EDITED-v12.html`
+- Latest working source: `newsletters/working/spring 2026 newsletter final-EDITED-v13.html`
 - Current file highlights:
   - Full table-based email layout
   - Inline styles and absolute URLs

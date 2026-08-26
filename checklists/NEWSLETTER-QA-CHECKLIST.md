@@ -5,7 +5,7 @@ Use this checklist for every newsletter update in this repo.
 ## 1) Before Editing
 
 - Confirm the latest approved source file or assigned working version.
-- Current working baseline: `newsletters/working/spring 2026 newsletter final-EDITED-v12.html`.
+- Current working baseline: `newsletters/working/spring 2026 newsletter final-EDITED-v13.html`.
 - Do not overwrite approved files.
 - Create a new versioned file (example: `spring-newsletter-EDITED-v13.html`).
 - Confirm scope: only the requested section(s), unless told otherwise.
