@@ -25,6 +25,9 @@ Use these absolute GitHub Pages URLs when linking to the PNG icons in email HTML
 | `13-worship-celebration-ministry.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/13-worship-celebration-ministry.png` |
 | `14-compassionate-care-ministry.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/14-compassionate-care-ministry.png` |
 | `18-team-avatar-variant-a.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/18-team-avatar-variant-a.png` |
+| `21-social-facebook.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/21-social-facebook.png` |
+| `22-social-youtube.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/22-social-youtube.png` |
+| `23-social-website.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/23-social-website.png` |
 | `greetings-friends.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/greetings-friends.png` |
 | `hero-title.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/hero-title.png` |
 
