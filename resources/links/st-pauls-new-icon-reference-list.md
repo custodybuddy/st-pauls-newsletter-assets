@@ -1,12 +1,16 @@
 # St. Paul’s New Icon Reference List
 
-Use these absolute GitHub Pages URLs when linking to the PNG icons in email HTML, Canva planning files, or other newsletter resources. This is the canonical icon URL list for the repository.
+> **Superseded icon reference:** This file documents the previous `assets/icons/new/` set. Do not use it when building a new newsletter.
 
-## Icon Base URL
+For current production, follow `docs/st-pauls-comprehensive-newsletter-template.md` and select icons from `resources/links/st-pauls-icons-and-important-links.md` under `assets/icons/icons-v3/`.
+
+The URLs below are retained only to interpret or maintain an older issue that already uses this icon family.
+
+## Legacy Icon Base URL
 
 `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/`
 
-## All New Icon URLs
+## Legacy Icon URLs
 
 | Icon file | Absolute PNG URL |
 |---|---|
@@ -31,7 +35,7 @@ Use these absolute GitHub Pages URLs when linking to the PNG icons in email HTML
 | `greetings-friends.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/greetings-friends.png` |
 | `hero-title.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/hero-title.png` |
 
-## Email-Safe HTML Example
+## Historical Email-Safe HTML Example
 
 ```html
 <img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/greetings-friends.png" alt="Greetings Friends icon" width="64" style="display:block; border:0; outline:none; text-decoration:none;">
@@ -39,4 +43,4 @@ Use these absolute GitHub Pages URLs when linking to the PNG icons in email HTML
 
 ## Publishing Note
 
-These links work after the `assets/icons/new/` files have been committed and GitHub Pages has deployed the repository's current branch.
+These legacy links work after the `assets/icons/new/` files have been committed and GitHub Pages has deployed the repository's current branch. They are not approved for a newly built issue.

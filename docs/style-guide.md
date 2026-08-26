@@ -1,5 +1,7 @@
 # St. Paul's Newsletter Style Guide (Condensed)
 
+This is a quick-reference companion to `docs/st-pauls-comprehensive-newsletter-template.md`. The comprehensive template controls structure, edition types, editorial length, accessibility, and production workflow.
+
 ## Brand Colors
 
 - Deep navy: `#0A1C2C`
@@ -28,27 +30,36 @@
 - Gold divider/accent
 - Spacious section padding
 
-## Standard Section Flow (Spring 2026 v13)
+## Standard Type A Section Flow
 
 1. Hero Banner
-2. Branding Card
-3. Greetings Friends
-4. Our Mission
-5. Relationships Ministry
-6. Did You Know?
-7. Our Mission in the Community
-8. Experiencing God
-9. Focus on Finances / Stewardship
-10. Youth Support Funds Available
-11. Upcoming Events
-12. We Are So Thankful For
-13. Reflection
-14. Footer
+2. Greetings / Pastoral Note
+3. Our Mission
+4. Ministry Spotlight
+5. Primary Feature Article
+6. Secondary Focus
+7. Spiritual Formation & Learning
+8. Prayer & Volunteer Spotlights
+9. Upcoming Events
+10. Financial Stewardship when required
+11. We Are So Thankful For
+12. Footer
+
+Use the comprehensive template’s Type B or Type C structure only for a foundational/vision or feature-heavy seasonal issue.
+
+## Layout and Readability
+
+- Maximum desktop canvas: `1100px`, fluid at smaller widths
+- Desktop body copy: approximately `18-20px` minimum with `1.65-1.8` line height
+- Mobile body copy: approximately `17-18px`
+- Major cards: `24px` radius; inner cards: approximately `14-20px`
+- Use nested presentation tables for bento rows; stack into a logical single column on mobile
+- Use varied cream, navy, warm-gold, and sage treatments to create editorial rhythm
 
 ## Email-Safe Rules
 
 - Table-based layout
-- Inline styles only
+- Inline critical styles; mobile media queries may be used as progressive enhancement
 - Absolute image and link URLs
 - `width` + `alt` on images
 - `role="presentation"` and `border="0" cellpadding="0" cellspacing="0"` on layout tables
@@ -63,10 +74,11 @@
 
 ## Canonical Icon Library
 
-- Base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/`
-- Use `resources/links/st-pauls-new-icon-reference-list.md` to select a section, CTA, team, or footer icon.
-- Use `resources/links/st-pauls-new-icon-visual-map-v1.html` for a visual, copy-ready mapping guide.
+- Base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/`
+- Use `resources/links/st-pauls-icons-and-important-links.md` to select a current v3 section icon.
+- Use `resources/links/st-pauls-icons-v3-visual-map-v1.html` for a visual, copy-ready mapping guide.
 - Do not use the retired icon host in new or updated newsletter HTML.
+- If no v3 icon fits, use a clear text treatment instead of silently reusing a legacy icon.
 
 ## Dark Section Contrast
 
@@ -75,7 +87,7 @@
 - Accent: `#D4AF37` or `#F0D98C`
 - Do not use dark text colors on dark navy backgrounds
 
-## Current Live CTA Endpoints Used in v13
+## Stable CTA Endpoints
 
 - Website: `https://stpaulsingersoll.ca/`
 - Donate / Give Now: `https://www.stpaulsingersoll.ca/contact-us/donate`

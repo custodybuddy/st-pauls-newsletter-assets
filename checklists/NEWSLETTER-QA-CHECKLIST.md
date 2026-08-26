@@ -2,12 +2,15 @@
 
 Use this checklist for every newsletter update in this repo.
 
+The controlling production instructions are in `docs/st-pauls-comprehensive-newsletter-template.md`. If this checklist or an older newsletter conflicts with that file, follow the comprehensive template.
+
 ## 1) Before Editing
 
 - Confirm the latest approved source file or assigned working version.
-- Current working baseline: `newsletters/working/spring 2026 newsletter final-EDITED-v13.html`.
+- Read `docs/st-pauls-comprehensive-newsletter-template.md` before planning or building a new issue.
+- Confirm the edition type: Type A by default, or Type B/Type C when justified by the content or user request.
 - Do not overwrite approved files.
-- Create a new versioned file (example: `spring-newsletter-EDITED-v13.html`).
+- Create a new versioned file (example: `fall-newsletter-EDITED-v2.html`).
 - Confirm scope: only the requested section(s), unless told otherwise.
 - If copy is approved/verbatim, preserve wording exactly.
 
@@ -23,7 +26,7 @@ Use this checklist for every newsletter update in this repo.
 ## 3) Email HTML Safety Rules
 
 - Use table-based layout only.
-- Use inline CSS only.
+- Inline critical CSS; use simple mobile media queries only as progressive enhancement.
 - Use absolute image URLs and absolute link URLs.
 - Include `width` on images.
 - Include `alt` on all images (`alt=""` only for decorative images).
@@ -37,6 +40,10 @@ Use this checklist for every newsletter update in this repo.
   - No browser-only layout patterns
 
 ## 4) Brand and Visual Rules
+
+- Use an intentional 1100px maximum-width editorial canvas that scales fluidly to mobile.
+- Use rounded editorial cards, varied section treatments, and table-based bento rows only when content lengths are compatible.
+- Stack every multi-column row into a logical single-column reading order on mobile.
 
 - Use St. Paul's palette consistently:
   - Deep navy `#0A1C2C`
@@ -52,6 +59,8 @@ Use this checklist for every newsletter update in this repo.
 - Typography:
   - Headings: `Lora, Georgia, serif`
   - Body: `Inter, Arial, sans-serif`
+  - Desktop body copy: approximately `18-20px` minimum
+  - Mobile body copy: approximately `17-18px`
 - Preserve visual hierarchy:
   - Small uppercase section labels
   - Large serif headings
@@ -68,10 +77,10 @@ Use this checklist for every newsletter update in this repo.
 
 ## 6) Icons and Links
 
-- Use icon/link source file: `resources/links/st-pauls-new-icon-reference-list.md`.
-- Use only `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/` for new or replaced icon images.
+- Use the current icon/link source: `resources/links/st-pauls-icons-and-important-links.md`.
+- Use only `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/` for new or replaced icon images.
 - Use PNG icons for email compatibility.
-- Keep icon style consistent (minimal navy/gold church style).
+- Keep the glossy enamel navy/gold/cream v3 style consistent.
 - Use recommended icon sizes:
   - Section header: `64` or `72`
   - Feature: `80`
@@ -80,15 +89,25 @@ Use this checklist for every newsletter update in this repo.
   - CTA: `18-24`
 - Use stable public links for footer/CTA unless a dated or campaign link is explicitly requested.
 - Treat bulletin/event links as time-sensitive; verify currency or fallback to stable pages.
+- Use text links when v3 has no suitable icon; do not silently use the retired icon set.
 
-## 7) Copy and Scope Protection
+## 7) Structure and Editorial Checks
+
+- Follow the selected edition structure in the comprehensive template.
+- For Type A, verify the reader journey covers greeting, mission, ministry spotlight, primary feature, secondary focus, formation, prayer/volunteer, events, optional stewardship, gratitude, and footer.
+- Keep the complete issue near `1,500-2,300` words unless the user directs otherwise.
+- Keep the ministry spotlight near `500-800` words and the primary feature near `350-650` words.
+- Limit Upcoming Events to approximately `3-5` priorities.
+- Keep paragraphs short and use approximately `2-4` intentional emphasized phrases per section.
+
+## 8) Copy and Scope Protection
 
 - Do not rewrite approved/verbatim copy.
 - Do not alter meaning or tone.
 - Do not modify unrelated sections.
 - Preserve existing approved links, image URLs, and tracking links unless asked.
 
-## 8) Final Validation (Required)
+## 9) Final Validation (Required)
 
 - No unclosed `<table>`, `<tr>`, or `<td>` tags.
 - No missing image `alt` attributes.
@@ -99,8 +118,11 @@ Use this checklist for every newsletter update in this repo.
 - Mobile stacking remains reasonable.
 - Footer links and core details remain intact.
 - CTA button contrast is readable.
+- Hero and content images are publicly hosted over HTTPS and have useful alt text.
+- Dates, times, names, Scripture references, contact details, financial figures, and permissions are current.
+- A real test email has been checked in the available desktop and mobile inbox clients.
 
-## 9) Deliverable Options
+## 10) Deliverable Options
 
 - Full updated HTML file.
 - Section-only HTML snippet.
@@ -109,10 +131,10 @@ Use this checklist for every newsletter update in this repo.
 - Link/icon library update.
 - Short audit summary.
 
-## 10) Default Rule if Uncertain
+## 11) Default Rule if Uncertain
 
-1. Preserve approved copy.
-2. Preserve email-safe table structure.
-3. Preserve links and image URLs.
+1. Follow `docs/st-pauls-comprehensive-newsletter-template.md`.
+2. Preserve approved copy and existing approved files.
+3. Preserve email-safe table structure, links, and image URLs.
 4. Change only requested sections.
 5. Keep St. Paul's navy/gold identity consistent.

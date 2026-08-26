@@ -2,6 +2,8 @@
 
 This second review turns the completed September 2025, November 2025, and April 2026 newsletters into a reusable production pattern.
 
+> **Historical reference only:** The authoritative production pattern is now `docs/st-pauls-comprehensive-newsletter-template.md`. Use its Type A structure by default and its Type B or Type C variations when appropriate.
+
 ## Recurring Reader Journey
 
 1. Welcome readers and set the pastoral context.
@@ -20,9 +22,9 @@ This second review turns the completed September 2025, November 2025, and April 
 | Participation | Get involved and share feedback | Meet the team and give generously | Events, giving, youth support, prayer, and feedback |
 | Gratitude and belonging | Church identity and future updates | Thankful people and ministry stories | Volunteer gratitude and a kingdom-focused close |
 
-## Reusable Section Pattern
+## Historical Section Pattern
 
-The template uses this order because it is evident in all three issues and supports readers who skim:
+This order was observed across the three archived issues. It is not the current construction template:
 
 1. Hero and branding
 2. Pastoral note
@@ -35,6 +37,8 @@ The template uses this order because it is evident in all three issues and suppo
 9. Gratitude and footer
 
 ## Design Rules Preserved in the Template
+
+The comprehensive template carries these useful historical lessons into the current system:
 
 - Use a table-based, single-column core layout with inline styles and absolute image URLs.
 - Use cream and white content cards for reading, deep navy for anchors and visual pauses, and gold for labels and key phrases.

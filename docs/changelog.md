@@ -2,6 +2,13 @@
 
 Use this file to track production changes by issue and version.
 
+## 2026-08-26 (comprehensive template governance)
+
+- Established `docs/st-pauls-comprehensive-newsletter-template.md` as the controlling structure for all new newsletter planning and construction.
+- Updated Markdown instructions to use the template’s edition types, 1100px editorial system, accessible large-print typography, content lengths, fact-checking, and inbox-testing workflow.
+- Established `assets/icons/icons-v3/` and `resources/links/st-pauls-icons-and-important-links.md` as the current icon sources.
+- Reclassified existing HTML newsletters and older icon documentation as historical references; no HTML newsletter or previously generated newsletter was changed.
+
 ## 2026-08-26 (live preview base URL)
 
 - Added `https://custodybuddy.github.io/st-pauls-newsletter-assets/` as the canonical base URL for deployed newsletter and resource previews.

@@ -1,7 +1,11 @@
 # St. Paul’s Newsletter Icon + Important Link Library
 
-This file is the section-level companion to the canonical URL list:
-`resources/links/st-pauls-new-icon-reference-list.md`.
+Use this file with `docs/st-pauls-comprehensive-newsletter-template.md`, which controls newsletter structure, design, accessibility, and workflow.
+
+This file is the current v3 section-level icon and important-link library.
+The v3 icon files are stored under `assets/icons/icons-v3/`.
+
+The older `resources/links/st-pauls-new-icon-reference-list.md` remains a historical mapping for the previous icon set; use this file when selecting v3 icons.
 
 For the expanded, website-verified ministry and CTA directory, use:
 `resources/links/st-pauls-website-data-and-links-v1.md`.
@@ -16,26 +20,32 @@ Append a repository-relative HTML path to create a public preview URL. Live prev
 
 ## Icon Base URL
 
-`https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/`
+`https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/`
 
-## Canonical Section Icon Map
+## Canonical v3 Section Icon Map
 
 | Newsletter Section | Icon URL |
 |---|---|
-| Branding / Main Title | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/01-branding-main-title.png` |
-| Greetings Friends | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/02-pastoral-note-greetings.png` |
-| Our Mission | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/03-our-mission.png` |
-| Ministry Spotlight | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/04-ministry-spotlight-relationships.png` |
-| Did You Know? | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/05-did-you-know-community-discernment.png` |
-| Mission in Community | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/06-mission-in-the-community.png` |
-| Experiencing God | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/07-biblical-foundations-experiencing-god.png` |
-| Focus on Finances | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/08-stewardship-focus-on-finances.png` |
-| Upcoming Events | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/09-upcoming-events-calendar.png` |
-| Thankful Section | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/10-gratitude-thankful.png` |
-| Reflection | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/11-reflection-spiritual-close.png` |
-| Feedback CTA | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/12-feedback.png` |
-| Footer website | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/23-social-website.png` |
-| Footer YouTube | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/22-social-youtube.png` |
+| Branding / Main Title | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/01-branding-cross-heart-laurel.png` |
+| Greetings Friends / Pastoral Note | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/02-pastoral-note-greetings.png` |
+| Our Mission | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/03-our-mission.png` |
+| Ministry Spotlight / Relationships | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/04-ministry-relationships.png` |
+| Did You Know? / Community Discernment | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/05-did-you-know-community-discernment.png` |
+| Mission in the Community | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/06-mission-in-the-community.png` |
+| Equipping Ministries / Bible Study | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/07-equipping-ministries-bible-study.png` |
+| Stewardship / Financial Update | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/08-stewardship-financial-update.png` |
+| Upcoming Events / Calendar | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/09-upcoming-events-calendar.png` |
+| Prayer / Care / Compassion | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/10-prayer-care-and-compassion.png` |
+
+The v3 set does not include dedicated gratitude, reflection, feedback, team-avatar, or social icons. Use text links for those roles unless a future v3 asset is added and documented.
+
+## v3 Visual Mapping HTML
+
+Copy-ready visual map:
+`resources/links/st-pauls-icons-v3-visual-map-v1.html`
+
+Live preview:
+`https://custodybuddy.github.io/st-pauls-newsletter-assets/resources/links/st-pauls-icons-v3-visual-map-v1.html`
 
 ## Non-Icon Images Used in v12
 
@@ -47,7 +57,7 @@ https://custodybuddy.com/stpauls/april-newsletter/join_us.png
 https://214-rrom9k8axuyo6f70kx1lyobvconhmvmxbrhnicy.canva-cdn.email/9388b4772a0af8beb9d6103b3a7f271f.png
 ```
 
-## Current CTA / Footer Links Used in v13
+## Historical CTA / Footer Links Recorded for v13
 
 | Label | URL |
 |---|---|
@@ -66,14 +76,14 @@ https://214-rrom9k8axuyo6f70kx1lyobvconhmvmxbrhnicy.canva-cdn.email/9388b4772a0a
 | Our Videos | `https://www.stpaulsingersoll.ca/a-church-for-you/our-videos` |
 | News | `https://www.stpaulsingersoll.ca/contact-us/blog/categories/news` |
 
-## Email-Safe Icon HTML Snippet
+## Email-Safe v3 Icon HTML Snippet
 
 ```html
-<img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/03-our-mission.png" alt="Mission icon" width="64" style="display:block; border:0; outline:none; text-decoration:none;">
+<img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/03-our-mission.png" alt="Mission icon" width="64" style="display:block; border:0; outline:none; text-decoration:none;">
 ```
 
 ## Notes
 
 - Time-sensitive bulletin/event links should be re-verified before sending each issue.
 - For new issues, default to stable page URLs unless a dated link is explicitly required.
-- The `assets/icons/new/` image files must be committed and deployed by GitHub Pages before their hosted URLs can load in sent email.
+- The `assets/icons/icons-v3/` image files must be committed and deployed by GitHub Pages before their hosted URLs can load in sent email.

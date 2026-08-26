@@ -2,6 +2,8 @@
 
 This review compares the three completed newsletter HTML files without changing their source.
 
+> **Historical reference only:** Use `docs/st-pauls-comprehensive-newsletter-template.md` for all new newsletter structure and production decisions. The observations below explain earlier issues and do not override the current template.
+
 ## Saved Browser Reference Captures
 
 | Newsletter | Screenshot |
@@ -45,6 +47,6 @@ The April full-length capture is included because the newsletter extends past th
 
 ## Design-System Conclusion
 
-April 2026 is the strongest baseline for future issues: it has the clearest colour discipline, the most consistent spacing and editorial hierarchy, and the most developed set of reusable newsletter modules.
+April 2026 supplied useful visual evidence for the current system: it has clear colour discipline, consistent spacing and editorial hierarchy, and a developed set of reusable newsletter modules.
 
-September 2025 contributes a useful compact-card and engagement pattern. November 2025 contributes the warm, image-led storytelling approach for seasonal or feature-led issues. Reuse those strengths within the April 2026 navy/gold/cream framework to keep future issues recognizably St. Paul’s.
+September 2025 contributes a useful compact-card and engagement pattern. November 2025 contributes warm, image-led storytelling for seasonal or feature-led issues. Apply those lessons only through the comprehensive template’s edition types, layout rules, accessibility requirements, and current v3 icon system.

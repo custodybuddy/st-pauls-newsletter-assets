@@ -39,13 +39,25 @@ Agents must treat this as a **production email project**, not a browser-only web
 
 ## 2. Source of Truth Rules
 
-### 2.1 Use the latest approved file
+### 2.1 Use the comprehensive template for every new issue
 
-Before editing, identify the latest approved full HTML newsletter or markdown resource file.
+The controlling structure, editorial guidance, design system, accessibility rules, and production workflow are defined in:
+
+```text
+docs/st-pauls-comprehensive-newsletter-template.md
+```
+
+Read that file before planning, drafting, or building a new newsletter. Use its Type A structure by default and use Type B or Type C only when the issue clearly requires that format or the user requests it.
+
+Existing HTML newsletters are historical or approved issue references. Do not copy their section order, icon paths, typography sizes, or layout decisions when they conflict with the comprehensive template.
+
+### 2.2 Use the latest approved copy
+
+Before editing issue content, identify the latest approved copy source or the working version explicitly assigned by the user.
 
 Do not edit old versions unless explicitly requested.
 
-### 2.2 Never overwrite the approved source
+### 2.3 Never overwrite the approved source
 
 Always create a new versioned file when making changes.
 
@@ -58,7 +70,7 @@ st-pauls-icons-and-important-links-UPDATED.md
 st-pauls-icons-and-important-links-UPDATED-v2.md
 ```
 
-### 2.3 Preserve approved copy
+### 2.4 Preserve approved copy
 
 When the user says copy must remain verbatim:
 
@@ -169,22 +181,22 @@ Use:
 
 ## 6. Standard Newsletter Section Order
 
-Use this order for future St. Paul’s newsletters unless instructed otherwise:
+Use this Type A order for a standard ministry spotlight issue. The comprehensive template defines the allowed Type B foundational and Type C seasonal variations.
 
 1. Hero Banner
-2. Branding Card
-3. Pastoral Note / Greetings Friends
-4. Our Mission
-5. Ministry Spotlight
-6. Did You Know?
-7. Our Mission in the Community
-8. Biblical Foundations / Experiencing God
-9. Practical Update / Focus on Finances / Stewardship
-10. Youth / Opportunity / Announcement
-11. Upcoming Events
-12. Gratitude / We Are So Thankful For
-13. Reflection / Pull Quote
-14. Footer
+2. Greetings / Pastoral Note
+3. Our Mission
+4. Ministry Spotlight
+5. Primary Feature Article
+6. Secondary Focus
+7. Spiritual Formation & Learning
+8. Prayer & Volunteer Spotlights
+9. Upcoming Events
+10. Financial Stewardship when required
+11. We Are So Thankful For
+12. Footer
+
+Do not force every optional section into an issue. Keep the complete newsletter near the comprehensive template’s 1,500–2,300-word target and limit Upcoming Events to approximately 3–5 priorities.
 
 ---
 
@@ -230,35 +242,31 @@ We Are So Thankful For
 Use the canonical icon library in:
 
 ```text
-resources/links/st-pauls-new-icon-reference-list.md
+resources/links/st-pauls-icons-and-important-links.md
 ```
 
 ### 8.1 Icon base URL
 
 ```text
-https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/
+https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/
 ```
 
 ### 8.2 Recommended section icons
 
 | Newsletter Section | Icon Filename |
 |---|---|
-| Branding / Main Title | `01-branding-main-title.png` |
-| Greetings Friends / Pastoral Note | `02-pastoral-note-greetings.png` or `greetings-friends.png` |
+| Branding / Main Title | `01-branding-cross-heart-laurel.png` |
+| Greetings Friends / Pastoral Note | `02-pastoral-note-greetings.png` |
 | Our Mission | `03-our-mission.png` |
-| Ministry Spotlight / Relationships | `04-ministry-spotlight-relationships.png` |
+| Ministry Spotlight / Relationships | `04-ministry-relationships.png` |
 | Did You Know? / Community Discernment | `05-did-you-know-community-discernment.png` |
 | Our Mission in the Community | `06-mission-in-the-community.png` |
-| Biblical Foundations / Experiencing God | `07-biblical-foundations-experiencing-god.png` |
-| Focus on Finances / Stewardship | `08-stewardship-focus-on-finances.png` |
+| Equipping Ministries / Bible Study | `07-equipping-ministries-bible-study.png` |
+| Focus on Finances / Stewardship | `08-stewardship-financial-update.png` |
 | Upcoming Events | `09-upcoming-events-calendar.png` |
-| Gratitude / Thankful Section | `10-gratitude-thankful.png` |
-| Reflection / Spiritual Close | `11-reflection-spiritual-close.png` |
-| Feedback CTA | `12-feedback.png` |
-| Worship / Celebration | `13-worship-celebration-ministry.png` |
-| Compassionate Care | `14-compassionate-care-ministry.png` |
-| Team spotlight | `18-team-avatar-variant-a.png` |
-| Footer social links | `21-social-facebook.png`, `22-social-youtube.png`, `23-social-website.png` |
+| Prayer / Care / Compassion | `10-prayer-care-and-compassion.png` |
+
+The current v3 set has no dedicated gratitude, reflection, feedback, team-avatar, or social icons. Use clear text links or a documented v3 substitute; do not fall back to the retired icon family without explicit approval.
 
 ### 8.3 Icon sizing
 
@@ -273,7 +281,7 @@ CTA icon: 18px–24px
 ### 8.4 Icon HTML pattern
 
 ```html
-<img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/new/03-our-mission.png" alt="Mission icon" width="64" style="display:block; border:0; outline:none; text-decoration:none;">
+<img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/03-our-mission.png" alt="Mission icon" width="64" style="display:block; border:0; outline:none; text-decoration:none;">
 ```
 
 ### 8.5 Icon usage rules
@@ -499,6 +507,8 @@ Use:
 
 Do not bury important production notes at the bottom only. Put critical warnings near the relevant section.
 
+All current Markdown instructions must point agents back to `docs/st-pauls-comprehensive-newsletter-template.md`. Historical analysis and superseded resources must be labeled clearly and must not override the comprehensive template.
+
 ---
 
 ## 15. DOCX-Driven Edit Rules
@@ -622,11 +632,13 @@ Avoid unnecessary explanations when a file is requested. Create the file and pro
 Recommended current resources:
 
 ```text
-st-pauls-canva-friendly-newsletter-template.html
-st-pauls-icons-and-important-links-UPDATED.md
+docs/st-pauls-comprehensive-newsletter-template.md
+resources/links/st-pauls-icons-and-important-links.md
+checklists/NEWSLETTER-QA-CHECKLIST.md
+docs/style-guide.md
 ```
 
-Use the Spring newsletter design system as the preferred style baseline for future newsletters.
+Use the comprehensive Markdown template as the production baseline for future newsletters. Existing Spring HTML may be consulted for historical visual context only.
 
 ---
 
@@ -642,12 +654,8 @@ When in doubt:
 
 ---
 
-## 23. Current Newsletter Baseline (As of 2026-05-09)
+## 23. Existing Newsletter Files
 
-Latest working newsletter file in this repository:
+The repository contains approved, working, and archived HTML newsletters. They must remain unchanged unless the user explicitly requests an HTML edit.
 
-```text
-newsletters/working/spring 2026 newsletter final-EDITED-v13.html
-```
-
-When asked to "analyze current spring newsletter," use this v13 file unless the user specifies a newer version.
+When building a new newsletter, use `docs/st-pauls-comprehensive-newsletter-template.md` for structure and use the assigned approved copy source for wording. Never treat an older generated newsletter as the current construction template.
