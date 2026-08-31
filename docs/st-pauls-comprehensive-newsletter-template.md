@@ -4,8 +4,7 @@
 
 ## Required Supporting Resources
 
-* Canonical machine-readable v3 icons: `resources/links/st-pauls-icons-v3.json`
-* Human-readable v3 icons and stable links: `resources/links/st-pauls-icons-and-important-links.md`
+* Icon-system reset placeholders: `resources/links/st-pauls-icon-placeholders.md`
 * Website data and CTA destinations: `resources/links/st-pauls-website-data-and-links-v1.md`
 * View-in-browser implementation: `resources/links/st-pauls-view-in-browser-guidance-v2.md`
 * Final QA: `checklists/NEWSLETTER-QA-CHECKLIST.md`
@@ -52,7 +51,7 @@ Use:
 * Deep navy background: `#0A1C2C`
 * White text
 * Gold emphasis: `#D4AF37` or `#FFD700`
-* Large mission icon
+* Text-only mission heading while the icon system is being redesigned
 * Centered Lora quotation typography
 * Generous whitespace
 * Rounded 24px card
@@ -238,17 +237,7 @@ Each event card should contain:
 
 Do **not** rely on emoji as the primary visual language.
 
-Use the St. Paul’s PNG icon system for:
-
-* Worship
-* Bible study / Equipping
-* Fellowship
-* Outreach
-* Community
-* Celebration
-* Volunteer opportunities
-
-Small emoji may appear inside informal copy when appropriate, but the **canonical PNG icons should identify newsletter sections and major cards**.
+The icon system is being rebuilt. For any planned section icon, leave the relevant text marker from `resources/links/st-pauls-icon-placeholders.md` in the draft. Do not add an image, emoji substitute, or legacy icon URL until a new icon is approved.
 
 ---
 

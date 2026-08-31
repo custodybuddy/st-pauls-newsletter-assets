@@ -237,66 +237,17 @@ We Are So Thankful For
 
 ---
 
-## 8. Icon System
+## 8. Icon-System Reset
 
-Use the canonical icon library in:
+All prior icon assets and mappings are retired while the system is redesigned from scratch.
 
-```text
-resources/links/st-pauls-icons-v3.json
-resources/links/st-pauls-icons-and-important-links.md
-```
-
-Use the JSON manifest as the machine-readable source for icon filenames, URLs, roles, default alt text, and recommended widths. Use the Markdown library as the human-readable selection guide. Run the repository audit after changing either file.
-
-### 8.1 Icon base URL
+Use:
 
 ```text
-https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/
+resources/links/st-pauls-icon-placeholders.md
 ```
 
-### 8.2 Recommended section icons
-
-| Newsletter Section | Icon Filename |
-|---|---|
-| Branding / Main Title | `01-branding-cross-heart-laurel.png` |
-| Greetings Friends / Pastoral Note | `02-pastoral-note-greetings.png` |
-| Our Mission | `03-our-mission.png` |
-| Ministry Spotlight / Relationships | `04-ministry-relationships.png` |
-| Did You Know? / Community Discernment | `05-did-you-know-community-discernment.png` |
-| Our Mission in the Community | `06-mission-in-the-community.png` |
-| Equipping Ministries / Bible Study | `07-equipping-ministries-bible-study.png` |
-| Focus on Finances / Stewardship | `08-stewardship-financial-update.png` |
-| Upcoming Events | `09-upcoming-events-calendar.png` |
-| Prayer / Care / Compassion | `10-prayer-care-and-compassion.png` |
-
-The current v3 set has no dedicated gratitude, reflection, feedback, team-avatar, or social icons. Use clear text links or a documented v3 substitute; do not fall back to the retired icon family without explicit approval.
-
-### 8.3 Icon sizing
-
-```text
-Main brand icon: 72px–96px
-Major section icon: 64px–82px
-Supporting card icon: 44px–64px
-```
-
-Do not assign footer or CTA icon sizes until an approved v3 asset exists for that role.
-
-### 8.4 Icon HTML pattern
-
-```html
-<img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/03-our-mission.png" alt="Mission icon" width="64" style="display:block; border:0; outline:none; text-decoration:none;">
-```
-
-### 8.5 Icon usage rules
-
-- Use PNG icons for email compatibility.
-- Use only the canonical GitHub Pages URLs above for new or updated icon images; do not use the retired `custodybuddy.com/stpauls/icons/` path.
-- Use descriptive `alt` text for meaningful icons.
-- Use `alt=""` for decorative-only icons.
-- Use navy icons on light backgrounds.
-- Use white or gold icons on dark navy backgrounds.
-- Do not mix emoji headers and PNG icon headers unless the user asks for a casual style.
-- Keep icons visually consistent with the glossy enamel v3 family: navy, gold, cream/white, bold outlined shapes, subtle highlights, and soft shadows.
+No icon image, legacy URL, emoji substitute, filename, or size is approved for new or updated newsletter HTML. Use the relevant visible text marker in a draft, or use a clear text-only treatment. Do not create or add a new icon until it has been explicitly approved and documented. Run the repository audit after changing the placeholder guidance or introducing a future icon system.
 
 ---
 
@@ -368,7 +319,7 @@ depending on hierarchy.
 Use the link library in:
 
 ```text
-resources/links/st-pauls-icons-and-important-links.md
+resources/links/st-pauls-icon-placeholders.md
 resources/links/st-pauls-website-data-and-links-v1.md
 ```
 
@@ -487,7 +438,7 @@ When creating Canva-friendly resources:
 - Keep image URLs visible and easy to copy.
 - Avoid overly complex HTML when the goal is Canva planning.
 - Include section order.
-- Include icon recommendations.
+- Include placeholder recommendations when a future icon is planned.
 - Include button text.
 - Include suggested visual hierarchy.
 - Include notes for dark background contrast.
@@ -638,8 +589,7 @@ Recommended current resources:
 
 ```text
 docs/st-pauls-comprehensive-newsletter-template.md
-resources/links/st-pauls-icons-v3.json
-resources/links/st-pauls-icons-and-important-links.md
+resources/links/st-pauls-icon-placeholders.md
 checklists/NEWSLETTER-QA-CHECKLIST.md
 docs/style-guide.md
 ```

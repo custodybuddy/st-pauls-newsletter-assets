@@ -75,22 +75,13 @@ The controlling production instructions are in `docs/st-pauls-comprehensive-news
   - Accent/labels: `#D4AF37` or `#F0D98C`
 - Remove dark text in dark sections (for example `#1E293B`).
 
-## 6) Icons and Links
+## 6) Icon Placeholders and Links
 
-- Use `resources/links/st-pauls-icons-v3.json` as the canonical machine-readable v3 icon manifest.
-- Use the current icon/link source: `resources/links/st-pauls-icons-and-important-links.md`.
-- Use only `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/` for new or replaced icon images.
-- Use PNG icons for email compatibility.
-- Keep the glossy enamel navy/gold/cream v3 style consistent.
-- Use recommended icon sizes:
-  - Section header: `64` or `72`
-  - Feature: `80`
-  - Card: `48`
-  - Footer: `20-28`
-  - CTA: `18-24`
+- No icon assets are approved while the icon system is being redesigned.
+- For a draft that needs a future icon, use the relevant marker in `resources/links/st-pauls-icon-placeholders.md`.
+- Do not reuse a legacy icon URL or replace it with an emoji.
 - Use stable public links for footer/CTA unless a dated or campaign link is explicitly requested.
 - Treat bulletin/event links as time-sensitive; verify currency or fallback to stable pages.
-- Use text links when v3 has no suitable icon; do not silently use the retired icon set.
 
 ## 7) Structure and Editorial Checks
 
