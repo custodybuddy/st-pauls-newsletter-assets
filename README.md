@@ -47,12 +47,30 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 5. Validate the issue with `checklists/NEWSLETTER-QA-CHECKLIST.md`, including a real inbox test before distribution.
 6. Move a completed issue into `newsletters/approved/` only after approval.
 
+## Repository Audit
+
+Run the dependency-free, read-only audit from the repository root:
+
+```bash
+node scripts/audit-newsletter-repo.js
+```
+
+The standard audit fails on current guidance or v3 asset errors and reports historical/template HTML findings as warnings. Use `--strict` when every warning must fail the check:
+
+```bash
+node scripts/audit-newsletter-repo.js --strict
+```
+
+The audit does not change any file and does not make network requests.
+
 ## Key References
 
 - Comprehensive construction template: `docs/st-pauls-comprehensive-newsletter-template.md`
 - Live preview base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/`
 - QA checklist: `checklists/NEWSLETTER-QA-CHECKLIST.md`
+- Repository audit: `scripts/audit-newsletter-repo.js`
 - Canonical v3 icon and link library: `resources/links/st-pauls-icons-and-important-links.md`
+- Canonical v3 machine-readable icon manifest: `resources/links/st-pauls-icons-v3.json`
 - Current v3 visual icon map: `resources/links/st-pauls-icons-v3-visual-map-v1.html`
 - Website data and stable link directory: `resources/links/st-pauls-website-data-and-links-v1.md`
 - View-in-browser guidance: `resources/links/st-pauls-view-in-browser-guidance-v2.md`

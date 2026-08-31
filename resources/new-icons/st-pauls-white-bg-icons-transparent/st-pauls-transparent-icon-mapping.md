@@ -2,7 +2,7 @@
 
 > **Superseded icon mapping:** This legacy-named resource maps the previous icon set in `assets/icons/new/`. Do not use it to build a new newsletter.
 
-For new issues, follow `docs/st-pauls-comprehensive-newsletter-template.md` and use `resources/links/st-pauls-icons-and-important-links.md` for the current `assets/icons/icons-v3/` set.
+For new issues, follow `docs/st-pauls-comprehensive-newsletter-template.md`, use `resources/links/st-pauls-icons-v3.json` as the machine-readable source, and use `resources/links/st-pauls-icons-and-important-links.md` as the human-readable guide for the current `assets/icons/icons-v3/` set.
 
 ## Legacy Source
 

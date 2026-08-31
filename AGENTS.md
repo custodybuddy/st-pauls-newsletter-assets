@@ -242,8 +242,11 @@ We Are So Thankful For
 Use the canonical icon library in:
 
 ```text
+resources/links/st-pauls-icons-v3.json
 resources/links/st-pauls-icons-and-important-links.md
 ```
+
+Use the JSON manifest as the machine-readable source for icon filenames, URLs, roles, default alt text, and recommended widths. Use the Markdown library as the human-readable selection guide. Run the repository audit after changing either file.
 
 ### 8.1 Icon base URL
 
@@ -570,6 +573,8 @@ Do not change:
 
 Before delivering an updated HTML file, check:
 
+- Run `node scripts/audit-newsletter-repo.js` and resolve every current-source error.
+- Use `node scripts/audit-newsletter-repo.js --strict` for a release audit; do not silently ignore warnings in the assigned issue.
 - No unclosed `<table>`
 - No unclosed `<tr>`
 - No unclosed `<td>`
@@ -633,6 +638,7 @@ Recommended current resources:
 
 ```text
 docs/st-pauls-comprehensive-newsletter-template.md
+resources/links/st-pauls-icons-v3.json
 resources/links/st-pauls-icons-and-important-links.md
 checklists/NEWSLETTER-QA-CHECKLIST.md
 docs/style-guide.md

@@ -4,7 +4,8 @@
 
 ## Required Supporting Resources
 
-* Current v3 icons and stable links: `resources/links/st-pauls-icons-and-important-links.md`
+* Canonical machine-readable v3 icons: `resources/links/st-pauls-icons-v3.json`
+* Human-readable v3 icons and stable links: `resources/links/st-pauls-icons-and-important-links.md`
 * Website data and CTA destinations: `resources/links/st-pauls-website-data-and-links-v1.md`
 * View-in-browser implementation: `resources/links/st-pauls-view-in-browser-guidance-v2.md`
 * Final QA: `checklists/NEWSLETTER-QA-CHECKLIST.md`
@@ -687,7 +688,7 @@ Characteristics:
 
 `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/`
 
-Use `resources/links/st-pauls-icons-and-important-links.md` as the copy-ready source for current filenames and absolute URLs.
+Use `resources/links/st-pauls-icons-v3.json` as the canonical machine-readable source. Use `resources/links/st-pauls-icons-and-important-links.md` as the copy-ready human-readable companion.
 
 ## Section Mapping
 

@@ -77,6 +77,7 @@ The controlling production instructions are in `docs/st-pauls-comprehensive-news
 
 ## 6) Icons and Links
 
+- Use `resources/links/st-pauls-icons-v3.json` as the canonical machine-readable v3 icon manifest.
 - Use the current icon/link source: `resources/links/st-pauls-icons-and-important-links.md`.
 - Use only `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/` for new or replaced icon images.
 - Use PNG icons for email compatibility.
@@ -109,6 +110,8 @@ The controlling production instructions are in `docs/st-pauls-comprehensive-news
 
 ## 9) Final Validation (Required)
 
+- Run `node scripts/audit-newsletter-repo.js` from the repository root and resolve every current-source error.
+- Before release, run `node scripts/audit-newsletter-repo.js --strict` and review every remaining warning against the assigned issue scope.
 - No unclosed `<table>`, `<tr>`, or `<td>` tags.
 - No missing image `alt` attributes.
 - No relative image URLs.

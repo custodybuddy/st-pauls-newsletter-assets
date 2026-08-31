@@ -2,7 +2,7 @@
 
 > **Superseded icon reference:** This file documents the previous `assets/icons/new/` set. Do not use it when building a new newsletter.
 
-For current production, follow `docs/st-pauls-comprehensive-newsletter-template.md` and select icons from `resources/links/st-pauls-icons-and-important-links.md` under `assets/icons/icons-v3/`.
+For current production, follow `docs/st-pauls-comprehensive-newsletter-template.md`, use `resources/links/st-pauls-icons-v3.json` as the machine-readable source, and select icons from the human-readable `resources/links/st-pauls-icons-and-important-links.md` under `assets/icons/icons-v3/`.
 
 The URLs below are retained only to interpret or maintain an older issue that already uses this icon family.
 

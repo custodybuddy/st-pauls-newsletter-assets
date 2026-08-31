@@ -5,6 +5,11 @@ Use this file with `docs/st-pauls-comprehensive-newsletter-template.md`, which c
 This file is the current v3 section-level icon and important-link library.
 The v3 icon files are stored under `assets/icons/icons-v3/`.
 
+Canonical machine-readable source:
+`resources/links/st-pauls-icons-v3.json`
+
+This Markdown file is the human-readable companion. The JSON manifest controls filenames, URLs, roles, default alt text, and recommended widths. The repository audit enforces that this map and the manifest contain the same v3 filenames and URLs.
+
 The older `resources/links/st-pauls-new-icon-reference-list.md` remains a historical mapping for the previous icon set; use this file when selecting v3 icons.
 
 For the expanded, website-verified ministry and CTA directory, use:

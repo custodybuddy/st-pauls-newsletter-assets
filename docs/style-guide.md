@@ -74,6 +74,7 @@ Use the comprehensive template’s Type B or Type C structure only for a foundat
 
 ## Canonical Icon Library
 
+- Machine-readable manifest: `resources/links/st-pauls-icons-v3.json`
 - Base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/`
 - Use `resources/links/st-pauls-icons-and-important-links.md` to select a current v3 section icon.
 - Use `resources/links/st-pauls-icons-v3-visual-map-v1.html` for a visual, copy-ready mapping guide.

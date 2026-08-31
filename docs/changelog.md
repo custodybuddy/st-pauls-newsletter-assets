@@ -2,6 +2,20 @@
 
 Use this file to track production changes by issue and version.
 
+## 2026-08-26 (canonical v3 machine manifest)
+
+- Added `resources/links/st-pauls-icons-v3.json` as the canonical machine-readable source for the v3 icon set.
+- Recorded stable icon keys, roles, filenames, absolute URLs, default alt text, and recommended display widths.
+- Extended the repository audit to enforce agreement between the manifest, disk assets, and human-readable Markdown map.
+- Updated current production guidance to direct agents and automation to the manifest without changing any HTML file.
+
+## 2026-08-26 (dependency-free repository audit)
+
+- Added `scripts/audit-newsletter-repo.js` as a read-only validation module with no package dependencies or network requests.
+- Added strict checks for current production guidance and the canonical v3 icon map.
+- Added repository-wide warnings for unsafe HTML patterns, stale legacy icon mappings, embedded images, and tracked junk files.
+- Documented standard and `--strict` audit commands in the README, QA checklist, and agent instructions.
+
 ## 2026-08-26 (comprehensive template governance)
 
 - Established `docs/st-pauls-comprehensive-newsletter-template.md` as the controlling structure for all new newsletter planning and construction.
