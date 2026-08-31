@@ -4,7 +4,8 @@
 
 ## Required Supporting Resources
 
-* Icon-system reset placeholders: `resources/links/st-pauls-icon-placeholders.md`
+* Canonical v4 icon manifest: `resources/links/st-pauls-icons-v4.json`
+* Human-readable v4 icon map and stable links: `resources/links/st-pauls-icons-and-important-links.md`
 * Website data and CTA destinations: `resources/links/st-pauls-website-data-and-links-v1.md`
 * View-in-browser implementation: `resources/links/st-pauls-view-in-browser-guidance-v2.md`
 * Final QA: `checklists/NEWSLETTER-QA-CHECKLIST.md`
@@ -51,7 +52,7 @@ Use:
 * Deep navy background: `#0A1C2C`
 * White text
 * Gold emphasis: `#D4AF37` or `#FFD700`
-* Text-only mission heading while the icon system is being redesigned
+* Canonical Our Mission icon from the v4 map
 * Centered Lora quotation typography
 * Generous whitespace
 * Rounded 24px card
@@ -237,7 +238,7 @@ Each event card should contain:
 
 Do **not** rely on emoji as the primary visual language.
 
-The icon system is being rebuilt. For any planned section icon, leave the relevant text marker from `resources/links/st-pauls-icon-placeholders.md` in the draft. Do not add an image, emoji substitute, or legacy icon URL until a new icon is approved.
+Use the appropriate canonical v4 icon from `resources/links/st-pauls-icons-and-important-links.md`. Do not use a retired icon or emoji substitute.
 
 ---
 
@@ -655,13 +656,11 @@ Use nested presentation tables with mobile stacking fallbacks.
 
 ---
 
-# 8. ICON-SYSTEM RESET
+# 8. CANONICAL v4 ICON SYSTEM
 
-The prior icon system has been removed so the next family can be designed from scratch.
+Use the ten individually generated transparent PNG icons in `assets/icons/`. Their filenames, roles, URLs, alt text, and recommended widths are controlled by `resources/links/st-pauls-icons-v4.json` and documented in `resources/links/st-pauls-icons-and-important-links.md`.
 
-No icon image, filename, URL, visual map, or sizing rule is currently approved. Use a clear text-only section treatment, or use the relevant visible marker from `resources/links/st-pauls-icon-placeholders.md` in a new draft.
-
-Do not add an image placeholder, legacy icon, or emoji substitute. A future system must be explicitly approved, documented, and validated before it is used in newsletter HTML.
+The system uses deep navy `#082A55`, warm gold `#D39A08`, and teal `#087F8C`, with clean Christian symbols and softened vector-style geometry. Use `88px` for the main branding icon and `72px` for major section icons. Do not use retired icons or emoji substitutes.
 
 ---
 

@@ -72,11 +72,13 @@ Use the comprehensive template’s Type B or Type C structure only for a foundat
 - Do not send a placeholder `href="#"`; send a test email and verify the hosted version.
 - Use `resources/links/st-pauls-view-in-browser-guidance-v2.md` for the reusable HTML pattern and checklist.
 
-## Icon-System Reset
+## Canonical v4 Icon System
 
-- No icon assets are approved for new or updated newsletter HTML.
-- Use a clear text treatment, or leave the relevant marker from `resources/links/st-pauls-icon-placeholders.md` in a draft for later design review.
-- Do not reuse a legacy icon URL, add an emoji substitute, or invent a replacement image.
+- Machine-readable manifest: `resources/links/st-pauls-icons-v4.json`
+- Human-readable map: `resources/links/st-pauls-icons-and-important-links.md`
+- Base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/`
+- Use the mapped v4 icon for each newsletter role; do not reuse a retired icon or substitute emoji.
+- Main brand icon: `88px`; major section icons: `72px`.
 
 ## Dark Section Contrast
 

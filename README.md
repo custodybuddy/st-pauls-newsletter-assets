@@ -7,7 +7,7 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 - Required construction guide: `docs/st-pauls-comprehensive-newsletter-template.md`
 - Default format: Type A — Ministry Spotlight
 - Approved and working HTML newsletters are issue records and visual references; they are not the structural source for a new issue.
-- The prior icon library is retired. New issues use the text markers in `resources/links/st-pauls-icon-placeholders.md` until a newly approved system is introduced.
+- New newsletter icons use the canonical v4 system in `assets/icons/`.
 
 ## Project Structure
 
@@ -18,7 +18,7 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 - `newsletters/archive/`
   - Historical issues not currently being edited.
 - `assets/icons/`
-  - Reserved for a future approved icon library; intentionally contains no production icon assets.
+  - Canonical transparent PNG icon library for new newsletter sections.
 - `resources/links/`
   - Link and icon mapping libraries used during production.
 - `templates/`
@@ -36,7 +36,7 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 - Create versioned edits:
   - `spring-newsletter-EDITED-v2.html`
   - `spring-newsletter-EDITED-v3.html`
-  - `st-pauls-icon-placeholders-UPDATED-v2.md`
+  - `st-pauls-icons-and-important-links-UPDATED-v2.md`
 
 ## Production Workflow
 
@@ -55,7 +55,7 @@ Run the dependency-free, read-only audit from the repository root:
 node scripts/audit-newsletter-repo.js
 ```
 
-The standard audit fails on current guidance errors or any remaining production icon asset and reports historical/template HTML findings as warnings. Use `--strict` when every warning must fail the check:
+The standard audit fails on current guidance or canonical v4 icon errors and reports historical/template HTML findings as warnings. Use `--strict` when every warning must fail the check:
 
 ```bash
 node scripts/audit-newsletter-repo.js --strict
@@ -69,7 +69,9 @@ The audit does not change any file and does not make network requests.
 - Live preview base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/`
 - QA checklist: `checklists/NEWSLETTER-QA-CHECKLIST.md`
 - Repository audit: `scripts/audit-newsletter-repo.js`
-- Icon-system reset placeholders: `resources/links/st-pauls-icon-placeholders.md`
+- Canonical v4 icon and link library: `resources/links/st-pauls-icons-and-important-links.md`
+- Canonical v4 machine-readable manifest: `resources/links/st-pauls-icons-v4.json`
+- Visual icon map: `resources/links/st-pauls-icons-v4-visual-map.html`
 - Website data and stable link directory: `resources/links/st-pauls-website-data-and-links-v1.md`
 - View-in-browser guidance: `resources/links/st-pauls-view-in-browser-guidance-v2.md`
 - Brand tokens: `docs/style-guide.md`

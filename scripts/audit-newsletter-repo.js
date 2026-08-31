@@ -16,7 +16,7 @@ const UNKNOWN_ARGS = process.argv.slice(2).filter(function (arg) {
 if (HELP) {
   console.log('Usage: node scripts/audit-newsletter-repo.js [--strict]');
   console.log('');
-  console.log('Checks current Markdown guidance, the icon-system reset, and email HTML.');
+  console.log('Checks current Markdown guidance, canonical v4 icons, and email HTML.');
   console.log('By default, historical/template HTML findings are warnings.');
   console.log('--strict exits with an error when warnings are present.');
   process.exit(0);
@@ -33,7 +33,9 @@ const REQUIRED_FILES = [
   'checklists/NEWSLETTER-QA-CHECKLIST.md',
   'docs/st-pauls-comprehensive-newsletter-template.md',
   'docs/style-guide.md',
-  'resources/links/st-pauls-icon-placeholders.md',
+  'resources/links/st-pauls-icons-v4.json',
+  'resources/links/st-pauls-icons-and-important-links.md',
+  'resources/links/st-pauls-icons-v4-visual-map.html',
   'resources/links/st-pauls-view-in-browser-guidance-v2.md',
   'resources/links/st-pauls-website-data-and-links-v1.md'
 ];
@@ -42,8 +44,10 @@ const CURRENT_GUIDANCE = REQUIRED_FILES.filter(function (file) {
   return file.endsWith('.md');
 });
 
-const RETIRED_ICON_DIRECTORIES = ['assets/icons', 'resources/icons', 'resources/new-icons'];
-const PLACEHOLDER_GUIDANCE = 'resources/links/st-pauls-icon-placeholders.md';
+const ICON_DIRECTORY = 'assets/icons';
+const ICON_MANIFEST = 'resources/links/st-pauls-icons-v4.json';
+const ICON_LIBRARY = 'resources/links/st-pauls-icons-and-important-links.md';
+const ICON_BASE_URL = 'https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/';
 const HTML_DIRECTORIES = ['newsletters', 'templates'];
 
 const issues = [];
@@ -120,17 +124,85 @@ function checkCurrentGuidance() {
   });
 }
 
-function checkIconReset() {
-  const guidance = read(PLACEHOLDER_GUIDANCE);
-  if (!guidance.includes('[ICON PLACEHOLDER')) {
-    add('error', 'missing-icon-placeholders', PLACEHOLDER_GUIDANCE, 'Must define visible text markers for future icon design.');
+function checkCanonicalIcons() {
+  if (!fs.existsSync(absolute(ICON_MANIFEST)) || !fs.existsSync(absolute(ICON_LIBRARY))) return;
+
+  let manifest;
+  try {
+    manifest = JSON.parse(read(ICON_MANIFEST));
+  } catch (error) {
+    add('error', 'invalid-icon-manifest', ICON_MANIFEST, 'JSON could not be parsed: ' + error.message);
+    return;
   }
 
-  RETIRED_ICON_DIRECTORIES.forEach(function (directory) {
-    const files = listFiles(directory, '.png');
-    files.forEach(function (filePath) {
-      add('error', 'retired-icon-asset', relative(filePath), 'Icon assets are retired until a new system is approved.');
-    });
+  if (manifest.schemaVersion !== 1 || manifest.iconSetVersion !== 4 || manifest.status !== 'canonical') {
+    add('error', 'icon-manifest-version', ICON_MANIFEST, 'Expected schemaVersion 1, iconSetVersion 4, and canonical status.');
+  }
+  if (manifest.assetDirectory !== ICON_DIRECTORY || manifest.baseUrl !== ICON_BASE_URL) {
+    add('error', 'icon-manifest-location', ICON_MANIFEST, 'Asset directory or base URL does not match the canonical v4 location.');
+  }
+  if (!manifest.visualMap || !fs.existsSync(absolute(manifest.visualMap.repositoryPath || ''))) {
+    add('error', 'icon-visual-map', ICON_MANIFEST, 'visualMap.repositoryPath must point to an existing file.');
+  }
+
+  const icons = Array.isArray(manifest.icons) ? manifest.icons : [];
+  if (icons.length !== 10) {
+    add('error', 'icon-count', ICON_MANIFEST, 'Expected exactly 10 canonical v4 icon records.');
+  }
+
+  const keys = [];
+  const manifestFiles = [];
+  const urls = [];
+  icons.forEach(function (icon, index) {
+    const label = 'icons[' + index + ']';
+    if (!icon || typeof icon !== 'object') {
+      add('error', 'invalid-icon-record', ICON_MANIFEST, label + ' must be an object.');
+      return;
+    }
+    if (!icon.key || keys.includes(icon.key)) add('error', 'duplicate-icon-key', ICON_MANIFEST, label + ' has a missing or duplicate key.');
+    else keys.push(icon.key);
+    if (!icon.filename || manifestFiles.includes(icon.filename)) add('error', 'duplicate-icon-file', ICON_MANIFEST, label + ' has a missing or duplicate filename.');
+    else manifestFiles.push(icon.filename);
+    if (!Array.isArray(icon.roles) || icon.roles.length === 0) add('error', 'missing-icon-role', ICON_MANIFEST, label + ' must define at least one role.');
+    if (!icon.alt || typeof icon.alt !== 'string') add('error', 'missing-icon-alt', ICON_MANIFEST, label + ' must define useful alt text.');
+    if (!Number.isInteger(icon.recommendedWidth) || icon.recommendedWidth < 44 || icon.recommendedWidth > 96) add('error', 'invalid-icon-width', ICON_MANIFEST, label + ' recommendedWidth must be an integer from 44 to 96.');
+    if (icon.filename && icon.url !== ICON_BASE_URL + icon.filename) add('error', 'invalid-icon-url', ICON_MANIFEST, label + ' URL must equal baseUrl plus filename.');
+    if (!icon.url || urls.includes(icon.url)) add('error', 'duplicate-icon-url', ICON_MANIFEST, label + ' has a missing or duplicate URL.');
+    else urls.push(icon.url);
+  });
+
+  const diskFiles = listFiles(ICON_DIRECTORY, '.png').map(function (filePath) {
+    return path.basename(filePath);
+  }).sort();
+  manifestFiles.sort();
+  diskFiles.forEach(function (file) {
+    if (!manifestFiles.includes(file)) add('error', 'unmapped-v4-icon', ICON_MANIFEST, file + ' exists on disk but is absent from the manifest.');
+  });
+  manifestFiles.forEach(function (file) {
+    if (!diskFiles.includes(file)) {
+      add('error', 'missing-v4-icon', ICON_DIRECTORY + '/' + file, 'Manifest icon is missing from disk.');
+      return;
+    }
+    const data = fs.readFileSync(absolute(ICON_DIRECTORY + '/' + file));
+    const isPng = data.length > 25 && data.slice(1, 4).toString('ascii') === 'PNG';
+    if (!isPng) {
+      add('error', 'invalid-png', ICON_DIRECTORY + '/' + file, 'File is not a valid PNG.');
+      return;
+    }
+    const width = data.readUInt32BE(16);
+    const height = data.readUInt32BE(20);
+    const colorType = data[25];
+    if (width !== height) add('error', 'non-square-icon', ICON_DIRECTORY + '/' + file, width + 'x' + height + ' icon is not square.');
+    if (colorType !== 4 && colorType !== 6) add('error', 'missing-alpha', ICON_DIRECTORY + '/' + file, 'PNG does not contain an alpha channel.');
+  });
+
+  const library = read(ICON_LIBRARY);
+  const visualMap = manifest.visualMap && manifest.visualMap.repositoryPath && fs.existsSync(absolute(manifest.visualMap.repositoryPath))
+    ? read(manifest.visualMap.repositoryPath)
+    : '';
+  icons.forEach(function (icon) {
+    if (!library.includes(icon.url)) add('error', 'undocumented-v4-icon', ICON_LIBRARY, icon.filename + ' URL is missing from the human-readable map.');
+    if (!visualMap.includes(icon.filename)) add('error', 'missing-visual-map-icon', manifest.visualMap.repositoryPath, icon.filename + ' is missing from the visual map.');
   });
 }
 
@@ -212,7 +284,7 @@ function printIssues(level) {
 
 checkRequiredFiles();
 checkCurrentGuidance();
-checkIconReset();
+checkCanonicalIcons();
 checkTrackedJunk();
 checkHtml();
 

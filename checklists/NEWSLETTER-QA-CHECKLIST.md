@@ -75,11 +75,13 @@ The controlling production instructions are in `docs/st-pauls-comprehensive-news
   - Accent/labels: `#D4AF37` or `#F0D98C`
 - Remove dark text in dark sections (for example `#1E293B`).
 
-## 6) Icon Placeholders and Links
+## 6) v4 Icons and Links
 
-- No icon assets are approved while the icon system is being redesigned.
-- For a draft that needs a future icon, use the relevant marker in `resources/links/st-pauls-icon-placeholders.md`.
-- Do not reuse a legacy icon URL or replace it with an emoji.
+- Use `resources/links/st-pauls-icons-v4.json` as the canonical machine-readable manifest.
+- Use `resources/links/st-pauls-icons-and-important-links.md` for the role map, URLs, alt text, and recommended widths.
+- Use only the canonical `assets/icons/` files for new or replaced section icons.
+- Confirm every icon is a square transparent PNG and has useful alt text and an explicit width.
+- Do not reuse a retired icon or replace it with an emoji.
 - Use stable public links for footer/CTA unless a dated or campaign link is explicitly requested.
 - Treat bulletin/event links as time-sensitive; verify currency or fallback to stable pages.
 

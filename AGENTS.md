@@ -66,8 +66,8 @@ Recommended naming:
 ```text
 spring-newsletter-EDITED-v2.html
 spring-newsletter-EDITED-v3.html
-st-pauls-icon-placeholders-UPDATED.md
-st-pauls-icon-placeholders-UPDATED-v2.md
+st-pauls-icons-and-important-links-UPDATED.md
+st-pauls-icons-and-important-links-UPDATED-v2.md
 ```
 
 ### 2.4 Preserve approved copy
@@ -237,17 +237,16 @@ We Are So Thankful For
 
 ---
 
-## 8. Icon-System Reset
-
-All prior icon assets and mappings are retired while the system is redesigned from scratch.
+## 8. Canonical v4 Icon System
 
 Use:
 
 ```text
-resources/links/st-pauls-icon-placeholders.md
+resources/links/st-pauls-icons-v4.json
+resources/links/st-pauls-icons-and-important-links.md
 ```
 
-No icon image, legacy URL, emoji substitute, filename, or size is approved for new or updated newsletter HTML. Use the relevant visible text marker in a draft, or use a clear text-only treatment. Do not create or add a new icon until it has been explicitly approved and documented. Run the repository audit after changing the placeholder guidance or introducing a future icon system.
+The manifest controls filenames, roles, URLs, alt text, and recommended widths. Assets live in `assets/icons/`. Use `88px` for the main branding icon and `72px` for major section icons. Do not reuse a retired icon or substitute emoji. Run the repository audit after changing the assets or mappings.
 
 ---
 
@@ -319,7 +318,7 @@ depending on hierarchy.
 Use the link library in:
 
 ```text
-resources/links/st-pauls-icon-placeholders.md
+resources/links/st-pauls-icons-and-important-links.md
 resources/links/st-pauls-website-data-and-links-v1.md
 ```
 
@@ -589,7 +588,8 @@ Recommended current resources:
 
 ```text
 docs/st-pauls-comprehensive-newsletter-template.md
-resources/links/st-pauls-icon-placeholders.md
+resources/links/st-pauls-icons-v4.json
+resources/links/st-pauls-icons-and-important-links.md
 checklists/NEWSLETTER-QA-CHECKLIST.md
 docs/style-guide.md
 ```
