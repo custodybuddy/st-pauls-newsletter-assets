@@ -49,6 +49,8 @@ const ICON_MANIFEST = 'resources/links/st-pauls-icons-v4.json';
 const ICON_LIBRARY = 'resources/links/st-pauls-icons-and-important-links.md';
 const ICON_BASE_URL = 'https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/';
 const HTML_DIRECTORIES = ['newsletters', 'templates'];
+const COMPREHENSIVE_TEMPLATE = 'docs/st-pauls-comprehensive-newsletter-template.md';
+const MODULAR_TEMPLATE_ID = '1TIgR_NbjIOMLPt0Q-g7jymQPYRLEPjK1vQTJ96vwPC8';
 
 const issues = [];
 
@@ -120,6 +122,31 @@ function checkCurrentGuidance() {
     if (file !== 'docs/st-pauls-comprehensive-newsletter-template.md' &&
         !content.includes('docs/st-pauls-comprehensive-newsletter-template.md')) {
       add('error', 'missing-source-of-truth', file, 'Does not reference the comprehensive template.');
+    }
+  });
+
+  if (!fs.existsSync(absolute(COMPREHENSIVE_TEMPLATE))) return;
+  const template = read(COMPREHENSIVE_TEMPLATE);
+  const requiredModularMarkers = [
+    MODULAR_TEMPLATE_ID,
+    'Part 2 — Core Sections',
+    'Part 3 — Choose Your Story Modules',
+    'Part 4 — Upcoming Events',
+    'Part 5 — We Are So Thankful For',
+    'Part 8 — Final Check Before Submission'
+  ];
+
+  requiredModularMarkers.forEach(function (marker) {
+    if (!template.includes(marker)) {
+      add('error', 'missing-modular-template-marker', COMPREHENSIVE_TEMPLATE, 'Missing current Google Doc marker: ' + marker);
+    }
+  });
+
+  CURRENT_GUIDANCE.forEach(function (file) {
+    if (!fs.existsSync(absolute(file))) return;
+    const content = read(file);
+    if (/\bType [ABC]\b/.test(content)) {
+      add('error', 'retired-edition-model', file, 'Current guidance still references the retired fixed edition model.');
     }
   });
 }

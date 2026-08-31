@@ -39,15 +39,21 @@ Agents must treat this as a **production email project**, not a browser-only web
 
 ## 2. Source of Truth Rules
 
-### 2.1 Use the comprehensive template for every new issue
+### 2.1 Use the current modular template for every new issue
 
-The controlling structure, editorial guidance, design system, accessibility rules, and production workflow are defined in:
+The current editorial drafting structure is defined in the Google Doc:
+
+```text
+https://docs.google.com/document/d/1TIgR_NbjIOMLPt0Q-g7jymQPYRLEPjK1vQTJ96vwPC8/edit
+```
+
+The local production companion mirrors that structure and adds the repository's design system, accessibility rules, and email-safe workflow:
 
 ```text
 docs/st-pauls-comprehensive-newsletter-template.md
 ```
 
-Read that file before planning, drafting, or building a new newsletter. Use its Type A structure by default and use Type B or Type C only when the issue clearly requires that format or the user requests it.
+Read that file before planning, drafting, or building a new newsletter. Complete the three Core Sections and include only the Optional Story Modules selected for that seasonal issue.
 
 Existing HTML newsletters are historical or approved issue references. Do not copy their section order, icon paths, typography sizes, or layout decisions when they conflict with the comprehensive template.
 
@@ -179,24 +185,20 @@ Use:
 
 ---
 
-## 6. Standard Newsletter Section Order
+## 6. Seasonal Modular Newsletter Structure
 
-Use this Type A order for a standard ministry spotlight issue. The comprehensive template defines the allowed Type B foundational and Type C seasonal variations.
+Use this structure for each Spring, Summer, Fall, or Winter issue:
 
-1. Hero Banner
-2. Greetings / Pastoral Note
-3. Our Mission
-4. Ministry Spotlight
-5. Primary Feature Article
-6. Secondary Focus
-7. Spiritual Formation & Learning
-8. Prayer & Volunteer Spotlights
-9. Upcoming Events
-10. Financial Stewardship when required
-11. We Are So Thankful For
-12. Footer
+1. Newsletter Basics and seasonal Hero Banner
+2. Core Sections: Greetings Friends, Our Mission, and Ministry Spotlight
+3. Only the Optional Story Modules selected in the approved draft, in their approved order
+4. Upcoming Events: approximately 3–5 priorities
+5. We Are So Thankful For: approximately 3 entries
+6. Current Contact and Footer Information
 
-Do not force every optional section into an issue. Keep the complete newsletter near the comprehensive template’s 1,500–2,300-word target and limit Upcoming Events to approximately 3–5 priorities.
+Optional Story Modules may include Community Impact, Community Discernment, Scripture or Spiritual Reflection, Sermon Reflection, Special Event or Church Update, Prayer Focus, Volunteer Opportunity, Spiritual Formation or Bible Study, Financial Stewardship, Testimony or Story of Care, and Other Story.
+
+Do not force every optional module into an issue. Keep Greetings Friends near 120–200 words; other sections are content-driven and should remain warm, clear, and easy to scan.
 
 ---
 

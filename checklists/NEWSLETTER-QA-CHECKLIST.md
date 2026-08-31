@@ -8,7 +8,8 @@ The controlling production instructions are in `docs/st-pauls-comprehensive-news
 
 - Confirm the latest approved source file or assigned working version.
 - Read `docs/st-pauls-comprehensive-newsletter-template.md` before planning or building a new issue.
-- Confirm the edition type: Type A by default, or Type B/Type C when justified by the content or user request.
+- Confirm the latest approved seasonal Google Doc or explicitly assigned copy source.
+- Identify the three Core Sections and only the Optional Story Modules selected for this issue.
 - Do not overwrite approved files.
 - Create a new versioned file (example: `fall-newsletter-EDITED-v2.html`).
 - Confirm scope: only the requested section(s), unless told otherwise.
@@ -87,11 +88,12 @@ The controlling production instructions are in `docs/st-pauls-comprehensive-news
 
 ## 7) Structure and Editorial Checks
 
-- Follow the selected edition structure in the comprehensive template.
-- For Type A, verify the reader journey covers greeting, mission, ministry spotlight, primary feature, secondary focus, formation, prayer/volunteer, events, optional stewardship, gratitude, and footer.
-- Keep the complete issue near `1,500-2,300` words unless the user directs otherwise.
-- Keep the ministry spotlight near `500-800` words and the primary feature near `350-650` words.
-- Limit Upcoming Events to approximately `3-5` priorities.
+- Confirm Greetings Friends, Our Mission, and Ministry Spotlight are complete.
+- Include only the Optional Story Modules selected in the approved seasonal draft and preserve their approved order.
+- Keep Greetings Friends near `120-200` words; other modules are content-driven and should be concise and easy to scan.
+- Limit Upcoming Events to approximately `3-5` priorities and gratitude to approximately 3 entries.
+- Remove every unused prompt, bracketed placeholder, checkbox, and `REMOVE` marker before release.
+- Confirm permission for private prayer details, personal stories, and identifiable-person photos.
 - Keep paragraphs short and use approximately `2-4` intentional emphasized phrases per section.
 
 ## 8) Copy and Scope Protection

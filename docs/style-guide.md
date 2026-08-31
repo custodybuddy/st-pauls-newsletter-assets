@@ -1,6 +1,6 @@
 # St. Paul's Newsletter Style Guide (Condensed)
 
-This is a quick-reference companion to `docs/st-pauls-comprehensive-newsletter-template.md`. The comprehensive template controls structure, edition types, editorial length, accessibility, and production workflow.
+This is a quick-reference companion to `docs/st-pauls-comprehensive-newsletter-template.md`. The comprehensive template mirrors the current seasonal Google Doc and controls modular structure, editorial guidance, accessibility, and production workflow.
 
 ## Brand Colors
 
@@ -30,22 +30,18 @@ This is a quick-reference companion to `docs/st-pauls-comprehensive-newsletter-t
 - Gold divider/accent
 - Spacious section padding
 
-## Standard Type A Section Flow
+## Seasonal Modular Section Flow
 
-1. Hero Banner
-2. Greetings / Pastoral Note
-3. Our Mission
-4. Ministry Spotlight
-5. Primary Feature Article
-6. Secondary Focus
-7. Spiritual Formation & Learning
-8. Prayer & Volunteer Spotlights
-9. Upcoming Events
-10. Financial Stewardship when required
-11. We Are So Thankful For
-12. Footer
+1. Newsletter Basics and seasonal Hero Banner
+2. Core: Greetings Friends
+3. Core: Our Mission
+4. Core: Ministry Spotlight
+5. Only the Optional Story Modules selected in the approved seasonal draft
+6. Three to five priority Upcoming Events
+7. Approximately three gratitude entries
+8. Current Contact and Footer Information
 
-Use the comprehensive template’s Type B or Type C structure only for a foundational/vision or feature-heavy seasonal issue.
+Optional modules can be reordered, combined, or omitted when the approved draft calls for it. Do not fill every module by default. Keep Greetings Friends near 120–200 words; all other sections are content-driven.
 
 ## Layout and Readability
 

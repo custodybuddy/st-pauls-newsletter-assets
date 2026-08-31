@@ -5,7 +5,8 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 ## Current Production Baseline
 
 - Required construction guide: `docs/st-pauls-comprehensive-newsletter-template.md`
-- Default format: Type A — Ministry Spotlight
+- Current editorial source: [St. Paul’s — Seasonal Newsletter Drafting Template (Modular)](https://docs.google.com/document/d/1TIgR_NbjIOMLPt0Q-g7jymQPYRLEPjK1vQTJ96vwPC8/edit)
+- Default structure: three Core Sections plus only the Optional Story Modules selected for that seasonal issue
 - Approved and working HTML newsletters are issue records and visual references; they are not the structural source for a new issue.
 - New newsletter icons use the canonical v4 system in `assets/icons/`.
 
@@ -41,8 +42,8 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 ## Production Workflow
 
 1. Read `docs/st-pauls-comprehensive-newsletter-template.md` before planning or building a new issue.
-2. Select Type A by default; use Type B or Type C only when the content or user request calls for it.
-3. Use the latest approved or explicitly assigned source for copy, while preserving approved wording.
+2. Complete the three Core Sections and select only the Optional Story Modules that fit the seasonal issue.
+3. Use the latest approved Google Doc or explicitly assigned copy source while preserving approved wording and module order.
 4. Create a new versioned file in `newsletters/working/`; never overwrite approved or historical newsletters.
 5. Validate the issue with `checklists/NEWSLETTER-QA-CHECKLIST.md`, including a real inbox test before distribution.
 6. Move a completed issue into `newsletters/approved/` only after approval.
@@ -66,6 +67,7 @@ The audit does not change any file and does not make network requests.
 ## Key References
 
 - Comprehensive construction template: `docs/st-pauls-comprehensive-newsletter-template.md`
+- Current modular drafting template: `https://docs.google.com/document/d/1TIgR_NbjIOMLPt0Q-g7jymQPYRLEPjK1vQTJ96vwPC8/edit`
 - Live preview base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/`
 - QA checklist: `checklists/NEWSLETTER-QA-CHECKLIST.md`
 - Repository audit: `scripts/audit-newsletter-repo.js`

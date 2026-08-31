@@ -2,6 +2,14 @@
 
 Use this file to track production changes by issue and version.
 
+## 2026-08-31 (seasonal modular Google Doc template)
+
+- Reviewed `St. Paul’s — Seasonal Newsletter Drafting Template (Modular)` and made it the current editorial drafting source.
+- Rebuilt the comprehensive local template around three Core Sections and selectable Optional Story Modules for Spring, Summer, Fall, and Winter issues.
+- Preserved the repository's email-safe HTML, accessibility, 1100px layout, brand, v4 icon, link, versioning, and release rules as the production addendum.
+- Updated the README, agent guide, condensed style guide, QA checklist, and audit to retire the fixed edition model and old issue-length targets.
+- No approved, working, archived, or template HTML newsletter was changed.
+
 ## 2026-08-26 (canonical v3 machine manifest)
 
 - Added `resources/links/st-pauls-icons-v3.json` as the canonical machine-readable source for the v3 icon set.
