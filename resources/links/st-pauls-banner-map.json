@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "status": "canonical",
+  "banners": {
+    "ourMission": {
+      "filename": "st-pauls-our-mission-banner-transparent.png",
+      "repositoryPath": "templates/st-pauls-our-mission-banner-transparent.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/templates/st-pauls-our-mission-banner-transparent.png",
+      "alt": "St. Paul's Our Mission banner"
+    }
+  }
+}
