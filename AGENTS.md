@@ -66,8 +66,8 @@ Recommended naming:
 ```text
 spring-newsletter-EDITED-v2.html
 spring-newsletter-EDITED-v3.html
-st-pauls-icons-and-important-links-UPDATED.md
-st-pauls-icons-and-important-links-UPDATED-v2.md
+st-pauls-icon-placeholders-UPDATED.md
+st-pauls-icon-placeholders-UPDATED-v2.md
 ```
 
 ### 2.4 Preserve approved copy

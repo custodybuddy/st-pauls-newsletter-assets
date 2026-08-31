@@ -36,7 +36,7 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 - Create versioned edits:
   - `spring-newsletter-EDITED-v2.html`
   - `spring-newsletter-EDITED-v3.html`
-  - `st-pauls-icons-and-important-links-UPDATED-v2.md`
+  - `st-pauls-icon-placeholders-UPDATED-v2.md`
 
 ## Production Workflow
 

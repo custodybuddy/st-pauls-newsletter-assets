@@ -655,87 +655,13 @@ Use nested presentation tables with mobile stacking fallbacks.
 
 ---
 
-# 8. CANONICAL ICON SYSTEM
+# 8. ICON-SYSTEM RESET
 
-The newsletter should use one consistent St. Paul’s icon family.
+The prior icon system has been removed so the next family can be designed from scratch.
 
-## Style
+No icon image, filename, URL, visual map, or sizing rule is currently approved. Use a clear text-only section treatment, or use the relevant visible marker from `resources/links/st-pauls-icon-placeholders.md` in a new draft.
 
-**Glossy Enamel Badge**
-
-Characteristics:
-
-* Navy
-* Gold
-* Cream / white
-* Bold outlined shapes
-* Subtle glossy highlight
-* Soft shadow
-* Transparent PNG background
-
-## Canonical Asset Directory
-
-`https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/icons-v3/`
-
-Use `resources/links/st-pauls-icons-v3.json` as the canonical machine-readable source. Use `resources/links/st-pauls-icons-and-important-links.md` as the copy-ready human-readable companion.
-
-## Section Mapping
-
-Use the appropriate canonical icon instead of generic emoji wherever available.
-
-Examples:
-
-**Brand / Main Title**
-`01-branding-cross-heart-laurel.png`
-
-**Greetings / Pastoral Note**
-`02-pastoral-note-greetings.png`
-
-**Our Mission**
-`03-our-mission.png`
-
-**Ministry Spotlight / Relationships**
-`04-ministry-relationships.png`
-
-**Did You Know / Discernment**
-`05-did-you-know-community-discernment.png`
-
-**Mission in the Community**
-`06-mission-in-the-community.png`
-
-**Equipping Ministries / Bible Study**
-`07-equipping-ministries-bible-study.png`
-
-**Stewardship / Financial Update**
-`08-stewardship-financial-update.png`
-
-**Upcoming Events / Calendar**
-`09-upcoming-events-calendar.png`
-
-**Prayer / Care / Compassion**
-`10-prayer-care-and-compassion.png`
-
-The current v3 set does not include dedicated gratitude, reflection, feedback, team-avatar, or social icons. Use clear text links for those roles unless a future v3 asset is added and documented. Do not silently fall back to a retired icon family.
-
-## Icon Size
-
-### Main Brand Icon
-
-**72–96px**
-
-### Major Section Icon
-
-**64–82px**
-
-### Supporting Card Icon
-
-**44–64px**
-
-### Footer Icon
-
-**28–40px**
-
-Always provide descriptive `alt` text.
+Do not add an image placeholder, legacy icon, or emoji substitute. A future system must be explicitly approved, documented, and validated before it is used in newsletter HTML.
 
 ---
 
