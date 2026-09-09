@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "iconSetVersion": 4,
+  "status": "canonical",
+  "lastUpdated": "2026-09-09",
+  "assetDirectory": "brand/assets/icons",
+  "baseUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/",
+  "visualMap": {
+    "repositoryPath": "brand/resources/icon-map-v4-visual.html",
+    "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/resources/icon-map-v4-visual.html"
+  },
+  "style": {
+    "reference": "User-supplied Christian icon family reference, 2026-08-31",
+    "description": "Premium dimensional Christian symbols with softened, readable geometry and transparent backgrounds",
+    "palette": {
+      "deepNavy": "#082A55",
+      "warmGold": "#D39A08",
+      "teal": "#087F8C"
+    }
+  },
+  "mappingPolicy": {
+    "principle": "Use one icon as the visual label for a section's primary purpose; do not reuse an icon merely because the subject is related.",
+    "selectionOrder": ["exactSectionMatch", "primaryPurpose", "approvedFallback", "omitIcon"],
+    "fallbackRule": "If no icon is an exact match, omit the icon or use the listed approved fallback; never substitute emoji, retired assets, or the combined reference sheet.",
+    "legacyFallbacks": {
+      "financialUpdate": "08 was the interim stewardship fallback for financial figures before 11 was published. Use 11 for new Finance sections; retain 08 only in approved or working historical HTML unless an assigned edit requires replacement."
+    }
+  },
+  "permanentSectionTypes": [
+    {"sectionType": "Branding", "iconKey": "branding-main-title", "status": "mapped"},
+    {"sectionType": "Greetings", "iconKey": "pastoral-note", "status": "mapped"},
+    {"sectionType": "Our Mission", "iconKey": "our-mission", "status": "mapped"},
+    {"sectionType": "Ministry Spotlight", "iconKey": "ministry-spotlight", "status": "mapped"},
+    {"sectionType": "Did You Know", "iconKey": "community-discernment", "status": "mapped"},
+    {"sectionType": "Community Mission", "iconKey": "community-mission", "status": "mapped"},
+    {"sectionType": "Spiritual Formation", "iconKey": "spiritual-formation", "status": "mapped"},
+    {"sectionType": "Stewardship", "iconKey": "stewardship", "status": "mapped"},
+    {"sectionType": "Focus on Finances", "iconKey": "focus-on-finances", "status": "mapped", "note": "Use 11 for new Finance sections. 08 is retained only as the documented historical temporary fallback."},
+    {"sectionType": "Upcoming Events", "iconKey": "upcoming-events", "status": "mapped"},
+    {"sectionType": "Prayer & Care", "iconKey": "prayer-care", "status": "mapped"},
+    {"sectionType": "Power of Prayer", "iconKey": "prayer-care", "status": "mapped"},
+    {"sectionType": "Thankful", "iconKey": "thankful", "status": "mapped"},
+    {"sectionType": "Announcements", "iconKey": "announcements", "status": "mapped"},
+    {"sectionType": "Volunteer", "iconKey": "volunteer", "status": "mapped"},
+    {"sectionType": "Worship & Music", "iconKey": "worship-music", "status": "mapped"}
+  ],
+  "icons": [
+    {
+      "key": "branding-main-title",
+      "roles": ["Branding", "Main title"],
+      "filename": "01-branding-cross-wings.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/01-branding-cross-wings.png",
+      "alt": "Winged cross with a gold halo",
+      "recommendedWidth": 88,
+      "useFor": ["Newsletter masthead", "What’s Up, St. Paul’s? hero"],
+      "avoidFor": ["Body sections", "Decorative repetition"]
+    },
+    {
+      "key": "pastoral-note",
+      "roles": ["Greetings Friends", "Pastoral note"],
+      "filename": "02-pastoral-note-heart-dialogue.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/02-pastoral-note-heart-dialogue.png",
+      "alt": "Gold heart inside a speech bubble",
+      "recommendedWidth": 72,
+      "useFor": ["Greetings Friends", "Pastoral note"],
+      "avoidFor": ["Prayer requests", "Gratitude"]
+    },
+    {
+      "key": "our-mission",
+      "roles": ["Our Mission", "Church community"],
+      "filename": "03-our-mission-church-community.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/03-our-mission-church-community.png",
+      "alt": "Church community gathered beneath a cross",
+      "recommendedWidth": 72,
+      "useFor": ["Our Mission statement"],
+      "avoidFor": ["Rotating ministry stories", "Community outreach"]
+    },
+    {
+      "key": "ministry-spotlight",
+      "roles": ["Ministry Spotlight", "Relationships", "Compassionate Care", "Stewardship Ministry", "Equipping Ministry"],
+      "filename": "04-ministry-spotlight-serving-heart.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/04-ministry-spotlight-serving-heart.png",
+      "alt": "Open hand supporting a gold heart",
+      "recommendedWidth": 72,
+      "useFor": ["Featured ministry story", "Relationships Ministry", "Compassionate Care feature", "Stewardship Ministry feature", "Equipping Ministry feature"],
+      "avoidFor": ["Community-wide outreach results", "Prayer request lists"]
+    },
+    {
+      "key": "community-discernment",
+      "roles": ["Did You Know?", "Community Discernment"],
+      "filename": "05-community-discernment-congregation.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/05-community-discernment-congregation.png",
+      "alt": "Congregation gathered beneath a cross in a circle",
+      "recommendedWidth": 72,
+      "useFor": ["Did You Know?", "Community needs", "Why this matters", "Discernment or context"],
+      "avoidFor": ["Community service reports", "Financial totals"]
+    },
+    {
+      "key": "community-mission",
+      "roles": ["Mission in the Community", "Community outreach", "Partnerships"],
+      "filename": "06-community-mission-cross-path.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/06-community-mission-cross-path.png",
+      "alt": "Cross above a pathway through the community",
+      "recommendedWidth": 72,
+      "useFor": ["Food bank support", "Community partnerships", "Ingersoll Inter-Church work", "Service projects"],
+      "avoidFor": ["An internal ministry spotlight", "Prayer and pastoral care"]
+    },
+    {
+      "key": "spiritual-formation",
+      "roles": ["Spiritual Formation", "Bible Study", "Scripture reflection", "Experiencing God", "Equipping"],
+      "filename": "07-spiritual-formation-open-bible.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/07-spiritual-formation-open-bible.png",
+      "alt": "Radiant cross rising from an open Bible",
+      "recommendedWidth": 72,
+      "useFor": ["Bible study", "Scripture reflection", "Experiencing God", "Spiritual formation", "Equipping teaching"],
+      "avoidFor": ["General announcements", "Financial reporting"]
+    },
+    {
+      "key": "stewardship",
+      "roles": ["Stewardship", "Generosity", "Time and talents"],
+      "filename": "08-stewardship-wheat-fields.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/08-stewardship-wheat-fields.png",
+      "alt": "Three wheat stalks growing over fields",
+      "recommendedWidth": 72,
+      "useFor": ["Stewardship story", "Generosity", "Time and talents", "Faithful resource care"],
+      "avoidFor": ["Monthly financial figures when a dedicated finance icon exists", "Gratitude"]
+    },
+    {
+      "key": "upcoming-events",
+      "roles": ["Upcoming Events", "Calendar"],
+      "filename": "09-upcoming-events-calendar.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/09-upcoming-events-calendar.png",
+      "alt": "Church calendar with a cross and event markers",
+      "recommendedWidth": 72,
+      "useFor": ["Upcoming Events heading", "Calendar overview"],
+      "avoidFor": ["Individual ministry stories", "General announcements"]
+    },
+    {
+      "key": "prayer-care",
+      "roles": ["Prayer Focus", "Prayer requests", "Pastoral care", "Compassionate Care", "Homebound care"],
+      "filename": "10-prayer-care-heart-hands.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/10-prayer-care-heart-hands.png",
+      "alt": "Caring hands beneath an outlined gold heart",
+      "recommendedWidth": 72,
+      "useFor": ["Prayer Focus", "Prayer requests", "Compassionate Care notices", "Pastoral care", "Homebound care"],
+      "avoidFor": ["We Are So Thankful For", "General ministry spotlight", "Community outreach"]
+    },
+    {
+      "key": "focus-on-finances",
+      "roles": ["Focus on Finances", "Financial update", "Financial report"],
+      "filename": "11-focus-on-finances-chart.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/11-focus-on-finances-chart.png",
+      "alt": "Rising bar chart, coins, and financial statement",
+      "recommendedWidth": 72,
+      "useFor": ["Focus on Finances", "Monthly financial figures", "Financial report"],
+      "avoidFor": ["Stewardship narrative", "Gratitude"]
+    },
+    {
+      "key": "thankful",
+      "roles": ["Thankful", "Gratitude", "Appreciation"],
+      "filename": "12-thankful-heart-hands.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/12-thankful-heart-hands.png",
+      "alt": "Hands holding a radiant heart",
+      "recommendedWidth": 72,
+      "useFor": ["We Are So Thankful For", "Gratitude", "Appreciation"],
+      "avoidFor": ["Prayer requests", "Pastoral care"]
+    },
+    {
+      "key": "announcements",
+      "roles": ["Announcements", "News", "Church notices"],
+      "filename": "13-announcements-bell.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/13-announcements-bell.png",
+      "alt": "Ringing church announcement bell",
+      "recommendedWidth": 72,
+      "useFor": ["Announcements", "Church news", "General notices"],
+      "avoidFor": ["Upcoming Events heading", "Prayer requests"]
+    },
+    {
+      "key": "volunteer",
+      "roles": ["Volunteer", "Community care", "Serving opportunity"],
+      "filename": "14-volunteer-community-care.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/14-volunteer-community-care.png",
+      "alt": "Community members and a heart held in caring hands",
+      "recommendedWidth": 72,
+      "useFor": ["Volunteer Opportunity", "Community care", "Serving opportunity"],
+      "avoidFor": ["General ministry spotlight", "Financial reporting"]
+    },
+    {
+      "key": "worship-music",
+      "roles": ["Worship & Music", "Worship", "Music ministry"],
+      "filename": "15-worship-music-cross-notes.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/15-worship-music-cross-notes.png",
+      "alt": "Cross with musical notes on a staff",
+      "recommendedWidth": 72,
+      "useFor": ["Worship & Music", "Worship", "Music ministry"],
+      "avoidFor": ["General announcements", "Financial reporting"]
+    }
+  ]
+}

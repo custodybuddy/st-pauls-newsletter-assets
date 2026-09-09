@@ -30,25 +30,29 @@ if (UNKNOWN_ARGS.length > 0) {
 const REQUIRED_FILES = [
   'AGENTS.md',
   'README.md',
-  'checklists/NEWSLETTER-QA-CHECKLIST.md',
-  'docs/st-pauls-comprehensive-newsletter-template.md',
-  'docs/style-guide.md',
-  'resources/links/st-pauls-icons-v4.json',
-  'resources/links/st-pauls-icons-and-important-links.md',
-  'resources/links/st-pauls-icons-v4-visual-map.html',
-  'resources/links/st-pauls-view-in-browser-guidance-v2.md',
-  'resources/links/st-pauls-website-data-and-links-v1.md'
+  'newsletter-system/template/kathy-drafting-template.md',
+  'newsletter-system/template/html-scaffold.html',
+  'newsletter-system/docs/style-guide.md',
+  'newsletter-system/docs/qa-checklist.md',
+  'newsletter-system/docs/changelog.md',
+  'brand/resources/icon-map-v4.json',
+  'brand/resources/icon-map-v4.md',
+  'brand/resources/icon-map-v4-visual.html',
+  'brand/resources/website-links.md',
+  'brand/resources/donation-links.md',
+  'brand/resources/church-contact.md',
+  'brand/resources/reusable-urls.md'
 ];
 
 const CURRENT_GUIDANCE = REQUIRED_FILES.filter(function (file) {
   return file.endsWith('.md');
 });
 
-const ICON_DIRECTORY = 'assets/icons';
-const ICON_MANIFEST = 'resources/links/st-pauls-icons-v4.json';
-const ICON_LIBRARY = 'resources/links/st-pauls-icons-and-important-links.md';
-const ICON_BASE_URL = 'https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/';
-const HTML_DIRECTORIES = ['newsletters', 'templates'];
+const ICON_DIRECTORY = 'brand/assets/icons';
+const ICON_MANIFEST = 'brand/resources/icon-map-v4.json';
+const ICON_LIBRARY = 'brand/resources/icon-map-v4.md';
+const ICON_BASE_URL = 'https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/';
+const HTML_DIRECTORIES = ['newsletters', 'templates', 'newsletter-system/template', 'newsletter-system/components/outlook-safe'];
 const COMPREHENSIVE_TEMPLATE = 'docs/st-pauls-comprehensive-newsletter-template.md';
 const MODULAR_TEMPLATE_ID = '1TIgR_NbjIOMLPt0Q-g7jymQPYRLEPjK1vQTJ96vwPC8';
 
@@ -119,8 +123,8 @@ function checkCurrentGuidance() {
       add('error', 'retired-icon-host', file, 'Current guidance contains the retired icon host.');
     }
 
-    if (file !== 'docs/st-pauls-comprehensive-newsletter-template.md' &&
-        !content.includes('docs/st-pauls-comprehensive-newsletter-template.md')) {
+    if (file !== COMPREHENSIVE_TEMPLATE &&
+        !content.includes(COMPREHENSIVE_TEMPLATE)) {
       add('error', 'missing-source-of-truth', file, 'Does not reference the comprehensive template.');
     }
   });
@@ -298,6 +302,13 @@ function checkHtml() {
   });
 }
 
+function checkApprovalCandidate() {
+  const candidates = listFiles('newsletters/pending-approval', '.html');
+  if (candidates.length !== 1) {
+    add('error', 'pending-approval-count', 'newsletters/pending-approval', 'Expected exactly one HTML approval candidate; found ' + candidates.length + '.');
+  }
+}
+
 function printIssues(level) {
   const selected = issues.filter(function (issue) { return issue.level === level; });
   if (selected.length === 0) return;
@@ -314,6 +325,7 @@ checkCurrentGuidance();
 checkCanonicalIcons();
 checkTrackedJunk();
 checkHtml();
+checkApprovalCandidate();
 
 const errors = issues.filter(function (issue) { return issue.level === 'error'; }).length;
 const warnings = issues.filter(function (issue) { return issue.level === 'warning'; }).length;

@@ -1,90 +1,40 @@
-# St. Paul's Newsletter Assets
+# St. Paul’s Newsletter System
 
-Production assets and templates for St. Paul's "What's Up, St. Paul's?" newsletters.
+This repository contains the production system for “What’s Up, St. Paul’s?” newsletters.
 
-## Current Production Baseline
+## Start Here
 
-- Required construction guide: `docs/st-pauls-comprehensive-newsletter-template.md`
-- Current editorial source: [St. Paul’s — Seasonal Newsletter Drafting Template (Modular)](https://docs.google.com/document/d/1TIgR_NbjIOMLPt0Q-g7jymQPYRLEPjK1vQTJ96vwPC8/edit)
-- Default structure: three Core Sections plus only the Optional Story Modules selected for that seasonal issue
-- Approved and working HTML newsletters are issue records and visual references; they are not the structural source for a new issue.
-- New newsletter icons use the canonical v4 system in `assets/icons/`.
+- **Editorial wording:** Kathy’s approved seasonal submission / the current [Seasonal Newsletter Drafting Template](https://docs.google.com/document/d/1TIgR_NbjIOMLPt0Q-g7jymQPYRLEPjK1vQTJ96vwPC8/edit) controls wording, included modules, and their order.
+- **New issue structure:** `docs/st-pauls-comprehensive-newsletter-template.md`.
+- **HTML starting point:** `newsletter-system/template/html-scaffold.html`.
+- **Brand assets and stable destinations:** `brand/`.
+- **Final checks:** `newsletter-system/docs/qa-checklist.md`.
 
-## Project Structure
+## Working Rules
 
-- `newsletters/approved/`
-  - Final approved source-of-truth HTML newsletters.
-- `newsletters/working/`
-  - In-progress versioned edits (`*-EDITED-v2.html`, `*-EDITED-v3.html`).
-- `newsletters/archive/`
-  - Historical issues not currently being edited.
-- `assets/icons/`
-  - Canonical transparent PNG icon library for new newsletter sections.
-- `assets/icon-archive/v4-previous/`
-  - Preserved previous v4 exports and alternate generated icon variants; not for production email use.
-- `resources/links/`
-  - Link and icon mapping libraries used during production.
-- `templates/`
-  - Historical and previously generated HTML references. Do not use these as the structural source for a new issue unless the user explicitly assigns one.
-- `snippets/`
-  - Reusable, email-safe table-row fragments. See `snippets/README.md` for host-table requirements and source-copy guidance.
-- `checklists/`
-  - QA and production checklists.
-- `docs/`
-  - Supporting docs (style guide, changelog, process notes).
+1. Create and edit new issue files only in `newsletters/drafting/`.
+2. Put exactly one proposed final file in `newsletters/pending-approval/`.
+3. After approval and publication, place the final file in `newsletters/archive/`; do not edit archived issues.
+4. Reusable components control table layout and Outlook compatibility only. They must not become a source of editorial wording.
+5. Retained `assets/`, `templates/`, `snippets/`, and legacy newsletter paths preserve GitHub Pages URLs. Do not edit them for new work.
 
-## File Naming Rules
+## Structure
 
-- Never overwrite approved source files.
-- Create versioned edits:
-  - `spring-newsletter-EDITED-v2.html`
-  - `spring-newsletter-EDITED-v3.html`
-  - `st-pauls-icons-and-important-links-UPDATED-v2.md`
+- `brand/assets/` — canonical icons, banners, illustrations, and reference images for new work.
+- `brand/resources/` — canonical website, donation, contact, reusable URL, and icon-map records.
+- `newsletter-system/` — drafting template, HTML scaffold, Outlook-safe layout components, and production documentation.
+- `newsletters/` — new drafts, one approval candidate, and read-only archive.
 
-## Production Workflow
+## Legacy Compatibility
 
-1. Read `docs/st-pauls-comprehensive-newsletter-template.md` before planning or building a new issue.
-2. Complete the three Core Sections and select only the Optional Story Modules that fit the seasonal issue.
-3. Use the latest approved Google Doc or explicitly assigned copy source while preserving approved wording and module order.
-4. Create a new versioned file in `newsletters/working/`; never overwrite approved or historical newsletters.
-5. Validate the issue with `checklists/NEWSLETTER-QA-CHECKLIST.md`, including a real inbox test before distribution.
-6. Move a completed issue into `newsletters/approved/` only after approval.
+The former `/assets/`, `/templates/`, `/snippets/`, and existing `/newsletters/` paths are retained so previously published GitHub Pages and email image URLs continue to resolve. New work must use the structure above. GitHub Pages does not redirect moved static files.
 
-## Repository Audit
+## Audit
 
-Run the dependency-free, read-only audit from the repository root:
+Run this read-only command from the repository root:
 
 ```bash
 node scripts/audit-newsletter-repo.js
 ```
 
-The standard audit fails on current guidance or canonical v4 icon errors and reports historical/template HTML findings as warnings. Use `--strict` when every warning must fail the check:
-
-```bash
-node scripts/audit-newsletter-repo.js --strict
-```
-
-The audit does not change any file and does not make network requests.
-
-## Documentation Maintenance
-
-Every meaningful Codex change must update the affected authoritative documentation in the same change. This includes production assets, icon filenames, roles, URLs, fallback rules, templates, email-safe requirements, validation, and production workflow.
-
-- For icon work, update `resources/links/st-pauls-icons-v4.json` first, then mirror it in `resources/links/st-pauls-icons-and-important-links.md`. Update the visual map when icon assets change.
-- For illustration work, update `resources/links/st-pauls-illustrations-v1.json` and any readable map that references the illustration.
-- For construction or workflow changes, update `docs/st-pauls-comprehensive-newsletter-template.md`, the relevant style guide or checklist, and this README when repository-wide source-of-truth locations, asset roots, or workflow change.
-
-## Key References
-
-- Comprehensive construction template: `docs/st-pauls-comprehensive-newsletter-template.md`
-- Current modular drafting template: `https://docs.google.com/document/d/1TIgR_NbjIOMLPt0Q-g7jymQPYRLEPjK1vQTJ96vwPC8/edit`
-- Live preview base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/`
-- QA checklist: `checklists/NEWSLETTER-QA-CHECKLIST.md`
-- Repository audit: `scripts/audit-newsletter-repo.js`
-- Canonical v4 icon and link library: `resources/links/st-pauls-icons-and-important-links.md`
-- Canonical v4 machine-readable manifest: `resources/links/st-pauls-icons-v4.json`
-- Visual icon map: `resources/links/st-pauls-icons-v4-visual-map.html`
-- Website data and stable link directory: `resources/links/st-pauls-website-data-and-links-v1.md`
-- View-in-browser guidance: `resources/links/st-pauls-view-in-browser-guidance-v2.md`
-- Brand tokens: `docs/style-guide.md`
-- Change log: `docs/changelog.md`
+Use `--strict` only for a release review; it also fails on retained historical warnings.

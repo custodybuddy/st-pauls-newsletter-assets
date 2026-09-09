@@ -2,6 +2,12 @@
 
 # St. Paul’s Newsletter Production Agent Guide
 
+## Current Repository Structure
+
+New work uses `brand/`, `newsletter-system/`, and `newsletters/`. Kathy’s approved seasonal submission controls wording; `docs/st-pauls-comprehensive-newsletter-template.md` controls the drafting structure and `newsletter-system/template/html-scaffold.html` is the HTML starting point. Use `newsletter-system/components/outlook-safe/` for layout only, never as editorial copy.
+
+Create drafts in `newsletters/drafting/`. Keep exactly one HTML candidate in `newsletters/pending-approval/`. Treat `newsletters/archive/` as read-only. The older `/assets/`, `/templates/`, `/snippets/`, and existing newsletter paths are read-only GitHub Pages compatibility copies; do not use them for new work.
+
 This file defines how AI agents, editors, and automation tools should work on the St. Paul’s newsletter codebase, Canva-friendly templates, icon libraries, and reusable email resources.
 
 The goal is to keep every newsletter:
@@ -244,17 +250,17 @@ We Are So Thankful For
 Use:
 
 ```text
-resources/links/st-pauls-icons-v4.json
-resources/links/st-pauls-icons-and-important-links.md
+brand/resources/icon-map-v4.json
+brand/resources/icon-map-v4.md
 ```
 
-The manifest controls filenames, roles, URLs, alt text, and recommended widths. Assets live in `assets/icons/`. Use `88px` for the main branding icon and `72px` for major section icons. Do not reuse a retired icon or substitute emoji. Run the repository audit after changing the assets or mappings.
+The manifest controls filenames, roles, URLs, alt text, and recommended widths. Assets live in `brand/assets/icons/`. Use `88px` for the main branding icon and `72px` for major section icons. Do not reuse a retired icon or substitute emoji. Run the repository audit after changing the assets or mappings.
 
 ### Documentation impact check
 
 Every meaningful Codex change must update the affected authoritative documentation in the same change. Before completing work, identify whether assets, icon filenames, roles, URLs, fallback rules, templates, email-safe requirements, validation, or workflow changed.
 
-- For icon work, update `resources/links/st-pauls-icons-v4.json` first and mirror it in `resources/links/st-pauls-icons-and-important-links.md`; update the visual map when icon assets change.
+- For icon work, update `brand/resources/icon-map-v4.json` first and mirror it in `brand/resources/icon-map-v4.md`; update the visual map when icon assets change.
 - For illustration work, update `resources/links/st-pauls-illustrations-v1.json` and the readable illustration map.
 - For construction or workflow changes, update `docs/st-pauls-comprehensive-newsletter-template.md`, the relevant style guide or checklist, and README when repository-wide source-of-truth locations, asset roots, or workflow change.
 
@@ -328,8 +334,8 @@ depending on hierarchy.
 Use the link library in:
 
 ```text
-resources/links/st-pauls-icons-and-important-links.md
-resources/links/st-pauls-website-data-and-links-v1.md
+brand/resources/icon-map-v4.md
+brand/resources/website-links.md
 ```
 
 ### 11.1 Stable links
@@ -384,7 +390,7 @@ Use a discreet **View in browser** link in the footer. Add a top utility link on
 - Use the ESP's exact hosted-email merge tag in place of `[VIEW_IN_BROWSER_URL]`.
 - Never send a browser link with `href="#"` or a generic hard-coded URL.
 - Test the merge tag in a delivered email; the hosted version should retain the intended layout, images, personalization, and supported dynamic content.
-- Use `resources/links/st-pauls-view-in-browser-guidance-v2.md` for the email-safe HTML pattern and pre-send checks.
+- Use `brand/resources/reusable-urls.md` for the email-safe HTML pattern and pre-send checks.
 
 ### 11.4 Time-sensitive links
 
@@ -598,10 +604,10 @@ Recommended current resources:
 
 ```text
 docs/st-pauls-comprehensive-newsletter-template.md
-resources/links/st-pauls-icons-v4.json
-resources/links/st-pauls-icons-and-important-links.md
-checklists/NEWSLETTER-QA-CHECKLIST.md
-docs/style-guide.md
+brand/resources/icon-map-v4.json
+brand/resources/icon-map-v4.md
+newsletter-system/docs/qa-checklist.md
+newsletter-system/docs/style-guide.md
 ```
 
 Use the comprehensive Markdown template as the production baseline for future newsletters. Existing Spring HTML may be consulted for historical visual context only.
