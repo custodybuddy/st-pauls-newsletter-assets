@@ -34,6 +34,29 @@ Use each icon as the visual label for a section's primary purpose, not as genera
 | Prayer requests, homebound, pastoral care | `10` | `02` greetings or gratitude |
 | We Are So Thankful For | No current v4 icon; use future gratitude icon | `10` prayer-care |
 
+### Permanent section type map
+
+`resources/links/st-pauls-icons-v4.json` is the canonical mapping for these permanent section types. This table is its readable mirror; do not introduce v5 production paths until individually exported v5 PNGs are published and verified.
+
+| Permanent section type | v4 icon key | Status / use rule |
+|---|---|---|
+| Branding | `branding-main-title` | Mapped to `01` |
+| Greetings | `pastoral-note` | Mapped to `02` |
+| Our Mission | `our-mission` | Mapped to `03` |
+| Ministry Spotlight | `ministry-spotlight` | Mapped to `04` |
+| Did You Know | `community-discernment` | Mapped to `05` |
+| Community Mission | `community-mission` | Mapped to `06` |
+| Spiritual Formation | `spiritual-formation` | Mapped to `07` |
+| Stewardship | `stewardship` | Mapped to `08` |
+| Focus on Finances | `stewardship` | Temporary `08` fallback only, until dedicated finance art is published |
+| Upcoming Events | `upcoming-events` | Mapped to `09` |
+| Prayer & Care | `prayer-care` | Mapped to `10` |
+| Power of Prayer | `prayer-care` | Mapped to `10` |
+| Thankful | `null` | Text-only until dedicated gratitude art is published |
+| Announcements | `null` | Text-only until dedicated announcements art is published |
+| Volunteer | `null` | Text-only; use `04` only for a featured ministry story |
+| Worship & Music | `null` | Text-only until dedicated worship art is published |
+
 | Newsletter role | Filename | Canonical URL | Default alt text |
 |---|---|---|---|
 | Branding / Main title | `01-branding-cross-wings.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/01-branding-cross-wings.png` | Winged cross with a gold halo |
@@ -46,6 +69,14 @@ Use each icon as the visual label for a section's primary purpose, not as genera
 | Stewardship / Generosity | `08-stewardship-wheat-fields.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/08-stewardship-wheat-fields.png` | Three wheat stalks growing over fields |
 | Upcoming Events | `09-upcoming-events-calendar.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/09-upcoming-events-calendar.png` | Church calendar with a cross and event markers |
 | Prayer / Care / Compassion | `10-prayer-care-heart-hands.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/10-prayer-care-heart-hands.png` | Caring hands beneath an outlined gold heart |
+
+## Supplemental illustration map
+
+The canonical illustration manifest is `resources/links/st-pauls-illustrations-v1.json`.
+
+| Use | Filename | Repository path | Canonical URL | Default alt text |
+|---|---|---|---|---|
+| Compassionate Care Ministry Spotlight | `st-pauls-compassionate-care-ministry-highlight (1).png` | `assets/st-pauls-compassionate-care-ministry-highlight (1).png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/st-pauls-compassionate-care-ministry-highlight%20(1).png` | St. Paul’s ministry wheel showing Compassionate Care Ministry |
 
 ## Email-Safe HTML Pattern
 

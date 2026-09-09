@@ -28,6 +28,24 @@
       "announcements": "Use a future announcements icon when that asset is individually exported."
     }
   },
+  "permanentSectionTypes": [
+    {"sectionType": "Branding", "iconKey": "branding-main-title", "status": "mapped"},
+    {"sectionType": "Greetings", "iconKey": "pastoral-note", "status": "mapped"},
+    {"sectionType": "Our Mission", "iconKey": "our-mission", "status": "mapped"},
+    {"sectionType": "Ministry Spotlight", "iconKey": "ministry-spotlight", "status": "mapped"},
+    {"sectionType": "Did You Know", "iconKey": "community-discernment", "status": "mapped"},
+    {"sectionType": "Community Mission", "iconKey": "community-mission", "status": "mapped"},
+    {"sectionType": "Spiritual Formation", "iconKey": "spiritual-formation", "status": "mapped"},
+    {"sectionType": "Stewardship", "iconKey": "stewardship", "status": "mapped"},
+    {"sectionType": "Focus on Finances", "iconKey": "stewardship", "status": "temporary-fallback", "note": "Use 08 only until a dedicated finance icon is individually exported and published."},
+    {"sectionType": "Upcoming Events", "iconKey": "upcoming-events", "status": "mapped"},
+    {"sectionType": "Prayer & Care", "iconKey": "prayer-care", "status": "mapped"},
+    {"sectionType": "Power of Prayer", "iconKey": "prayer-care", "status": "mapped"},
+    {"sectionType": "Thankful", "iconKey": null, "status": "missing-dedicated-icon", "note": "Use a text-only heading until a dedicated gratitude icon is individually exported and published."},
+    {"sectionType": "Announcements", "iconKey": null, "status": "missing-dedicated-icon", "note": "Use a text-only heading until a dedicated announcements icon is individually exported and published."},
+    {"sectionType": "Volunteer", "iconKey": null, "status": "missing-dedicated-icon", "note": "Use a text-only heading unless the content is a featured ministry story, which may use 04."},
+    {"sectionType": "Worship & Music", "iconKey": null, "status": "missing-dedicated-icon", "note": "Use a text-only heading until a dedicated worship icon is individually exported and published."}
+  ],
   "icons": [
     {
       "key": "branding-main-title",

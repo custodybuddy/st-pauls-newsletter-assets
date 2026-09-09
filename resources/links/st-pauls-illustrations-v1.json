@@ -16,5 +16,18 @@
       "layoutRole": "Permanent 30% visual column in the Greetings Friends 70/30 component",
       "emailFormat": "jpg"
     }
+  ],
+  "supplementalIllustrations": [
+    {
+      "key": "compassionate-care-ministry-wheel",
+      "section": "Ministry Spotlight / Compassionate Care Ministry",
+      "filename": "st-pauls-compassionate-care-ministry-highlight (1).png",
+      "repositoryPath": "assets/st-pauls-compassionate-care-ministry-highlight (1).png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/st-pauls-compassionate-care-ministry-highlight%20(1).png",
+      "alt": "St. Paul’s ministry wheel showing Compassionate Care Ministry",
+      "recommendedWidth": 260,
+      "layoutRole": "Supplemental Ministry Spotlight graphic for the Compassionate Care Ministry feature",
+      "emailFormat": "png"
+    }
   ]
 }

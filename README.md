@@ -66,6 +66,14 @@ node scripts/audit-newsletter-repo.js --strict
 
 The audit does not change any file and does not make network requests.
 
+## Documentation Maintenance
+
+Every meaningful Codex change must update the affected authoritative documentation in the same change. This includes production assets, icon filenames, roles, URLs, fallback rules, templates, email-safe requirements, validation, and production workflow.
+
+- For icon work, update `resources/links/st-pauls-icons-v4.json` first, then mirror it in `resources/links/st-pauls-icons-and-important-links.md`. Update the visual map when icon assets change.
+- For illustration work, update `resources/links/st-pauls-illustrations-v1.json` and any readable map that references the illustration.
+- For construction or workflow changes, update `docs/st-pauls-comprehensive-newsletter-template.md`, the relevant style guide or checklist, and this README when repository-wide source-of-truth locations, asset roots, or workflow change.
+
 ## Key References
 
 - Comprehensive construction template: `docs/st-pauls-comprehensive-newsletter-template.md`

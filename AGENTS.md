@@ -250,6 +250,14 @@ resources/links/st-pauls-icons-and-important-links.md
 
 The manifest controls filenames, roles, URLs, alt text, and recommended widths. Assets live in `assets/icons/`. Use `88px` for the main branding icon and `72px` for major section icons. Do not reuse a retired icon or substitute emoji. Run the repository audit after changing the assets or mappings.
 
+### Documentation impact check
+
+Every meaningful Codex change must update the affected authoritative documentation in the same change. Before completing work, identify whether assets, icon filenames, roles, URLs, fallback rules, templates, email-safe requirements, validation, or workflow changed.
+
+- For icon work, update `resources/links/st-pauls-icons-v4.json` first and mirror it in `resources/links/st-pauls-icons-and-important-links.md`; update the visual map when icon assets change.
+- For illustration work, update `resources/links/st-pauls-illustrations-v1.json` and the readable illustration map.
+- For construction or workflow changes, update `docs/st-pauls-comprehensive-newsletter-template.md`, the relevant style guide or checklist, and README when repository-wide source-of-truth locations, asset roots, or workflow change.
+
 ---
 
 ## 9. Gold/Bold Emphasis Rules
