@@ -4,9 +4,11 @@ Use this file with `docs/st-pauls-comprehensive-newsletter-template.md`, which c
 
 The v4 icon family is the canonical system for new newsletter work. Its source files are individually stored in `assets/icons/`, and `resources/links/st-pauls-icons-v4.json` is the machine-readable source of truth.
 
+The canonical PNG exports were refreshed on 2026-09-08. Previous exports and alternate generated variants are preserved in `assets/icon-archive/v4-previous/` and are not production assets.
+
 ## Style
 
-- Clean Christian symbols with softened vector-style geometry
+- Premium dimensional Christian symbols with softened, readable geometry
 - Deep navy `#082A55`, warm gold `#D39A08`, and teal `#087F8C`
 - Transparent PNG background
 - No words, letters, emoji, or decorative frames unrelated to the symbol

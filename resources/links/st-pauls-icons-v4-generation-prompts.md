@@ -2,14 +2,14 @@
 
 Use this provenance record with `docs/st-pauls-comprehensive-newsletter-template.md` and the canonical manifest in `resources/links/st-pauls-icons-v4.json`.
 
-The built-in image-generation tool created each icon in a separate call using the user-supplied reference image for style. The second group also used the completed first group as consistency references.
+The built-in image-generation tool created each icon in a separate call using the user-supplied reference image for style. The refreshed canonical PNG exports were selected on 2026-09-08; previous exports and alternate variants are preserved in `assets/icon-archive/v4-previous/`.
 
 ## Shared Prompt
 
 ```text
 Use case: logo-brand
 Asset type: individual St. Paul's newsletter section icon
-Style/medium: clean premium flat vector-style symbol with subtly softened edges; simple geometric shapes; uniform visual weight; minimal layering; crisp at small email sizes.
+Style/medium: clean premium dimensional symbol with subtly softened edges; simple geometric shapes; uniform visual weight; controlled glossy layering; crisp at small email sizes.
 Color palette: deep navy #082A55, warm gold #D39A08, teal #087F8C, and white negative space only.
 Composition/framing: one centered symbol, balanced, generous transparent padding, square 1:1 canvas.
 Background: genuinely transparent alpha background.

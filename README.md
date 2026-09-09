@@ -20,6 +20,8 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
   - Historical issues not currently being edited.
 - `assets/icons/`
   - Canonical transparent PNG icon library for new newsletter sections.
+- `assets/icon-archive/v4-previous/`
+  - Preserved previous v4 exports and alternate generated icon variants; not for production email use.
 - `resources/links/`
   - Link and icon mapping libraries used during production.
 - `templates/`
