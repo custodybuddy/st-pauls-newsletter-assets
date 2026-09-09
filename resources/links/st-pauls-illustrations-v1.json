@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "illustrationSetVersion": 1,
+  "status": "canonical",
+  "assetDirectory": "assets/illustrations",
+  "baseUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/illustrations/",
+  "illustrations": [
+    {
+      "key": "our-mission-card",
+      "section": "Greetings Friends / Our Mission",
+      "filename": "st-pauls-our-mission-card-v2-email.jpg",
+      "repositoryPath": "assets/illustrations/st-pauls-our-mission-card-v2-email.jpg",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/illustrations/st-pauls-our-mission-card-v2-email.jpg",
+      "alt": "Our Mission: We are a Christ-centered, worshipping community serving and leading people to Jesus.",
+      "recommendedWidth": 300,
+      "layoutRole": "Permanent 30% visual column in the Greetings Friends 70/30 component",
+      "emailFormat": "jpg"
+    }
+  ]
+}
