@@ -14,6 +14,6 @@ These are table-row fragments extracted from `newsletters/working/st-pauls-fall-
 | `ministry-spotlight.html` | Ministry Spotlight feature |
 | `did-you-know.html` | Did You Know section |
 | `upcoming-event.html` | Upcoming Event section |
-| `focus-on-finances.html` | Focus on Finances section |
+| `focus-on-finances.html` | Focus on Finances section, with the shared Support St. Paul’s card in its right column |
 | `thankful.html` | We Are So Thankful For section |
 | `newsletter-footer.html` | Footer and calls to action |
