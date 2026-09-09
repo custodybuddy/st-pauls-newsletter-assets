@@ -4,7 +4,7 @@ Use this file with `docs/st-pauls-comprehensive-newsletter-template.md`, which c
 
 The v4 icon family is the canonical system for new newsletter work. Its source files are individually stored in `assets/icons/`, and `resources/links/st-pauls-icons-v4.json` is the machine-readable source of truth.
 
-The canonical PNG exports were refreshed on 2026-09-08. Previous exports and alternate generated variants are preserved in `assets/icon-archive/v4-previous/` and are not production assets.
+The canonical PNG exports were refreshed on 2026-09-09. Previous exports and alternate generated variants are preserved in `assets/icon-archive/v4-previous/` and are not production assets.
 
 ## Style
 
@@ -16,7 +16,7 @@ The canonical PNG exports were refreshed on 2026-09-08. Previous exports and alt
 
 ## Canonical Icon Map
 
-Use each icon as the visual label for a section's primary purpose, not as general decoration. Select icons in this order: exact section match, primary purpose, approved fallback, then no icon. Keep these boundaries strict: `04` is a featured ministry story, `06` is work beyond the church walls, and `10` is prayer or pastoral care. Do not use `10` for gratitude. `08` covers stewardship narratives and is only the interim fallback for financial figures until a dedicated finance icon is exported.
+Use each icon as the visual label for a section's primary purpose, not as general decoration. Select icons in this order: exact section match, primary purpose, approved fallback, then no icon. Keep these boundaries strict: `04` is a featured ministry story, `06` is work beyond the church walls, and `10` is prayer or pastoral care. Use `11` for new Finance sections; `08` remains the documented historical temporary fallback in existing approved or working HTML.
 
 ### Routing rules
 
@@ -29,10 +29,13 @@ Use each icon as the visual label for a section's primary purpose, not as genera
 | Food bank, partnerships, service beyond the church | `06` | `04` internal ministry feature |
 | Bible study, Scripture, Experiencing God | `07` | `03` mission |
 | Stewardship, generosity, time and talents | `08` | `10` gratitude or care |
-| Monthly financial figures | Future finance icon; use `08` only as interim fallback | Gratitude or prayer icons |
+| Monthly financial figures | `11` | `08` in new Finance sections, gratitude, or prayer icons |
 | Upcoming Events heading | `09` | Any other section icon |
 | Prayer requests, homebound, pastoral care | `10` | `02` greetings or gratitude |
-| We Are So Thankful For | No current v4 icon; use future gratitude icon | `10` prayer-care |
+| We Are So Thankful For | `12` | `10` prayer-care |
+| Announcements / church news | `13` | `09` Upcoming Events |
+| Volunteer Opportunity / community care | `14` | `04` featured ministry story unless the section is itself a ministry spotlight |
+| Worship & Music | `15` | `07` Spiritual Formation |
 
 ### Permanent section type map
 
@@ -48,14 +51,14 @@ Use each icon as the visual label for a section's primary purpose, not as genera
 | Community Mission | `community-mission` | Mapped to `06` |
 | Spiritual Formation | `spiritual-formation` | Mapped to `07` |
 | Stewardship | `stewardship` | Mapped to `08` |
-| Focus on Finances | `stewardship` | Temporary `08` fallback only, until dedicated finance art is published |
+| Focus on Finances | `focus-on-finances` | Mapped to `11`; `08` is the documented historical temporary fallback |
 | Upcoming Events | `upcoming-events` | Mapped to `09` |
 | Prayer & Care | `prayer-care` | Mapped to `10` |
 | Power of Prayer | `prayer-care` | Mapped to `10` |
-| Thankful | `null` | Text-only until dedicated gratitude art is published |
-| Announcements | `null` | Text-only until dedicated announcements art is published |
-| Volunteer | `null` | Text-only; use `04` only for a featured ministry story |
-| Worship & Music | `null` | Text-only until dedicated worship art is published |
+| Thankful | `thankful` | Mapped to `12` |
+| Announcements | `announcements` | Mapped to `13` |
+| Volunteer | `volunteer` | Mapped to `14` |
+| Worship & Music | `worship-music` | Mapped to `15` |
 
 | Newsletter role | Filename | Canonical URL | Default alt text |
 |---|---|---|---|
@@ -69,6 +72,11 @@ Use each icon as the visual label for a section's primary purpose, not as genera
 | Stewardship / Generosity | `08-stewardship-wheat-fields.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/08-stewardship-wheat-fields.png` | Three wheat stalks growing over fields |
 | Upcoming Events | `09-upcoming-events-calendar.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/09-upcoming-events-calendar.png` | Church calendar with a cross and event markers |
 | Prayer / Care / Compassion | `10-prayer-care-heart-hands.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/10-prayer-care-heart-hands.png` | Caring hands beneath an outlined gold heart |
+| Focus on Finances | `11-focus-on-finances-chart.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/11-focus-on-finances-chart.png` | Rising bar chart, coins, and financial statement |
+| Thankful / Gratitude | `12-thankful-heart-hands.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/12-thankful-heart-hands.png` | Hands holding a radiant heart |
+| Announcements | `13-announcements-bell.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/13-announcements-bell.png` | Ringing church announcement bell |
+| Volunteer / Community Care | `14-volunteer-community-care.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/14-volunteer-community-care.png` | Community members and a heart held in caring hands |
+| Worship & Music | `15-worship-music-cross-notes.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/15-worship-music-cross-notes.png` | Cross with musical notes on a staff |
 
 ## Supplemental illustration map
 

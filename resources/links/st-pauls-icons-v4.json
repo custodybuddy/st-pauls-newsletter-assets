@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "iconSetVersion": 4,
   "status": "canonical",
-  "lastUpdated": "2026-09-08",
+  "lastUpdated": "2026-09-09",
   "assetDirectory": "assets/icons",
   "baseUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/",
   "visualMap": {
@@ -22,10 +22,8 @@
     "principle": "Use one icon as the visual label for a section's primary purpose; do not reuse an icon merely because the subject is related.",
     "selectionOrder": ["exactSectionMatch", "primaryPurpose", "approvedFallback", "omitIcon"],
     "fallbackRule": "If no icon is an exact match, omit the icon or use the listed approved fallback; never substitute emoji, retired assets, or the combined reference sheet.",
-    "futureIcons": {
-      "financialUpdate": "Reserve a dedicated chart or money icon for monthly figures; 08 is the interim stewardship fallback only.",
-      "gratitude": "Reserve a dedicated gratitude or heart icon for We Are So Thankful For; do not use 10.",
-      "announcements": "Use a future announcements icon when that asset is individually exported."
+    "legacyFallbacks": {
+      "financialUpdate": "08 was the interim stewardship fallback for financial figures before 11 was published. Use 11 for new Finance sections; retain 08 only in approved or working historical HTML unless an assigned edit requires replacement."
     }
   },
   "permanentSectionTypes": [
@@ -37,14 +35,14 @@
     {"sectionType": "Community Mission", "iconKey": "community-mission", "status": "mapped"},
     {"sectionType": "Spiritual Formation", "iconKey": "spiritual-formation", "status": "mapped"},
     {"sectionType": "Stewardship", "iconKey": "stewardship", "status": "mapped"},
-    {"sectionType": "Focus on Finances", "iconKey": "stewardship", "status": "temporary-fallback", "note": "Use 08 only until a dedicated finance icon is individually exported and published."},
+    {"sectionType": "Focus on Finances", "iconKey": "focus-on-finances", "status": "mapped", "note": "Use 11 for new Finance sections. 08 is retained only as the documented historical temporary fallback."},
     {"sectionType": "Upcoming Events", "iconKey": "upcoming-events", "status": "mapped"},
     {"sectionType": "Prayer & Care", "iconKey": "prayer-care", "status": "mapped"},
     {"sectionType": "Power of Prayer", "iconKey": "prayer-care", "status": "mapped"},
-    {"sectionType": "Thankful", "iconKey": null, "status": "missing-dedicated-icon", "note": "Use a text-only heading until a dedicated gratitude icon is individually exported and published."},
-    {"sectionType": "Announcements", "iconKey": null, "status": "missing-dedicated-icon", "note": "Use a text-only heading until a dedicated announcements icon is individually exported and published."},
-    {"sectionType": "Volunteer", "iconKey": null, "status": "missing-dedicated-icon", "note": "Use a text-only heading unless the content is a featured ministry story, which may use 04."},
-    {"sectionType": "Worship & Music", "iconKey": null, "status": "missing-dedicated-icon", "note": "Use a text-only heading until a dedicated worship icon is individually exported and published."}
+    {"sectionType": "Thankful", "iconKey": "thankful", "status": "mapped"},
+    {"sectionType": "Announcements", "iconKey": "announcements", "status": "mapped"},
+    {"sectionType": "Volunteer", "iconKey": "volunteer", "status": "mapped"},
+    {"sectionType": "Worship & Music", "iconKey": "worship-music", "status": "mapped"}
   ],
   "icons": [
     {
@@ -146,6 +144,56 @@
       "recommendedWidth": 72,
       "useFor": ["Prayer Focus", "Prayer requests", "Compassionate Care notices", "Pastoral care", "Homebound care"],
       "avoidFor": ["We Are So Thankful For", "General ministry spotlight", "Community outreach"]
+    },
+    {
+      "key": "focus-on-finances",
+      "roles": ["Focus on Finances", "Financial update", "Financial report"],
+      "filename": "11-focus-on-finances-chart.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/11-focus-on-finances-chart.png",
+      "alt": "Rising bar chart, coins, and financial statement",
+      "recommendedWidth": 72,
+      "useFor": ["Focus on Finances", "Monthly financial figures", "Financial report"],
+      "avoidFor": ["Stewardship narrative", "Gratitude"]
+    },
+    {
+      "key": "thankful",
+      "roles": ["Thankful", "Gratitude", "Appreciation"],
+      "filename": "12-thankful-heart-hands.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/12-thankful-heart-hands.png",
+      "alt": "Hands holding a radiant heart",
+      "recommendedWidth": 72,
+      "useFor": ["We Are So Thankful For", "Gratitude", "Appreciation"],
+      "avoidFor": ["Prayer requests", "Pastoral care"]
+    },
+    {
+      "key": "announcements",
+      "roles": ["Announcements", "News", "Church notices"],
+      "filename": "13-announcements-bell.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/13-announcements-bell.png",
+      "alt": "Ringing church announcement bell",
+      "recommendedWidth": 72,
+      "useFor": ["Announcements", "Church news", "General notices"],
+      "avoidFor": ["Upcoming Events heading", "Prayer requests"]
+    },
+    {
+      "key": "volunteer",
+      "roles": ["Volunteer", "Community care", "Serving opportunity"],
+      "filename": "14-volunteer-community-care.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/14-volunteer-community-care.png",
+      "alt": "Community members and a heart held in caring hands",
+      "recommendedWidth": 72,
+      "useFor": ["Volunteer Opportunity", "Community care", "Serving opportunity"],
+      "avoidFor": ["General ministry spotlight", "Financial reporting"]
+    },
+    {
+      "key": "worship-music",
+      "roles": ["Worship & Music", "Worship", "Music ministry"],
+      "filename": "15-worship-music-cross-notes.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/15-worship-music-cross-notes.png",
+      "alt": "Cross with musical notes on a staff",
+      "recommendedWidth": 72,
+      "useFor": ["Worship & Music", "Worship", "Music ministry"],
+      "avoidFor": ["General announcements", "Financial reporting"]
     }
   ]
 }

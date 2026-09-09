@@ -173,8 +173,8 @@ function checkCanonicalIcons() {
   }
 
   const icons = Array.isArray(manifest.icons) ? manifest.icons : [];
-  if (icons.length !== 10) {
-    add('error', 'icon-count', ICON_MANIFEST, 'Expected exactly 10 canonical v4 icon records.');
+  if (icons.length !== 15) {
+    add('error', 'icon-count', ICON_MANIFEST, 'Expected exactly 15 canonical v4 icon records.');
   }
 
   const keys = [];
