@@ -16,6 +16,24 @@ The canonical PNG exports were refreshed on 2026-09-08. Previous exports and alt
 
 ## Canonical Icon Map
 
+Use each icon as the visual label for a section's primary purpose, not as general decoration. Select icons in this order: exact section match, primary purpose, approved fallback, then no icon. Keep these boundaries strict: `04` is a featured ministry story, `06` is work beyond the church walls, and `10` is prayer or pastoral care. Do not use `10` for gratitude. `08` covers stewardship narratives and is only the interim fallback for financial figures until a dedicated finance icon is exported.
+
+### Routing rules
+
+| Content signal | Use | Do not substitute |
+|---|---|---|
+| Greetings Friends / pastoral message | `02` | `10` prayer-care or a generic heart |
+| Our Mission statement | `03` | `04` ministry spotlight |
+| Featured ministry story | `04` | `06` unless the story is explicitly community outreach |
+| Did You Know? / community need / context | `05` | `06` service report |
+| Food bank, partnerships, service beyond the church | `06` | `04` internal ministry feature |
+| Bible study, Scripture, Experiencing God | `07` | `03` mission |
+| Stewardship, generosity, time and talents | `08` | `10` gratitude or care |
+| Monthly financial figures | Future finance icon; use `08` only as interim fallback | Gratitude or prayer icons |
+| Upcoming Events heading | `09` | Any other section icon |
+| Prayer requests, homebound, pastoral care | `10` | `02` greetings or gratitude |
+| We Are So Thankful For | No current v4 icon; use future gratitude icon | `10` prayer-care |
+
 | Newsletter role | Filename | Canonical URL | Default alt text |
 |---|---|---|---|
 | Branding / Main title | `01-branding-cross-wings.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/01-branding-cross-wings.png` | Winged cross with a gold halo |
@@ -25,7 +43,7 @@ The canonical PNG exports were refreshed on 2026-09-08. Previous exports and alt
 | Community Discernment | `05-community-discernment-congregation.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/05-community-discernment-congregation.png` | Congregation gathered beneath a cross in a circle |
 | Mission in the Community | `06-community-mission-cross-path.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/06-community-mission-cross-path.png` | Cross above a pathway through the community |
 | Spiritual Formation | `07-spiritual-formation-open-bible.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/07-spiritual-formation-open-bible.png` | Radiant cross rising from an open Bible |
-| Financial Stewardship | `08-stewardship-wheat-fields.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/08-stewardship-wheat-fields.png` | Three wheat stalks growing over fields |
+| Stewardship / Generosity | `08-stewardship-wheat-fields.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/08-stewardship-wheat-fields.png` | Three wheat stalks growing over fields |
 | Upcoming Events | `09-upcoming-events-calendar.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/09-upcoming-events-calendar.png` | Church calendar with a cross and event markers |
 | Prayer / Care / Compassion | `10-prayer-care-heart-hands.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/10-prayer-care-heart-hands.png` | Caring hands beneath an outlined gold heart |
 
