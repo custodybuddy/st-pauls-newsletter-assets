@@ -27,7 +27,7 @@ Production assets and templates for St. Paul's "What's Up, St. Paul's?" newslett
 - `templates/`
   - Historical and previously generated HTML references. Do not use these as the structural source for a new issue unless the user explicitly assigns one.
 - `snippets/`
-  - Reserved for future reusable section blocks; currently empty except for its placeholder file.
+  - Reusable, email-safe table-row fragments. See `snippets/README.md` for host-table requirements and source-copy guidance.
 - `checklists/`
   - QA and production checklists.
 - `docs/`
