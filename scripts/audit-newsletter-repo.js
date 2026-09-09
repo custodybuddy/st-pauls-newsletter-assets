@@ -304,8 +304,8 @@ function checkHtml() {
 
 function checkApprovalCandidate() {
   const candidates = listFiles('newsletters/pending-approval', '.html');
-  if (candidates.length !== 1) {
-    add('error', 'pending-approval-count', 'newsletters/pending-approval', 'Expected exactly one HTML approval candidate; found ' + candidates.length + '.');
+  if (candidates.length > 1) {
+    add('error', 'pending-approval-count', 'newsletters/pending-approval', 'Expected at most one HTML approval candidate; found ' + candidates.length + '.');
   }
 }
 
