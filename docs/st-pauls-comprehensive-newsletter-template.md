@@ -66,10 +66,10 @@ Use the matching 1100px hero image when building the final newsletter.
 
 | Season | Hero URL |
 |---|---|
-| Spring | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/banners/st-pauls-spring-hero-1100px.png` |
-| Summer | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/banners/st-pauls-summer-hero-1100px.png` |
-| Fall | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/banners/st-pauls-fall-hero-1100px.png` |
-| Winter | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/banners/st-pauls-winter-hero-1100px.png` |
+| Spring | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/st-pauls-spring-hero-1100px.png` |
+| Summer | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/st-pauls-summer-hero-1100px.png` |
+| Fall | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/st-pauls-fall-hero-1100px.png` |
+| Winter | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/st-pauls-winter-hero-1100px.png` |
 
 **Optional seasonal note:**
 
@@ -506,10 +506,10 @@ On dark navy backgrounds, use white headings, `#E2E8F0` or `#CBD5E1` body text, 
 
 ## Canonical v4 Icons
 
-Use `resources/links/st-pauls-icons-v4.json` as the machine-readable source and `resources/links/st-pauls-icons-and-important-links.md` as the human-readable role map.
+Use `brand/resources/icon-map-v4.json` as the machine-readable source and `brand/resources/icon-map-v4.md` as the human-readable role map.
 
-- Icon directory: `assets/icons/`
-- Base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/`
+- Icon directory: `brand/assets/icons/`
+- Base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/`
 - Main branding icon: 88px.
 - Major section icons: 72px.
 - Use descriptive alt text for meaningful icons and `alt=""` only when decorative.
@@ -559,7 +559,7 @@ Avoid:
 
 1. Confirm the linked Google Doc or an explicitly assigned copy is the latest approved editorial source.
 2. Confirm the three Core Sections and identify the selected Optional Story Modules in their approved order.
-3. Create a new versioned HTML file in `newsletters/working/`; never overwrite an approved or historical issue.
+3. Create a new versioned HTML file in `newsletters/drafting/`; never overwrite an approved or historical issue.
 4. Convert approved content to email-safe table HTML without rewriting it.
 5. Apply the current v4 icon map, brand system, responsive stacking, and accessibility rules.
 6. Remove unused drafting scaffolding and verify all names, dates, times, links, financial figures, Scripture, images, and permissions.

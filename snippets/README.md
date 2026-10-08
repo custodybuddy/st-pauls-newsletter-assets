@@ -1,13 +1,15 @@
 # Reusable Newsletter Snippets
 
-> **FROZEN — read-only legacy folder.** Kept only so published GitHub Pages URLs keep resolving. Do not edit, move, or delete files here. New work must use `newsletter-system/components/outlook-safe/` for layout and `brand/` for assets. See `AGENTS.md`.
+**Active component library.** These are table-row fragments for building new issues. They were extracted from `newsletters/working/st-pauls-fall-2026-newsletter-DRAFT-11.html`.
 
-These are table-row fragments extracted from `newsletters/working/st-pauls-fall-2026-newsletter-DRAFT-11.html`.
+> **Layout only.** The wording, names, dates, and figures inside each fragment come from Draft 11. Replace all of it with Kathy’s approved copy for the issue you are building. See `docs/st-pauls-comprehensive-newsletter-template.md`.
 
 - Insert each fragment inside the destination newsletter's main content table; they are not standalone HTML documents.
 - Preserve the inline styles, presentation tables, Outlook conditional comments, absolute image URLs, and `alt` text.
-- The host newsletter must include the responsive classes used by these fragments, including `section-pad`, `inner-pad`, `split-col`, `stack-gap`, `heading-icon-cell`, and `footer-col`.
-- Treat Draft 11's wording, figures, and names as source-specific. Confirm the assigned approved copy before reusing a component in another issue.
+- The host newsletter must include the responsive classes used by these fragments, including `section-pad`, `inner-pad`, `split-col`, `stack-gap`, `heading-icon-cell`, and `footer-col`. `newsletter-system/template/html-scaffold.html` is the matching host.
+- All image URLs point to `brand/assets/` (icons, banners, illustrations). Do not reintroduce `/assets/` URLs.
+- Icon choices follow `brand/resources/icon-map-v4.json`.
+- Run `node scripts/audit-newsletter-repo.js` after building an issue; it flags image URLs that point to files missing from the repository.
 
 | Snippet | Extracted role |
 |---|---|
@@ -17,5 +19,6 @@ These are table-row fragments extracted from `newsletters/working/st-pauls-fall-
 | `did-you-know.html` | Did You Know section |
 | `upcoming-event.html` | Upcoming Event section |
 | `focus-on-finances.html` | Focus on Finances section, with the shared Support St. Paul’s card in its right column |
+| `Support St. Paul’s component.html` | Standalone Support St. Paul’s card (already embedded in `focus-on-finances.html`) |
 | `thankful.html` | We Are So Thankful For section |
 | `newsletter-footer.html` | Footer and calls to action |

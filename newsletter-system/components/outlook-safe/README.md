@@ -4,4 +4,4 @@ These files are reusable table-layout fragments only. They must not contain Kath
 
 Insert a component inside a newsletter’s main presentation table. Preserve its inline styles, `role="presentation"`, table attributes, and Outlook conditional comments. Replace bracketed structural markers only after using Kathy’s approved submission.
 
-The old `snippets/` directory is a read-only legacy library because its fragments contain Draft 11 editorial copy.
+The `snippets/` directory is the richer, styled section library. Its fragments still contain Draft 11 editorial copy, so use them for layout only and replace all wording with approved copy.

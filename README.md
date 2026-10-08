@@ -16,18 +16,19 @@ This repository contains the production system for “What’s Up, St. Paul’s?
 2. Put exactly one proposed final file in `newsletters/pending-approval/`.
 3. After approval and publication, place the final file in `newsletters/archive/`; do not edit archived issues.
 4. Reusable components control table layout and Outlook compatibility only. They must not become a source of editorial wording.
-5. Retained `assets/`, `templates/`, `snippets/`, and legacy newsletter paths preserve GitHub Pages URLs. Do not edit them for new work.
+5. `snippets/` holds the reusable section fragments (layout only; swap in approved copy). `templates/`, `newsletters/working/`, and `newsletters/approved/` are read-only history; do not edit them for new work.
 
 ## Structure
 
 - `brand/assets/` — canonical icons, banners, illustrations, and reference images for new work.
 - `brand/resources/` — canonical website, donation, contact, reusable URL, and icon-map records.
 - `newsletter-system/` — drafting template, HTML scaffold, Outlook-safe layout components, and production documentation.
+- `snippets/` — reusable section fragments (hero, greetings and mission, ministry spotlight, did you know, event, finances, thankful, footer).
 - `newsletters/` — new drafts, one approval candidate, and read-only archive.
 
 ## Legacy Compatibility
 
-The former `/assets/`, `/templates/`, `/snippets/`, and existing `/newsletters/` paths are retained so previously published GitHub Pages and email image URLs continue to resolve. New work must use the structure above. GitHub Pages does not redirect moved static files.
+The former `/assets/` folder was removed on 2026-10-08, so any image URL containing `/st-pauls-newsletter-assets/assets/` no longer loads. Older issues still in `newsletters/working/`, `newsletters/approved/`, and `templates/` may show broken images and are kept for history only. New work must use `brand/assets/`. GitHub Pages does not redirect moved static files.
 
 ## Audit
 

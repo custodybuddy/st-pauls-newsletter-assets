@@ -1,9 +1,8 @@
-# templates/ — FROZEN legacy folder
+# templates/ — superseded legacy folder
 
-This folder is read-only. It is kept only so published GitHub Pages URLs keep resolving (`https://custodybuddy.github.io/st-pauls-newsletter-assets/templates/...`).
+This folder is read-only history. Do not use it for new work.
 
-- Do not edit, rename, move, or delete anything here.
-- New issues must start from `newsletter-system/template/html-scaffold.html` and follow `docs/st-pauls-comprehensive-newsletter-template.md`.
-- Copies of the images in this folder live in `brand/assets/reference/legacy-template-images/`.
+- New issues start from `newsletter-system/template/html-scaffold.html` and follow `docs/st-pauls-comprehensive-newsletter-template.md`.
+- `st-pauls-seasonal-newsletter-template.html` still points at the removed `/assets/` folder, so its images no longer load.
 
 See `AGENTS.md` and `README.md` at the repository root.

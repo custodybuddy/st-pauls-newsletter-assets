@@ -16,7 +16,7 @@ const UNKNOWN_ARGS = process.argv.slice(2).filter(function (arg) {
 if (HELP) {
   console.log('Usage: node scripts/audit-newsletter-repo.js [--strict]');
   console.log('');
-  console.log('Checks current Markdown guidance, canonical v4 icons, and email HTML.');
+  console.log('Checks current Markdown guidance, canonical v4 icons, email HTML, and GitHub Pages URLs.');
   console.log('By default, historical/template HTML findings are warnings.');
   console.log('--strict exits with an error when warnings are present.');
   process.exit(0);
@@ -309,6 +309,45 @@ function checkApprovalCandidate() {
   }
 }
 
+const PAGES_URL_PATTERN = /https:\/\/custodybuddy\.github\.io\/st-pauls-newsletter-assets\/((?:[^"'\s)<>`\]()]|\([^"'\s)<>`]*\))+)/g;
+const LEGACY_PREFIXES = ['templates/', 'newsletters/working/', 'newsletters/approved/', 'newsletters/archive/', 'resources/'];
+const URL_SCAN_ROOTS = ['AGENTS.md', 'README.md', 'snippets', 'templates', 'newsletters', 'newsletter-system', 'brand', 'docs', 'resources/links'];
+
+function listScanFiles(entry, output) {
+  const result = output || [];
+  const entryPath = absolute(entry);
+  if (!fs.existsSync(entryPath)) return result;
+  if (fs.statSync(entryPath).isDirectory()) {
+    fs.readdirSync(entryPath).forEach(function (name) { listScanFiles(entry + '/' + name, result); });
+  } else if (/\.(html|md|json)$/i.test(entry)) {
+    result.push(entry);
+  }
+  return result;
+}
+
+// Every GitHub Pages URL in the repo must map to a file that still exists.
+function checkRepoUrls() {
+  URL_SCAN_ROOTS.forEach(function (root) {
+    listScanFiles(root).forEach(function (file) {
+      const legacy = LEGACY_PREFIXES.some(function (prefix) { return file.startsWith(prefix); });
+      const missing = {};
+      let match;
+      PAGES_URL_PATTERN.lastIndex = 0;
+      const text = read(file);
+      while ((match = PAGES_URL_PATTERN.exec(text)) !== null) {
+        let target = match[1].replace(/[?#].*$/, '');
+        try { target = decodeURIComponent(target); } catch (error) { /* keep raw path */ }
+        if (target && !fs.existsSync(absolute(target))) missing[target] = true;
+      }
+      const targets = Object.keys(missing);
+      if (targets.length > 0) {
+        add(legacy ? 'warning' : 'error', 'dead-pages-url', file,
+          targets.length + ' GitHub Pages URL(s) point to files missing from the repository, e.g. ' + targets[0]);
+      }
+    });
+  });
+}
+
 function printIssues(level) {
   const selected = issues.filter(function (issue) { return issue.level === level; });
   if (selected.length === 0) return;
@@ -326,6 +365,7 @@ checkCanonicalIcons();
 checkTrackedJunk();
 checkHtml();
 checkApprovalCandidate();
+checkRepoUrls();
 
 const errors = issues.filter(function (issue) { return issue.level === 'error'; }).length;
 const warnings = issues.filter(function (issue) { return issue.level === 'warning'; }).length;

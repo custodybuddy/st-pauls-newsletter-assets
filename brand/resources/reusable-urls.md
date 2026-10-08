@@ -5,7 +5,7 @@
 - Human-readable icon map: `brand/resources/icon-map-v4.md`
 - Visual icon map: `brand/resources/icon-map-v4-visual.html`
 - Canonical new icon base: `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/`
-- Legacy icon base retained for published email: `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/icons/`
+- The old `/assets/` path has been removed from GitHub Pages. Do not use it; any email already sent with `/assets/...` image URLs will show broken images.
 
 For a View in browser link, replace `[VIEW_IN_BROWSER_URL]` with the exact merge tag supplied by the sending platform and verify it in a delivered email. Never use `href="#"`.
 
