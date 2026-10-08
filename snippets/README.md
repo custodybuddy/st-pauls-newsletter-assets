@@ -1,5 +1,7 @@
 # Reusable Newsletter Snippets
 
+> **FROZEN — read-only legacy folder.** Kept only so published GitHub Pages URLs keep resolving. Do not edit, move, or delete files here. New work must use `newsletter-system/components/outlook-safe/` for layout and `brand/` for assets. See `AGENTS.md`.
+
 These are table-row fragments extracted from `newsletters/working/st-pauls-fall-2026-newsletter-DRAFT-11.html`.
 
 - Insert each fragment inside the destination newsletter's main content table; they are not standalone HTML documents.

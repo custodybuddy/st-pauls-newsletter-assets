@@ -1,5 +1,11 @@
 # Newsletter Change Log
 
+## 2026-10-08 (documentation consolidation and legacy freeze)
+
+- Made `newsletter-system/docs/changelog.md` and `newsletter-system/docs/style-guide.md` the only canonical copies. `docs/changelog.md` and `docs/style-guide.md` are now short pointers so old links still resolve.
+- The old `docs/style-guide.md` still referenced pre-`brand/` paths; nothing unique was lost. The old `docs/changelog.md` lacked only the 2026-09-09 entry.
+- Added or updated FROZEN notes in `assets/`, `templates/`, `snippets/`, `newsletters/working/`, and `newsletters/approved/`. No files were moved, renamed, or deleted, so published GitHub Pages URLs are unaffected.
+
 ## 2026-09-09 (simplified newsletter system)
 
 - Added the canonical `brand/`, `newsletter-system/`, and `newsletters/` workflow for future work.
