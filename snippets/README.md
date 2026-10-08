@@ -11,6 +11,8 @@
 - Icon choices follow `brand/resources/icon-map-v4.json`.
 - Run `node scripts/audit-newsletter-repo.js` after building an issue; it flags image URLs that point to files missing from the repository.
 
+The five newest fragments (announcements, volunteer, photo, celebration, closing) contain bracketed placeholders only, no Draft 11 wording. The component catalogue with placement notes is `.claude/skills/st-pauls-newsletter/components.md`.
+
 | Snippet | Extracted role |
 |---|---|
 | `newsletter-hero-masthead.html` | Seasonal hero, masthead, and processional rule |
@@ -21,4 +23,9 @@
 | `focus-on-finances.html` | Focus on Finances section, with the shared Support St. Paul’s card in its right column |
 | `Support St. Paul’s component.html` | Standalone Support St. Paul’s card (already embedded in `focus-on-finances.html`) |
 | `thankful.html` | We Are So Thankful For section |
+| `church-announcements.html` | Church Announcements (up to 3 items, with Read Church News button). Placeholder text only |
+| `volunteer-opportunities.html` | Volunteer Opportunity with When/Where/Contact. Placeholder text only |
+| `photo-feature.html` | Photo Feature with caption (landscape 16:9 recommended). Placeholder text only |
+| `seasonal-celebration.html` | Seasonal Celebration on a dark navy panel with light text. Placeholder text only |
+| `closing-message.html` | Closing Message with sign-off. Place just above the footer. Placeholder text only |
 | `newsletter-footer.html` | Footer and calls to action |

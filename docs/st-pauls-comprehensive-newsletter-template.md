@@ -6,11 +6,12 @@ Reviewed against Google Doc revision `AIroW35i__mB-nJYSiOJlnArgGh6s6MNgzjzQicwB5
 
 ## Required Supporting Resources
 
-- Canonical v4 icon manifest: `resources/links/st-pauls-icons-v4.json`
-- Human-readable icon map and stable links: `resources/links/st-pauls-icons-and-important-links.md`
-- Website data and CTA destinations: `resources/links/st-pauls-website-data-and-links-v1.md`
-- View-in-browser implementation: `resources/links/st-pauls-view-in-browser-guidance-v2.md`
-- Final QA: `checklists/NEWSLETTER-QA-CHECKLIST.md`
+- Canonical v4 icon manifest: `brand/resources/icon-map-v4.json`
+- Human-readable icon map and stable links: `brand/resources/icon-map-v4.md`
+- Website data and CTA destinations: `brand/resources/website-links.md`
+- View-in-browser implementation: `brand/resources/reusable-urls.md`
+- Final QA: `newsletter-system/docs/qa-checklist.md`
+- Component catalogue and assembly skill: `.claude/skills/st-pauls-newsletter/SKILL.md`
 
 ---
 
@@ -549,7 +550,7 @@ Avoid:
 
 ## Links and Footer
 
-- Use `resources/links/st-pauls-website-data-and-links-v1.md` for current destinations.
+- Use `brand/resources/website-links.md` for current destinations.
 - Verify time-sensitive event and bulletin links before sending.
 - Include a discreet View in browser link in the footer using the ESP’s exact merge tag.
 - Never send `[VIEW_IN_BROWSER_URL]`, `href="#"`, or a generic hard-coded browser-version URL.

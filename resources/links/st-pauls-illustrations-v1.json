@@ -29,5 +29,42 @@
       "layoutRole": "Supplemental Ministry Spotlight graphic for the Compassionate Care Ministry feature",
       "emailFormat": "png"
     }
-  ]
+  ],
+  "formatSpecs": {
+    "specDocument": "brand/resources/illustration-specs.md",
+    "pendingAssets": [
+      {
+        "key": "church-building",
+        "status": "pending approved art from the church; do not generate or substitute",
+        "layoutRole": "Reserved slot in the permanent Greetings Friends block"
+      }
+    ],
+    "shapes": {
+      "portrait": {
+        "ratio": "3:4",
+        "masterSize": "1200x1600",
+        "emailDisplayWidth": 300,
+        "use": "Side column beside text",
+        "existing": "st-pauls-our-mission-card-v2-email.jpg"
+      },
+      "landscape": {
+        "ratio": "16:9",
+        "masterSize": "1600x900",
+        "emailDisplayWidth": 640,
+        "use": "Photo Feature and section banners"
+      },
+      "square": {
+        "ratio": "1:1",
+        "masterSize": "1200x1200",
+        "emailDisplayWidth": 260,
+        "use": "Feature graphics; v4 icons display at 72",
+        "existing": "st-pauls-compassionate-care-ministry-highlight (1).png"
+      }
+    },
+    "formats": {
+      "source": "svg when practical",
+      "email": "png (flat art, transparency) or jpg (photographic)"
+    },
+    "naming": "st-pauls-<subject>-<shape>[-v<n>][-email].<ext>, lowercase and hyphens only"
+  }
 }

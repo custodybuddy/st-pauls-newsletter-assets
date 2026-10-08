@@ -18,3 +18,13 @@ Three folders, organized by season (`<year>-<season>`, for example `2026-fall`):
 ## Why the archive matters
 
 Archived issues show the sections and components the church community already knows. New issues should keep those sections and components and improve the design and visual hierarchy, not replace them. See `archive/README.md` for the section list and `resources/archive-review/` for the design analysis.
+
+## Assembling with the St. Paul's newsletter skill
+
+1. Copy `newsletter-system/template/content-template.md` to `drafting/<year>-<season>/content.md` and fill it in with approved copy. Delete the sections you do not need. Reorder the rest.
+2. Ask Claude Code: "Create the next St. Paul's newsletter using our existing design system. Select appropriate components, rearrange them for visual balance, reuse our illustrations, and prepare a preview for approval. Content is in `<path>`." (or start with `/st-pauls-newsletter`).
+3. Claude proposes a section order and waits for your yes, then builds a new versioned draft plus a plain-text `.txt`.
+4. Check the preview and the report of checks run, then approve. Only after approval does the file move to `final/`.
+
+`drafting/2026-test/` is a layout test with sample text. It is not an issue and must not be sent.
+

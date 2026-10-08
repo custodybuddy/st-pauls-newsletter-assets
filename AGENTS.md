@@ -8,6 +8,8 @@ New work uses `brand/`, `newsletter-system/`, and `newsletters/`. Kathy’s appr
 
 Newsletters are organized by season (`<year>-<season>`, e.g. `2026-fall`) in three folders: create drafts in `newsletters/drafting/<year>-<season>/`; keep at most one approved, ready-to-send HTML file per season in `newsletters/final/<year>-<season>/`; and treat `newsletters/archive/` (published issues, each with a screenshot) as read-only. Archived issues define the sections and components readers already know: keep them consistent while improving design and visual hierarchy. See `newsletters/README.md`. `snippets/` is the active library of reusable section fragments: use them for layout only, and replace their Draft 11 wording with Kathy’s approved copy (see `snippets/README.md`). The legacy `/assets/` folder has been removed; all images live under `brand/assets/` and every image URL must use `.../st-pauls-newsletter-assets/brand/assets/...`. The older `/templates/` folder and `newsletters/drafting/*/older-drafts/` are read-only history; do not use them for new work.
 
+For assembling an edition from approved content, use the project skill `.claude/skills/st-pauls-newsletter/SKILL.md` (workflow, component catalogue, attribution). It adds to, and never overrides, the rules below. Content-only input template: `newsletter-system/template/content-template.md`. Illustration shapes and naming: `brand/resources/illustration-specs.md`.
+
 This file defines how AI agents, editors, and automation tools should work on the St. Paul’s newsletter codebase, Canva-friendly templates, icon libraries, and reusable email resources.
 
 The goal is to keep every newsletter:

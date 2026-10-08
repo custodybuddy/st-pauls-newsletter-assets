@@ -136,3 +136,12 @@ The controlling production instructions are in `docs/st-pauls-comprehensive-news
 3. Preserve email-safe table structure, links, and image URLs.
 4. Change only requested sections.
 5. Keep St. Paul's navy/gold identity consistent.
+
+## 12) Plain Text and Outlook Hardening
+
+- A plain-text companion exists next to the HTML (`node scripts/html-to-text.js <file>.html > <file>.txt`) and reads cleanly: headings, links shown as `label (URL)`, no stray markup.
+- Section order matches the approved plan (`node scripts/audit-newsletter-repo.js --sections <file>`).
+- Permanent elements are present: hero, Greetings Friends, Our Mission, footer facts.
+- Buttons are table cells with `bgcolor` plus `background-color`; `border-radius` is on the `<td>`.
+- Every image has `alt`, `width`, `border="0"` and `display:block`.
+- 390px view: no horizontal scroll, every image loads, stacked columns read in a logical order.

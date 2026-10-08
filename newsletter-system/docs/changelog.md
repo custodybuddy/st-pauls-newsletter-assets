@@ -1,5 +1,17 @@
 # Newsletter Change Log
 
+## 2026-10-08 (St. Paul's newsletter skill and assembly workflow)
+
+- Added the project skill `.claude/skills/st-pauls-newsletter/` (`SKILL.md`, `components.md`, `ATTRIBUTION.md`). It adapts ideas from the MIT-licensed upstream `email-newsletter` skill; nothing was copied or installed.
+- Added five reusable section snippets (layout only, placeholder text): `church-announcements.html`, `volunteer-opportunities.html`, `photo-feature.html`, `seasonal-celebration.html`, `closing-message.html`.
+- Added `newsletter-system/template/content-template.md` (content-only input for assembly) and `scripts/html-to-text.js` (plain-text companion).
+- Extended `scripts/audit-newsletter-repo.js`: snippet checks, permanent-element checks for drafts and final issues, a missing plain-text warning for final issues, and `--sections <file>` to print section order.
+- Added `brand/resources/illustration-specs.md` and a `formatSpecs` block in `resources/links/st-pauls-illustrations-v1.json` (portrait, landscape, square; church-building art pending).
+- Added `newsletter-system/docs/email-width-proposal.md` (1100px findings; proposal only, nothing changed).
+- Added test edition `newsletters/drafting/2026-test/` (two arrangements, sample text, not for sending).
+- Fixed stale pointers in `docs/st-pauls-comprehensive-newsletter-template.md` and the scaffold comment so they use `brand/resources/`.
+- No approved wording, archived issue, Draft 13, or existing artwork was changed.
+
 ## 2026-10-08 (superseded drafts moved)
 
 - Moved Drafts 11 and 12 from `newsletters/drafting/2026-fall/` to `older-drafts/` (superseded by Draft 13; both used removed `/assets/` image URLs). Draft 11 was renamed `...DRAFT-11-from-drafting.html` to avoid a name clash.

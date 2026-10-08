@@ -9,16 +9,36 @@ const childProcess = require('child_process');
 const ROOT = path.resolve(__dirname, '..');
 const STRICT = process.argv.includes('--strict');
 const HELP = process.argv.includes('--help') || process.argv.includes('-h');
-const UNKNOWN_ARGS = process.argv.slice(2).filter(function (arg) {
-  return !['--strict', '--help', '-h'].includes(arg);
+const SECTIONS_INDEX = process.argv.indexOf('--sections');
+const SECTIONS_FILE = SECTIONS_INDEX > -1 ? process.argv[SECTIONS_INDEX + 1] : null;
+const UNKNOWN_ARGS = process.argv.slice(2).filter(function (arg, index, all) {
+  return !['--strict', '--help', '-h', '--sections'].includes(arg) && all[index - 1] !== '--sections';
 });
 
 if (HELP) {
   console.log('Usage: node scripts/audit-newsletter-repo.js [--strict]');
+  console.log('       node scripts/audit-newsletter-repo.js --sections <newsletter.html>');
   console.log('');
-  console.log('Checks current Markdown guidance, canonical v4 icons, email HTML, and GitHub Pages URLs.');
+  console.log('Checks current Markdown guidance, canonical v4 icons, email HTML, snippets, and GitHub Pages URLs.');
   console.log('By default, historical/template HTML findings are warnings.');
   console.log('--strict exits with an error when warnings are present.');
+  console.log('--sections prints the headings of a newsletter in order, to confirm section order.');
+  process.exit(0);
+}
+
+if (SECTIONS_INDEX > -1) {
+  if (!SECTIONS_FILE || !fs.existsSync(SECTIONS_FILE)) {
+    console.error('--sections needs an existing newsletter HTML file.');
+    process.exit(2);
+  }
+  const html = fs.readFileSync(SECTIONS_FILE, 'utf8').replace(/<!--[\s\S]*?-->/g, '');
+  const headings = [];
+  html.replace(/<h([12])\b[^>]*>([\s\S]*?)<\/h\1>/gi, function (match, level, inner) {
+    headings.push(inner.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim());
+    return match;
+  });
+  console.log('Section order for ' + SECTIONS_FILE);
+  headings.forEach(function (heading, index) { console.log((index + 1) + '. ' + heading); });
   process.exit(0);
 }
 
@@ -296,6 +316,53 @@ function checkHtmlFile(filePath) {
   });
 }
 
+
+const SNIPPET_DIRECTORY = 'snippets';
+const PERMANENT_MARKERS = [
+  ['hero banner', /-hero-1100px\.(?:png|webp)/i],
+  ['Greetings Friends', /Greetings Friends/i],
+  ['Our Mission', /Our Mission/i],
+  ['church address', /56 Thames Street S/i]
+];
+
+function checkSnippets() {
+  listFiles(SNIPPET_DIRECTORY, '.html').forEach(function (filePath) {
+    const file = relative(filePath);
+    const content = fs.readFileSync(filePath, 'utf8');
+    ['table', 'tr', 'td'].forEach(function (tag) {
+      const openings = countMatches(content, new RegExp('<' + tag + '\\b', 'gi'));
+      const closings = countMatches(content, new RegExp('</' + tag + '\\s*>', 'gi'));
+      if (openings !== closings) add('error', 'snippet-unbalanced-' + tag, file, openings + ' opening and ' + closings + ' closing <' + tag + '> tags.');
+    });
+    (content.match(/<img\b[^>]*>/gi) || []).forEach(function (tag) {
+      if (attributeValue(tag, 'alt') === null) add('error', 'snippet-missing-alt', file, 'Image without alt: ' + tag.slice(0, 80));
+      if (attributeValue(tag, 'width') === null) add('error', 'snippet-missing-width', file, 'Image without width: ' + tag.slice(0, 80));
+      const source = attributeValue(tag, 'src');
+      if (source && !/^(https:\/\/|\[)/i.test(source)) add('error', 'snippet-relative-image', file, 'Relative image URL: ' + source);
+    });
+    if (countMatches(content, /display\s*:\s*(?:grid|flex)\b/gi) > 0) add('warning', 'snippet-unsupported-layout', file, 'Grid/Flex declaration.');
+    if (!/^\s*<!--/.test(content)) add('warning', 'snippet-no-header', file, 'Snippet should start with a comment saying what it is.');
+  });
+}
+
+function checkPermanentElements() {
+  const files = listFiles('newsletters/final', '.html').concat(
+    listFiles('newsletters/drafting', '.html').filter(function (filePath) {
+      return !/older-drafts/.test(filePath);
+    })
+  );
+  files.forEach(function (filePath) {
+    const content = fs.readFileSync(filePath, 'utf8');
+    PERMANENT_MARKERS.forEach(function (marker) {
+      if (!marker[1].test(content)) add('warning', 'missing-permanent', relative(filePath), 'Permanent element not found: ' + marker[0] + '.');
+    });
+  });
+  listFiles('newsletters/final', '.html').forEach(function (filePath) {
+    const text = filePath.replace(/\.html$/, '.txt');
+    if (!fs.existsSync(text)) add('warning', 'missing-plain-text', relative(filePath), 'No plain-text companion (run node scripts/html-to-text.js).');
+  });
+}
+
 function checkHtml() {
   HTML_DIRECTORIES.forEach(function (directory) {
     listFiles(directory, '.html').forEach(checkHtmlFile);
@@ -370,6 +437,8 @@ checkCurrentGuidance();
 checkCanonicalIcons();
 checkTrackedJunk();
 checkHtml();
+checkSnippets();
+checkPermanentElements();
 checkFinalIssues();
 checkRepoUrls();
 
