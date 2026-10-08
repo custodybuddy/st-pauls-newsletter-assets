@@ -79,5 +79,55 @@
         "portrait": 320
       }
     }
-  }
+  },
+  "candidateIllustrations": [
+    {
+      "filename": "st-pauls-greetings-portrait-v1.png",
+      "repositoryPath": "brand/assets/illustrations/st-pauls-greetings-portrait-v1.png",
+      "description": "Autumn garden conversation in a warm editorial setting",
+      "intendedComponent": "Illustrated Editorial Split — Greetings Friends",
+      "aspectRatio": "3:4",
+      "pixelSize": "1086x1448",
+      "alt": "Two people in conversation beside an autumn garden path",
+      "version": 1,
+      "approvalStatus": "pending",
+      "promptReference": "design-review/illustrated-fall-2026/asset-candidates.json"
+    },
+    {
+      "filename": "st-pauls-compassionate-care-square-v1.png",
+      "repositoryPath": "brand/assets/illustrations/st-pauls-compassionate-care-square-v1.png",
+      "description": "Hands arranging autumn foliage around a lantern as a metaphor for care and hope",
+      "intendedComponent": "Full-Width Illustrated Feature — Ministry Spotlight",
+      "aspectRatio": "1:1",
+      "pixelSize": "1254x1254",
+      "alt": "Hands arranging autumn foliage around a lantern",
+      "version": 1,
+      "approvalStatus": "pending",
+      "promptReference": "design-review/illustrated-fall-2026/asset-candidates.json"
+    },
+    {
+      "filename": "st-pauls-community-care-landscape-v1.png",
+      "repositoryPath": "brand/assets/illustrations/st-pauls-community-care-landscape-v1.png",
+      "description": "Neighbours sharing autumn apples, a symbolic community care scene",
+      "intendedComponent": "Illustrated Editorial Split — community care",
+      "aspectRatio": "16:9",
+      "pixelSize": "1672x941",
+      "alt": "Neighbours sharing a basket of autumn apples",
+      "version": 1,
+      "approvalStatus": "pending",
+      "promptReference": "design-review/illustrated-fall-2026/asset-candidates.json"
+    },
+    {
+      "filename": "st-pauls-autumn-closing-landscape-v1.png",
+      "repositoryPath": "brand/assets/illustrations/st-pauls-autumn-closing-landscape-v1.png",
+      "description": "Autumn leaves, grasses and an unlit candle for a quiet closing visual",
+      "intendedComponent": "Illustrated Closing",
+      "aspectRatio": "16:9",
+      "pixelSize": "1672x941",
+      "alt": "",
+      "version": 1,
+      "approvalStatus": "pending",
+      "promptReference": "design-review/illustrated-fall-2026/asset-candidates.json"
+    }
+  ]
 }

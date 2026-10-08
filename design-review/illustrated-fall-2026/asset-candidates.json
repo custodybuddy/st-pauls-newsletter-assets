@@ -1,0 +1,62 @@
+{
+  "status": "pending visual approval; design-review candidates only",
+  "sourceNewsletter": "newsletters/drafting/2026-fall/st-pauls-fall-2026-newsletter-DRAFT-13.html",
+  "candidateAssets": [
+    {
+      "filename": "st-pauls-greetings-portrait-v1.png",
+      "repositoryPath": "brand/assets/illustrations/st-pauls-greetings-portrait-v1.png",
+      "originalGenerationOutput": "/workspace/generated_images/exec-04d8b07f-f1e6-4d5f-9567-6d1b7ea60a2d.png",
+      "description": "Autumn garden conversation in a warm editorial setting",
+      "intendedComponent": "Illustrated Editorial Split — Greetings Friends",
+      "aspectRatio": "3:4",
+      "pixelSize": "1086x1448",
+      "alt": "Two people in conversation beside an autumn garden path",
+      "version": 1,
+      "approvalStatus": "pending",
+      "prompt": "Create one original 2D editorial illustration for a church community newsletter, portrait 3:4 composition. A warm, welcoming scene for an introductory Greetings Friends letter: an inviting autumn garden path with a simple wooden bench, colourful fall leaves, and two people seen at a respectful distance in quiet conversation. Hand-crafted layered shapes, subtle grain; deep navy, cream, antique gold, muted sage and warm rust. No text, logo, building, or photorealism."
+    },
+    {
+      "filename": "st-pauls-compassionate-care-square-v1.png",
+      "repositoryPath": "brand/assets/illustrations/st-pauls-compassionate-care-square-v1.png",
+      "originalGenerationOutput": "/workspace/generated_images/exec-2a3daf3a-be3d-48f6-8509-983f3c49ec8c.png",
+      "description": "Hands arranging autumn foliage around a lantern as a metaphor for care and hope",
+      "intendedComponent": "Full-Width Illustrated Feature — Ministry Spotlight",
+      "aspectRatio": "1:1",
+      "pixelSize": "1254x1254",
+      "alt": "Hands arranging autumn foliage around a lantern",
+      "version": 1,
+      "approvalStatus": "pending",
+      "prompt": "Original cohesive 2D editorial illustration, square composition for a Ministry Spotlight section about compassionate care. Several diverse hands gently arranging autumn foliage around a small lantern, representing care and hope without implying a specific event. Hand-cut paper shapes, soft layered dimension, subtle texture; deep navy, cream, antique gold, muted sage and rust. No lettering, building, photorealism, gradients or orbs."
+    },
+    {
+      "filename": "st-pauls-community-care-landscape-v1.png",
+      "repositoryPath": "brand/assets/illustrations/st-pauls-community-care-landscape-v1.png",
+      "originalGenerationOutput": "/workspace/generated_images/exec-ae6a17d5-4176-4bb9-a769-a72e12ea317a.png",
+      "description": "Neighbours sharing autumn apples, a symbolic community care scene",
+      "intendedComponent": "Illustrated Editorial Split — community care",
+      "aspectRatio": "16:9",
+      "pixelSize": "1672x941",
+      "alt": "Neighbours sharing a basket of autumn apples",
+      "version": 1,
+      "approvalStatus": "pending",
+      "prompt": "Original 2D editorial landscape illustration for community and volunteering. Symbolic scene of neighbours of varied ages passing a basket of harvested apples and leaves across a garden table, without depicting a specific claimed event. Handcrafted paper-cut shapes, soft dimensional layering, fine texture; deep navy, cream, antique gold, muted sage, rust. No text, logo, church building or photorealism."
+    },
+    {
+      "filename": "st-pauls-autumn-closing-landscape-v1.png",
+      "repositoryPath": "brand/assets/illustrations/st-pauls-autumn-closing-landscape-v1.png",
+      "originalGenerationOutput": "/workspace/generated_images/exec-2861fd63-09c2-4a53-b984-7d016d111d7b.png",
+      "description": "Autumn leaves, grasses and an unlit candle for a quiet closing visual",
+      "intendedComponent": "Illustrated Closing",
+      "aspectRatio": "16:9",
+      "pixelSize": "1672x941",
+      "alt": "",
+      "version": 1,
+      "approvalStatus": "pending",
+      "prompt": "Original 2D editorial decorative fall closing illustration. Graceful arrangement of maple leaves, seed pods, wild grasses and a simple unlit candle on cream. Horizontal landscape; paper-cut shapes, subtle handmade texture and dimensional layering; deep navy, cream, antique gold, muted sage, warm rust. No words, logo, architecture, people, photorealism or gradients."
+    }
+  ],
+  "pendingAsset": {
+    "key": "st-pauls-church-building",
+    "status": "awaiting an authentic approved reference photograph; no substitute generated"
+  }
+}

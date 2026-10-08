@@ -53,3 +53,16 @@ Describe what the image shows and why it is there, in one sentence, without "ima
 3. Named by the rule above.
 4. Added to `st-pauls-illustrations-v1.json` with alt text and layout role.
 5. `node scripts/audit-newsletter-repo.js` shows no dead image URLs.
+
+## Fall 2026 illustrated design review candidates
+
+The four original PNG candidates in `design-review/illustrated-fall-2026/` are pending visual approval. Their filenames, intended components, alt text, dimensions and generation prompts are recorded in `design-review/illustrated-fall-2026/asset-candidates.json`; `resources/links/st-pauls-illustrations-v1.json` lists them under `candidateIllustrations`. They are not part of the approved `illustrations` or `supplementalIllustrations` lists and must not be linked from a sent newsletter yet.
+
+| Candidate | Shape | Proposed role |
+|---|---|---|
+| `st-pauls-greetings-portrait-v1.png` | Portrait | Greetings editorial split |
+| `st-pauls-compassionate-care-square-v1.png` | Square | Ministry Spotlight feature |
+| `st-pauls-community-care-landscape-v1.png` | Landscape | Community care editorial split |
+| `st-pauls-autumn-closing-landscape-v1.png` | Landscape | Seasonal closing |
+
+The church building illustration still requires an authentic approved reference photograph. The visual review files use local paths so they work before any artwork is hosted. After approval, optimize email exports, check their hosted URLs, and update the canonical illustration entries.
