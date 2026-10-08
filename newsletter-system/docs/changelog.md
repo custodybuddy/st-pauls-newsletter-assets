@@ -1,5 +1,12 @@
 # Newsletter Change Log
 
+## 2026-10-08 (newsletters reorganized by season)
+
+- Reduced `newsletters/` to three folders organized by season: `drafting/`, `final/`, and `archive/`. Removed `approved/`, `pending-approval/`, and `working/`.
+- Archive: each published issue now has its own folder (`archive/<year>-<season>/<yyyy-mm-month>/newsletter.html`) with a screenshot; the capture images moved from `resources/archive-review/screenshots/`. The three identical copies of the April 2026 issue were reduced to one.
+- Drafting: Fall 2026 drafts moved to `drafting/2026-fall/`; Drafts 1–11 from `working/` are in `drafting/2026-fall/older-drafts/`.
+- Moved files keep git history, but their old GitHub Pages URLs no longer resolve.
+
 ## 2026-10-08 (repository cleanup after asset removal)
 
 - The legacy `assets/` folder was removed in an earlier commit. Repointed all `snippets/*.html` image URLs, the hero and icon URLs in `docs/st-pauls-comprehensive-newsletter-template.md`, and `resources/links/st-pauls-illustrations-v1.json` to `brand/assets/`.

@@ -559,7 +559,7 @@ Avoid:
 
 1. Confirm the linked Google Doc or an explicitly assigned copy is the latest approved editorial source.
 2. Confirm the three Core Sections and identify the selected Optional Story Modules in their approved order.
-3. Create a new versioned HTML file in `newsletters/drafting/`; never overwrite an approved or historical issue.
+3. Create a new versioned HTML file in `newsletters/drafting/<year>-<season>/`; never overwrite an approved or historical issue.
 4. Convert approved content to email-safe table HTML without rewriting it.
 5. Apply the current v4 icon map, brand system, responsive stacking, and accessibility rules.
 6. Remove unused drafting scaffolding and verify all names, dates, times, links, financial figures, Scripture, images, and permissions.

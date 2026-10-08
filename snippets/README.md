@@ -1,6 +1,6 @@
 # Reusable Newsletter Snippets
 
-**Active component library.** These are table-row fragments for building new issues. They were extracted from `newsletters/working/st-pauls-fall-2026-newsletter-DRAFT-11.html`.
+**Active component library.** These are table-row fragments for building new issues. They were extracted from `newsletters/drafting/2026-fall/older-drafts/st-pauls-fall-2026-newsletter-DRAFT-11.html`.
 
 > **Layout only.** The wording, names, dates, and figures inside each fragment come from Draft 11. Replace all of it with Kathy’s approved copy for the issue you are building. See `docs/st-pauls-comprehensive-newsletter-template.md`.
 

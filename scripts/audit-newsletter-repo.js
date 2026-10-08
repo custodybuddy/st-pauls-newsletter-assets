@@ -302,15 +302,21 @@ function checkHtml() {
   });
 }
 
-function checkApprovalCandidate() {
-  const candidates = listFiles('newsletters/pending-approval', '.html');
-  if (candidates.length > 1) {
-    add('error', 'pending-approval-count', 'newsletters/pending-approval', 'Expected at most one HTML approval candidate; found ' + candidates.length + '.');
-  }
+function checkFinalIssues() {
+  const bySeason = {};
+  listFiles('newsletters/final', '.html').forEach(function (file) {
+    const season = path.dirname(relative(file));
+    bySeason[season] = (bySeason[season] || 0) + 1;
+  });
+  Object.keys(bySeason).forEach(function (season) {
+    if (bySeason[season] > 1) {
+      add('error', 'final-count', season, 'Expected at most one HTML file per season in final/; found ' + bySeason[season] + '.');
+    }
+  });
 }
 
 const PAGES_URL_PATTERN = /https:\/\/custodybuddy\.github\.io\/st-pauls-newsletter-assets\/((?:[^"'\s)<>`\]()]|\([^"'\s)<>`]*\))+)/g;
-const LEGACY_PREFIXES = ['templates/', 'newsletters/working/', 'newsletters/approved/', 'newsletters/archive/', 'resources/'];
+const LEGACY_PREFIXES = ['templates/', 'newsletters/archive/', 'older-drafts/', 'resources/'];
 const URL_SCAN_ROOTS = ['AGENTS.md', 'README.md', 'snippets', 'templates', 'newsletters', 'newsletter-system', 'brand', 'docs', 'resources/links'];
 
 function listScanFiles(entry, output) {
@@ -329,7 +335,7 @@ function listScanFiles(entry, output) {
 function checkRepoUrls() {
   URL_SCAN_ROOTS.forEach(function (root) {
     listScanFiles(root).forEach(function (file) {
-      const legacy = LEGACY_PREFIXES.some(function (prefix) { return file.startsWith(prefix); });
+      const legacy = LEGACY_PREFIXES.some(function (prefix) { return file.startsWith(prefix) || file.includes('/' + prefix); });
       const missing = {};
       let match;
       PAGES_URL_PATTERN.lastIndex = 0;
@@ -364,7 +370,7 @@ checkCurrentGuidance();
 checkCanonicalIcons();
 checkTrackedJunk();
 checkHtml();
-checkApprovalCandidate();
+checkFinalIssues();
 checkRepoUrls();
 
 const errors = issues.filter(function (issue) { return issue.level === 'error'; }).length;

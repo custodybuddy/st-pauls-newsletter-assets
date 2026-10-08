@@ -1,5 +1,8 @@
 # Drafting Area
 
-Create new versioned working files here. Kathy’s approved seasonal submission controls their wording. Do not edit the legacy `newsletters/working/` files.
+Create new versioned drafts in the season folder, for example `2026-fall/`. Kathy’s approved seasonal submission controls the wording.
 
-Move no more than one chosen candidate to `newsletters/pending-approval/`. After approval and publication, copy the final version into the read-only archive.
+- Current Fall 2026 drafts: `2026-fall/` (Drafts 11–13; Draft 13 is the latest).
+- `2026-fall/older-drafts/` holds Drafts 1–11 from the earlier workflow. They are history only: several have unbalanced `<td>` tags (Drafts 8, 9, 10) and removed `/assets/` image URLs. Do not copy markup from them.
+- Start new drafts from `newsletter-system/template/html-scaffold.html`.
+- When a draft is approved, copy it to `newsletters/final/<year>-<season>/`.

@@ -12,11 +12,11 @@ This repository contains the production system for “What’s Up, St. Paul’s?
 
 ## Working Rules
 
-1. Create and edit new issue files only in `newsletters/drafting/`.
-2. Put exactly one proposed final file in `newsletters/pending-approval/`.
-3. After approval and publication, place the final file in `newsletters/archive/`; do not edit archived issues.
+1. Create and edit new issue files only in `newsletters/drafting/<year>-<season>/`.
+2. When approved, copy the chosen file to `newsletters/final/<year>-<season>/` (at most one per season).
+3. After it is sent, move it to `newsletters/archive/<year>-<season>/<yyyy-mm-month>/newsletter.html` with a screenshot; do not edit archived issues.
 4. Reusable components control table layout and Outlook compatibility only. They must not become a source of editorial wording.
-5. `snippets/` holds the reusable section fragments (layout only; swap in approved copy). `templates/`, `newsletters/working/`, and `newsletters/approved/` are read-only history; do not edit them for new work.
+5. `snippets/` holds the reusable section fragments (layout only; swap in approved copy). `templates/` and `newsletters/drafting/*/older-drafts/` are read-only history; do not edit them for new work.
 
 ## Structure
 
@@ -24,11 +24,11 @@ This repository contains the production system for “What’s Up, St. Paul’s?
 - `brand/resources/` — canonical website, donation, contact, reusable URL, and icon-map records.
 - `newsletter-system/` — drafting template, HTML scaffold, Outlook-safe layout components, and production documentation.
 - `snippets/` — reusable section fragments (hero, greetings and mission, ministry spotlight, did you know, event, finances, thankful, footer).
-- `newsletters/` — new drafts, one approval candidate, and read-only archive.
+- `newsletters/` — `drafting/`, `final/`, and a read-only `archive/` of published issues with screenshots, all organized by season. See `newsletters/README.md`.
 
 ## Legacy Compatibility
 
-The former `/assets/` folder was removed on 2026-10-08, so any image URL containing `/st-pauls-newsletter-assets/assets/` no longer loads. Older issues still in `newsletters/working/`, `newsletters/approved/`, and `templates/` may show broken images and are kept for history only. New work must use `brand/assets/`. GitHub Pages does not redirect moved static files.
+The former `/assets/` folder was removed on 2026-10-08, so any image URL containing `/st-pauls-newsletter-assets/assets/` no longer loads. Older issues in `newsletters/archive/`, `newsletters/drafting/*/older-drafts/`, and `templates/` may show broken images and are kept for history only. New work must use `brand/assets/`. GitHub Pages does not redirect moved static files.
 
 ## Audit
 
