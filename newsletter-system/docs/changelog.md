@@ -1,5 +1,9 @@
 # Newsletter Change Log
 
+## 2026-10-08 (brand asset visual)
+
+- Added `brand/resources/brand-assets-visual.html`: a browser reference page showing the brand colors, typography, section style, four seasonal hero banners, all 15 v4 icons (generated from `icon-map-v4.json`), and the illustrations. It is a reference page, not an email. Update it when brand assets or the icon map change.
+
 ## 2026-10-08 (superseded drafts moved)
 
 - Moved Drafts 11 and 12 from `newsletters/drafting/2026-fall/` to `older-drafts/` (superseded by Draft 13; both used removed `/assets/` image URLs). Draft 11 was renamed `...DRAFT-11-from-drafting.html` to avoid a name clash.

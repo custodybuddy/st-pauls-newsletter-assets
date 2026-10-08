@@ -606,6 +606,7 @@ Recommended current resources:
 docs/st-pauls-comprehensive-newsletter-template.md
 brand/resources/icon-map-v4.json
 brand/resources/icon-map-v4.md
+brand/resources/brand-assets-visual.html
 newsletter-system/docs/qa-checklist.md
 newsletter-system/docs/style-guide.md
 ```
