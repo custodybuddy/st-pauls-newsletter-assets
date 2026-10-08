@@ -32,7 +32,7 @@ Component list: `.claude/skills/st-pauls-newsletter/components.md`. Illustration
 ## Structure
 
 - `brand/assets/` — canonical icons, banners, illustrations, and reference images for new work.
-- `brand/resources/` — canonical website, donation, contact, reusable URL, and icon-map records.
+- `brand/resources/` — canonical website, donation, contact, reusable URL, and icon-map records, plus `brand-assets-visual.html`, a one-page visual of the colors, type, section style, hero banners, icons, and illustrations.
 - `newsletter-system/` — drafting template, HTML scaffold, Outlook-safe layout components, and production documentation.
 - `snippets/` — reusable section fragments (hero, greetings and mission, ministry spotlight, did you know, event, finances, thankful, footer).
 - `newsletters/` — `drafting/`, `final/`, and a read-only `archive/` of published issues with screenshots, all organized by season. See `newsletters/README.md`.

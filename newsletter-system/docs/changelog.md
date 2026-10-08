@@ -21,6 +21,9 @@
 - Added test edition `newsletters/drafting/2026-test/` (two arrangements, sample text, not for sending).
 - Fixed stale pointers in `docs/st-pauls-comprehensive-newsletter-template.md` and the scaffold comment so they use `brand/resources/`.
 - No approved wording, archived issue, Draft 13, or existing artwork was changed.
+## 2026-10-08 (brand asset visual)
+
+- Added `brand/resources/brand-assets-visual.html`: a browser reference page showing the brand colors, typography, section style, four seasonal hero banners, all 15 v4 icons (generated from `icon-map-v4.json`), and the illustrations. It is a reference page, not an email. Update it when brand assets or the icon map change.
 
 ## 2026-10-08 (superseded drafts moved)
 

@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>St. Paul’s Brand Assets</title>
+<style>
+  :root {
+    --navy:#0A1C2C; --slate:#1E293B; --body:#475569; --soft:#64748B;
+    --gold:#D4AF37; --dgold:#B8860B; --lgold:#F0D98C; --cream:#FDFBF7;
+    --blue:#EBF4F8; --line:#D7E1E8;
+    --serif:Lora, Georgia, serif; --sans:Inter, Arial, sans-serif;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--blue); color:var(--slate); font-family:var(--sans); line-height:1.6; }
+  main { max-width:1100px; margin:0 auto; padding:0 20px 64px; }
+  header.top { background:var(--navy); color:#fff; text-align:center; padding:56px 20px 48px; }
+  header.top img { width:88px; height:88px; object-fit:contain; }
+  header.top .label { color:var(--gold); letter-spacing:.18em; font-size:12px; font-weight:700; text-transform:uppercase; margin:14px auto 6px; }
+  header.top h1 { font-family:var(--serif); font-size:clamp(30px,5vw,46px); margin:0 0 10px; color:#fff; }
+  header.top p { color:#E2E8F0; max-width:640px; margin:0 auto; }
+  .rule { width:72px; height:3px; background:var(--gold); border-radius:2px; margin:16px auto 0; }
+  nav { display:flex; flex-wrap:wrap; gap:8px 18px; justify-content:center; padding:18px 20px; background:#fff; border-bottom:1px solid var(--line); font-size:14px; }
+  nav a { color:var(--dgold); font-weight:700; text-decoration:none; }
+  section { margin-top:48px; }
+  .label { color:var(--dgold); letter-spacing:.16em; font-size:12px; font-weight:700; text-transform:uppercase; margin:0 0 4px; }
+  h2 { font-family:var(--serif); color:var(--navy); font-size:30px; margin:0 0 6px; }
+  .lede { color:var(--body); margin:0 0 22px; max-width:720px; }
+  code { font-size:12px; color:var(--soft); overflow-wrap:anywhere; }
+  .swatches { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:14px; }
+  .swatch { border-radius:16px; padding:18px; min-height:130px; display:flex; flex-direction:column; justify-content:flex-end; gap:2px; }
+  .swatch span { font-family:monospace; font-size:14px; }
+  .swatch small { opacity:.85; font-size:12px; line-height:1.4; margin-top:4px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:20px; padding:26px; box-shadow:0 8px 24px rgba(10,28,44,.07); }
+  .type { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px; }
+  .type .big { font-size:44px; line-height:1.1; color:var(--navy); margin:6px 0 10px; }
+  .anatomy { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:18px; }
+  .sample-cream { background:var(--cream); border:1px solid #E5E7EB; border-radius:24px; padding:34px 30px; }
+  .sample-navy { background:var(--navy); border-radius:24px; padding:34px 30px; }
+  .sample-cream .label, .sample-navy .label { margin-bottom:6px; }
+  .sample-navy .label { color:var(--gold); }
+  .sample-cream h3 { font-family:var(--serif); font-size:28px; color:var(--navy); margin:0 0 10px; }
+  .sample-navy h3 { font-family:var(--serif); font-size:28px; color:#fff; margin:0 0 10px; }
+  .sample-cream p { color:var(--body); margin:14px 0 0; }
+  .sample-navy p { color:#E2E8F0; margin:14px 0 0; }
+  .em { color:var(--dgold); font-weight:800; }
+  .sample-navy .em { color:var(--lgold); }
+  .divider { width:56px; height:3px; background:var(--gold); border-radius:2px; }
+  .btns { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+  .btn { display:inline-block; padding:12px 22px; border-radius:999px; font-weight:700; font-size:14px; text-decoration:none; }
+  .btn.gold { background:var(--gold); color:var(--navy); }
+  .btn.navy { background:var(--navy); color:#fff; }
+  .btn.ghost { border:2px solid var(--gold); color:#fff; }
+  .heroes { display:grid; grid-template-columns:repeat(auto-fit,minmax(420px,1fr)); gap:18px; }
+  figure { margin:0; background:#fff; border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:0 8px 24px rgba(10,28,44,.07); }
+  figure img { display:block; width:100%; height:auto; }
+  figcaption { padding:12px 16px; font-size:13px; color:var(--body); }
+  .icons { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:16px; }
+  .icon-card { background:#fff; border:1px solid var(--line); border-radius:20px; padding:20px 16px; text-align:center; box-shadow:0 8px 24px rgba(10,28,44,.07); }
+  .icon-stage { background:var(--cream); border-radius:16px; padding:14px; margin-bottom:12px; }
+  .icon-stage img { display:block; margin:0 auto; object-fit:contain; }
+  .icon-card h3 { font-family:var(--serif); font-size:16px; color:var(--navy); margin:0 0 2px; }
+  .meta { margin:0 0 6px; font-size:12px; color:var(--dgold); font-weight:700; }
+  .illus { align-items:start; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+  .illus figure img { object-fit:contain; background:var(--cream); padding:12px; }
+  .rules { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin:0; padding:0; list-style:none; }
+  .rules li { background:#fff; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:12px; padding:14px 16px; font-size:14px; color:var(--body); }
+  .rules strong { display:block; color:var(--navy); }
+  footer { margin-top:56px; text-align:center; color:var(--soft); font-size:13px; }
+  @media (max-width:520px) { .heroes { grid-template-columns:1fr; } h2 { font-size:25px; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <img src="../assets/icons/01-branding-cross-wings.png" alt="Winged cross with a gold halo" width="88" height="88">
+  <p class="label">St. Paul’s Church · Ingersoll</p>
+  <h1>What’s Up, St. Paul’s? Brand Assets</h1>
+  <p>Colors, type, section styles, hero banners, icons and illustrations for the newsletter. One page to check before you build an issue.</p>
+  <div class="rule"></div>
+</header>
+<nav aria-label="Sections">
+  <a href="#colors">Colors</a><a href="#type">Typography</a><a href="#sections">Section style</a><a href="#heroes">Hero banners</a><a href="#icons">Icons</a><a href="#illustrations">Illustrations</a><a href="#rules">Rules</a>
+</nav>
+<main>
+
+<section id="colors">
+  <p class="label">Color</p><h2>Navy and gold</h2>
+  <p class="lede">Use these ten colors only. Light text goes on navy; dark gold is for emphasis on light backgrounds.</p>
+  <div class="swatches">
+      <div class="swatch" style="background:#0A1C2C;color:#FFFFFF;">
+        <strong>Deep navy</strong><span>#0A1C2C</span><small>Feature panels, footer, headings on light</small>
+      </div>
+      <div class="swatch" style="background:#1E293B;color:#FFFFFF;">
+        <strong>Slate text</strong><span>#1E293B</span><small>Headings and key phrases on light</small>
+      </div>
+      <div class="swatch" style="background:#475569;color:#FFFFFF;">
+        <strong>Body slate</strong><span>#475569</span><small>Body copy</small>
+      </div>
+      <div class="swatch" style="background:#64748B;color:#FFFFFF;">
+        <strong>Soft slate</strong><span>#64748B</span><small>Captions, secondary text</small>
+      </div>
+      <div class="swatch" style="background:#D4AF37;color:#0A1C2C;">
+        <strong>Gold</strong><span>#D4AF37</span><small>Dividers, labels on navy, accents</small>
+      </div>
+      <div class="swatch" style="background:#B8860B;color:#FFFFFF;">
+        <strong>Dark gold</strong><span>#B8860B</span><small>Gold/bold emphasis on light</small>
+      </div>
+      <div class="swatch" style="background:#F0D98C;color:#0A1C2C;">
+        <strong>Light gold</strong><span>#F0D98C</span><small>Accent text on navy</small>
+      </div>
+      <div class="swatch" style="background:#FDFBF7;color:#1E293B;border:1px solid #D7E1E8;">
+        <strong>Cream</strong><span>#FDFBF7</span><small>Editorial cards</small>
+      </div>
+      <div class="swatch" style="background:#EBF4F8;color:#1E293B;border:1px solid #D7E1E8;">
+        <strong>Soft blue</strong><span>#EBF4F8</span><small>Page background</small>
+      </div>
+      <div class="swatch" style="background:#FFFFFF;color:#1E293B;border:1px solid #D7E1E8;">
+        <strong>White</strong><span>#FFFFFF</span><small>Cards, headings on navy</small>
+      </div>
+  </div>
+</section>
+
+<section id="type">
+  <p class="label">Typography</p><h2>Serif headings, clean body</h2>
+  <p class="lede">Lora with Georgia as the email-safe fallback for headings. Inter with Arial as the fallback for body text.</p>
+  <div class="type">
+    <div class="card"><p class="label">Headings</p><div class="big" style="font-family:var(--serif)">Greetings Friends</div><code>Lora, Georgia, serif</code></div>
+    <div class="card"><p class="label">Body</p><div class="big" style="font-family:var(--sans);font-size:34px">Warm, clear, easy to scan.</div><code>Inter, Arial, sans-serif</code></div>
+  </div>
+</section>
+
+<section id="sections">
+  <p class="label">Section style</p><h2>How a section is built</h2>
+  <p class="lede">A small uppercase label, a large serif heading, a gold divider, then body copy with gold/bold emphasis on the phrases that help readers skim.</p>
+  <div class="anatomy">
+    <div class="sample-cream">
+      <p class="label">Our Mission</p>
+      <h3>Cream editorial card</h3>
+      <div class="divider"></div>
+      <p>We are a <span class="em">Christ-centered</span>, worshipping community that helps people <strong style="color:var(--slate)">serve, welcome, teach, prepare, and encourage</strong>.</p>
+    </div>
+    <div class="sample-navy">
+      <p class="label">St. Paul’s Ministry Spotlight</p>
+      <h3>Navy feature panel</h3>
+      <div class="divider"></div>
+      <p>Headings are white, body text is light slate, and key phrases like <span class="em">Compassionate Care Ministry</span> use light gold.</p>
+      <div class="btns"><a class="btn gold" href="#">Give Now</a><a class="btn ghost" href="#">Learn More</a></div>
+    </div>
+  </div>
+  <div class="btns"><a class="btn navy" href="#">Contact Us</a><a class="btn gold" href="#">Join a Small Group</a><a class="btn navy" href="#">Watch Sunday Service</a></div>
+</section>
+
+<section id="heroes">
+  <p class="label">Hero banners</p><h2>One banner per season</h2>
+  <p class="lede">1100 × 367 px. Use the banner for the issue’s season.</p>
+  <div class="heroes">
+      <figure><img src="../assets/banners/st-pauls-spring-hero-1100px.png" alt="Spring hero banner" width="1100" height="367"><figcaption><strong>Spring</strong> <code>st-pauls-spring-hero-1100px.png</code> · 1100 × 367</figcaption></figure>
+      <figure><img src="../assets/banners/st-pauls-summer-hero-1100px.png" alt="Summer hero banner" width="1100" height="367"><figcaption><strong>Summer</strong> <code>st-pauls-summer-hero-1100px.png</code> · 1100 × 367</figcaption></figure>
+      <figure><img src="../assets/banners/st-pauls-fall-hero-1100px.png" alt="Fall hero banner" width="1100" height="367"><figcaption><strong>Fall</strong> <code>st-pauls-fall-hero-1100px.png</code> · 1100 × 367</figcaption></figure>
+      <figure><img src="../assets/banners/st-pauls-winter-hero-1100px.png" alt="Winter hero banner" width="1100" height="367"><figcaption><strong>Winter</strong> <code>st-pauls-winter-hero-1100px.png</code> · 1100 × 367</figcaption></figure>
+  </div>
+</section>
+
+<section id="icons">
+  <p class="label">Icons</p><h2>The v4 icon family</h2>
+  <p class="lede">Fifteen transparent PNGs, one primary role each. Use 88 px for the branding icon and 72 px for major section icons. Never reuse a retired icon or substitute emoji. The role map lives in <code>brand/resources/icon-map-v4.json</code>.</p>
+  <div class="icons">
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/01-branding-cross-wings.png" alt="Winged cross with a gold halo" width="96" height="96"></div>
+        <h3>Branding, Main title</h3>
+        <p class="meta">88px in email</p>
+        <code>01-branding-cross-wings.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/02-pastoral-note-heart-dialogue.png" alt="Gold heart inside a speech bubble" width="96" height="96"></div>
+        <h3>Greetings Friends, Pastoral note</h3>
+        <p class="meta">72px in email</p>
+        <code>02-pastoral-note-heart-dialogue.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/03-our-mission-church-community.png" alt="Church community gathered beneath a cross" width="96" height="96"></div>
+        <h3>Our Mission, Church community</h3>
+        <p class="meta">72px in email</p>
+        <code>03-our-mission-church-community.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/04-ministry-spotlight-serving-heart.png" alt="Open hand supporting a gold heart" width="96" height="96"></div>
+        <h3>Ministry Spotlight, Relationships, Compassionate Care, Stewardship Ministry, Equipping Ministry</h3>
+        <p class="meta">72px in email</p>
+        <code>04-ministry-spotlight-serving-heart.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/05-community-discernment-congregation.png" alt="Congregation gathered beneath a cross in a circle" width="96" height="96"></div>
+        <h3>Did You Know?, Community Discernment</h3>
+        <p class="meta">72px in email</p>
+        <code>05-community-discernment-congregation.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/06-community-mission-cross-path.png" alt="Cross above a pathway through the community" width="96" height="96"></div>
+        <h3>Mission in the Community, Community outreach, Partnerships</h3>
+        <p class="meta">72px in email</p>
+        <code>06-community-mission-cross-path.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/07-spiritual-formation-open-bible.png" alt="Radiant cross rising from an open Bible" width="96" height="96"></div>
+        <h3>Spiritual Formation, Bible Study, Scripture reflection, Experiencing God, Equipping</h3>
+        <p class="meta">72px in email</p>
+        <code>07-spiritual-formation-open-bible.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/08-stewardship-wheat-fields.png" alt="Three wheat stalks growing over fields" width="96" height="96"></div>
+        <h3>Stewardship, Generosity, Time and talents</h3>
+        <p class="meta">72px in email</p>
+        <code>08-stewardship-wheat-fields.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/09-upcoming-events-calendar.png" alt="Church calendar with a cross and event markers" width="96" height="96"></div>
+        <h3>Upcoming Events, Calendar</h3>
+        <p class="meta">72px in email</p>
+        <code>09-upcoming-events-calendar.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/10-prayer-care-heart-hands.png" alt="Caring hands beneath an outlined gold heart" width="96" height="96"></div>
+        <h3>Prayer Focus, Prayer requests, Pastoral care, Compassionate Care, Homebound care</h3>
+        <p class="meta">72px in email</p>
+        <code>10-prayer-care-heart-hands.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/11-focus-on-finances-chart.png" alt="Rising bar chart, coins, and financial statement" width="96" height="96"></div>
+        <h3>Focus on Finances, Financial update, Financial report</h3>
+        <p class="meta">72px in email</p>
+        <code>11-focus-on-finances-chart.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/12-thankful-heart-hands.png" alt="Hands holding a radiant heart" width="96" height="96"></div>
+        <h3>Thankful, Gratitude, Appreciation</h3>
+        <p class="meta">72px in email</p>
+        <code>12-thankful-heart-hands.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/13-announcements-bell.png" alt="Ringing church announcement bell" width="96" height="96"></div>
+        <h3>Announcements, News, Church notices</h3>
+        <p class="meta">72px in email</p>
+        <code>13-announcements-bell.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/14-volunteer-community-care.png" alt="Community members and a heart held in caring hands" width="96" height="96"></div>
+        <h3>Volunteer, Community care, Serving opportunity</h3>
+        <p class="meta">72px in email</p>
+        <code>14-volunteer-community-care.png</code>
+      </article>
+      <article class="icon-card">
+        <div class="icon-stage"><img src="../assets/icons/15-worship-music-cross-notes.png" alt="Cross with musical notes on a staff" width="96" height="96"></div>
+        <h3>Worship &amp; Music, Worship, Music ministry</h3>
+        <p class="meta">72px in email</p>
+        <code>15-worship-music-cross-notes.png</code>
+      </article>
+  </div>
+</section>
+
+<section id="illustrations">
+  <p class="label">Illustrations</p><h2>Supporting artwork</h2>
+  <div class="illus">
+    <figure><img src="../assets/illustrations/st-pauls-our-mission-card-v2-email.jpg" alt="Our Mission card" height="260"><figcaption><strong>Our Mission card</strong> · 300 px column in Greetings Friends<br><code>st-pauls-our-mission-card-v2-email.jpg</code></figcaption></figure>
+    <figure><img src="../assets/illustrations/st-pauls-compassionate-care-ministry-highlight%20(1).png" alt="St. Paul’s ministry wheel showing Compassionate Care Ministry" height="260"><figcaption><strong>Compassionate Care ministry wheel</strong> · 260 px in Ministry Spotlight<br><code>st-pauls-compassionate-care-ministry-highlight (1).png</code></figcaption></figure>
+    <figure><img src="../assets/illustrations/St.%20Paul%E2%80%99s%20Newsletter%20Mood%20Board(1).png" alt="St. Paul’s newsletter mood board" height="260"><figcaption><strong>Mood board</strong> · reference only, not for email<br><code>St. Paul’s Newsletter Mood Board(1).png</code></figcaption></figure>
+  </div>
+</section>
+
+<section id="rules">
+  <p class="label">Quick rules</p><h2>Before you build</h2>
+  <ul class="rules">
+    <li><strong>Use the full image URL</strong>Email images must use absolute <code>.../st-pauls-newsletter-assets/brand/assets/...</code> URLs.</li>
+    <li><strong>Light text on navy</strong>White headings, #E2E8F0 body, gold or light gold labels.</li>
+    <li><strong>One icon per section</strong>Follow the icon map; omit the icon rather than substitute.</li>
+    <li><strong>Emphasize sparingly</strong>Gold/bold only on names, dates, numbers, calls to action.</li>
+    <li><strong>Table layout, inline styles</strong>No grid, flexbox or scripts inside the email itself.</li>
+    <li><strong>Keep archive sections</strong>Improve hierarchy; do not drop sections readers know.</li>
+  </ul>
+</section>
+
+<footer>This page is a browser reference, not an email. Build emails from <code>newsletter-system/template/html-scaffold.html</code>.</footer>
+</main>
+</body>
+</html>
