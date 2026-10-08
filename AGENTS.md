@@ -6,7 +6,7 @@
 
 New work uses `brand/`, `newsletter-system/`, and `newsletters/`. Kathy’s approved seasonal submission controls wording; `docs/st-pauls-comprehensive-newsletter-template.md` controls the drafting structure and `newsletter-system/template/html-scaffold.html` is the HTML starting point. Use `newsletter-system/components/outlook-safe/` for layout only, never as editorial copy.
 
-Create drafts in `newsletters/drafting/`. Keep exactly one HTML candidate in `newsletters/pending-approval/`. Treat `newsletters/archive/` as read-only. The older `/assets/`, `/templates/`, `/snippets/`, and existing newsletter paths are read-only GitHub Pages compatibility copies; do not use them for new work.
+Newsletters are organized by season (`<year>-<season>`, e.g. `2026-fall`) in three folders: create drafts in `newsletters/drafting/<year>-<season>/`; keep at most one approved, ready-to-send HTML file per season in `newsletters/final/<year>-<season>/`; and treat `newsletters/archive/` (published issues, each with a screenshot) as read-only. Archived issues define the sections and components readers already know: keep them consistent while improving design and visual hierarchy. See `newsletters/README.md`. `snippets/` is the active library of reusable section fragments: use them for layout only, and replace their Draft 11 wording with Kathy’s approved copy (see `snippets/README.md`). The legacy `/assets/` folder has been removed; all images live under `brand/assets/` and every image URL must use `.../st-pauls-newsletter-assets/brand/assets/...`. The older `/templates/` folder and `newsletters/drafting/*/older-drafts/` are read-only history; do not use them for new work.
 
 This file defines how AI agents, editors, and automation tools should work on the St. Paul’s newsletter codebase, Canva-friendly templates, icon libraries, and reusable email resources.
 
@@ -628,6 +628,6 @@ When in doubt:
 
 ## 23. Existing Newsletter Files
 
-The repository contains approved, working, and archived HTML newsletters. They must remain unchanged unless the user explicitly requests an HTML edit.
+The repository contains archived (published), final, and drafting HTML newsletters. Archived and older-draft files must remain unchanged unless the user explicitly requests an HTML edit.
 
 When building a new newsletter, use `docs/st-pauls-comprehensive-newsletter-template.md` for structure and use the assigned approved copy source for wording. Never treat an older generated newsletter as the current construction template.

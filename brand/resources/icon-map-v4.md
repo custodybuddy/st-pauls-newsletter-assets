@@ -86,7 +86,7 @@ The canonical illustration manifest is `resources/links/st-pauls-illustrations-v
 
 | Use | Filename | Repository path | Canonical URL | Default alt text |
 |---|---|---|---|---|
-| Compassionate Care Ministry Spotlight | `st-pauls-compassionate-care-ministry-highlight (1).png` | `assets/st-pauls-compassionate-care-ministry-highlight (1).png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/assets/st-pauls-compassionate-care-ministry-highlight%20(1).png` | St. Paul’s ministry wheel showing Compassionate Care Ministry |
+| Compassionate Care Ministry Spotlight | `st-pauls-compassionate-care-ministry-highlight (1).png` | `brand/assets/illustrations/st-pauls-compassionate-care-ministry-highlight (1).png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/st-pauls-compassionate-care-ministry-highlight%20(1).png` | St. Paul’s ministry wheel showing Compassionate Care Ministry |
 
 ## Email-Safe HTML Pattern
 

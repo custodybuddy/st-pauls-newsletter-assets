@@ -1,10 +1,25 @@
 # Newsletter Change Log
 
+## 2026-10-08 (newsletters reorganized by season)
+
+- Reduced `newsletters/` to three folders organized by season: `drafting/`, `final/`, and `archive/`. Removed `approved/`, `pending-approval/`, and `working/`.
+- Archive: each published issue now has its own folder (`archive/<year>-<season>/<yyyy-mm-month>/newsletter.html`) with a screenshot; the capture images moved from `resources/archive-review/screenshots/`. The three identical copies of the April 2026 issue were reduced to one.
+- Drafting: Fall 2026 drafts moved to `drafting/2026-fall/`; Drafts 1–11 from `working/` are in `drafting/2026-fall/older-drafts/`.
+- Moved files keep git history, but their old GitHub Pages URLs no longer resolve.
+
+## 2026-10-08 (repository cleanup after asset removal)
+
+- The legacy `assets/` folder was removed in an earlier commit. Repointed all `snippets/*.html` image URLs, the hero and icon URLs in `docs/st-pauls-comprehensive-newsletter-template.md`, and `resources/links/st-pauls-illustrations-v1.json` to `brand/assets/`.
+- Restored `snippets/` as the active component library (layout only; Draft 11 wording must be replaced).
+- Corrected the comprehensive template to use `brand/resources/icon-map-v4.*` and `newsletters/drafting/`.
+- Replaced `checklists/NEWSLETTER-QA-CHECKLIST.md` with a pointer to `newsletter-system/docs/qa-checklist.md`.
+- Marked `templates/` as superseded. Drafts 11 and 12 and the files in `newsletters/working/` still reference the removed `/assets/` URLs and were left unchanged.
+
 ## 2026-10-08 (documentation consolidation and legacy freeze)
 
 - Made `newsletter-system/docs/changelog.md` and `newsletter-system/docs/style-guide.md` the only canonical copies. `docs/changelog.md` and `docs/style-guide.md` are now short pointers so old links still resolve.
 - The old `docs/style-guide.md` still referenced pre-`brand/` paths; nothing unique was lost. The old `docs/changelog.md` lacked only the 2026-09-09 entry.
-- Added or updated FROZEN notes in `assets/`, `templates/`, `snippets/`, `newsletters/working/`, and `newsletters/approved/`. No files were moved, renamed, or deleted, so published GitHub Pages URLs are unaffected.
+- Added or updated FROZEN notes in `assets/`, `templates/`, `snippets/`, `newsletters/working/`, and `newsletters/approved/`. (Superseded: `assets/` was later removed; see the entry above.)
 
 ## 2026-09-09 (simplified newsletter system)
 

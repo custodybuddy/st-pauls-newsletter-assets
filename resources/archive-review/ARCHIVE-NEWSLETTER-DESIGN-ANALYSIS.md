@@ -8,10 +8,10 @@ This review compares the three completed newsletter HTML files without changing 
 
 | Newsletter | Screenshot |
 |---|---|
-| September 2025 | `screenshots/september-2025-newsletter.png` (720 × 10,000) |
-| November 2025 | `screenshots/november-2025-newsletter.png` (720 × 10,000) |
-| April 2026 | `screenshots/april-2026-newsletter.png` (720 × 10,000) |
-| April 2026 full-length reference | `screenshots/april-2026-newsletter-full.png` (720 × 18,000) |
+| September 2025 | `newsletters/archive/2025-fall/2025-09-september/screenshot.png` (720 × 10,000) |
+| November 2025 | `newsletters/archive/2025-fall/2025-11-november/screenshot.png` (720 × 10,000) |
+| April 2026 | `newsletters/archive/2026-spring/2026-04-april/screenshot.png` (720 × 10,000) |
+| April 2026 full-length reference | `newsletters/archive/2026-spring/2026-04-april/screenshot-full.png` (720 × 18,000) |
 
 The April full-length capture is included because the newsletter extends past the standard 10,000-pixel reference viewport.
 
