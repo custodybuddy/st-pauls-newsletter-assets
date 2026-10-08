@@ -2,7 +2,7 @@
 
 Reuse existing artwork first. This file defines the three illustration shapes the newsletter supports and how to name and register new art. It does not add or replace any artwork.
 
-> **Church building:** the permanent illustration of the actual St. Paul's building will be supplied and approved separately. Do not draw, generate or substitute one. Until it arrives, leave a visible `[CHURCH ILLUSTRATION: pending approved art]` marker.
+> **Church building:** the permanent illustration of the actual St. Paul's building will be supplied and approved separately. Do not draw, generate or substitute one. Until it arrives, keep the visible `[CHURCH ILLUSTRATION: pending approved art]` placeholder in the Greetings illustration slot (`snippets/greetings-and-mission.html`, class `illus-slot`).
 
 Machine-readable record: `resources/links/st-pauls-illustrations-v1.json` (`formatSpecs` and the illustration lists). Update both together.
 
@@ -13,6 +13,18 @@ Machine-readable record: `resources/links/st-pauls-illustrations-v1.json` (`form
 | Portrait | 3:4 | 1200 × 1600 | 300px column (mobile: full width) | Side column beside text (Greetings and Mission, Ministry Spotlight) | `st-pauls-our-mission-card-v2-email.jpg` (640 × 853) |
 | Landscape | 16:9 | 1600 × 900 | Full card width, up to 640px inside a card | Photo Feature, section banners | Seasonal heroes are a wider 3:1 banner (1100 × 367) |
 | Square | 1:1 | 1254 × 1254 (current icon size) or 1200 × 1200 | 72px (icons), 260px (feature graphic) | Section icons, ministry wheels | v4 icons; `st-pauls-compassionate-care-ministry-highlight (1).png` |
+
+## Where illustrations go
+
+| Placement | Component | Display width | Notes |
+|---|---|---|---|
+| Greetings slot (replaceable) | `greetings-and-mission.html` | 220px, stacks under text on mobile (max 320px) | Pending approved church illustration. Same `<img>` markup fits any shape. |
+| Large editorial illustration beside text | `ministry-spotlight.html` image column | About 36% of the card | Portrait or square. |
+| Photo or landscape illustration | `photo-feature.html` | Up to 640px (square 420px, portrait 320px) | Keep `height:auto`. |
+| Decorative card accent | v4 icons (72px), gold side bar, teal item rules | | Use existing icons first. |
+| Illustrated background | Not used by default | | If ever needed: `bgcolor` fallback plus a real-client test first. |
+
+Images use `width:100%; max-width:<N>px; height:auto`, so every shape keeps its aspect ratio.
 
 ## Formats
 

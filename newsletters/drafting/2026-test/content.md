@@ -6,7 +6,7 @@ Used to test component assembly, reordering, mobile layout and plain-text output
 
 - Season and year: Fall 2026 (test)
 - Hero image: fall (from `snippets/newsletter-hero-masthead.html`)
-- Church building illustration: `[pending approved art]`
+- Church building illustration: `[pending approved art]`. Edition B keeps the placeholder. Edition A fills the slot with a portrait stand-in (the Our Mission card) only to test aspect ratio and layout.
 
 ## SECTION: Greetings Friends (permanent)
 
@@ -62,5 +62,7 @@ Unchanged from `snippets/newsletter-footer.html`.
 |---|---|---|
 | **A** (`st-pauls-test-edition-A.html`) | Announcements, Photo Feature, Volunteer, Seasonal Celebration, Closing Message, footer | Thankful |
 | **B** (`st-pauls-test-edition-B.html`) | Seasonal Celebration, Volunteer, Announcements, Thankful, Closing Message, footer | Photo Feature |
+
+Built from `newsletter-system/template/html-scaffold.html`, not from an earlier newsletter. Screenshots (1280px and 390px) are in `previews/`.
 
 Plain-text versions: `st-pauls-test-edition-A.txt`, `st-pauls-test-edition-B.txt` (made with `node scripts/html-to-text.js`).

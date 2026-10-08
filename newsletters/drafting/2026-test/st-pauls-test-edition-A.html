@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="x-apple-disable-message-reformatting" />
   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
-  <title>TEST EDITION — What’s Up, St. Paul’s? — Layout test, not for sending</title>
-  <!-- TEST EDITION: layout test built from snippets/. Sample text is placeholder only. Not for sending. -->
+  <title>TEST EDITION A — What’s Up, St. Paul’s? — Layout test, not for sending</title>
   
   <!--[if mso]>
   <noscript>
@@ -43,6 +42,8 @@
       .inner-pad { padding:26px 18px !important; }
       .split-col { display:block !important; width:100% !important; max-width:100% !important; padding-left:0 !important; padding-right:0 !important; box-sizing:border-box !important; }
       .stack-gap { padding-top:20px !important; }
+      .illus-slot { text-align:center !important; }
+      .illus-slot img { margin:0 auto !important; max-width:320px !important; }
       .hero-title { font-size:36px !important; line-height:1.08 !important; }
       .section-title { font-size:28px !important; line-height:1.15 !important; }
       .card-title { font-size:22px !important; }
@@ -59,11 +60,32 @@
 </head>
 <body style="margin:0; padding:0; background-color:#FAF7F1; color:#0D1B2A; font-family:'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;">
 
+<!--
+  ST. PAUL'S CANONICAL NEWSLETTER SCAFFOLD
+  Structure: docs/st-pauls-comprehensive-newsletter-template.md
+  Assembly:  .claude/skills/st-pauls-newsletter/SKILL.md and components.md
+  Icons:     brand/resources/icon-map-v4.json   Links: brand/resources/website-links.md
+
+  HOW TO USE
+  1. Copy this file to newsletters/drafting/<year>-<season>/ as a new versioned draft.
+  2. Permanent blocks are already in place: hero + masthead, Greetings Friends + Our Mission
+     (with its illustration slot), and the footer. Replace wording with approved copy only.
+  3. Paste optional snippets from snippets/ between the OPTIONAL SECTIONS markers, in the approved order.
+     Each snippet is one or more table rows. The head styles below already support every active snippet.
+  4. Pick the seasonal hero: brand/assets/banners/st-pauls-{spring|summer|fall|winter}-hero-1100px.png and
+     update the hero alt text, the edition badge and the title.
+  5. Keep image URLs absolute HTTPS, hosted under the repository's brand/assets folder (see brand/resources/icon-map-v4.json).
+  6. Church-building illustration: still pending approved art. Keep the placeholder until it is supplied.
+  7. View in browser: add a discreet footer link with the ESP's exact merge tag once an ESP is chosen
+     (brand/resources/reusable-urls.md). Never send a placeholder or empty-anchor browser link.
+  8. Run: node scripts/audit-newsletter-repo.js, then node scripts/html-to-text.js <file> > <file>.txt
+-->
+
 <!-- OUTER ENCLOSING EMAIL CONTAINER -->
 <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#FAF7F1; table-layout:fixed;">
   <tr>
     <td align="center" class="outer-wrap" style="padding:24px 12px; background-color:#FAF7F1;">
-      
+
       <!-- MAIN EMAIL CONTENT CARD (MAX 1100PX) -->
       <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="main-card" style="width:100%; max-width:1100px; background-color:#FAF7F1; border-radius:24px; overflow:hidden;">
 
@@ -73,7 +95,7 @@
             <p style="font-family:'Inter', Arial, sans-serif; font-size:16px; line-height:1.4; color:#F0D98C; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; margin:0;">Test edition: layout check only, sample text, not for sending</p>
           </td>
         </tr>
-<!-- Hero, masthead, and processional rule. Extracted from Draft 11; insert inside the host newsletter's main content table. -->
+
         <!-- SEASONAL HERO IMAGE -->
         <tr>
           <td align="center" style="padding:0; background-color:#FAF7F1;">
@@ -83,7 +105,7 @@
 
         <!-- MASTHEAD -->
         <tr>
-          <td style="padding:36px 40px; background-color:#FAF7F1; border-bottom:1px solid #C7D6C1;">
+          <td style="padding:42px 40px 44px 40px; background-color:#0D1B2A; border-bottom:1px solid #D4AF37;">
             <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
               <tr>
                 <!--[if mso]>
@@ -99,10 +121,10 @@
                     <td valign="middle">
                 <![endif]-->
                 <td valign="middle" class="masthead-cell" style="text-align:left;">
-                  <h1 class="hero-title" style="font-family:'Playfair Display', Georgia, 'Times New Roman', serif; font-size:48px; line-height:1.08; color:#0D1B2A; margin:0; font-weight:600; letter-spacing:-0.02em;">
-                    What’s Up, <span style="color:#9C6A08; font-style:italic;" aria-label="St. Paul's">St. Paul’s?</span>
+                  <h1 class="hero-title" style="font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:48px; line-height:1.12; color:#FFFFFF; margin:0; font-weight:600; letter-spacing:-0.02em;">
+                    What’s Up, St. Paul’s?
                   </h1>
-                  <p style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#9C6A08; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; margin:10px 0 0 0;">
+                  <p style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#E2E8F0; font-weight:600; margin:12px 0 0 0;">
                     Connecting our church family
                   </p>
                 </td>
@@ -113,8 +135,8 @@
                 <td width="220" valign="middle" align="right" class="masthead-cell" style="padding-left:16px;">
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="right" class="edition-badge" style="margin-left:auto; margin-right:0;">
                     <tr>
-                      <td align="center" style="background-color:#DAA017; border-radius:50px; padding:12px 24px;">
-                        <span style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#0D1B2A; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; display:inline-block;">Fall 2026 Edition</span>
+                      <td align="center" style="background-color:#D4AF37; border-radius:8px; padding:12px 20px;">
+                        <span style="font-family:'Inter', Arial, sans-serif; font-size:17px; line-height:1.4; color:#0D1B2A; font-weight:700; display:inline-block;">Fall 2026 Edition</span>
                       </td>
                     </tr>
                   </table>
@@ -134,28 +156,28 @@
           <td style="padding:0; background-color:#FAF7F1;">
             <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
               <tr>
-                <td width="42%" height="4" style="height:4px; background-color:#DAA017; font-size:0; line-height:0;">&#160;</td>
-                <td width="16%" height="4" style="height:4px; background-color:#007A8A; font-size:0; line-height:0;">&#160;</td>
-                <td width="42%" height="4" style="height:4px; background-color:#DAA017; font-size:0; line-height:0;">&#160;</td>
+                <td width="42%" height="4" style="height:4px; background-color:#D4AF37; font-size:0; line-height:0;">&#160;</td>
+                <td width="16%" height="4" style="height:4px; background-color:#F0D98C; font-size:0; line-height:0;">&#160;</td>
+                <td width="42%" height="4" style="height:4px; background-color:#D4AF37; font-size:0; line-height:0;">&#160;</td>
               </tr>
             </table>
           </td>
         </tr>
-<!-- Greetings Friends and Our Mission. Extracted from Draft 11; insert inside the host newsletter's main content table. -->
+
         <!-- GREETINGS + MISSION -->
         <tr>
-          <td align="center" class="section-pad" style="padding:36px 36px 18px 36px;" max width="1100px">
+          <td align="center" class="section-pad" style="padding:36px 36px 18px 36px;">
             <!--[if mso]>
             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
               <tr>
                 <td width="64%" valign="top">
             <![endif]-->
-            <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width:1100px;">
+            <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width:100%;">
               <tr>
                 <td width="64%" valign="top" class="split-col" style="padding-right:12px;">
-                  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF; border:1px solid #E5E0D8; border-radius:20px;">
+                  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#EBF4F8; border:1px solid #D7E6EC; border-radius:20px;">
                     <tr>
-                      <td width="10" style="width:10px; background-color:#DAA017; border-top-left-radius:20px; border-bottom-left-radius:20px; font-size:0; line-height:0;">&#160;</td>
+                      <td width="10" style="width:10px; background-color:#D4AF37; border-top-left-radius:20px; border-bottom-left-radius:20px; font-size:0; line-height:0;">&#160;</td>
                       <td class="inner-pad" style="padding:36px 38px;">
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                           <tr>
@@ -163,17 +185,32 @@
                               <img class="icon-section" src="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/02-pastoral-note-heart-dialogue.png" alt="Gold heart inside a speech bubble" width="72" style="display:block; width:72px; height:auto; border:0;" />
                             </td>
                             <td valign="middle">
-                              <p style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#9C6A08; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin:0 0 4px 0;">Pastoral Note</p>
-                              <h2 class="section-title" style="font-family:'Playfair Display', Georgia, serif; font-size:36px; color:#0D1B2A; line-height:1.12; margin:0; font-weight:700; letter-spacing:-0.02em;">Greetings Friends</h2>
+                              <p style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#8A5C00; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin:0 0 4px 0;">Pastoral Note</p>
+                              <h2 class="section-title" style="font-family:'Lora', Georgia, serif; font-size:36px; color:#0D1B2A; line-height:1.15; margin:0; font-weight:700; letter-spacing:-0.02em;">Greetings Friends</h2>
                             </td>
                           </tr>
                         </table>
-                        <p class="body-copy" style="font-family:'Source Sans 3', Arial, sans-serif; font-size:19px; line-height:1.75; color:#0D1B2A; margin:20px 0 0 0;">
+                        <!-- GREETINGS TEXT + ILLUSTRATION SLOT: text column on the left, replaceable illustration on the right. Stacks on mobile. -->
+                        <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top:20px;">
+                          <tr>
+                            <td width="60%" valign="top" class="split-col" style="padding-right:20px;">
+                        <p class="body-copy" style="font-family:'Source Sans 3', Arial, sans-serif; font-size:19px; line-height:1.75; color:#0D1B2A; margin:0;">
                           We hope you have enjoyed this lovely summer and were able to find some refreshment in whatever ways you enjoy. And, just like that, fall is upon us!
                         </p>
                         <p class="body-copy" style="font-family:'Source Sans 3', Arial, sans-serif; font-size:19px; line-height:1.75; color:#0D1B2A; margin:16px 0 0 0;">
                           As we continue our newsletter series, this fall, we would like to focus on another ministry at St. Paul’s — our <strong style="color:#0D1B2A; font-weight:700;">Compassionate Care Ministry</strong>.
                         </p>
+                            </td>
+                            <td width="40%" valign="middle" align="center" class="split-col stack-gap illus-slot">
+                              <!-- ILLUSTRATION SLOT (any shape: portrait, square or landscape).
+                                   Pending: the approved St. Paul's church illustration. Do not substitute a generic church.
+                                   To fill: replace the whole placeholder table below with
+                                   <img src="[ABSOLUTE_HTTPS_URL_OF_APPROVED_ILLUSTRATION]" alt="Describe the approved illustration" width="220" style="display:block; width:100%; max-width:220px; height:auto; border:0; border-radius:16px; margin:0 auto;" />
+                                   See brand/resources/illustration-specs.md. -->
+                              <img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/st-pauls-our-mission-card-v2-email.jpg" alt="Test stand-in: a portrait illustration standing in for the pending church art" width="220" style="display:block; width:100%; max-width:220px; height:auto; border:0; border-radius:16px; margin:0 auto;" />
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
@@ -204,7 +241,7 @@
             <![endif]-->
           </td>
         </tr>
-<!-- Church Announcements section. Layout only: replace every [BRACKETED] placeholder with Kathy’s approved copy. Insert inside the host newsletter's main content table. Optional and reorderable. -->
+
         <!-- CHURCH ANNOUNCEMENTS -->
         <tr>
           <td align="center" class="section-pad" style="padding:18px 36px;">
@@ -217,7 +254,7 @@
                         <img class="icon-section" src="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/13-announcements-bell.png" alt="Ringing church announcement bell" width="72" style="display:block; width:72px; height:auto; border:0;" />
                       </td>
                       <td valign="middle">
-                        <p style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#9C6A08; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin:0 0 4px 0;">Church News</p>
+                        <p style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#8A5C00; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin:0 0 4px 0;">Church News</p>
                         <h2 class="section-title" style="font-family:'Playfair Display', Georgia, serif; font-size:36px; color:#0D1B2A; line-height:1.12; margin:0; font-weight:700; letter-spacing:-0.02em;">Announcements</h2>
                       </td>
                     </tr>
@@ -258,16 +295,16 @@
             </table>
           </td>
         </tr>
-<!-- Photo Feature section. Layout only: replace every [BRACKETED] placeholder with Kathy’s approved copy. Insert inside the host newsletter's main content table. Optional and reorderable. -->
+
         <!-- PHOTO FEATURE -->
         <tr>
           <td align="center" class="section-pad" style="padding:18px 36px;">
             <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF; border:1px solid #E5E0D8; border-radius:22px;">
               <tr>
                 <td class="inner-pad" style="padding:36px 40px;">
-                  <p style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#9C6A08; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin:0 0 6px 0;">Photo Feature</p>
+                  <p style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#8A5C00; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin:0 0 6px 0;">Photo Feature</p>
                   <h2 class="section-title" style="font-family:'Playfair Display', Georgia, serif; font-size:36px; color:#0D1B2A; line-height:1.12; margin:0 0 20px 0; font-weight:700; letter-spacing:-0.02em;">[SAMPLE] Photo feature title</h2>
-                  <!-- Photo: landscape 16:9 recommended (see brand/resources/illustration-specs.md). Confirm permission before using identifiable people. -->
+                  <!-- Photo: landscape 16:9 recommended (max-width 640px). Variants, same markup with a different max-width: square 420px (width="420"), portrait 320px (width="320"). Always keep height:auto so the aspect ratio is preserved. See brand/resources/illustration-specs.md. Confirm permission before using identifiable people. -->
                   <img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/st-pauls-winter-hero-1100px.png" alt="Test stand-in: a wide seasonal banner image standing in for a landscape photo" width="640" style="display:block; width:100%; max-width:640px; height:auto; border:0; border-radius:16px; margin:0 auto;" />
                   <p style="font-family:'Source Sans 3', Arial, sans-serif; font-size:16px; line-height:1.6; color:#475569; font-style:italic; margin:12px 0 0 0;">[SAMPLE] Caption text for layout testing.</p>
                   <p class="body-copy" style="font-family:'Source Sans 3', Arial, sans-serif; font-size:19px; line-height:1.75; color:#0D1B2A; margin:0; margin-top:18px;">[SAMPLE] One sample sentence of context.</p>
@@ -276,7 +313,7 @@
             </table>
           </td>
         </tr>
-<!-- Volunteer Opportunities section. Layout only: replace every [BRACKETED] placeholder with Kathy’s approved copy. Insert inside the host newsletter's main content table. Optional and reorderable. -->
+
         <!-- VOLUNTEER OPPORTUNITIES -->
         <tr>
           <td align="center" class="section-pad" style="padding:18px 36px;">
@@ -289,7 +326,7 @@
                         <img class="icon-section" src="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/14-volunteer-community-care.png" alt="Community members and a heart held in caring hands" width="72" style="display:block; width:72px; height:auto; border:0;" />
                       </td>
                       <td valign="middle">
-                        <p style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#9C6A08; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin:0 0 4px 0;">Volunteer Opportunity</p>
+                        <p style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#8A5C00; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin:0 0 4px 0;">Volunteer Opportunity</p>
                         <h2 class="section-title" style="font-family:'Playfair Display', Georgia, serif; font-size:36px; color:#0D1B2A; line-height:1.12; margin:0; font-weight:700; letter-spacing:-0.02em;">[SAMPLE] Sample Team</h2>
                       </td>
                     </tr>
@@ -298,7 +335,7 @@
                   <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#FAF7F1; border:1px solid #E5E0D8; border-radius:16px;">
                     <tr>
                       <td style="padding:22px 26px;">
-                        <p class="body-copy" style="font-family:'Source Sans 3', Arial, sans-serif; font-size:19px; line-height:1.75; color:#0D1B2A; margin:0;"><strong style="color:#9C6A08; font-weight:800;">When:</strong> [SAMPLE DATE]<br /><strong style="color:#9C6A08; font-weight:800;">Where:</strong> [SAMPLE PLACE]<br /><strong style="color:#9C6A08; font-weight:800;">Who to contact:</strong> [SAMPLE CONTACT]</p>
+                        <p class="body-copy" style="font-family:'Source Sans 3', Arial, sans-serif; font-size:19px; line-height:1.75; color:#0D1B2A; margin:0;"><strong style="color:#8A5C00; font-weight:800;">When:</strong> [SAMPLE DATE]<br /><strong style="color:#8A5C00; font-weight:800;">Where:</strong> [SAMPLE PLACE]<br /><strong style="color:#8A5C00; font-weight:800;">Who to contact:</strong> [SAMPLE CONTACT]</p>
                       </td>
                     </tr>
                   </table>
@@ -314,7 +351,7 @@
             </table>
           </td>
         </tr>
-<!-- Seasonal Celebration section (dark navy panel: keep light text). Layout only: replace every [BRACKETED] placeholder with Kathy’s approved copy. Insert inside the host newsletter's main content table. Optional and reorderable. -->
+
         <!-- SEASONAL CELEBRATION -->
         <tr>
           <td align="center" class="section-pad" style="padding:18px 36px;">
@@ -336,14 +373,14 @@
             </table>
           </td>
         </tr>
-<!-- Closing Message section. Place just above the footer. Layout only: replace every [BRACKETED] placeholder with Kathy’s approved copy. Insert inside the host newsletter's main content table. Optional and reorderable. -->
+
         <!-- CLOSING MESSAGE -->
         <tr>
           <td align="center" class="section-pad" style="padding:18px 36px;">
             <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#F4F8F5; border:1px solid #C7D6C1; border-radius:22px;">
               <tr>
                 <td class="inner-pad" style="padding:40px 44px;">
-                  <p style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#9C6A08; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin:0 0 6px 0;">A Closing Word</p>
+                  <p style="font-family:'Inter', Arial, sans-serif; font-size:18px; line-height:1.4; color:#8A5C00; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin:0 0 6px 0;">A Closing Word</p>
                   <h2 class="section-title" style="font-family:'Playfair Display', Georgia, serif; font-size:36px; color:#0D1B2A; line-height:1.12; margin:0 0 20px 0; font-weight:700; letter-spacing:-0.02em;">[SAMPLE] Closing heading</h2>
                   <p class="body-copy" style="font-family:'Source Sans 3', Arial, sans-serif; font-size:19px; line-height:1.75; color:#0D1B2A; margin:0;">[SAMPLE] Sample closing sentences for layout testing only.</p>
                   <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top:22px; border-top:3px solid #D4AF37;">
@@ -359,7 +396,8 @@
             </table>
           </td>
         </tr>
-<!-- Newsletter footer. Extracted from Draft 11; insert inside the host newsletter's main content table. -->
+
+
         <!-- FOOTER -->
         <tr>
           <td align="center" style="padding:0; background-color:#0D1B2A; border-bottom-left-radius:24px; border-bottom-right-radius:24px;">
@@ -422,7 +460,7 @@
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;">
                           <tr>
                             <td align="center" style="border-radius:50px; background-color:#DAA017; padding:0; margin:0 6px;">
-                              <a href="https://stpaulsingersoll.ca/" style="display:inline-block; padding:12px 26px; font-family:'Inter', Arial, sans-serif; font-size:18px; color:#0D1B2A; font-weight:700; text-decoration:none; border-radius:50px;">Visit Website</a>
+                              <a href="https://www.stpaulsingersoll.ca/" style="display:inline-block; padding:12px 26px; font-family:'Inter', Arial, sans-serif; font-size:18px; color:#0D1B2A; font-weight:700; text-decoration:none; border-radius:50px;">Visit Website</a>
                             </td>
                             <td width="12" style="width:12px; font-size:0; line-height:0;">&#160;</td>
                             <td align="center" style="border-radius:50px; background-color:#1C2E42; padding:0; margin:0 6px;">
@@ -439,11 +477,9 @@
           </td>
         </tr>
 
-
       </table>
     </td>
   </tr>
 </table>
 </body>
 </html>
-

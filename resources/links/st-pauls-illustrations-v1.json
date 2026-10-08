@@ -36,7 +36,9 @@
       {
         "key": "church-building",
         "status": "pending approved art from the church; do not generate or substitute",
-        "layoutRole": "Reserved slot in the permanent Greetings Friends block"
+        "layoutRole": "Reserved slot in the permanent Greetings Friends block",
+        "slot": "snippets/greetings-and-mission.html (class illus-slot)",
+        "placeholderText": "[CHURCH ILLUSTRATION: pending approved art]"
       }
     ],
     "shapes": {
@@ -65,6 +67,17 @@
       "source": "svg when practical",
       "email": "png (flat art, transparency) or jpg (photographic)"
     },
-    "naming": "st-pauls-<subject>-<shape>[-v<n>][-email].<ext>, lowercase and hyphens only"
+    "naming": "st-pauls-<subject>-<shape>[-v<n>][-email].<ext>, lowercase and hyphens only",
+    "placements": {
+      "greetingsSlot": {
+        "displayWidth": 220,
+        "mobileMaxWidth": 320
+      },
+      "photoFeature": {
+        "landscape": 640,
+        "square": 420,
+        "portrait": 320
+      }
+    }
   }
 }

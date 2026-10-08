@@ -133,7 +133,7 @@ Use this pattern for major email sections:
 <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td align="center" style="padding:20px 44px;">
-      <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#FDFBF7; border-radius:24px; border:1px solid #E5E7EB;">
+      <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#FAF7F1; border-radius:24px; border:1px solid #E5E0D8;">
         <tr>
           <td style="padding:50px 55px;">
             <!-- Section content here -->
@@ -151,33 +151,9 @@ For every new issue, include simple mobile stacking classes and a small mobile m
 
 ## 5. Brand Style
 
-### 5.1 Core Colors
+### 5.1 Core Colors and 5.2 Typography
 
-Use these colors consistently:
-
-```text
-Deep navy: #0A1C2C
-Dark slate/navy text: #1E293B
-Body slate: #475569
-Soft slate: #64748B
-Gold: #D4AF37
-Dark gold: #B8860B
-Light gold: #F0D98C
-Cream: #FDFBF7
-Soft blue background: #EBF4F8
-White: #FFFFFF
-```
-
-### 5.2 Typography
-
-Preferred font system:
-
-```text
-Headings: Lora, Georgia, serif
-Body: Inter, Arial, sans-serif
-Fallback-safe headings: Georgia, serif
-Fallback-safe body: Arial, sans-serif
-```
+The canonical tokens (fonts, colours, contrast, spacing) are in `newsletter-system/docs/style-guide.md`. They were reconciled against Draft 13. In short: navy `#0D1B2A`, cream `#FAF7F1`, gold `#D4AF37` for bars and buttons, gold text on light backgrounds `#8A5C00` (AA contrast), Lora for lead blocks, Playfair Display for section headings, Source Sans 3 for body, Inter for labels. Do not use the retired `#0A1C2C`, `#B8860B` or `#9C6A08`.
 
 ### 5.3 Visual hierarchy
 
@@ -286,8 +262,8 @@ Use gold/bold emphasis for:
 Examples:
 
 ```html
-<span style="color:#B8860B; font-weight:800;">Christ-centered</span>
-<span style="color:#B8860B; font-weight:800;">Relationships Ministry</span>
+<span style="color:#8A5C00; font-weight:800;">Christ-centered</span>
+<span style="color:#8A5C00; font-weight:800;">Relationships Ministry</span>
 <span style="font-weight:800; color:#1E293B;">serve, welcome, teach, prepare, and encourage</span>
 ```
 

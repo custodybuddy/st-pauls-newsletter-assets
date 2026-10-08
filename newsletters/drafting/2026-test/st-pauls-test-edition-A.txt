@@ -1,5 +1,5 @@
-TEST EDITION — What’s Up, St. Paul’s? — Layout test, not for sending
-====================================================================
+TEST EDITION A — What’s Up, St. Paul’s? — Layout test, not for sending
+======================================================================
 Test edition: layout check only, sample text, not for sending
 
 WHAT’S UP, ST. PAUL’S?
@@ -94,6 +94,6 @@ All are welcome.
 
 © 2026 St. Paul’s Church. All rights reserved.
 
-Visit Website (https://stpaulsingersoll.ca/)
+Visit Website (https://www.stpaulsingersoll.ca/)
 
 Watch on YouTube (https://www.youtube.com/channel/UCCTGFWFR4Z3svvSyZ08rE_g/videos)

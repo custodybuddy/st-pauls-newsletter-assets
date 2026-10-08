@@ -1,5 +1,5 @@
-TEST EDITION — What’s Up, St. Paul’s? — Layout test, not for sending
-====================================================================
+TEST EDITION B — What’s Up, St. Paul’s? — Layout test, not for sending
+======================================================================
 Test edition: layout check only, sample text, not for sending
 
 WHAT’S UP, ST. PAUL’S?
@@ -15,6 +15,10 @@ GREETINGS FRIENDS
 We hope you have enjoyed this lovely summer and were able to find some refreshment in whatever ways you enjoy. And, just like that, fall is upon us!
 
 As we continue our newsletter series, this fall, we would like to focus on another ministry at St. Paul’s — our Compassionate Care Ministry.
+
+[CHURCH ILLUSTRATION: pending approved art]
+
+Replace with the approved illustration. Any shape fits.
 
 Our Mission
 
@@ -102,6 +106,6 @@ All are welcome.
 
 © 2026 St. Paul’s Church. All rights reserved.
 
-Visit Website (https://stpaulsingersoll.ca/)
+Visit Website (https://www.stpaulsingersoll.ca/)
 
 Watch on YouTube (https://www.youtube.com/channel/UCCTGFWFR4Z3svvSyZ08rE_g/videos)

@@ -13,10 +13,11 @@ Read `AGENTS.md` first. It still controls email-safe HTML, brand colours, links 
 
 1. **Approved wording is untouchable.** Copy it exactly. If copy is missing, leave a visible `[NEEDS APPROVED COPY: what]` marker. Never invent announcements, dates, people, quotations, events or figures.
 2. **Never edit** `newsletters/archive/`, `newsletters/drafting/*/older-drafts/`, `templates/`, or any existing draft. Make a new versioned file (`...-DRAFT-N+1.html`).
-3. **Permanent elements** appear in every edition, in this order: hero + masthead, Greetings Friends + Our Mission (with a reserved slot for the approved church illustration), footer. Everything else is optional and reorderable.
-4. **Do not invent or substitute artwork** for the actual church building. The approved illustration will be supplied. Until then, leave `[CHURCH ILLUSTRATION: pending approved art]` and say so in the summary.
-5. **Reuse before creating.** Use existing icons (`brand/resources/icon-map-v4.json`), banners and illustrations (`resources/links/st-pauls-illustrations-v1.json`). Do not use stock graphics or other icon libraries, and do not substitute emoji.
-6. Do not change the 1100px container or the brand tokens. See `newsletter-system/docs/email-width-proposal.md`.
+3. **Permanent elements** appear in every edition, in this order: hero + masthead, Greetings Friends + Our Mission (with its illustration slot), footer. The Ministry Spotlight is a prominent recurring section whose content changes each edition. Everything else is optional and reorderable.
+4. **Church-building illustration is pending.** Keep the `[CHURCH ILLUSTRATION: pending approved art]` placeholder in the Greetings slot. Never draw, generate or substitute a generic church. When approved art arrives, replace only the placeholder table with an `<img>` (see the comment inside the slot). The audit warns on the placeholder in drafts and fails it in `final/`.
+5. **Reuse before creating.** Use existing icons (`brand/resources/icon-map-v4.json`), banners and illustrations (`resources/links/st-pauls-illustrations-v1.json`). No stock graphics, other icon libraries, emoji, or generated imagery.
+6. **Use the canonical tokens** in `newsletter-system/docs/style-guide.md`. Gold text on light backgrounds is `#8A5C00` (`#6D4A00` on sage). Do not reintroduce `#9C6A08`, `#B8860B` or `#0A1C2C`.
+7. Do not change the 1100px container or add the Outlook wrapper. See `newsletter-system/docs/email-width-proposal.md` (awaiting approval).
 
 ## Workflow
 
@@ -28,15 +29,20 @@ Read `AGENTS.md` first. It still controls email-safe HTML, brand colours, links 
    - Do not place two dark panels or two photo sections together.
    - Put time-sensitive items (events, announcements) in the first half.
    - Closing Message goes last, just above the footer.
-5. **Assemble.** Use the `<head>`, styles and outer tables of the latest draft as the shell (the scaffold lacks some classes the snippets use; see `components.md`). Paste each chosen snippet from `snippets/` between the hero and the footer, replacing placeholder wording with the exact copy from `content.md`. Each snippet is a `<tr>` row, so any order works. Pick illustrations from the manifests. See `brand/resources/illustration-specs.md` for portrait, landscape and square use.
+5. **Assemble from the scaffold, not from an old newsletter.**
+   - Copy `newsletter-system/template/html-scaffold.html` to `newsletters/drafting/<year>-<season>/<name>-DRAFT-N.html`. It already has the complete `<head>` styles, the outer tables, and the permanent blocks (hero + masthead, Greetings + Mission with its slot, footer).
+   - Paste each chosen snippet from `snippets/` between the `OPTIONAL SECTIONS` markers, then delete the marker comment.
+   - Set the seasonal hero image, hero alt text, edition badge and `<title>`.
+   - Replace placeholder wording with the exact copy from `content.md`.
+   - Choose illustrations from the manifests. See `brand/resources/illustration-specs.md` for portrait, landscape and square use.
 6. **Plain text.** `node scripts/html-to-text.js <file>.html > <file>.txt`, saved next to the HTML. Read it once to check it flows.
 7. **Validate.**
-   - `node scripts/audit-newsletter-repo.js` (0 errors required).
+   - `node scripts/audit-newsletter-repo.js` (0 errors required). It also checks that every snippet class is defined in the scaffold and that the scaffold matches the permanent snippets.
    - `node scripts/audit-newsletter-repo.js --sections <file>.html` to confirm the section order matches what was approved.
-   - Check the 390px mobile view for horizontal overflow, and confirm every image loads. Playwright is available in this environment.
+   - Check the 1280px and 390px views for horizontal overflow, stacking and image loading. Playwright is available in this environment.
    - Check `newsletter-system/docs/qa-checklist.md`.
    - Compare wording against `content.md`.
-8. **Hand off for approval.** Report: file paths, section order, what is still a placeholder, checks run (and any not run), and open editorial issues such as past dates or unverified figures. A person approves. Only then does the file move to `newsletters/final/<year>-<season>/` (at most one per season).
+8. **Hand off for approval.** Report: file paths, section order, what is still a placeholder (including the church illustration), checks run (and any not run), and open editorial issues such as past dates or unverified figures. Say plainly that no email client was tested. A person approves. Only then does the file move to `newsletters/final/<year>-<season>/` (at most one per season).
 
 ## Output rules (summary)
 

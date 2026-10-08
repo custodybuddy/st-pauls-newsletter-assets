@@ -272,8 +272,9 @@ function checkTrackedJunk() {
 function checkHtmlFile(filePath) {
   const file = relative(filePath);
   const content = fs.readFileSync(filePath, 'utf8');
-  const imageTags = content.match(/<img\b[^>]*>/gi) || [];
-  const anchorTags = content.match(/<a\b[^>]*>/gi) || [];
+  const visible = content.replace(/<!--[\s\S]*?-->/g, '');
+  const imageTags = visible.match(/<img\b[^>]*>/gi) || [];
+  const anchorTags = visible.match(/<a\b[^>]*>/gi) || [];
   let missingAlt = 0;
   let missingWidth = 0;
   let relativeImages = 0;
@@ -363,6 +364,61 @@ function checkPermanentElements() {
   });
 }
 
+const SCAFFOLD = 'newsletter-system/template/html-scaffold.html';
+const PERMANENT_SNIPPETS = ['newsletter-hero-masthead.html', 'greetings-and-mission.html', 'newsletter-footer.html'];
+const DRAFT_PLACEHOLDERS = /\[(?:CHURCH ILLUSTRATION|NEEDS APPROVED COPY)/;
+const FINAL_PLACEHOLDERS = /\[(?:CHURCH ILLUSTRATION|NEEDS APPROVED COPY|SAMPLE)/;
+
+function normalizeMarkup(html) {
+  return html.replace(/<!--[\s\S]*?-->/g, '').replace(/\s+/g, ' ').replace(/> </g, '><').trim();
+}
+
+function checkScaffold() {
+  if (!fs.existsSync(absolute(SCAFFOLD))) return;
+  const scaffold = read(SCAFFOLD);
+  const styleBlock = (scaffold.match(/<style\b[^>]*>([\s\S]*?)<\/style>/i) || [])[1] || '';
+  const defined = new Set();
+  styleBlock.replace(/\.([a-z][\w-]*)/gi, function (m, name) { defined.add(name); return m; });
+
+  const used = {};
+  const sources = listFiles(SNIPPET_DIRECTORY, '.html').map(relative).concat([SCAFFOLD]);
+  sources.forEach(function (file) {
+    read(file).replace(/\bclass=["']([^"']*)["']/gi, function (m, value) {
+      value.split(/\s+/).filter(Boolean).forEach(function (name) {
+        if (!defined.has(name)) used[name] = used[name] || file;
+      });
+      return m;
+    });
+  });
+  Object.keys(used).forEach(function (name) {
+    add('error', 'undefined-class', used[name], 'Class "' + name + '" is used but not defined in the scaffold styles.');
+  });
+
+  const normalizedScaffold = normalizeMarkup(scaffold);
+  PERMANENT_SNIPPETS.forEach(function (name) {
+    const file = SNIPPET_DIRECTORY + '/' + name;
+    if (!fs.existsSync(absolute(file))) return;
+    if (!normalizedScaffold.includes(normalizeMarkup(read(file)))) {
+      add('error', 'scaffold-out-of-sync', SCAFFOLD, 'Permanent block differs from ' + file + '. Update both together.');
+    }
+  });
+}
+
+function checkPlaceholders() {
+  listFiles('newsletters/final', '.html').forEach(function (filePath) {
+    if (FINAL_PLACEHOLDERS.test(fs.readFileSync(filePath, 'utf8'))) {
+      add('error', 'unresolved-placeholder', relative(filePath), 'Final issue still contains a placeholder (church illustration, missing copy, or sample text).');
+    }
+  });
+  listFiles('newsletters/drafting', '.html').forEach(function (filePath) {
+    const file = relative(filePath);
+    if (/older-drafts\/|\/\d{4}-test\//.test(file)) return;
+    if (DRAFT_PLACEHOLDERS.test(fs.readFileSync(filePath, 'utf8'))) {
+      add('warning', 'unresolved-placeholder', file, 'Draft still contains a placeholder (church illustration or missing copy).');
+    }
+  });
+}
+
 function checkHtml() {
   HTML_DIRECTORIES.forEach(function (directory) {
     listFiles(directory, '.html').forEach(checkHtmlFile);
@@ -438,7 +494,9 @@ checkCanonicalIcons();
 checkTrackedJunk();
 checkHtml();
 checkSnippets();
+checkScaffold();
 checkPermanentElements();
+checkPlaceholders();
 checkFinalIssues();
 checkRepoUrls();
 

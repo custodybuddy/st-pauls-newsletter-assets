@@ -2,25 +2,51 @@
 
 This is a quick-reference companion to `docs/st-pauls-comprehensive-newsletter-template.md`. The comprehensive template mirrors the current seasonal Google Doc and controls modular structure, editorial guidance, accessibility, and production workflow.
 
-## Brand Colors
+## Design Tokens (canonical)
 
-- Deep navy: `#0A1C2C`
-- Dark slate/navy text: `#1E293B`
-- Body slate: `#475569`
-- Soft slate: `#64748B`
-- Gold: `#D4AF37`
-- Dark gold: `#B8860B`
-- Light gold: `#F0D98C`
-- Cream: `#FDFBF7`
-- Soft blue background: `#EBF4F8`
-- White: `#FFFFFF`
+**Source:** reconciled on 2026-10-08 against Draft 13, the current visual reference. These values replace the earlier `#0A1C2C`, `#1E293B`, `#B8860B`, `#9C6A08`, `#FDFBF7`, `#64748B` and `#6D7C93`-as-text values. Reusable snippets and `newsletter-system/template/html-scaffold.html` use only these tokens.
 
-## Typography
+### Fonts
 
-- Headings: `Lora, Georgia, serif`
-- Body: `Inter, Arial, sans-serif`
-- Fallback-safe headings: `Georgia, serif`
-- Fallback-safe body: `Arial, sans-serif`
+| Role | Stack | Used for |
+|---|---|---|
+| Lead serif | `'Lora', Georgia, serif` | Masthead title, Greetings Friends heading, Our Mission quote, Ministry Spotlight title |
+| Section serif | `'Playfair Display', Georgia, serif` | Supporting section headings and card titles |
+| Body | `'Source Sans 3', Arial, sans-serif` | Paragraphs, lists, captions |
+| Labels and UI | `'Inter', Arial, sans-serif` | Small uppercase labels, buttons, badges |
+
+Web fonts are progressive enhancement. Every stack ends in a system fallback (Georgia or Arial), and no layout depends on the web font loading.
+
+### Colours
+
+| Token | Value | Use | Contrast |
+|---|---|---|---|
+| Navy | `#0D1B2A` | Body and heading text, masthead, dark panels, footer | 17.4:1 on white |
+| Cream | `#FAF7F1` | Page and soft card background | |
+| White | `#FFFFFF` | Cards | |
+| Border | `#E5E0D8` | Card outlines | |
+| Soft blue | `#EBF4F8` (border `#D7E6EC`) | Greetings card | |
+| Sage | `#C7D6C1` | Gratitude panel, accents | |
+| Teal | `#007A8A` | Accent bars, event dates, small labels | 5.1:1 on white, 4.7:1 on cream |
+| Gold | `#D4AF37` | Bars, borders, rules, buttons, edition badge (not for text on light backgrounds) | |
+| Gold on dark | `#DAA017` | Labels and emphasis on navy panels | 7.5:1 on navy |
+| Light gold | `#F0D98C` | Rule accents, accent text on navy | |
+| **Gold text on light** | **`#8A5C00`** | Gold labels and emphasis on white, cream, soft blue and tinted cards | 5.8:1 on white, 5.4:1 on cream, 5.2:1 on soft blue (AA) |
+| **Gold text on sage** | **`#6D4A00`** | Gold label on the sage Gratitude panel only | 5.3:1 on sage (AA) |
+| Secondary text | `#475569` | Captions, secondary copy | 7.6:1 on white |
+| Muted text | `#56657B` | Small figure notes | 5.9:1 on white |
+| Chart slate | `#6D7C93` | Chart bars and strokes only, never text | |
+| Navy border | `#1C2E42` | Outline on navy panels | |
+| On navy | `#FFFFFF`, `#FAF7F1`, `#E2E8F0` | Text on navy | |
+
+Rules: gold text on any light surface uses `#8A5C00` (or `#6D4A00` on sage), never `#D4AF37`, `#DAA017`, `#9C6A08` or `#B8860B`. Do not use dark navy text on navy.
+
+### Spacing and shape
+
+- Container: fluid, `max-width:1100px` (see `email-width-proposal.md`; unchanged).
+- Section rows: `padding:18px 36px` (mobile `20px 12px`). Card padding `36px 40px` (mobile `26px 18px`).
+- Cards: `20–22px` radius; buttons `12px` radius or pill; small inner cards `12–16px`.
+- Body copy: `19px` / `1.75` (mobile `18px` / `1.7`). Labels `18px` bold uppercase, letter-spacing `0.1em`. Section titles `36px` (mobile `28px`).
 
 ## Hierarchy Pattern
 

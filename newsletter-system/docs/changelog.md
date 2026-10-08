@@ -1,5 +1,15 @@
 # Newsletter Change Log
 
+## 2026-10-08 (final refinement of the newsletter system)
+
+- Rebuilt `newsletter-system/template/html-scaffold.html` from Draft 13's `<head>` styles plus the permanent snippets. It now defines every class the snippets use (`split-col`, `heading-icon-cell`, `event-date`, `event-copy`, `masthead-cell`, `illus-slot` and others) and has OPTIONAL SECTIONS markers for assembly.
+- Reconciled brand tokens against Draft 13. Canonical table is in `newsletter-system/docs/style-guide.md`: navy `#0D1B2A`, cream `#FAF7F1`, Lora for lead blocks, Playfair Display for section headings, Source Sans 3 body, Inter labels. Gold text on light backgrounds is now `#8A5C00` (`#6D4A00` on sage); muted text `#56657B`. Retired `#0A1C2C`, `#1E293B`, `#B8860B`, `#9C6A08` and `#FDFBF7` in snippets and docs.
+- Re-extracted the hero + masthead, Greetings + Mission, Ministry Spotlight and Focus on Finances snippets from Draft 13. Removed the flex/absolute badge and the fixed `width="1100px"` table that overflowed on mobile (`did-you-know.html`), the invalid `max width` attribute, and an undefined `mobile-padding` class.
+- Added a replaceable illustration slot beside the Greetings text. It keeps the `[CHURCH ILLUSTRATION: pending approved art]` placeholder; nothing was substituted.
+- Footer website link now uses `https://www.stpaulsingersoll.ca/`.
+- Audit: undefined-class check, scaffold-sync check, placeholder checks for drafts and final issues, comment-aware image and link scans.
+- Draft 13 is unchanged.
+
 ## 2026-10-08 (St. Paul's newsletter skill and assembly workflow)
 
 - Added the project skill `.claude/skills/st-pauls-newsletter/` (`SKILL.md`, `components.md`, `ATTRIBUTION.md`). It adapts ideas from the MIT-licensed upstream `email-newsletter` skill; nothing was copied or installed.
