@@ -1,7 +1,7 @@
 # Older Fall 2026 drafts (history only)
 
-Drafts 1–11 from the earlier working folder. Do not edit them or copy markup from them.
+Drafts 1–12 from earlier rounds. `DRAFT-11-from-drafting` is the Draft 11 that was in `drafting/`; `DRAFT-11` is the earlier working copy. Do not edit them or copy markup from them.
 
 - Drafts 8, 9, and 10 have unbalanced `<td>` tags.
 - These drafts use the removed `/assets/` image URLs, so images will not load.
-- Current drafts are one level up in `newsletters/drafting/2026-fall/`.
+- The current draft is one level up in `newsletters/drafting/2026-fall/`.

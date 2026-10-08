@@ -1,5 +1,9 @@
 # Newsletter Change Log
 
+## 2026-10-08 (superseded drafts moved)
+
+- Moved Drafts 11 and 12 from `newsletters/drafting/2026-fall/` to `older-drafts/` (superseded by Draft 13; both used removed `/assets/` image URLs). Draft 11 was renamed `...DRAFT-11-from-drafting.html` to avoid a name clash.
+
 ## 2026-10-08 (newsletters reorganized by season)
 
 - Reduced `newsletters/` to three folders organized by season: `drafting/`, `final/`, and `archive/`. Removed `approved/`, `pending-approval/`, and `working/`.
