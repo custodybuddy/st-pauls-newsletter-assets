@@ -2,6 +2,13 @@
 
 Use this file to track production changes by issue and version.
 
+## 2026-10-08 (Fall 2026 Draft 14, pending-approval folder)
+
+- Added `newsletters/drafting/st-pauls-fall-2026-newsletter-DRAFT-14.html`, a copy of Draft 13 with one change: a discreet "View in browser" link in the footer, as required by the agent guide (section 11.3). Draft 13 and all other issue files are unchanged.
+- The link uses the `[VIEW_IN_BROWSER_URL]` placeholder. Replace it with the sending platform's exact hosted-email merge tag and verify it in a delivered test email before sending.
+- Created `newsletters/pending-approval/` (with a README) so the documented one-candidate approval workflow has its folder.
+- Editorial items still open from Draft 13: the September 20 event has passed, only one event is listed, and the July 31 finance figures need review.
+
 ## 2026-08-31 (seasonal modular Google Doc template)
 
 - Reviewed `St. Paul’s — Seasonal Newsletter Drafting Template (Modular)` and made it the current editorial drafting source.
