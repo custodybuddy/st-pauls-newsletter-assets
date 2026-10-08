@@ -1,0 +1,393 @@
+<meta charset="utf-8" />
+<title>St. Paul’s Component Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,600;0,700;1,500&display=swap" />
+<!--
+  BROWSER-ONLY REVIEW PAGE (not an email). Uses JavaScript and CSS Grid on purpose.
+  It loads the real component files from newsletter-system/components/, fills them with
+  sample values, and renders each one inside the real document shell at desktop (1100px)
+  and mobile (390px) widths. Editing a component file changes the gallery automatically.
+  Preview locally from the repository root:  python3 -m http.server 8000
+  then open  http://localhost:8000/newsletter-system/gallery/
+  Sample text = verbatim excerpts from Fall 2026 Draft 14, used for layout demonstration only.
+-->
+<style>
+  /* Layout: a quiet review console — header, sticky toolbar, then one panel per component with desktop + phone frames side by side. */
+  :root {
+    --bg: #F3F6F8;
+    --surface: #FFFFFF;
+    --ink: #0A1C2C;
+    --muted: #55657A;
+    --line: #DCE3EA;
+    --gold: #B8860B;
+    --gold-soft: #F0D98C;
+    --chip: #EBF4F8;
+    --mark: #FDE68A;
+    --font-display: 'Lora', Georgia, 'Times New Roman', serif;
+    --font-body: 'Inter', Arial, Helvetica, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #08131E; --surface: #0F1F2F; --ink: #EEF2F6; --muted: #A3B1C2; --line: #22364A;
+      --gold: #E3C15A; --gold-soft: #F0D98C; --chip: #15293C; --mark: #7A5C08; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #08131E; --surface: #0F1F2F; --ink: #EEF2F6; --muted: #A3B1C2; --line: #22364A;
+    --gold: #E3C15A; --gold-soft: #F0D98C; --chip: #15293C; --mark: #7A5C08; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.55; }
+  .wrap { max-width: 1680px; margin: 0 auto; padding-inline: 24px; padding-block: 0 64px; }
+  header.top { padding-block: 40px 24px; display: grid; gap: 10px; }
+  .eyebrow { font-size: 12px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); }
+  h1 { font-family: var(--font-display); font-size: clamp(30px, 4vw, 44px); line-height: 1.1; margin: 0; text-wrap: balance; }
+  .intro { max-width: 72ch; color: var(--muted); margin: 0; }
+  .intro code, .src code { font-size: 13px; background: var(--chip); padding: 1px 6px; border-radius: 6px; color: var(--ink); }
+  .toolbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); padding-block: 12px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+  .nav, .views { display: flex; flex-wrap: wrap; gap: 6px; }
+  .nav a, .views button { font: 600 13px/1 var(--font-body); color: var(--ink); background: var(--chip); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; text-decoration: none; cursor: pointer; }
+  .views button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .nav a:focus-visible, .views button:focus-visible, .src a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  section.group { padding-top: 48px; scroll-margin-top: 72px; }
+  section.group > h2 { font-family: var(--font-display); font-size: 28px; margin: 0 0 4px; }
+  section.group > p { margin: 0 0 20px; color: var(--muted); max-width: 72ch; }
+  article.item { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; margin-bottom: 28px; display: grid; gap: 16px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: baseline; justify-content: space-between; }
+  .meta h3 { font-family: var(--font-display); font-size: 21px; margin: 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: var(--chip); color: var(--ink); }
+  .tag.art { background: var(--gold-soft); color: #0A1C2C; }
+  .notes { margin: 0; color: var(--muted); max-width: 90ch; }
+  .src { font-size: 13px; color: var(--muted); }
+  .src a { color: var(--ink); }
+  .previews { display: grid; grid-template-columns: minmax(0, 1fr) 406px; gap: 24px; align-items: start; }
+  body.view-desktop .previews { grid-template-columns: minmax(0, 1fr); }
+  body.view-desktop .frame.mobile, body.view-mobile .frame.desktop { display: none; }
+  body.view-mobile .previews { grid-template-columns: 406px; justify-content: center; }
+  .frame { min-width: 0; display: grid; gap: 8px; }
+  .frame-label { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .holder { overflow: hidden; border-radius: 10px; border: 1px solid var(--line); background: #EBF4F8; max-width: 100%; }
+  .frame.mobile .holder { width: 406px; max-width: 100%; border-radius: 28px; border-width: 8px; border-color: #1B2B3B; }
+  iframe { border: 0; display: block; transform-origin: 0 0; background: #FFFFFF; }
+  .error { color: #B42318; font-weight: 600; }
+  @media (max-width: 1100px) { .previews { grid-template-columns: minmax(0, 1fr); } .frame.mobile { justify-self: center; } }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <span class="eyebrow">What’s Up, St. Paul’s? · Component system v1</span>
+    <h1>St. Paul’s Component Gallery</h1>
+    <p class="intro">Every preview below is rendered from the real source file in <code>newsletter-system/components/</code> inside the real document shell, at desktop width (1100px) and phone width (390px). Sample text is a verbatim excerpt from the Fall 2026 Draft 14, used only to show layout. CTA buttons use labels from the standard list. Draft 15 will include one only where the approved copy calls for it. Yellow highlights mark any placeholder without a sample value.</p>
+  </header>
+
+  <div class="toolbar">
+    <nav class="nav" aria-label="Component groups" id="nav"></nav>
+    <div class="views" role="group" aria-label="Preview width">
+      <button type="button" id="view-both" data-view="both" aria-pressed="true">Desktop + mobile</button>
+      <button type="button" id="view-desktop" data-view="desktop" aria-pressed="false">Desktop</button>
+      <button type="button" id="view-mobile" data-view="mobile" aria-pressed="false">Mobile</button>
+    </div>
+  </div>
+
+  <main id="gallery"></main>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  // Real image URLs use the GitHub Pages base. For previews they are rewritten to the
+  // repository root this page is served from, so new assets show before deployment.
+  var PAGES_BASE = 'https://custodybuddy.github.io/st-pauls-newsletter-assets/';
+  // Repository root: works when served from the repository (…/newsletter-system/gallery/) and when the
+  // gallery is published on its own with the component and asset files beside it.
+  var here = location.href.split('#')[0].split('?')[0];
+  var at = here.indexOf('/newsletter-system/gallery/');
+  var ROOT = at > -1 ? here.slice(0, at + 1) : new URL('./', here).href;
+  var COMPONENTS = ROOT + 'newsletter-system/components/';
+  var A = PAGES_BASE + 'brand/assets/';
+  var ILL = A + 'illustrations/email/';
+
+  var gold = function (t) { return '<span style="color:#B8860B; font-weight:800;">' + t + '</span>'; };
+  var goldDark = function (t) { return '<span style="color:#F0D98C; font-weight:700;">' + t + '</span>'; };
+
+  // Verbatim excerpts from newsletters/drafting/2026-fall/st-pauls-fall-2026-newsletter-DRAFT-14.html
+  var T = {
+    title: 'What’s Up, St. Paul’s?',
+    tagline: 'Connecting our church family',
+    edition: 'Fall 2026 Edition',
+    greet1: 'We hope you have enjoyed this lovely summer and were able to find some refreshment in whatever ways you enjoy. And, just like that, fall is upon us!',
+    greet2: 'As we continue our newsletter series, this fall, we would like to focus on another ministry at St. Paul’s — our ' + gold('Compassionate Care Ministry') + '.',
+    mission: 'We are a ' + goldDark('Christ-centered') + ', worshipping community serving and leading people to ' + goldDark('Jesus') + '.',
+    vision6: '“Hurting people find hope and healing in the compassion of Jesus.”',
+    spot1: 'In our Vision Statements, or the strategies we want to use to fulfill our Mission, #6 says, “Hurting people find hope and healing in the compassion of Jesus”. Throughout the Bible, we are called to care for one another. So, the focus of this ministry is to discern how we can care for all ages in our congregation and community, using the spiritual gifts that God has given us.',
+    spot2: 'We know so many people who are struggling to find hope today, especially when the challenges come. Jesus is God’s compassionate response to our helpless situation in life. We are invited to follow Jesus and let Jesus display his compassion in us to a hurting world.',
+    samaritan: 'Jesus told the story of the man, beaten by robbers and left on the road, who was ignored and passed by a priest and a Levite. It was only the Samaritan, a bitter rival of the Jews, who not only bandaged his wounds, but paid for his care. When Jesus asked the expert in the law, “Which of these three do you think was a neighbour to the man who fell into the hands of the robbers?” The expert in the law replied, “The one who had mercy on him”. Jesus then told him, “Go and do likewise”.',
+    mercy1: 'Over the past few years, we have learned that God has given some of us the spiritual gift of ‘mercy’.',
+    mercy2: 'Individuals with this gift just seem to know how to reach out to someone, letting them know they care. This God-given gift comes naturally to them.',
+    mercyQuote: '“the divine enablement to cheerfully and practically help those who are suffering or in need, having compassion that is moved to action”',
+    team: 'If you don’t yet know your spiritual gifts, but have a heart to care for others, the ' + goldDark('Compassionate Care Team') + ' would love to hear from you, as we seek to grow this team.',
+    shawl: 'For many years, a group of faithful knitters and crocheters have created beautiful prayer shawls that are taken to those who are facing a trial. We have heard so many messages of gratitude for these beautiful gifts of care. We want to continue to offer this ministry.',
+    prayer: 'We have a Prayer Team that prays for those individuals and situations that are raised during our weekly worship service. They also pray, with sensitivity and confidentiality, for those concerns that Pastor Al may become aware of during the week. We believe in the power of prayer and have seen answers to these prayers.',
+    thanks1: gold('Don Rumble &amp; Nancy Matthews') + ' who work so hard each summer to plant and care for the beautiful gardens around St. Paul’s. Your creative efforts are a gift to so many of us, as well as those who are simply passing by our church.',
+    thanks2: 'for their leadership in covering for Pastor Al during his vacation and time away at other congregations. We are blessed to have you in our midst.'
+  };
+
+  var ART = {
+    banner: { url: A + 'banners/st-pauls-fall-hero-1100px.png', alt: 'St. Paul’s Fall 2026 seasonal newsletter banner' },
+    panorama: { url: ILL + 'fall-2026-panorama-1100x367.jpg', alt: 'Autumn meadow at sunset with a family walking hand in hand toward a wooden cross' },
+    family: { url: ILL + 'fall-2026-family-landscape-652x367.jpg', alt: 'A family walking hand in hand through an autumn meadow toward a cross' },
+    cross: { url: ILL + 'fall-2026-cross-square-367.jpg', alt: 'A wooden cross in an autumn meadow beneath golden leaves' },
+    mission: { url: ILL + 'our-mission-card-portrait-640x853.jpg', alt: 'Our Mission: We are a Christ-centered, worshipping community serving and leading people to Jesus.' },
+    community: { url: ILL + 'our-mission-community-landscape-540x337.jpg', alt: 'Illustration of a church community gathered beneath a gold cross and arch' },
+    wheel: { url: ILL + 'ministry-wheel-compassionate-care-square-880.jpg', alt: 'St. Paul’s ministry wheel showing Compassionate Care Ministry' }
+  };
+  var contact = 'https://www.stpaulsingersoll.ca/contact-us';
+
+  var GROUPS = [
+    { id: 'masthead', title: 'Masthead and hero', blurb: 'Three openings that keep the established banner, brand mark, title and edition. Choose one per issue.', items: [
+      { file: 'masthead/masthead-classic.html', name: 'Classic: full-bleed banner + navy masthead', art: 'Banner 3:1', tags: ['Core'],
+        notes: 'The established opening with a bigger 64px title, centred brand mark, gold rule and edition pill.',
+        values: { banner_url: ART.banner.url, banner_alt: ART.banner.alt, tagline: T.tagline, newsletter_title: T.title, edition: T.edition } },
+      { file: 'masthead/masthead-split.html', name: 'Split: title stack + framed square art', art: 'Square', tags: ['Core'],
+        notes: 'Navy masthead with large square seasonal art in a gold frame. On a phone, the art stacks above the title. The demo art is a 367px crop, so production art should be 800px square.',
+        values: { tagline: T.tagline, newsletter_title: T.title, edition: T.edition, art_url: ART.cross.url, art_alt: ART.cross.alt }, omit: ['intro_line'] },
+      { file: 'masthead/masthead-framed.html', name: 'Framed: light title over an inset banner', art: 'Banner 3:1', tags: ['Core'],
+        notes: 'A softer cream opening. The banner sits inside a navy frame with a gold inner rule.',
+        values: { tagline: T.tagline, newsletter_title: T.title, edition: T.edition, banner_url: ART.banner.url, banner_alt: ART.banner.alt } }
+    ]},
+    { id: 'greetings', title: 'Greetings Friends', blurb: 'Core Section. Both variants keep the Pastoral Note label, the heading and the approved paragraphs. Only the layout changes.', items: [
+      { file: 'greetings/greetings-mission-portrait.html', name: 'Greetings + Our Mission portrait (large)', art: 'Portrait 3:4', tags: ['Core'],
+        notes: 'Replaces the 64/36 card with the 72px mission icon. The Our Mission card now shows at 400px wide (533px tall) beside the greeting. The first approved paragraph is set as an italic lead.',
+        values: { eyebrow: 'Pastoral Note', heading: 'Greetings Friends', greeting_lead: T.greet1, greeting_paragraph: T.greet2, art_url: ART.mission.url, art_alt: ART.mission.alt }, omit: ['signoff'] },
+      { file: 'greetings/greetings-landscape-letter.html', name: 'Greetings as a letter under wide seasonal art', art: 'Landscape 3:1', tags: ['Core'],
+        notes: 'Wide illustration across the top of a cream letter card. Pair with the standalone Our Mission band below.',
+        values: { art_url: ART.panorama.url, art_alt: ART.panorama.alt, eyebrow: 'Pastoral Note', heading: 'Greetings Friends', greeting_lead: T.greet1, greeting_paragraph: T.greet2 }, omit: ['signoff'] }
+    ]},
+    { id: 'mission', title: 'Our Mission', blurb: 'Core Section. A standalone band built around the portrait mission card.', items: [
+      { file: 'mission/our-mission-portrait.html', name: 'Our Mission: portrait card on navy', art: 'Portrait 3:4', tags: ['Core'],
+        notes: 'The portrait card shows at 360px, with the mission statement set in large Lora italic and an optional callout for a linked vision statement.',
+        values: { art_url: ART.mission.url, art_alt: ART.mission.alt, eyebrow: 'Our Mission', mission_statement: T.mission, callout_label: 'Vision Statement #6', callout_text: T.vision6 } }
+    ]},
+    { id: 'spotlight', title: 'Ministry Spotlight', blurb: 'Core Section. The illustration is now a lead element instead of a 260px sidebar graphic.', items: [
+      { file: 'spotlight/ministry-spotlight-feature.html', name: 'Feature: navy title band + large square art', art: 'Square 1:1', tags: ['Core'],
+        notes: 'Centred navy title band (52px), then 410px art in a white mat beside the story, with a pull quote and a button.',
+        values: { eyebrow: 'St. Paul’s Ministry Spotlight', ministry_name: 'Compassionate Care Ministry', ministry_tagline: 'Sharing Compassion', art_url: ART.wheel.url, art_alt: ART.wheel.alt, art_caption: 'One Christ-centred community', story_lead: T.spot1, story_paragraph: T.spot2, quote_label: 'Vision Statement #6', quote_text: T.vision6, cta_url: contact, cta_label: 'Contact Us' } },
+      { file: 'spotlight/ministry-spotlight-showcase.html', name: 'Showcase: artwork first, two-column story, quote band', art: 'Square 1:1', tags: ['Core'],
+        notes: 'For a long story or one strong image. 520px art in a soft-blue panel, approved paragraphs split across two columns in their original order, then a navy quote band.',
+        values: { eyebrow: 'St. Paul’s Ministry Spotlight', ministry_name: 'Compassionate Care Ministry', ministry_tagline: 'Sharing Compassion', art_url: ART.wheel.url, art_alt: ART.wheel.alt, story_column_1: T.spot1, story_column_2: T.spot2, quote_text: T.vision6.replace(/[“”]/g, ''), quote_source: 'Vision Statement #6' } }
+    ]},
+    { id: 'layouts', title: 'Illustration layouts', blurb: 'Optional Story Modules, one per artwork shape. Each one states its minimum source size in the file header.', items: [
+      { file: 'features/feature-portrait-side.html', name: 'Portrait: tall art beside a story', art: 'Portrait 3:4', tags: ['Module'],
+        notes: 'Portrait art on the right at 340px, with a larger heading, lead paragraph and ruled pull quote.',
+        values: { art_url: ART.mission.url, art_alt: ART.mission.alt, eyebrow: 'Sharing Compassion', heading: 'Compassionate Care Ministry', story_lead: T.mercy1, story_paragraph: T.mercy2, quote_text: T.mercyQuote } },
+      { file: 'features/feature-landscape-top.html', name: 'Landscape: wide art across the top of a card', art: 'Landscape 3:1–3:2', tags: ['Module'],
+        notes: 'Full card-width art (1002px), heading and button on one row, story below.',
+        values: { art_url: ART.panorama.url, art_alt: ART.panorama.alt, eyebrow: 'Gratitude &amp; Appreciation', heading: 'We Are So Thankful For', story_paragraph: T.thanks1 }, omit: ['cta'] },
+      { file: 'features/feature-split-image-left.html', name: 'Split, art left', art: 'Square or landscape', tags: ['Module'],
+        notes: 'Half-width art (478px). Alternate with “Split, art right” for a zig-zag rhythm.',
+        values: { art_url: ART.community.url, art_alt: ART.community.alt, eyebrow: 'Sharing Compassion', heading: 'In the Parable of The Good Samaritan,', story_paragraph: T.samaritan }, omit: ['cta'] },
+      { file: 'features/feature-split-image-right.html', name: 'Split, art right', art: 'Square or landscape', tags: ['Module'],
+        notes: 'Mirror of the left version. On a phone the art still comes first.',
+        values: { art_url: ART.family.url, art_alt: ART.family.alt, eyebrow: 'Did You Know?', heading: 'The Power of Prayer', story_paragraph: T.prayer, cta_url: contact, cta_label: 'Request Prayer' } },
+      { file: 'features/feature-square-badge.html', name: 'Square: circular art badge', art: 'Square 1:1', tags: ['Module'],
+        notes: 'Centred card for short items, with 280px circular art and a gold ring. Outlook shows it as a square.',
+        values: { art_url: ART.cross.url, art_alt: ART.cross.alt, eyebrow: 'Did You Know?', heading: 'Our Prayer Shawl Ministry', story_paragraph: T.shawl, cta_url: contact, cta_label: 'Contact Us' } }
+    ]},
+    { id: 'cards', title: 'Illustrated background cards', blurb: 'Navy and cream cards that hold an illustration and text. Dark cards use light text only.', items: [
+      { file: 'cards/card-navy-illustrated.html', name: 'Navy illustrated card', art: 'Square 1:1', tags: ['Card'],
+        notes: 'Navy card with a gold top rule, 340px square art and a gold button.',
+        values: { art_url: ART.wheel.url, art_alt: ART.wheel.alt, eyebrow: 'Sharing Compassion', heading: 'Compassionate Care Team', story_paragraph: T.team, cta_url: contact, cta_label: 'Contact Us' } },
+      { file: 'cards/card-cream-illustrated.html', name: 'Cream illustrated card', art: 'Landscape 3:2–16:9', tags: ['Card'],
+        notes: 'Cream card with a light-gold border and landscape art on the right.',
+        values: { art_url: ART.community.url, art_alt: ART.community.alt, eyebrow: 'We Are So Thankful For', heading: 'Rev. Susan McIlveen, Rev. Bill Vanderstelt &amp; Rev. Heather Vanderstelt', story_paragraph: T.thanks2 }, omit: ['cta'] },
+      { file: 'cards/card-pair.html', name: 'Card pair: navy + cream', art: 'Landscape ×2', tags: ['Card'],
+        notes: 'Two equal-height cards for related short items. They stack on a phone.',
+        values: { left_art_url: ART.family.url, left_art_alt: ART.family.alt, left_eyebrow: 'Did You Know?', left_heading: 'Our Prayer Shawl Ministry', left_paragraph: T.shawl,
+          right_art_url: ART.community.url, right_art_alt: ART.community.alt, right_eyebrow: 'Did You Know?', right_heading: 'The Power of Prayer', right_paragraph: T.prayer } }
+    ]},
+    { id: 'primitives', title: 'Building blocks', blurb: 'Reference copies of the pieces every component uses.', items: [
+      { file: 'primitives/section-header.html', name: 'Section header: light and dark', art: 'None', tags: ['Primitive'],
+        notes: 'Gold rule, uppercase label, serif heading, optional italic subtitle.',
+        values: { eyebrow: 'Did You Know?', heading: 'Our Prayer Shawl Ministry', subtitle: 'Sharing Compassion' } },
+      { file: 'primitives/buttons-and-dividers.html', name: 'Buttons and divider', art: 'None', tags: ['Primitive'],
+        notes: 'Bulletproof table-cell buttons (navy, outline, gold) and the gold ornament divider.',
+        values: { cta_url: contact, cta_label: 'Contact Us' } }
+    ]},
+    { id: 'sequence', title: 'Sequence demo', blurb: 'Several components stacked in one shell to show the rhythm of a full issue. This is not Draft 15.', items: [
+      { sequence: [
+          { file: 'masthead/masthead-classic.html', ref: ['masthead', 0] },
+          { file: 'greetings/greetings-mission-portrait.html', ref: ['greetings', 0] },
+          { file: 'spotlight/ministry-spotlight-feature.html', ref: ['spotlight', 0] },
+          { file: 'cards/card-pair.html', ref: ['cards', 2] }
+        ], name: 'Masthead → Greetings → Spotlight → Did You Know pair', art: 'Mixed', tags: ['Demo'],
+        notes: 'Shows how alternating navy, cream and white bands create hierarchy between sections.' }
+    ]}
+  ];
+
+  var cache = {};
+  function load(path) {
+    if (!cache[path]) {
+      cache[path] = fetch(path).then(function (r) {
+        if (!r.ok) throw new Error(path + ' returned ' + r.status);
+        return r.text();
+      });
+    }
+    return cache[path];
+  }
+
+  function escapeAttr(s) { return String(s).replace(/"/g, '&quot;'); }
+
+  function fill(html, values, omit) {
+    (omit || []).forEach(function (name) {
+      html = html.replace(new RegExp('<!-- OPTIONAL:' + name + ' -->[\\s\\S]*?<!-- /OPTIONAL:' + name + ' -->', 'g'), '');
+    });
+    html = html.replace(/<!--[\s\S]*?-->/, function (first) { return first.indexOf('COMPONENT:') > -1 ? '' : first; });
+    html = html.replace(/(\w+)="\{\{(\w+)\}\}"/g, function (m, attr, key) {
+      return attr + '="' + escapeAttr(key in values ? values[key] : '') + '"';
+    });
+    html = html.replace(/\{\{(\w+)\}\}/g, function (m, key) {
+      return key in values ? values[key] : '<mark style="background:#FDE68A; color:#0A1C2C;">[' + key + ']</mark>';
+    });
+    return html.split(PAGES_BASE).join(ROOT);
+  }
+
+  var GALLERY_CSS = '<style>.c-outer{padding:0 !important}.c-main{border-radius:0 !important}body{background:#FFFFFF !important}</style>';
+
+  function buildDoc(shell, rows) {
+    var parts = shell.split('<!-- COMPONENTS START -->');
+    var tail = parts[1].split('<!-- COMPONENTS END -->')[1];
+    var head = fill(parts[0], { email_title: 'Component preview', preheader: '' }).replace('</head>', GALLERY_CSS + '</head>');
+    return head + rows + fill(tail, {});
+  }
+
+  function mount(frameEl, doc, width) {
+    var holder = document.createElement('div');
+    holder.className = 'holder';
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('title', frameEl.dataset.title);
+    iframe.setAttribute('scrolling', 'no');
+    iframe.style.width = width + 'px';
+    iframe.style.height = '600px';
+    iframe.srcdoc = doc;
+    holder.appendChild(iframe);
+    frameEl.appendChild(holder);
+
+    function resize() {
+      var h = 600;
+      try { var t = iframe.contentDocument.querySelector('body > table'); h = Math.ceil(t.getBoundingClientRect().height) || h; } catch (e) { /* keep fallback */ }
+      var border = width === 390 ? 16 : 2;
+      var avail = (holder.parentElement.clientWidth || width) - border;
+      var scale = Math.min(1, avail / width);
+      iframe.style.height = h + 'px';
+      iframe.style.transform = scale < 1 ? 'scale(' + scale + ')' : '';
+      holder.style.height = Math.ceil(h * scale) + border + 'px';
+      holder.style.width = Math.floor(width * scale) + border + 'px';
+    }
+    iframe.addEventListener('load', function () {
+      resize();
+      try {
+        var d = iframe.contentDocument;
+        Array.prototype.forEach.call(d.images, function (img) { img.addEventListener('load', resize); });
+        if (d.fonts && d.fonts.ready) d.fonts.ready.then(resize);
+        if (window.ResizeObserver) new ResizeObserver(resize).observe(d.body);
+      } catch (e) { /* cross-origin frame: fixed height */ }
+    });
+    window.addEventListener('resize', resize);
+  }
+
+  function itemValues(ref) { var g = GROUPS.filter(function (x) { return x.id === ref[0]; })[0]; return g.items[ref[1]]; }
+
+  function render(shell) {
+    var nav = document.getElementById('nav');
+    var root = document.getElementById('gallery');
+    GROUPS.forEach(function (group) {
+      var a = document.createElement('a');
+      a.href = '#' + group.id;
+      a.textContent = group.title;
+      nav.appendChild(a);
+
+      var section = document.createElement('section');
+      section.className = 'group';
+      section.id = group.id;
+      section.innerHTML = '<h2></h2><p></p>';
+      section.querySelector('h2').textContent = group.title;
+      section.querySelector('p').textContent = group.blurb;
+      root.appendChild(section);
+
+      group.items.forEach(function (item) {
+        var art = document.createElement('article');
+        art.className = 'item';
+        var files = item.sequence ? item.sequence.map(function (s) { return s.file; }) : [item.file];
+        art.innerHTML =
+          '<div class="meta"><h3></h3><div class="tags"></div></div>' +
+          '<p class="notes"></p><div class="src"></div>' +
+          '<div class="previews"><div class="frame desktop"><span class="frame-label">Desktop · 1100px</span></div>' +
+          '<div class="frame mobile"><span class="frame-label">Mobile · 390px</span></div></div>';
+        art.querySelector('h3').textContent = item.name;
+        var tags = art.querySelector('.tags');
+        item.tags.concat([item.art]).forEach(function (t, i, arr) {
+          var s = document.createElement('span');
+          s.className = 'tag' + (i === arr.length - 1 ? ' art' : '');
+          s.textContent = i === arr.length - 1 ? 'Art: ' + t : t;
+          tags.appendChild(s);
+        });
+        art.querySelector('.notes').textContent = item.notes;
+        var src = art.querySelector('.src');
+        src.appendChild(document.createTextNode('Source: '));
+        files.forEach(function (f, i) {
+          if (i) src.appendChild(document.createTextNode(' + '));
+          var link = document.createElement('a');
+          link.href = COMPONENTS + f;
+          link.target = '_blank';
+          link.rel = 'noopener';
+          var code = document.createElement('code');
+          code.textContent = 'newsletter-system/components/' + f;
+          link.appendChild(code);
+          src.appendChild(link);
+        });
+        section.appendChild(art);
+
+        var desktop = art.querySelector('.frame.desktop');
+        var mobile = art.querySelector('.frame.mobile');
+        desktop.dataset.title = item.name + ' (desktop preview)';
+        mobile.dataset.title = item.name + ' (mobile preview)';
+
+        var jobs = item.sequence
+          ? item.sequence.map(function (s) { var v = itemValues(s.ref); return load(COMPONENTS + s.file).then(function (h) { return fill(h, v.values, v.omit); }); })
+          : [load(COMPONENTS + item.file).then(function (h) { return fill(h, item.values, item.omit); })];
+        Promise.all(jobs).then(function (rows) {
+          var doc = buildDoc(shell, rows.join('\n'));
+          mount(desktop, doc, 1100);
+          mount(mobile, doc, 390);
+        }).catch(function (err) {
+          var p = document.createElement('p');
+          p.className = 'error';
+          p.textContent = 'Could not load this component: ' + err.message + '. Serve the repository over HTTP (see the note at the top of this file).';
+          art.appendChild(p);
+        });
+      });
+    });
+  }
+
+  var buttons = document.querySelectorAll('.views button');
+  Array.prototype.forEach.call(buttons, function (btn) {
+    btn.addEventListener('click', function () {
+      document.body.classList.remove('view-desktop', 'view-mobile');
+      if (btn.dataset.view !== 'both') document.body.classList.add('view-' + btn.dataset.view);
+      Array.prototype.forEach.call(buttons, function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
+      window.dispatchEvent(new Event('resize'));
+    });
+  });
+
+  load(COMPONENTS + 'shell/document-shell.html').then(render).catch(function (err) {
+    var p = document.createElement('p');
+    p.className = 'error';
+    p.textContent = 'Could not load the document shell (' + err.message + '). Serve the repository over HTTP: run “python3 -m http.server 8000” from the repository root, then open /newsletter-system/gallery/.';
+    document.getElementById('gallery').appendChild(p);
+  });
+})();
+</script>

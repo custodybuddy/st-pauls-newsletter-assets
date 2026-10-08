@@ -1,0 +1,35 @@
+<!--
+  COMPONENT: masthead-classic (v1)
+  Role: Full-bleed seasonal banner over a centred navy masthead. The established St. Paul's opening.
+  Art:  Seasonal hero banner, 1100 x 367 (3:1), brand/assets/banners/.
+  Placeholders: {{banner_url}}, {{banner_alt}}, {{tagline}}, {{newsletter_title}}, {{edition}}
+  Desktop: 1100px banner, 88px brand mark, 64px title, gold edition pill.
+  Mobile: banner scales to full width, title drops to 40px.
+  Outlook: banner uses width="1100"; the pill is a bordered table cell (square corners in Outlook).
+-->
+<tr>
+  <td align="center" bgcolor="#0A1C2C" style="padding:0; background-color:#0A1C2C; font-size:0; line-height:0;">
+    <img src="{{banner_url}}" width="1100" alt="{{banner_alt}}" class="c-img-full" style="display:block; width:100%; max-width:1100px; height:auto; border:0; outline:none; text-decoration:none;" />
+  </td>
+</tr>
+<tr>
+  <td height="6" bgcolor="#D4AF37" style="height:6px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td>
+</tr>
+<tr>
+  <td align="center" class="c-gutter c-band" bgcolor="#0A1C2C" style="padding:52px 48px 60px 48px; background-color:#0A1C2C; text-align:center;">
+    <img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/01-branding-cross-wings.png" width="88" alt="Winged cross with a gold halo" class="c-img-icon" style="display:block; width:88px; height:auto; margin:0 auto 22px auto; border:0;" />
+    <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto 18px auto;">
+      <tr>
+        <td width="40" valign="middle" style="width:40px;"><table role="presentation" width="40" border="0" cellpadding="0" cellspacing="0"><tr><td height="2" bgcolor="#D4AF37" style="height:2px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+        <td valign="middle" style="padding:0 14px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.22em; text-transform:uppercase; color:#F0D98C;">{{tagline}}</td>
+        <td width="40" valign="middle" style="width:40px;"><table role="presentation" width="40" border="0" cellpadding="0" cellspacing="0"><tr><td height="2" bgcolor="#D4AF37" style="height:2px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+      </tr>
+    </table>
+    <h1 class="c-serif c-hero-title" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:64px; line-height:70px; font-weight:700; letter-spacing:-0.02em; color:#FFFFFF; mso-line-height-rule:exactly;">{{newsletter_title}}</h1>
+    <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:28px auto 0 auto;">
+      <tr>
+        <td align="center" style="border:1px solid #D4AF37; border-radius:999px; padding:10px 28px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:#F0D98C;">{{edition}}</td>
+      </tr>
+    </table>
+  </td>
+</tr>

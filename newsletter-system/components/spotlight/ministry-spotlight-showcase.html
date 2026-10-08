@@ -1,0 +1,61 @@
+<!--
+  COMPONENT: ministry-spotlight-showcase (v1)
+  Role: Core Section variant. Artwork-first Ministry Spotlight: very large centred illustration,
+        two-column story, then a full-width navy quote band. Use for a long story or a strong single image.
+  Art:  Square (1:1) or landscape up to 3:2, source at least 1040px wide for full sharpness.
+        Displayed at 520px inside a soft-blue panel.
+  Placeholders: {{eyebrow}}, {{ministry_name}}, {{ministry_tagline}}, {{art_url}}, {{art_alt}},
+                {{story_column_1}}, {{story_column_2}}, {{quote_text}}, {{quote_source}}
+  Copy rules: split the approved paragraphs between the two columns in their original order
+              (duplicate the <p> as needed). Never cut or reword to balance the columns.
+              The quote band holds an approved quotation only; delete those two rows otherwise.
+  Desktop: centred header, 520px art, 50/50 story columns, navy quote band.
+  Mobile: everything stacks in reading order; art max 320px.
+  Outlook: real table columns; quote band is a bgcolor row.
+-->
+<tr>
+  <td align="center" class="c-gutter c-band" bgcolor="#FDFBF7" style="padding:64px 48px 40px 48px; background-color:#FDFBF7; text-align:center;">
+    <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto 16px auto;">
+      <tr>
+        <td width="32" valign="middle" style="width:32px;"><table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="2" bgcolor="#D4AF37" style="height:2px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+        <td valign="middle" style="padding:0 14px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase; color:#0A1C2C;">{{eyebrow}}</td>
+        <td width="32" valign="middle" style="width:32px;"><table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="2" bgcolor="#D4AF37" style="height:2px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+      </tr>
+    </table>
+    <h2 class="c-serif c-display" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:56px; line-height:62px; font-weight:700; letter-spacing:-0.02em; color:#0A1C2C; mso-line-height-rule:exactly;">{{ministry_name}}</h2>
+    <p class="c-serif c-lead" style="margin:12px 0 36px 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:24px; line-height:32px; font-style:italic; font-weight:500; color:#B8860B; mso-line-height-rule:exactly;">{{ministry_tagline}}</p>
+    <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="c-center-table" style="margin:0 auto;">
+      <tr>
+        <td align="center" bgcolor="#EBF4F8" class="c-pad-tight" style="background-color:#EBF4F8; border:2px solid #F0D98C; border-radius:36px; padding:32px;">
+          <img src="{{art_url}}" width="520" alt="{{art_alt}}" class="c-img-square" style="display:block; width:100%; max-width:520px; height:auto; margin:0 auto; border:0; border-radius:20px;" />
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class="c-gutter" bgcolor="#FDFBF7" style="padding:12px 48px 56px 48px; background-color:#FDFBF7;">
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="50%" valign="top" class="c-col" style="width:50%; padding-right:24px;">
+          <p class="c-body" style="margin:0 0 20px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:19px; line-height:32px; color:#475569; mso-line-height-rule:exactly;">{{story_column_1}}</p>
+        </td>
+        <td width="50%" valign="top" class="c-col" style="width:50%; padding-left:24px;">
+          <p class="c-body" style="margin:0 0 20px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:19px; line-height:32px; color:#475569; mso-line-height-rule:exactly;">{{story_column_2}}</p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- OPTIONAL:quote -->
+<tr>
+  <td height="6" bgcolor="#D4AF37" style="height:6px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td>
+</tr>
+<tr>
+  <td align="center" class="c-gutter c-band" bgcolor="#0A1C2C" style="padding:52px 72px; background-color:#0A1C2C; text-align:center;">
+    <p style="margin:0 0 6px 0; font-family:Georgia, 'Times New Roman', serif; font-size:64px; line-height:48px; color:#D4AF37; mso-line-height-rule:exactly;">&#8220;</p>
+    <p class="c-serif c-quote" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:32px; line-height:44px; font-style:italic; font-weight:500; color:#FFFFFF; mso-line-height-rule:exactly;">{{quote_text}}</p>
+    <p style="margin:20px 0 0 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#F0D98C;">{{quote_source}}</p>
+  </td>
+</tr>
+<!-- /OPTIONAL:quote -->

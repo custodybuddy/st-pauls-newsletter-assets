@@ -1,0 +1,40 @@
+<!--
+  COMPONENT: greetings-mission-portrait (v1)
+  Role: Core Section. Greetings Friends beside the large Our Mission portrait card.
+        Replaces the old 64/36 Greetings + 72px-icon mission panel.
+  Art:  Portrait (3:4). Default: Our Mission card
+        https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/our-mission-card-portrait-640x853.jpg
+        Displayed at 400px wide (about 533px tall).
+  Placeholders: {{eyebrow}}, {{heading}}, {{greeting_lead}}, {{greeting_paragraph}}, {{signoff}},
+                {{art_url}}, {{art_alt}}
+  Copy rules: {{greeting_lead}} is the first approved paragraph, set as an italic lead (wording unchanged).
+              Duplicate the {{greeting_paragraph}} <p> for each further approved paragraph.
+              Delete the {{signoff}} <p> when the approved copy has none.
+  Desktop: 56/44 split, text vertically centred against the portrait.
+  Mobile: text first, portrait below (max 300px, centred).
+  Outlook: real table columns; image width="400"; .c-serif falls back to Georgia.
+-->
+<tr>
+  <td class="c-gutter c-band" bgcolor="#FDFBF7" style="padding:64px 48px; background-color:#FDFBF7;">
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="56%" valign="middle" class="c-col" style="width:56%; padding-right:32px;">
+          <img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/02-pastoral-note-heart-dialogue.png" width="72" alt="Gold heart inside a speech bubble" class="c-img-icon" style="display:block; width:72px; height:auto; margin:0 0 18px 0; border:0;" />
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin:0 0 12px 0;">
+            <tr>
+              <td width="32" valign="middle" style="width:32px;"><table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="3" bgcolor="#D4AF37" style="height:3px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+              <td valign="middle" style="padding-left:12px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#0A1C2C;">{{eyebrow}}</td>
+            </tr>
+          </table>
+          <h2 class="c-serif c-display" style="margin:0 0 24px 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:50px; line-height:56px; font-weight:700; letter-spacing:-0.02em; color:#0A1C2C; mso-line-height-rule:exactly;">{{heading}}</h2>
+          <p class="c-serif c-lead" style="margin:0 0 20px 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:23px; line-height:36px; font-style:italic; font-weight:500; color:#1E293B; mso-line-height-rule:exactly;">{{greeting_lead}}</p>
+          <p class="c-body" style="margin:0 0 20px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:19px; line-height:32px; color:#475569; mso-line-height-rule:exactly;">{{greeting_paragraph}}</p>
+          <!-- OPTIONAL:signoff --><p class="c-serif" style="margin:28px 0 0 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:20px; line-height:28px; font-style:italic; font-weight:600; color:#B8860B;">{{signoff}}</p><!-- /OPTIONAL:signoff -->
+        </td>
+        <td width="44%" valign="middle" align="center" class="c-col c-col-gap" style="width:44%; padding-left:16px;">
+          <img src="{{art_url}}" width="400" alt="{{art_alt}}" class="c-img-portrait" style="display:block; width:100%; max-width:400px; height:auto; margin:0 auto; border:0; border-radius:24px;" />
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

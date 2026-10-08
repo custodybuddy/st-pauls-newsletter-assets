@@ -4,9 +4,9 @@
 
 ## Current Repository Structure
 
-New work uses `brand/`, `newsletter-system/`, and `newsletters/`. Kathy’s approved seasonal submission controls wording; `docs/st-pauls-comprehensive-newsletter-template.md` controls the drafting structure and `newsletter-system/template/html-scaffold.html` is the HTML starting point. Use `newsletter-system/components/outlook-safe/` for layout only, never as editorial copy.
+New work uses `brand/`, `newsletter-system/`, and `newsletters/`. Kathy’s approved seasonal submission controls wording; `docs/st-pauls-comprehensive-newsletter-template.md` controls the drafting structure and `newsletter-system/components/shell/document-shell.html` is the HTML starting point (the older `newsletter-system/template/html-scaffold.html` is kept for reference). Use `newsletter-system/components/` for layout only, never as editorial copy.
 
-Newsletters are organized by season (`<year>-<season>`, e.g. `2026-fall`) in three folders: create drafts in `newsletters/drafting/<year>-<season>/`; keep at most one approved, ready-to-send HTML file per season in `newsletters/final/<year>-<season>/`; and treat `newsletters/archive/` (published issues, each with a screenshot) as read-only. Archived issues define the sections and components readers already know: keep them consistent while improving design and visual hierarchy. See `newsletters/README.md`. `snippets/` is the active library of reusable section fragments: use them for layout only, and replace their Draft 11 wording with Kathy’s approved copy (see `snippets/README.md`). The legacy `/assets/` folder has been removed; all images live under `brand/assets/` and every image URL must use `.../st-pauls-newsletter-assets/brand/assets/...`. The older `/templates/` folder and `newsletters/drafting/*/older-drafts/` are read-only history; do not use them for new work.
+Newsletters are organized by season (`<year>-<season>`, e.g. `2026-fall`) in three folders: create drafts in `newsletters/drafting/<year>-<season>/`; keep at most one approved, ready-to-send HTML file per season in `newsletters/final/<year>-<season>/`; and treat `newsletters/archive/` (published issues, each with a screenshot) as read-only. Archived issues define the sections and components readers already know: keep them consistent while improving design and visual hierarchy. See `newsletters/README.md`. `newsletter-system/components/` is the single source of truth for layout: build each issue by hand from `components/shell/document-shell.html` plus component rows, using the values in `newsletter-system/tokens.md`, and review designs in `newsletter-system/gallery/`. Change the design in the component, never in a generated draft. `snippets/` (Draft 11 fragments) stays only until the components are verified in a real issue, and is still the source for events, finances, thankful and footer sections; use it for layout only and replace its wording with Kathy’s approved copy (see `snippets/README.md`). The legacy `/assets/` folder has been removed; all images live under `brand/assets/` and every image URL must use `.../st-pauls-newsletter-assets/brand/assets/...`. The older `/templates/` folder and `newsletters/drafting/*/older-drafts/` are read-only history; do not use them for new work.
 
 This file defines how AI agents, editors, and automation tools should work on the St. Paul’s newsletter codebase, Canva-friendly templates, icon libraries, and reusable email resources.
 
@@ -261,7 +261,8 @@ The manifest controls filenames, roles, URLs, alt text, and recommended widths. 
 Every meaningful Codex change must update the affected authoritative documentation in the same change. Before completing work, identify whether assets, icon filenames, roles, URLs, fallback rules, templates, email-safe requirements, validation, or workflow changed.
 
 - For icon work, update `brand/resources/icon-map-v4.json` first and mirror it in `brand/resources/icon-map-v4.md`; update the visual map when icon assets change.
-- For illustration work, update `resources/links/st-pauls-illustrations-v1.json` and the readable illustration map.
+- For illustration work, update `resources/links/st-pauls-illustrations-v1.json` and the readable illustration map `resources/links/st-pauls-illustrations-v1.md`.
+- For component or token work, update `newsletter-system/tokens.json` and `tokens.md`, the component header comments, `newsletter-system/components/README.md`, and check the result in `newsletter-system/gallery/`.
 - For construction or workflow changes, update `docs/st-pauls-comprehensive-newsletter-template.md`, the relevant style guide or checklist, and README when repository-wide source-of-truth locations, asset roots, or workflow change.
 
 ---
@@ -604,6 +605,11 @@ Recommended current resources:
 
 ```text
 docs/st-pauls-comprehensive-newsletter-template.md
+newsletter-system/components/README.md
+newsletter-system/components/shell/document-shell.html
+newsletter-system/tokens.md
+newsletter-system/gallery/index.html
+resources/links/st-pauls-illustrations-v1.md
 brand/resources/icon-map-v4.json
 brand/resources/icon-map-v4.md
 brand/resources/brand-assets-visual.html

@@ -1,0 +1,40 @@
+<!--
+  COMPONENT: feature-split-image-left (v1)
+  Role: Optional Story Module. Half-width illustration on the LEFT, story on the right.
+        Pair with feature-split-image-right on the next module for a zig-zag rhythm.
+  Art:  SQUARE or LANDSCAPE (up to 3:2), source at least 478px wide (ideally 956px). Displayed at 478px.
+  Placeholders: {{art_url}}, {{art_alt}}, {{eyebrow}}, {{heading}}, {{story_paragraph}}, {{cta_url}}, {{cta_label}}
+  Copy rules: duplicate the {{story_paragraph}} <p> per approved paragraph; delete the CTA table if unused.
+  Band: cream by default; switch both bgcolor values to #FFFFFF to alternate.
+  Desktop: 50/50, text vertically centred.
+  Mobile: art first (full width), then text.
+  Outlook: real table columns; image width="478".
+-->
+<tr>
+  <td class="c-gutter c-band" bgcolor="#FDFBF7" style="padding:56px 48px; background-color:#FDFBF7;">
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="50%" valign="middle" class="c-col" style="width:50%; padding-right:24px;">
+          <img src="{{art_url}}" width="478" alt="{{art_alt}}" class="c-img-full" style="display:block; width:100%; max-width:478px; height:auto; border:0; border-radius:24px;" />
+        </td>
+        <td width="50%" valign="middle" class="c-col c-col-gap" style="width:50%; padding-left:24px;">
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin:0 0 12px 0;">
+            <tr>
+              <td width="32" valign="middle" style="width:32px;"><table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="3" bgcolor="#D4AF37" style="height:3px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+              <td valign="middle" style="padding-left:12px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#0A1C2C;">{{eyebrow}}</td>
+            </tr>
+          </table>
+          <h2 class="c-serif c-h2" style="margin:0 0 20px 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:40px; line-height:46px; font-weight:700; letter-spacing:-0.01em; color:#0A1C2C; mso-line-height-rule:exactly;">{{heading}}</h2>
+          <p class="c-body" style="margin:0 0 20px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:19px; line-height:32px; color:#475569; mso-line-height-rule:exactly;">{{story_paragraph}}</p>
+          <!-- OPTIONAL:cta --><table role="presentation" border="0" cellpadding="0" cellspacing="0" class="c-btn-full" style="margin:12px 0 0 0;">
+            <tr>
+              <td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:2px solid #D4AF37; border-radius:999px; padding:14px 32px;">
+                <a href="{{cta_url}}" target="_blank" style="display:inline-block; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:800; letter-spacing:0.02em; color:#0A1C2C; text-decoration:none;">{{cta_label}}</a>
+              </td>
+            </tr>
+          </table><!-- /OPTIONAL:cta -->
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

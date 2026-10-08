@@ -1,0 +1,69 @@
+<!--
+  COMPONENT: ministry-spotlight-feature (v1)
+  Role: Core Section. Ministry Spotlight with a navy title band and a large square illustration beside the story.
+  Art:  Square (1:1), source at least 880px. Displayed at 410px inside a white mat (the mat column is 48% of the 1004px content width).
+        Default: https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/ministry-wheel-compassionate-care-square-880.jpg
+  Placeholders: {{eyebrow}}, {{ministry_name}}, {{ministry_tagline}}, {{art_url}}, {{art_alt}}, {{art_caption}},
+                {{story_lead}}, {{story_paragraph}}, {{quote_label}}, {{quote_text}}, {{cta_url}}, {{cta_label}}
+  Copy rules: {{story_lead}} = first approved paragraph (set larger, wording unchanged).
+              Duplicate the {{story_paragraph}} <p> for each further approved paragraph.
+              The quote card holds an approved quotation only (verse, vision statement); delete it otherwise.
+              Delete the caption <p> or CTA table when not needed.
+  Desktop: centred navy title band (52px title), then 48/52 art/story split.
+  Mobile: title band, art (max 320px), story, quote, full-width button.
+  Outlook: real table columns; mat and quote are padded cells; button is a bgcolor cell.
+-->
+<tr>
+  <td align="center" class="c-gutter c-band" bgcolor="#0A1C2C" style="padding:56px 48px 52px 48px; background-color:#0A1C2C; text-align:center;">
+    <img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/04-ministry-spotlight-serving-heart.png" width="72" alt="Open hand supporting a gold heart" class="c-img-icon" style="display:block; width:72px; height:auto; margin:0 auto 18px auto; border:0;" />
+    <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto 16px auto;">
+      <tr>
+        <td width="32" valign="middle" style="width:32px;"><table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="2" bgcolor="#D4AF37" style="height:2px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+        <td valign="middle" style="padding:0 14px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase; color:#F0D98C;">{{eyebrow}}</td>
+        <td width="32" valign="middle" style="width:32px;"><table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="2" bgcolor="#D4AF37" style="height:2px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+      </tr>
+    </table>
+    <h2 class="c-serif c-display" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:52px; line-height:58px; font-weight:700; letter-spacing:-0.02em; color:#FFFFFF; mso-line-height-rule:exactly;">{{ministry_name}}</h2>
+    <p class="c-serif c-lead" style="margin:14px 0 0 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:24px; line-height:32px; font-style:italic; font-weight:500; color:#F0D98C; mso-line-height-rule:exactly;">{{ministry_tagline}}</p>
+  </td>
+</tr>
+<tr>
+  <td height="6" bgcolor="#D4AF37" style="height:6px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td>
+</tr>
+<tr>
+  <td class="c-gutter c-band" bgcolor="#FFFFFF" style="padding:56px 48px 64px 48px; background-color:#FFFFFF;">
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="48%" valign="top" align="center" class="c-col" style="width:48%; padding-right:28px;">
+          <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:1px solid #E5E7EB; border-radius:28px;">
+            <tr>
+              <td align="center" class="c-pad-tight" style="padding:18px;">
+                <img src="{{art_url}}" width="410" alt="{{art_alt}}" class="c-img-square" style="display:block; width:100%; max-width:410px; height:auto; margin:0 auto; border:0; border-radius:18px;" />
+              </td>
+            </tr>
+          </table>
+          <!-- OPTIONAL:caption --><p style="margin:14px 0 0 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:21px; color:#64748B; text-align:center;">{{art_caption}}</p><!-- /OPTIONAL:caption -->
+        </td>
+        <td width="52%" valign="top" class="c-col c-col-gap" style="width:52%; padding-left:28px;">
+          <p class="c-serif c-lead" style="margin:0 0 22px 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:23px; line-height:36px; font-weight:500; color:#0A1C2C; mso-line-height-rule:exactly;">{{story_lead}}</p>
+          <p class="c-body" style="margin:0 0 20px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:19px; line-height:32px; color:#475569; mso-line-height-rule:exactly;">{{story_paragraph}}</p>
+          <!-- OPTIONAL:quote --><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="margin:30px 0 0 0;">
+            <tr>
+              <td bgcolor="#FDFBF7" class="c-pad-tight" style="background-color:#FDFBF7; border-left:6px solid #D4AF37; border-radius:0 20px 20px 0; padding:26px 30px;">
+                <p style="margin:0 0 8px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:#0A1C2C;">{{quote_label}}</p>
+                <p class="c-serif c-quote" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:26px; line-height:36px; font-style:italic; font-weight:600; color:#0A1C2C; mso-line-height-rule:exactly;">{{quote_text}}</p>
+              </td>
+            </tr>
+          </table><!-- /OPTIONAL:quote -->
+          <!-- OPTIONAL:cta --><table role="presentation" border="0" cellpadding="0" cellspacing="0" class="c-btn-full" style="margin:32px 0 0 0;">
+            <tr>
+              <td align="center" bgcolor="#0A1C2C" style="background-color:#0A1C2C; border-radius:999px; padding:16px 34px;">
+                <a href="{{cta_url}}" target="_blank" style="display:inline-block; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:800; letter-spacing:0.02em; color:#FFFFFF; text-decoration:none;">{{cta_label}}</a>
+              </td>
+            </tr>
+          </table><!-- /OPTIONAL:cta -->
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

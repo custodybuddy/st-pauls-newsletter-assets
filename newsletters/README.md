@@ -10,7 +10,7 @@ Three folders, organized by season (`<year>-<season>`, for example `2026-fall`):
 
 ## Workflow
 
-1. Build the draft in `drafting/<year>-<season>/` from `newsletter-system/template/html-scaffold.html` and `docs/st-pauls-comprehensive-newsletter-template.md`.
+1. Build the draft in `drafting/<year>-<season>/` from `newsletter-system/components/` (start with `shell/document-shell.html`) and `docs/st-pauls-comprehensive-newsletter-template.md`.
 2. When Kathy approves it, copy the chosen version to `final/<year>-<season>/`.
 3. After it is sent, move it to `archive/<year>-<season>/<yyyy-mm-month>/newsletter.html` and add a screenshot of how it looked.
 4. Add the issue to the table in `archive/README.md`.

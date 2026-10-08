@@ -1,0 +1,41 @@
+<!--
+  COMPONENT: masthead-framed (v1)
+  Role: Light, editorial opening. Centred title on cream, then the seasonal banner inset in a navy frame.
+        Use when the issue should open softly (e.g. a reflective season).
+  Art:  Seasonal hero banner, 1100 x 367 (3:1). Displayed at 984px inside the frame.
+  Placeholders: {{tagline}}, {{newsletter_title}}, {{edition}}, {{banner_url}}, {{banner_alt}}
+  Desktop: 88px brand mark, 60px navy title, framed banner with gold inner rule.
+  Mobile: frame padding stays, banner scales to full width.
+  Outlook: frame is a padded navy cell; rounded corners fall back to square.
+-->
+<tr>
+  <td align="center" class="c-gutter c-band" bgcolor="#FDFBF7" style="padding:52px 48px 36px 48px; background-color:#FDFBF7; text-align:center;">
+    <img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/01-branding-cross-wings.png" width="88" alt="Winged cross with a gold halo" class="c-img-icon" style="display:block; width:88px; height:auto; margin:0 auto 20px auto; border:0;" />
+    <p style="margin:0 0 14px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.22em; text-transform:uppercase; color:#0A1C2C;">{{tagline}}</p>
+    <h1 class="c-serif c-hero-title" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:60px; line-height:66px; font-weight:700; letter-spacing:-0.02em; color:#0A1C2C; mso-line-height-rule:exactly;">{{newsletter_title}}</h1>
+    <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:22px auto 0 auto;">
+      <tr>
+        <td width="56" valign="middle" style="width:56px;"><table role="presentation" width="56" border="0" cellpadding="0" cellspacing="0"><tr><td height="2" bgcolor="#D4AF37" style="height:2px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+        <td valign="middle" style="padding:0 16px; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:20px; line-height:26px; font-style:italic; font-weight:600; color:#B8860B;" class="c-serif">{{edition}}</td>
+        <td width="56" valign="middle" style="width:56px;"><table role="presentation" width="56" border="0" cellpadding="0" cellspacing="0"><tr><td height="2" bgcolor="#D4AF37" style="height:2px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td align="center" class="c-gutter" bgcolor="#FDFBF7" style="padding:0 48px 52px 48px; background-color:#FDFBF7;">
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td bgcolor="#0A1C2C" style="background-color:#0A1C2C; padding:10px; border-radius:28px;">
+          <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="border:1px solid #D4AF37; border-radius:20px; padding:0; font-size:0; line-height:0;">
+                <img src="{{banner_url}}" width="982" alt="{{banner_alt}}" class="c-img-full" style="display:block; width:100%; max-width:982px; height:auto; border:0; border-radius:19px;" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

@@ -52,7 +52,11 @@ const ICON_DIRECTORY = 'brand/assets/icons';
 const ICON_MANIFEST = 'brand/resources/icon-map-v4.json';
 const ICON_LIBRARY = 'brand/resources/icon-map-v4.md';
 const ICON_BASE_URL = 'https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/';
-const HTML_DIRECTORIES = ['newsletters', 'templates', 'newsletter-system/template', 'newsletter-system/components/outlook-safe'];
+const HTML_DIRECTORIES = ['newsletters', 'templates', 'newsletter-system/template', 'newsletter-system/components'];
+const COMPONENT_DIRECTORY = 'newsletter-system/components/';
+const ILLUSTRATION_MANIFEST = 'resources/links/st-pauls-illustrations-v1.json';
+const ILLUSTRATION_MAX_BYTES = 300 * 1024;
+const OFF_BRAND = [/Playfair Display/i, /Source Sans 3/i, /#007A8A/i, /#DAA017/i, /#9C6A08/i, /#0D1B2A/i, /#FAF7F1/i];
 const COMPREHENSIVE_TEMPLATE = 'docs/st-pauls-comprehensive-newsletter-template.md';
 const MODULAR_TEMPLATE_ID = '1TIgR_NbjIOMLPt0Q-g7jymQPYRLEPjK1vQTJ96vwPC8';
 
@@ -252,6 +256,18 @@ function checkTrackedJunk() {
 function checkHtmlFile(filePath) {
   const file = relative(filePath);
   const content = fs.readFileSync(filePath, 'utf8');
+  const isComponent = file.startsWith(COMPONENT_DIRECTORY);
+  const isCurrentIssue = /^newsletters\/(drafting|final)\//.test(file) && !file.includes('/older-drafts/');
+  const isPlaceholder = function (value) { return isComponent && /^\{\{\w+\}\}$/.test(value); };
+
+  if (isCurrentIssue && /\{\{\w+\}\}/.test(content)) {
+    add('error', 'unfilled-placeholder', file, 'Contains {{placeholder}} markers from a component. Replace them with approved copy.');
+  }
+  if (isComponent) {
+    OFF_BRAND.forEach(function (pattern) {
+      if (pattern.test(content)) add('error', 'off-brand-token', file, 'Uses ' + pattern.source + ', which is not in newsletter-system/tokens.md.');
+    });
+  }
   const imageTags = content.match(/<img\b[^>]*>/gi) || [];
   const anchorTags = content.match(/<a\b[^>]*>/gi) || [];
   let missingAlt = 0;
@@ -263,12 +279,12 @@ function checkHtmlFile(filePath) {
     if (attributeValue(tag, 'alt') === null) missingAlt += 1;
     if (attributeValue(tag, 'width') === null) missingWidth += 1;
     const source = attributeValue(tag, 'src');
-    if (source && !/^(https:\/\/|data:|cid:)/i.test(source)) relativeImages += 1;
+    if (source && !isPlaceholder(source) && !/^(https:\/\/|data:|cid:)/i.test(source)) relativeImages += 1;
   });
 
   anchorTags.forEach(function (tag) {
     const href = attributeValue(tag, 'href');
-    if (href && !/^(https:\/\/|mailto:|tel:|#|\[)/i.test(href)) relativeLinks += 1;
+    if (href && !isPlaceholder(href) && !/^(https:\/\/|mailto:|tel:|#|\[)/i.test(href)) relativeLinks += 1;
   });
 
   const findings = [
@@ -300,6 +316,48 @@ function checkHtml() {
   HTML_DIRECTORIES.forEach(function (directory) {
     listFiles(directory, '.html').forEach(checkHtmlFile);
   });
+}
+
+function checkIllustrations() {
+  if (!fs.existsSync(absolute(ILLUSTRATION_MANIFEST))) {
+    add('error', 'required-file', ILLUSTRATION_MANIFEST, 'Illustration manifest is missing.');
+    return;
+  }
+  let manifest;
+  try {
+    manifest = JSON.parse(read(ILLUSTRATION_MANIFEST));
+  } catch (error) {
+    add('error', 'invalid-illustration-manifest', ILLUSTRATION_MANIFEST, 'JSON could not be parsed: ' + error.message);
+    return;
+  }
+  if (manifest.readableMap && !fs.existsSync(absolute(manifest.readableMap))) {
+    add('error', 'illustration-readable-map', ILLUSTRATION_MANIFEST, 'readableMap points to a missing file.');
+  }
+  const readable = manifest.readableMap && fs.existsSync(absolute(manifest.readableMap)) ? read(manifest.readableMap) : '';
+  (manifest.emailIllustrations || []).forEach(function (item, index) {
+    const label = 'emailIllustrations[' + index + ']';
+    if (!item.repositoryPath || !fs.existsSync(absolute(item.repositoryPath))) {
+      add('error', 'missing-illustration', ILLUSTRATION_MANIFEST, label + ' file is missing from disk.');
+      return;
+    }
+    if (item.url !== manifest.baseUrl + 'email/' + item.filename) add('error', 'invalid-illustration-url', ILLUSTRATION_MANIFEST, label + ' URL must equal baseUrl + "email/" + filename.');
+    if (/[\s()]/.test(item.filename)) add('error', 'illustration-filename', ILLUSTRATION_MANIFEST, label + ' filename must not contain spaces or brackets.');
+    if (!item.alt) add('error', 'missing-illustration-alt', ILLUSTRATION_MANIFEST, label + ' must define alt text.');
+    if (!['portrait', 'landscape', 'square'].includes(item.shape)) add('error', 'illustration-shape', ILLUSTRATION_MANIFEST, label + ' shape must be portrait, landscape or square.');
+    const bytes = fs.statSync(absolute(item.repositoryPath)).size;
+    if (bytes > ILLUSTRATION_MAX_BYTES) add('warning', 'heavy-illustration', item.repositoryPath, Math.round(bytes / 1024) + ' KB exceeds the 300 KB email limit.');
+    (item.components || []).forEach(function (component) {
+      if (!fs.existsSync(absolute(COMPONENT_DIRECTORY + component))) add('error', 'illustration-component', ILLUSTRATION_MANIFEST, label + ' names a missing component: ' + component);
+    });
+    if (readable && !readable.includes(item.filename)) add('error', 'undocumented-illustration', manifest.readableMap, item.filename + ' is missing from the readable map.');
+  });
+  const directory = manifest.emailAssetDirectory;
+  if (directory && fs.existsSync(absolute(directory))) {
+    const listed = (manifest.emailIllustrations || []).map(function (item) { return item.filename; });
+    fs.readdirSync(absolute(directory)).forEach(function (name) {
+      if (!listed.includes(name)) add('error', 'unmapped-illustration', directory + '/' + name, 'File exists but is absent from emailIllustrations.');
+    });
+  }
 }
 
 function checkFinalIssues() {
@@ -370,6 +428,7 @@ checkCurrentGuidance();
 checkCanonicalIcons();
 checkTrackedJunk();
 checkHtml();
+checkIllustrations();
 checkFinalIssues();
 checkRepoUrls();
 

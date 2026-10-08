@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
+<head>
+  <!--
+    COMPONENT: document-shell (v1)
+    Role: The host document for every issue. Holds the shared <head>, mobile CSS,
+          Outlook fallbacks, preheader, and the 1100px main canvas.
+    Use:  Copy this file into newsletters/drafting/<year>-<season>/, then paste
+          component rows between COMPONENTS START and COMPONENTS END.
+    Tokens: newsletter-system/tokens.md
+    Placeholders: {{email_title}}, {{preheader}}
+    Rules: docs/st-pauls-comprehensive-newsletter-template.md
+  -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+  <meta name="color-scheme" content="light" />
+  <meta name="supported-color-schemes" content="light" />
+  <title>{{email_title}}</title>
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet" />
+  <style type="text/css">
+    /* Resets */
+    body, table, td, a { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+    table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; }
+    table { border-collapse:separate; border-spacing:0; } /* separate keeps rounded borders; Outlook collapses below */
+    img { -ms-interpolation-mode:bicubic; border:0; outline:none; text-decoration:none; height:auto; }
+    body { margin:0 !important; padding:0 !important; width:100% !important; background-color:#EBF4F8; }
+    a[x-apple-data-detectors] { color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-family:inherit !important; font-weight:inherit !important; line-height:inherit !important; }
+    u + #body a { color:inherit; text-decoration:none; font-size:inherit; font-family:inherit; font-weight:inherit; line-height:inherit; }
+
+    /* Component system mobile layer (progressive enhancement).
+       Every component reads correctly on desktop and in clients that ignore this block. */
+    @media only screen and (max-width:700px) {
+      .c-outer { padding:0 !important; }
+      .c-main { width:100% !important; max-width:100% !important; border-radius:0 !important; }
+      .c-gutter { padding-left:16px !important; padding-right:16px !important; }
+      .c-band { padding-top:36px !important; padding-bottom:36px !important; }
+      .c-pad { padding:28px 22px !important; }
+      .c-pad-tight { padding:20px 16px !important; }
+      .c-col { display:block !important; width:100% !important; max-width:100% !important; box-sizing:border-box !important; padding-left:0 !important; padding-right:0 !important; }
+      .c-col-gap { padding-top:28px !important; }
+      .c-col-gap-sm { padding-top:16px !important; }
+      .c-center { text-align:center !important; }
+      .c-center-table { margin-left:auto !important; margin-right:auto !important; }
+      .c-img-full { width:100% !important; max-width:100% !important; height:auto !important; }
+      .c-img-portrait { width:100% !important; max-width:300px !important; height:auto !important; margin:0 auto !important; }
+      .c-img-square { width:100% !important; max-width:320px !important; height:auto !important; margin:0 auto !important; }
+      .c-img-icon { width:60px !important; height:auto !important; }
+      .c-hero-title { font-size:40px !important; line-height:46px !important; }
+      .c-display { font-size:32px !important; line-height:38px !important; }
+      .c-h2 { font-size:28px !important; line-height:34px !important; }
+      .c-h3 { font-size:23px !important; line-height:30px !important; }
+      .c-lead { font-size:19px !important; line-height:30px !important; }
+      .c-quote { font-size:22px !important; line-height:32px !important; }
+      .c-body { font-size:18px !important; line-height:30px !important; }
+      .c-btn-full { width:100% !important; }
+      .c-col.c-card-pad { padding:24px 20px 28px 20px !important; }
+      .c-no-rule { border-left:0 !important; border-right:0 !important; }
+      .c-spacer { display:block !important; width:100% !important; height:20px !important; }
+      .c-hide-mobile { display:none !important; max-height:0 !important; overflow:hidden !important; }
+    }
+  </style>
+  <!--[if mso]>
+  <style type="text/css">
+    table { border-collapse:collapse; }
+    body, table, td, p, a, span, li, h1, h2, h3 { font-family:Arial, Helvetica, sans-serif !important; }
+    .c-serif { font-family:Georgia, 'Times New Roman', serif !important; }
+  </style>
+  <![endif]-->
+</head>
+<body id="body" style="margin:0; padding:0; background-color:#EBF4F8; font-family:'Inter', Arial, Helvetica, sans-serif; color:#475569;">
+
+  <!-- PREHEADER (inbox preview text; hidden in the message body) -->
+  <div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">{{preheader}}</div>
+
+  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#EBF4F8" style="background-color:#EBF4F8;">
+    <tr>
+      <td align="center" class="c-outer" style="padding:28px 12px;">
+        <!--[if mso]>
+        <table role="presentation" width="1100" align="center" border="0" cellpadding="0" cellspacing="0"><tr><td>
+        <![endif]-->
+        <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="c-main" bgcolor="#FFFFFF" style="width:100%; max-width:1100px; background-color:#FFFFFF; border-radius:24px; overflow:hidden;">
+
+          <!-- COMPONENTS START -->
+
+          <!-- COMPONENTS END -->
+
+        </table>
+        <!--[if mso]>
+        </td></tr></table>
+        <![endif]-->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

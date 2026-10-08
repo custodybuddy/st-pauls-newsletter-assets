@@ -1,0 +1,48 @@
+<!--
+  COMPONENT: greetings-landscape-letter (v1)
+  Role: Core Section variant. Greetings Friends as a "letter" card under a wide seasonal illustration.
+        Use when a landscape seasonal illustration should carry the opening mood.
+  Art:  Landscape, 3:1 to 3:2, source at least 1004px wide (ideally 2008px). Displayed full card width.
+  Placeholders: {{art_url}}, {{art_alt}}, {{eyebrow}}, {{heading}}, {{greeting_lead}}, {{greeting_paragraph}}, {{signoff}}
+  Copy rules: same as greetings-mission-portrait. Pair with our-mission-portrait when this variant is used.
+  Desktop: art across the top; heading column (34%) beside the letter text (66%).
+  Mobile: art, heading, then text in one column.
+  Outlook: image width="1004"; card corners render square.
+-->
+<tr>
+  <td class="c-gutter c-band" bgcolor="#FFFFFF" style="padding:56px 48px; background-color:#FFFFFF;">
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FDFBF7" style="background-color:#FDFBF7; border-radius:28px;">
+      <tr>
+        <td style="padding:0; font-size:0; line-height:0;">
+          <img src="{{art_url}}" width="1004" alt="{{art_alt}}" class="c-img-full" style="display:block; width:100%; max-width:1004px; height:auto; border:0; border-radius:28px 28px 0 0;" />
+        </td>
+      </tr>
+      <tr>
+        <td height="6" bgcolor="#D4AF37" style="height:6px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td>
+      </tr>
+      <tr>
+        <td class="c-pad" style="padding:48px 52px 52px 52px;">
+          <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="34%" valign="top" class="c-col" style="width:34%; padding-right:28px;">
+                <img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/02-pastoral-note-heart-dialogue.png" width="72" alt="Gold heart inside a speech bubble" class="c-img-icon" style="display:block; width:72px; height:auto; margin:0 0 18px 0; border:0;" />
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin:0 0 12px 0;">
+                  <tr>
+                    <td width="32" valign="middle" style="width:32px;"><table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="3" bgcolor="#D4AF37" style="height:3px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+                    <td valign="middle" style="padding-left:12px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#0A1C2C;">{{eyebrow}}</td>
+                  </tr>
+                </table>
+                <h2 class="c-serif c-display" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:44px; line-height:50px; font-weight:700; letter-spacing:-0.02em; color:#0A1C2C; mso-line-height-rule:exactly;">{{heading}}</h2>
+              </td>
+              <td width="66%" valign="top" class="c-col c-col-gap c-no-rule" style="width:66%; padding-left:28px; border-left:1px solid #E9DFC7;">
+                <p class="c-serif c-lead" style="margin:0 0 20px 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:23px; line-height:36px; font-style:italic; font-weight:500; color:#1E293B; mso-line-height-rule:exactly;">{{greeting_lead}}</p>
+                <p class="c-body" style="margin:0 0 20px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:19px; line-height:32px; color:#475569; mso-line-height-rule:exactly;">{{greeting_paragraph}}</p>
+                <!-- OPTIONAL:signoff --><p class="c-serif" style="margin:24px 0 0 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:20px; line-height:28px; font-style:italic; font-weight:600; color:#B8860B;">{{signoff}}</p><!-- /OPTIONAL:signoff -->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

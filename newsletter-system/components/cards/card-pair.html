@@ -1,0 +1,36 @@
+<!--
+  COMPONENT: card-pair (v1)
+  Role: Two illustrated background cards side by side (navy + cream). Equal height on desktop.
+        Good for two short related items, e.g. the two Did You Know? stories.
+  Art:  LANDSCAPE (3:2 to 16:9) for both cards, source at least 434px wide (ideally 868px). Displayed at 434px.
+  Placeholders: LEFT  {{left_art_url}}, {{left_art_alt}}, {{left_eyebrow}}, {{left_heading}}, {{left_paragraph}}
+                RIGHT {{right_art_url}}, {{right_art_alt}}, {{right_eyebrow}}, {{right_heading}}, {{right_paragraph}}
+  Copy rules: duplicate a card's paragraph <p> per approved paragraph. Keep both cards to similar lengths
+              by choosing which items to pair, never by cutting approved copy.
+  Desktop: two cards (the table cells themselves carry the colour, so heights match), 24px gutter.
+  Mobile: cards stack with a 20px gap.
+  Outlook: cells use bgcolor; corners render square; heights stay equal.
+-->
+<tr>
+  <td class="c-gutter c-band" bgcolor="#FFFFFF" style="padding:48px 48px; background-color:#FFFFFF;">
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <!-- LEFT CARD: NAVY -->
+        <td width="49%" valign="top" bgcolor="#0A1C2C" class="c-col c-card-pad" style="width:49%; background-color:#0A1C2C; border-radius:28px; border-top:6px solid #D4AF37; padding:28px 28px 36px 28px;">
+          <img src="{{left_art_url}}" width="434" alt="{{left_art_alt}}" class="c-img-full" style="display:block; width:100%; max-width:434px; height:auto; border:0; border-radius:18px; margin:0 0 26px 0;" />
+          <p style="margin:0 0 10px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#F0D98C;">{{left_eyebrow}}</p>
+          <h3 class="c-serif c-h3" style="margin:0 0 14px 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:30px; line-height:36px; font-weight:700; color:#FFFFFF; mso-line-height-rule:exactly;">{{left_heading}}</h3>
+          <p class="c-body" style="margin:0 0 16px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:18px; line-height:30px; color:#E2E8F0; mso-line-height-rule:exactly;">{{left_paragraph}}</p>
+        </td>
+        <td width="2%" class="c-spacer" style="width:2%; font-size:1px; line-height:1px;">&#160;</td>
+        <!-- RIGHT CARD: CREAM -->
+        <td width="49%" valign="top" bgcolor="#FDFBF7" class="c-col c-card-pad" style="width:49%; background-color:#FDFBF7; border-radius:28px; border:1px solid #E9DFC7; border-top:6px solid #D4AF37; padding:28px 28px 36px 28px;">
+          <img src="{{right_art_url}}" width="434" alt="{{right_art_alt}}" class="c-img-full" style="display:block; width:100%; max-width:434px; height:auto; border:0; border-radius:18px; margin:0 0 26px 0;" />
+          <p style="margin:0 0 10px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#0A1C2C;">{{right_eyebrow}}</p>
+          <h3 class="c-serif c-h3" style="margin:0 0 14px 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:30px; line-height:36px; font-weight:700; color:#0A1C2C; mso-line-height-rule:exactly;">{{right_heading}}</h3>
+          <p class="c-body" style="margin:0 0 16px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:18px; line-height:30px; color:#475569; mso-line-height-rule:exactly;">{{right_paragraph}}</p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

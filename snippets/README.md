@@ -1,6 +1,8 @@
 # Reusable Newsletter Snippets
 
-**Active component library.** These are table-row fragments for building new issues. They were extracted from `newsletters/drafting/2026-fall/older-drafts/st-pauls-fall-2026-newsletter-DRAFT-11.html`.
+> **Being replaced.** `newsletter-system/components/` is now the single source of truth for layout (see its `README.md` for the snippet-to-component mapping). These files stay until the new components are verified in Draft 15. Until then, use them only for sections that have no component yet: Upcoming Events, Focus on Finances, Support St. Paul’s, We Are So Thankful For, and the footer. Their fonts (Playfair Display, Source Sans 3) do not match `newsletter-system/tokens.md`; switch them to Lora and Inter when you use them.
+
+**Older component library.** These are table-row fragments for building new issues. They were extracted from `newsletters/drafting/2026-fall/older-drafts/st-pauls-fall-2026-newsletter-DRAFT-11.html`.
 
 > **Layout only.** The wording, names, dates, and figures inside each fragment come from Draft 11. Replace all of it with Kathy’s approved copy for the issue you are building. See `docs/st-pauls-comprehensive-newsletter-template.md`.
 

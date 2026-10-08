@@ -1,0 +1,43 @@
+<!--
+  COMPONENT: section-header (v1)
+  Role: Reusable heading block (gold rule + uppercase eyebrow + serif heading + optional subtitle).
+        Paste the LIGHT block on white/cream backgrounds and the DARK block on navy.
+        Components already contain this block; this file is the reference copy.
+  Placeholders: {{eyebrow}}, {{heading}}, {{subtitle}}
+  Optional: delete the subtitle <p> when not needed.
+  Outlook: the gold rule is a 3px table cell (no inline-block spans), headings fall back to Georgia via .c-serif.
+-->
+<tr>
+  <td class="c-gutter c-band" bgcolor="#FFFFFF" style="padding:48px 48px 24px 48px; background-color:#FFFFFF;">
+
+    <!-- LIGHT: for white or cream backgrounds -->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin:0 0 14px 0;">
+      <tr>
+        <td width="32" valign="middle" style="width:32px;">
+          <table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="3" bgcolor="#D4AF37" style="height:3px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table>
+        </td>
+        <td valign="middle" style="padding-left:12px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#0A1C2C;">{{eyebrow}}</td>
+      </tr>
+    </table>
+    <h2 class="c-serif c-h2" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:40px; line-height:46px; font-weight:700; letter-spacing:-0.01em; color:#0A1C2C; mso-line-height-rule:exactly;">{{heading}}</h2>
+    <p class="c-serif c-lead" style="margin:10px 0 0 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:22px; line-height:32px; font-style:italic; font-weight:500; color:#B8860B; mso-line-height-rule:exactly;">{{subtitle}}</p>
+
+  </td>
+</tr>
+<tr>
+  <td class="c-gutter c-band" bgcolor="#0A1C2C" style="padding:48px 48px; background-color:#0A1C2C;">
+
+    <!-- DARK: for navy backgrounds -->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin:0 0 14px 0;">
+      <tr>
+        <td width="32" valign="middle" style="width:32px;">
+          <table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="3" bgcolor="#D4AF37" style="height:3px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table>
+        </td>
+        <td valign="middle" style="padding-left:12px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#F0D98C;">{{eyebrow}}</td>
+      </tr>
+    </table>
+    <h2 class="c-serif c-h2" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:40px; line-height:46px; font-weight:700; letter-spacing:-0.01em; color:#FFFFFF; mso-line-height-rule:exactly;">{{heading}}</h2>
+    <p class="c-serif c-lead" style="margin:10px 0 0 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:22px; line-height:32px; font-style:italic; font-weight:500; color:#F0D98C; mso-line-height-rule:exactly;">{{subtitle}}</p>
+
+  </td>
+</tr>

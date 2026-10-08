@@ -516,6 +516,24 @@ Use `brand/resources/icon-map-v4.json` as the machine-readable source and `brand
 - Do not use retired icons or emoji substitutes.
 - A selected story module may use the closest documented v4 role; use a text-only heading when no mapping is semantically appropriate.
 
+## Component System
+
+- Layout source of truth: `newsletter-system/components/` (catalogue and assembly steps in its `README.md`). Values: `newsletter-system/tokens.md`. Visual review: `newsletter-system/gallery/`.
+- Build every new issue by hand from `newsletter-system/components/shell/document-shell.html` plus component rows. Do not copy a previous draft as the starting point.
+- To change the design, edit the component, check it in the gallery, then rebuild the draft. Never restyle a generated draft by hand.
+- Keep the established opening order: masthead/hero, Greetings Friends, Our Mission, Ministry Spotlight. Pick the component variant that suits the season's content and artwork.
+- Replace every `{{placeholder}}` with approved copy and delete unused `OPTIONAL` blocks. The audit fails a draft that still contains `{{`.
+- Alternate band backgrounds (navy, cream, white, soft blue) so neighbouring sections never share one.
+- Brand: Lora and Inter only, core colours plus the supporting tints in `tokens.md`. The mood board is inspiration only; teal, Playfair Display and Source Sans 3 are not used.
+
+## Illustrations
+
+- Illustrations are lead elements, not sidebar graphics. Choose the component by artwork shape: portrait, landscape or square (see the table in `newsletter-system/components/README.md`).
+- Use only the email copies in `brand/assets/illustrations/email/`, listed in `resources/links/st-pauls-illustrations-v1.json` and `.md`. Each has a clean filename and stays under 300 KB.
+- Export new art at twice its largest display width (see `tokens.md`). Typical display widths: portrait 340–400px, square 280–520px, split 478px, full-width landscape 1004px.
+- On phones, portrait art caps at 300px, square at 320px, and landscape fills the width.
+- Write alt text that describes the picture. When the art contains words (such as the Our Mission card), the alt text repeats them.
+
 ## Images
 
 - Use absolute HTTPS image URLs in final email HTML.
@@ -559,8 +577,8 @@ Avoid:
 
 1. Confirm the linked Google Doc or an explicitly assigned copy is the latest approved editorial source.
 2. Confirm the three Core Sections and identify the selected Optional Story Modules in their approved order.
-3. Create a new versioned HTML file in `newsletters/drafting/<year>-<season>/`; never overwrite an approved or historical issue.
-4. Convert approved content to email-safe table HTML without rewriting it.
+3. Create a new versioned HTML file in `newsletters/drafting/<year>-<season>/` from `newsletter-system/components/shell/document-shell.html`; never overwrite an approved or historical issue.
+4. Assemble the issue from `newsletter-system/components/` and fill it with approved content without rewriting it.
 5. Apply the current v4 icon map, brand system, responsive stacking, and accessibility rules.
 6. Remove unused drafting scaffolding and verify all names, dates, times, links, financial figures, Scripture, images, and permissions.
 7. Run `node scripts/audit-newsletter-repo.js` and resolve every current-source error.
@@ -579,6 +597,8 @@ Avoid:
 - [ ] Names, dates, times, links, Scripture, financial figures, and permissions verified.
 - [ ] Seasonal hero and approved photos use durable HTTPS URLs.
 - [ ] Every image has alt text and an explicit width.
+- [ ] Built from `newsletter-system/components/`; no `{{placeholder}}` or unused `OPTIONAL` block remains.
+- [ ] Illustrations come from `brand/assets/illustrations/email/` and match their component's shape.
 - [ ] Canonical v4 icons are mapped correctly.
 - [ ] Mobile stacking and dark-section contrast checked.
 - [ ] View-in-browser merge tag verified in a delivered test.

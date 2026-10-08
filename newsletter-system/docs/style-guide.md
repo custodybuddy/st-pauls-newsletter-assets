@@ -2,6 +2,12 @@
 
 This is a quick-reference companion to `docs/st-pauls-comprehensive-newsletter-template.md`. The comprehensive template mirrors the current seasonal Google Doc and controls modular structure, editorial guidance, accessibility, and production workflow.
 
+## Components and Tokens
+
+- Build issues from `newsletter-system/components/` (catalogue in its `README.md`); review them in `newsletter-system/gallery/`.
+- Exact values for colour, type, spacing and image sizes: `newsletter-system/tokens.md`.
+- Illustrations: choose the layout by artwork shape (portrait, landscape, square) and use the email copies listed in `resources/links/st-pauls-illustrations-v1.md`.
+
 ## Brand Colors
 
 - Deep navy: `#0A1C2C`
@@ -50,7 +56,7 @@ Optional modules can be reordered, combined, or omitted when the approved draft 
 - Mobile body copy: approximately `17-18px`
 - Major cards: `24px` radius; inner cards: approximately `14-20px`
 - Use nested presentation tables for bento rows; stack into a logical single column on mobile
-- Use varied cream, navy, warm-gold, and sage treatments to create editorial rhythm
+- Alternate navy, cream, white and soft-blue bands to create editorial rhythm; gold is for rules, frames and buttons (no sage or teal)
 
 ## Email-Safe Rules
 

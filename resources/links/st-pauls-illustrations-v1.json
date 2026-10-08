@@ -2,8 +2,11 @@
   "schemaVersion": 1,
   "illustrationSetVersion": 1,
   "status": "canonical",
+  "readableMap": "resources/links/st-pauls-illustrations-v1.md",
   "assetDirectory": "brand/assets/illustrations",
+  "emailAssetDirectory": "brand/assets/illustrations/email",
   "baseUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/",
+  "emailRules": "Use the files in illustrations/email/ in newsletters. They have clean filenames and are sized for email (under 300 KB). Originals stay in illustrations/ as masters.",
   "illustrations": [
     {
       "key": "our-mission-card",
@@ -13,7 +16,7 @@
       "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/st-pauls-our-mission-card-v2-email.jpg",
       "alt": "Our Mission: We are a Christ-centered, worshipping community serving and leading people to Jesus.",
       "recommendedWidth": 300,
-      "layoutRole": "Permanent 30% visual column in the Greetings Friends 70/30 component",
+      "layoutRole": "Master copy of the Our Mission portrait card. In new issues use the email copy our-mission-card-portrait.",
       "emailFormat": "jpg"
     }
   ],
@@ -26,8 +29,94 @@
       "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/st-pauls-compassionate-care-ministry-highlight%20(1).png",
       "alt": "St. Paul’s ministry wheel showing Compassionate Care Ministry",
       "recommendedWidth": 260,
-      "layoutRole": "Supplemental Ministry Spotlight graphic for the Compassionate Care Ministry feature",
+      "layoutRole": "Master copy (1254 x 1254, 1.8 MB). In new issues use the email copy ministry-wheel-compassionate-care-square.",
       "emailFormat": "png"
+    }
+  ],
+  "emailIllustrations": [
+    {
+      "key": "our-mission-card-portrait",
+      "shape": "portrait",
+      "aspect": "3:4",
+      "pixels": "640x853",
+      "filename": "our-mission-card-portrait-640x853.jpg",
+      "repositoryPath": "brand/assets/illustrations/email/our-mission-card-portrait-640x853.jpg",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/our-mission-card-portrait-640x853.jpg",
+      "alt": "Our Mission: We are a Christ-centered, worshipping community serving and leading people to Jesus.",
+      "displayWidths": [400, 360, 340],
+      "components": ["greetings/greetings-mission-portrait.html", "mission/our-mission-portrait.html", "features/feature-portrait-side.html"],
+      "source": "Re-encoded from st-pauls-our-mission-card-v2-email.jpg",
+      "status": "production"
+    },
+    {
+      "key": "ministry-wheel-compassionate-care-square",
+      "shape": "square",
+      "aspect": "1:1",
+      "pixels": "880x880",
+      "filename": "ministry-wheel-compassionate-care-square-880.jpg",
+      "repositoryPath": "brand/assets/illustrations/email/ministry-wheel-compassionate-care-square-880.jpg",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/ministry-wheel-compassionate-care-square-880.jpg",
+      "alt": "St. Paul’s ministry wheel showing Compassionate Care Ministry",
+      "displayWidths": [520, 410, 340],
+      "components": ["spotlight/ministry-spotlight-feature.html", "spotlight/ministry-spotlight-showcase.html", "cards/card-navy-illustrated.html"],
+      "source": "Resized from st-pauls-compassionate-care-ministry-highlight (1).png (1.8 MB to 129 KB)",
+      "status": "production"
+    },
+    {
+      "key": "our-mission-community-landscape",
+      "shape": "landscape",
+      "aspect": "8:5",
+      "pixels": "540x337",
+      "filename": "our-mission-community-landscape-540x337.jpg",
+      "repositoryPath": "brand/assets/illustrations/email/our-mission-community-landscape-540x337.jpg",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/our-mission-community-landscape-540x337.jpg",
+      "alt": "Illustration of a church community gathered beneath a gold cross and arch",
+      "displayWidths": [478, 434, 390],
+      "components": ["features/feature-split-image-left.html", "cards/card-cream-illustrated.html", "cards/card-pair.html"],
+      "source": "Text-free crop of the Our Mission card artwork",
+      "status": "demo crop; good up to 540px wide, replace with an 1000px export for sharper split layouts"
+    },
+    {
+      "key": "fall-2026-panorama",
+      "shape": "landscape",
+      "aspect": "3:1",
+      "pixels": "1100x367",
+      "filename": "fall-2026-panorama-1100x367.jpg",
+      "repositoryPath": "brand/assets/illustrations/email/fall-2026-panorama-1100x367.jpg",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/fall-2026-panorama-1100x367.jpg",
+      "alt": "Autumn meadow at sunset with a family walking hand in hand toward a wooden cross",
+      "displayWidths": [1004, 1002],
+      "components": ["greetings/greetings-landscape-letter.html", "features/feature-landscape-top.html"],
+      "source": "JPG copy of brand/assets/banners/st-pauls-fall-hero-1100px.png",
+      "status": "demo; do not repeat the masthead banner in the same issue"
+    },
+    {
+      "key": "fall-2026-family-landscape",
+      "shape": "landscape",
+      "aspect": "16:9",
+      "pixels": "652x367",
+      "filename": "fall-2026-family-landscape-652x367.jpg",
+      "repositoryPath": "brand/assets/illustrations/email/fall-2026-family-landscape-652x367.jpg",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/fall-2026-family-landscape-652x367.jpg",
+      "alt": "A family walking hand in hand through an autumn meadow toward a cross",
+      "displayWidths": [478, 434],
+      "components": ["features/feature-split-image-right.html", "cards/card-pair.html"],
+      "source": "Crop of the Fall 2026 hero banner",
+      "status": "demo crop"
+    },
+    {
+      "key": "fall-2026-cross-square",
+      "shape": "square",
+      "aspect": "1:1",
+      "pixels": "367x367",
+      "filename": "fall-2026-cross-square-367.jpg",
+      "repositoryPath": "brand/assets/illustrations/email/fall-2026-cross-square-367.jpg",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/fall-2026-cross-square-367.jpg",
+      "alt": "A wooden cross in an autumn meadow beneath golden leaves",
+      "displayWidths": [400, 280],
+      "components": ["masthead/masthead-split.html", "features/feature-square-badge.html"],
+      "source": "Crop of the Fall 2026 hero banner",
+      "status": "demo crop; slightly upscaled at 400px, so commission an 800px square for production"
     }
   ]
 }

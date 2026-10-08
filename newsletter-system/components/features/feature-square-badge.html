@@ -1,0 +1,45 @@
+<!--
+  COMPONENT: feature-square-badge (v1)
+  Role: Optional Story Module. Centred card led by a large circular illustration.
+        Good for short items: Volunteer Opportunity, Prayer Focus, a single announcement.
+  Art:  SQUARE (1:1), subject centred (corners are cropped by the circle), source at least 280px (ideally 560px).
+        Displayed at 280px with a gold ring. Outlook shows the square image without the circle.
+  Placeholders: {{art_url}}, {{art_alt}}, {{eyebrow}}, {{heading}}, {{story_paragraph}}, {{cta_url}}, {{cta_label}}
+  Copy rules: duplicate the {{story_paragraph}} <p> per approved paragraph; delete the CTA table if unused.
+  Desktop: soft-blue band, centred white card up to 760px wide.
+  Mobile: card fills the width; art scales down.
+  Outlook: ghost table fixes the card at 760px; image width="280".
+-->
+<tr>
+  <td align="center" class="c-gutter c-band" bgcolor="#EBF4F8" style="padding:64px 48px; background-color:#EBF4F8;">
+    <!--[if mso]>
+    <table role="presentation" width="760" align="center" border="0" cellpadding="0" cellspacing="0"><tr><td>
+    <![endif]-->
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="width:100%; max-width:760px; background-color:#FFFFFF; border-radius:32px; border-top:6px solid #D4AF37;">
+      <tr>
+        <td align="center" class="c-pad" style="padding:52px 64px 56px 64px; text-align:center;">
+          <img src="{{art_url}}" width="280" alt="{{art_alt}}" class="c-img-square" style="display:block; width:280px; max-width:100%; height:auto; margin:0 auto 32px auto; border:6px solid #D4AF37; border-radius:50%;" />
+          <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto 14px auto;">
+            <tr>
+              <td width="28" valign="middle" style="width:28px;"><table role="presentation" width="28" border="0" cellpadding="0" cellspacing="0"><tr><td height="2" bgcolor="#D4AF37" style="height:2px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+              <td valign="middle" style="padding:0 12px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#0A1C2C;">{{eyebrow}}</td>
+              <td width="28" valign="middle" style="width:28px;"><table role="presentation" width="28" border="0" cellpadding="0" cellspacing="0"><tr><td height="2" bgcolor="#D4AF37" style="height:2px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+            </tr>
+          </table>
+          <h2 class="c-serif c-h2" style="margin:0 0 20px 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:40px; line-height:46px; font-weight:700; letter-spacing:-0.01em; color:#0A1C2C; mso-line-height-rule:exactly;">{{heading}}</h2>
+          <p class="c-body" style="margin:0 0 20px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:19px; line-height:32px; color:#475569; mso-line-height-rule:exactly;">{{story_paragraph}}</p>
+          <!-- OPTIONAL:cta --><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="c-btn-full" style="margin:16px auto 0 auto;">
+            <tr>
+              <td align="center" bgcolor="#0A1C2C" style="background-color:#0A1C2C; border-radius:999px; padding:16px 34px;">
+                <a href="{{cta_url}}" target="_blank" style="display:inline-block; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:800; letter-spacing:0.02em; color:#FFFFFF; text-decoration:none;">{{cta_label}}</a>
+              </td>
+            </tr>
+          </table><!-- /OPTIONAL:cta -->
+        </td>
+      </tr>
+    </table>
+    <!--[if mso]>
+    </td></tr></table>
+    <![endif]-->
+  </td>
+</tr>

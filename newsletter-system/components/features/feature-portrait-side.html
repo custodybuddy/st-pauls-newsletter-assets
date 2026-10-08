@@ -1,0 +1,42 @@
+<!--
+  COMPONENT: feature-portrait-side (v1)
+  Role: Optional Story Module. Tall portrait illustration beside a longer story with a pull quote.
+        Good for Scripture or Spiritual Reflection, Sermon Reflection, Prayer Focus.
+  Art:  PORTRAIT (3:4 or 2:3), source at least 340px wide (ideally 680px). Displayed at 340px.
+  Placeholders: {{art_url}}, {{art_alt}}, {{eyebrow}}, {{heading}}, {{story_lead}}, {{story_paragraph}}, {{quote_text}}
+  Copy rules: {{story_lead}} = first approved paragraph (set larger, wording unchanged). The quote is an
+              approved quotation only; delete the quote table otherwise.
+  Band: white by default; switch both bgcolor values to #FDFBF7 to alternate.
+  Desktop: 62/38 text/portrait, portrait on the right.
+  Mobile: portrait first (max 300px, centred), then text.
+  Outlook: dir="rtl" swap; image width="340".
+-->
+<tr>
+  <td class="c-gutter c-band" bgcolor="#FFFFFF" style="padding:64px 48px; background-color:#FFFFFF;">
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" dir="rtl">
+      <tr>
+        <td width="38%" valign="top" align="center" dir="ltr" class="c-col" style="width:38%; padding-left:24px;">
+          <img src="{{art_url}}" width="340" alt="{{art_alt}}" class="c-img-portrait" style="display:block; width:100%; max-width:340px; height:auto; margin:0 auto; border:0; border-radius:24px;" />
+        </td>
+        <td width="62%" valign="top" dir="ltr" class="c-col c-col-gap" style="width:62%; padding-right:32px; text-align:left;">
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin:0 0 12px 0;">
+            <tr>
+              <td width="32" valign="middle" style="width:32px;"><table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="3" bgcolor="#D4AF37" style="height:3px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+              <td valign="middle" style="padding-left:12px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#0A1C2C;">{{eyebrow}}</td>
+            </tr>
+          </table>
+          <h2 class="c-serif c-display" style="margin:0 0 24px 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:46px; line-height:52px; font-weight:700; letter-spacing:-0.02em; color:#0A1C2C; mso-line-height-rule:exactly;">{{heading}}</h2>
+          <p class="c-serif c-lead" style="margin:0 0 20px 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:23px; line-height:36px; font-weight:500; color:#1E293B; mso-line-height-rule:exactly;">{{story_lead}}</p>
+          <p class="c-body" style="margin:0 0 20px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:19px; line-height:32px; color:#475569; mso-line-height-rule:exactly;">{{story_paragraph}}</p>
+          <!-- OPTIONAL:quote --><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="margin:28px 0 0 0;">
+            <tr>
+              <td style="border-top:2px solid #D4AF37; border-bottom:2px solid #D4AF37; padding:24px 0;">
+                <p class="c-serif c-quote" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:28px; line-height:40px; font-style:italic; font-weight:500; color:#0A1C2C; text-align:center; mso-line-height-rule:exactly;">{{quote_text}}</p>
+              </td>
+            </tr>
+          </table><!-- /OPTIONAL:quote -->
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

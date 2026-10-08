@@ -1,0 +1,50 @@
+<!--
+  COMPONENT: masthead-split (v1)
+  Role: Navy masthead with the title stack on the left and large square seasonal artwork on the right.
+        Use when a square seasonal illustration is available and the banner is not needed.
+  Art:  Square (1:1), source at least 400px (ideally 800px). Displayed at 400px in a gold frame.
+  Placeholders: {{tagline}}, {{newsletter_title}}, {{intro_line}}, {{edition}}, {{art_url}}, {{art_alt}}
+  Optional: delete the {{intro_line}} paragraph when not needed.
+  Desktop: 56/44 split, 60px title.
+  Mobile: artwork stacks above the title (dir="rtl" swap keeps art first in source order), centred.
+  Outlook: columns are real table cells; dir="rtl" places the art on the right; frame is a padded gold cell.
+-->
+<tr>
+  <td height="6" bgcolor="#D4AF37" style="height:6px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td>
+</tr>
+<tr>
+  <td class="c-gutter c-band" bgcolor="#0A1C2C" style="padding:56px 48px; background-color:#0A1C2C;">
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" dir="rtl">
+      <tr>
+        <!-- ART (first in source = first on mobile; shown on the right on desktop) -->
+        <td width="44%" valign="middle" align="center" dir="ltr" class="c-col" style="width:44%; padding-left:24px;">
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" class="c-center-table">
+            <tr>
+              <td bgcolor="#D4AF37" style="background-color:#D4AF37; padding:6px; border-radius:30px;">
+                <img src="{{art_url}}" width="400" alt="{{art_alt}}" class="c-img-square" style="display:block; width:100%; max-width:400px; height:auto; border:0; border-radius:24px;" />
+              </td>
+            </tr>
+          </table>
+        </td>
+        <!-- TITLE STACK -->
+        <td width="56%" valign="middle" dir="ltr" class="c-col c-col-gap c-center" style="width:56%; padding-right:24px; text-align:left;">
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="c-center-table" style="margin:0 0 22px 0;">
+            <tr>
+              <td valign="middle" style="padding-right:14px;">
+                <img src="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/01-branding-cross-wings.png" width="64" alt="Winged cross with a gold halo" style="display:block; width:64px; height:auto; border:0;" />
+              </td>
+              <td valign="middle" style="font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase; color:#F0D98C;">{{tagline}}</td>
+            </tr>
+          </table>
+          <h1 class="c-serif c-hero-title" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:60px; line-height:66px; font-weight:700; letter-spacing:-0.02em; color:#FFFFFF; mso-line-height-rule:exactly;">{{newsletter_title}}</h1>
+          <!-- OPTIONAL:intro_line --><p class="c-serif c-lead" style="margin:20px 0 0 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:22px; line-height:33px; font-style:italic; font-weight:500; color:#E2E8F0; mso-line-height-rule:exactly;">{{intro_line}}</p><!-- /OPTIONAL:intro_line -->
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="c-center-table" style="margin:28px 0 0 0;">
+            <tr>
+              <td align="center" bgcolor="#D4AF37" style="background-color:#D4AF37; border-radius:999px; padding:10px 26px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:#0A1C2C;">{{edition}}</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

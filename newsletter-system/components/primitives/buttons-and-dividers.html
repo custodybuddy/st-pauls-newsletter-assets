@@ -1,0 +1,55 @@
+<!--
+  COMPONENT: buttons-and-dividers (v1)
+  Role: Reference copies of the bulletproof CTA buttons and the gold ornament divider.
+        Components already contain these; copy from here when adding a CTA to a section.
+  Buttons: GOLD (on navy), NAVY (on white/cream), OUTLINE (secondary, on white/cream).
+  Placeholders: {{cta_url}}, {{cta_label}}
+  Outlook: table-cell buttons with bgcolor; corners render square in Outlook desktop, text stays clickable.
+  Mobile: .c-btn-full stretches the button to full width.
+-->
+<tr>
+  <td class="c-gutter c-band" bgcolor="#FFFFFF" style="padding:40px 48px; background-color:#FFFFFF;">
+
+    <!-- NAVY BUTTON (primary on light backgrounds) -->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="c-btn-full" style="margin:0 0 16px 0;">
+      <tr>
+        <td align="center" bgcolor="#0A1C2C" style="background-color:#0A1C2C; border-radius:999px; padding:16px 34px;">
+          <a href="{{cta_url}}" target="_blank" style="display:inline-block; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:800; letter-spacing:0.02em; color:#FFFFFF; text-decoration:none;">{{cta_label}}</a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- OUTLINE BUTTON (secondary on light backgrounds) -->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="c-btn-full" style="margin:0 0 28px 0;">
+      <tr>
+        <td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:2px solid #D4AF37; border-radius:999px; padding:14px 32px;">
+          <a href="{{cta_url}}" target="_blank" style="display:inline-block; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:800; letter-spacing:0.02em; color:#0A1C2C; text-decoration:none;">{{cta_label}}</a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- GOLD ORNAMENT DIVIDER (centered) -->
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="45%" valign="middle"><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td height="1" bgcolor="#D4AF37" style="height:1px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+        <td width="10%" align="center" valign="middle" style="font-family:Georgia, serif; font-size:18px; line-height:18px; color:#D4AF37;">&#10022;</td>
+        <td width="45%" valign="middle"><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td height="1" bgcolor="#D4AF37" style="height:1px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+      </tr>
+    </table>
+
+  </td>
+</tr>
+<tr>
+  <td class="c-gutter c-band" bgcolor="#0A1C2C" style="padding:40px 48px; background-color:#0A1C2C;">
+
+    <!-- GOLD BUTTON (primary on navy backgrounds) -->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="c-btn-full">
+      <tr>
+        <td align="center" bgcolor="#D4AF37" style="background-color:#D4AF37; border-radius:999px; padding:16px 34px;">
+          <a href="{{cta_url}}" target="_blank" style="display:inline-block; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:800; letter-spacing:0.02em; color:#0A1C2C; text-decoration:none;">{{cta_label}}</a>
+        </td>
+      </tr>
+    </table>
+
+  </td>
+</tr>

@@ -1,0 +1,53 @@
+<!--
+  COMPONENT: feature-landscape-top (v1)
+  Role: Optional Story Module. Wide illustration across the top of a card, story below.
+        Good for Community Impact, Special Event or Church Update, Testimony.
+  Art:  LANDSCAPE, 3:1 to 3:2, source at least 1004px wide (ideally 2008px). Displayed full card width.
+  Placeholders: {{art_url}}, {{art_alt}}, {{eyebrow}}, {{heading}}, {{story_paragraph}}, {{cta_url}}, {{cta_label}}
+  Copy rules: duplicate the {{story_paragraph}} <p> for each approved paragraph; delete the CTA table if unused.
+  Band: white by default; switch both bgcolor values to #FDFBF7 to alternate with a neighbouring white band.
+  Desktop: 1004px art, 64/36 heading/CTA row, text below.
+  Mobile: single column; button full width.
+  Outlook: image width="1004"; card corners render square.
+-->
+<tr>
+  <td class="c-gutter c-band" bgcolor="#FFFFFF" style="padding:56px 48px; background-color:#FFFFFF;">
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:1px solid #E5E7EB; border-radius:28px;">
+      <tr>
+        <td style="padding:0; font-size:0; line-height:0;">
+          <img src="{{art_url}}" width="1002" alt="{{art_alt}}" class="c-img-full" style="display:block; width:100%; max-width:1002px; height:auto; border:0; border-radius:27px 27px 0 0;" />
+        </td>
+      </tr>
+      <tr>
+        <td class="c-pad" style="padding:44px 52px 52px 52px;">
+          <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="64%" valign="bottom" class="c-col" style="width:64%; padding-right:24px;">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin:0 0 12px 0;">
+                  <tr>
+                    <td width="32" valign="middle" style="width:32px;"><table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="3" bgcolor="#D4AF37" style="height:3px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+                    <td valign="middle" style="padding-left:12px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#0A1C2C;">{{eyebrow}}</td>
+                  </tr>
+                </table>
+                <h2 class="c-serif c-h2" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:42px; line-height:48px; font-weight:700; letter-spacing:-0.01em; color:#0A1C2C; mso-line-height-rule:exactly;">{{heading}}</h2>
+              </td>
+              <td width="36%" valign="bottom" align="right" class="c-col c-col-gap-sm" style="width:36%; padding-left:24px;">
+                <!-- OPTIONAL:cta --><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="right" class="c-btn-full">
+                  <tr>
+                    <td align="center" bgcolor="#0A1C2C" style="background-color:#0A1C2C; border-radius:999px; padding:16px 34px;">
+                      <a href="{{cta_url}}" target="_blank" style="display:inline-block; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:800; letter-spacing:0.02em; color:#FFFFFF; text-decoration:none;">{{cta_label}}</a>
+                    </td>
+                  </tr>
+                </table><!-- /OPTIONAL:cta -->
+              </td>
+            </tr>
+          </table>
+          <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="margin:26px 0 24px 0;">
+            <tr><td height="1" bgcolor="#E9DFC7" style="height:1px; background-color:#E9DFC7; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr>
+          </table>
+          <p class="c-body" style="margin:0 0 20px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:19px; line-height:32px; color:#475569; mso-line-height-rule:exactly;">{{story_paragraph}}</p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

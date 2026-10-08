@@ -1,0 +1,46 @@
+<!--
+  COMPONENT: card-cream-illustrated (v1)
+  Role: Illustrated background card on cream. A warm, quieter companion to card-navy-illustrated.
+        Good for Testimony or Story of Care, Volunteer Opportunity, Community Impact.
+  Art:  LANDSCAPE (3:2 to 16:9), source at least 390px wide (ideally 780px). Displayed at 390px.
+  Placeholders: {{art_url}}, {{art_alt}}, {{eyebrow}}, {{heading}}, {{story_paragraph}}, {{cta_url}}, {{cta_label}}
+  Copy rules: duplicate the {{story_paragraph}} <p> per approved paragraph; delete the CTA table if unused.
+  Band: white by default (the cream card needs a white or soft-blue band around it).
+  Desktop: 55/45 text/art, art on the right (dir="rtl" swap), light-gold border.
+  Mobile: art first (full width), then text; button full width.
+  Outlook: dir="rtl" swap; image width="390"; corners render square.
+-->
+<tr>
+  <td class="c-gutter c-band" bgcolor="#FFFFFF" style="padding:48px 48px; background-color:#FFFFFF;">
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FDFBF7" style="background-color:#FDFBF7; border:2px solid #F0D98C; border-radius:28px;">
+      <tr>
+        <td class="c-pad" style="padding:40px;">
+          <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" dir="rtl">
+            <tr>
+              <td width="45%" valign="middle" dir="ltr" class="c-col" style="width:45%; padding-left:20px;">
+                <img src="{{art_url}}" width="390" alt="{{art_alt}}" class="c-img-full" style="display:block; width:100%; max-width:390px; height:auto; border:0; border-radius:20px;" />
+              </td>
+              <td width="55%" valign="middle" dir="ltr" class="c-col c-col-gap" style="width:55%; padding-right:28px; text-align:left;">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin:0 0 12px 0;">
+                  <tr>
+                    <td width="32" valign="middle" style="width:32px;"><table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="3" bgcolor="#D4AF37" style="height:3px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+                    <td valign="middle" style="padding-left:12px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#0A1C2C;">{{eyebrow}}</td>
+                  </tr>
+                </table>
+                <h3 class="c-serif c-h2" style="margin:0 0 18px 0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:36px; line-height:42px; font-weight:700; letter-spacing:-0.01em; color:#0A1C2C; mso-line-height-rule:exactly;">{{heading}}</h3>
+                <p class="c-body" style="margin:0 0 20px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:19px; line-height:32px; color:#475569; mso-line-height-rule:exactly;">{{story_paragraph}}</p>
+                <!-- OPTIONAL:cta --><table role="presentation" border="0" cellpadding="0" cellspacing="0" class="c-btn-full" style="margin:12px 0 0 0;">
+                  <tr>
+                    <td align="center" bgcolor="#0A1C2C" style="background-color:#0A1C2C; border-radius:999px; padding:16px 34px;">
+                      <a href="{{cta_url}}" target="_blank" style="display:inline-block; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:800; letter-spacing:0.02em; color:#FFFFFF; text-decoration:none;">{{cta_label}}</a>
+                    </td>
+                  </tr>
+                </table><!-- /OPTIONAL:cta -->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

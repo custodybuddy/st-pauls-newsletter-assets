@@ -1,0 +1,46 @@
+<!--
+  COMPONENT: our-mission-portrait (v1)
+  Role: Core Section. Standalone Our Mission feature on navy with the portrait mission card.
+        Use with greetings-landscape-letter, or whenever Our Mission needs its own band.
+  Art:  Portrait (3:4). Default: Our Mission card
+        https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/our-mission-card-portrait-640x853.jpg
+        Displayed at 360px wide (about 480px tall).
+  Placeholders: {{art_url}}, {{art_alt}}, {{eyebrow}}, {{mission_statement}}, {{callout_label}}, {{callout_text}}
+  Copy rules: {{mission_statement}} is the approved mission wording. Gold emphasis on key words is allowed:
+              <span style="color:#F0D98C; font-weight:700;">Christ-centered</span>
+              Delete the callout table when the issue has no linked vision statement or verse.
+  Desktop: 40/60 split, portrait on the left, statement set large in Lora italic.
+  Mobile: portrait first (max 300px, centred), statement below, centred.
+  Outlook: real table columns; navy uses bgcolor; light text colours only (contrast rule).
+-->
+<tr>
+  <td height="6" bgcolor="#D4AF37" style="height:6px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td>
+</tr>
+<tr>
+  <td class="c-gutter c-band" bgcolor="#0A1C2C" style="padding:64px 48px; background-color:#0A1C2C;">
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="40%" valign="middle" align="center" class="c-col" style="width:40%; padding-right:24px;">
+          <img src="{{art_url}}" width="360" alt="{{art_alt}}" class="c-img-portrait" style="display:block; width:100%; max-width:360px; height:auto; margin:0 auto; border:0; border-radius:24px;" />
+        </td>
+        <td width="60%" valign="middle" class="c-col c-col-gap c-center" style="width:60%; padding-left:32px;">
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="c-center-table" style="margin:0 0 18px 0;">
+            <tr>
+              <td width="32" valign="middle" style="width:32px;"><table role="presentation" width="32" border="0" cellpadding="0" cellspacing="0"><tr><td height="3" bgcolor="#D4AF37" style="height:3px; background-color:#D4AF37; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&#160;</td></tr></table></td>
+              <td valign="middle" style="padding-left:12px; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:#F0D98C;">{{eyebrow}}</td>
+            </tr>
+          </table>
+          <p class="c-serif c-display" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:40px; line-height:52px; font-style:italic; font-weight:500; color:#FFFFFF; mso-line-height-rule:exactly;">{{mission_statement}}</p>
+          <!-- OPTIONAL:callout --><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="margin:36px 0 0 0;">
+            <tr>
+              <td bgcolor="#13293D" class="c-pad-tight" style="background-color:#13293D; border-left:4px solid #D4AF37; border-radius:0 16px 16px 0; padding:22px 26px; text-align:left;">
+                <p style="margin:0 0 6px 0; font-family:'Inter', Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:#F0D98C;">{{callout_label}}</p>
+                <p class="c-serif" style="margin:0; font-family:'Lora', Georgia, 'Times New Roman', serif; font-size:21px; line-height:31px; font-style:italic; color:#E2E8F0;">{{callout_text}}</p>
+              </td>
+            </tr>
+          </table><!-- /OPTIONAL:callout -->
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
