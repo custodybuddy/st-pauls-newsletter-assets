@@ -58,6 +58,7 @@ Append a repository-relative file path to this base to form a public URL. GitHub
 | Tool | Local path | What it checks |
 |---|---|---|
 | Repository audit | [scripts/audit-newsletter-repo.js](../scripts/audit-newsletter-repo.js) | Current guidance, canonical icons, HTML structure, image/link paths, and GitHub Pages file references. |
+| Documentation mirror renderer | [scripts/render-docs-html.rb](../scripts/render-docs-html.rb) | Regenerates the browser-readable `.html` mirrors for the Markdown files in this directory; Markdown remains authoritative. |
 | Standard audit command | `node scripts/audit-newsletter-repo.js` | Run after relevant newsletter, asset, or documentation work. Historical findings remain warnings in standard mode. |
 | Release audit command | `node scripts/audit-newsletter-repo.js --strict` | Treats warnings as failures for a release review. |
 

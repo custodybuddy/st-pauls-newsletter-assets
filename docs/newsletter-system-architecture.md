@@ -51,7 +51,7 @@ scripts/audit-newsletter-repo.js ---------------------> structural and path vali
 | `newsletters/archive/` | Sent issues and screenshots | Read-only historical reference. |
 | `templates/` and `newsletters/drafting/*/older-drafts/` | Legacy history | Read-only; paths and markup may be obsolete. |
 | `resources/` | Historical analysis, provenance, and superseded link references | Use only when its status and date make it relevant; current resources take precedence. |
-| `scripts/` | Repository validation | `audit-newsletter-repo.js` checks current guidance, assets, email HTML, and GitHub Pages paths. |
+| `scripts/` | Repository validation and documentation rendering | `audit-newsletter-repo.js` checks current guidance, assets, email HTML, and GitHub Pages paths. `render-docs-html.rb` regenerates browser-readable mirrors of `docs/*.md`; Markdown remains authoritative. |
 | `.agents/skills/` | Project-local agent guidance | Skills supplement repository rules; they do not alter production architecture. |
 
 ## Newsletter Assembly Flow

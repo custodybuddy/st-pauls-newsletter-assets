@@ -1,5 +1,10 @@
 # Newsletter Change Log
 
+## 2026-10-10 (documentation HTML mirrors)
+
+- Added a dependency-free renderer and browser-readable HTML mirrors for the Markdown guides in `docs/`.
+- Markdown remains the authoritative documentation; rerun `ruby scripts/render-docs-html.rb` after updating a mirrored guide.
+
 ## 2026-10-10 (path reference)
 
 - Added `docs/path-reference.md`, a verified local-path and GitHub Pages URL reference for assets, documentation, templates, newsletter lifecycle folders, and the repository audit.

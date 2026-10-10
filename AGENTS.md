@@ -263,6 +263,7 @@ Every meaningful Codex change must update the affected authoritative documentati
 - For icon work, update `brand/resources/icon-map-v4.json` first and mirror it in `brand/resources/icon-map-v4.md`; update the visual map when icon assets change.
 - For illustration work, update `resources/links/st-pauls-illustrations-v1.json` and the readable illustration map.
 - For construction or workflow changes, update `docs/st-pauls-comprehensive-newsletter-template.md`, the relevant style guide or checklist, and README when repository-wide source-of-truth locations, asset roots, or workflow change.
+- After changing a Markdown guide in `docs/`, run `ruby scripts/render-docs-html.rb` to regenerate its browser-readable `.html` mirror. The Markdown guide remains authoritative; check in the updated mirror with the source change.
 
 ---
 
@@ -637,4 +638,4 @@ When building a new newsletter, use `docs/st-pauls-comprehensive-newsletter-temp
 
 ## Repository Structure Reference
 
-For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](docs/newsletter-system-architecture.md).
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](docs/newsletter-system-architecture.md). For repository paths and live asset URLs, see the [path reference](docs/path-reference.md).

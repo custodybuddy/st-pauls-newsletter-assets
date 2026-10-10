@@ -8,6 +8,7 @@ This repository contains the production system for “What’s Up, St. Paul’s?
 - **New issue structure:** `docs/st-pauls-comprehensive-newsletter-template.md`.
 - **System architecture:** [Newsletter System Architecture](docs/newsletter-system-architecture.md).
 - **Path and live-URL reference:** [Path Reference](docs/path-reference.md).
+- **Browser-readable documentation:** Run `ruby scripts/render-docs-html.rb` after changing a file in `docs/`.
 - **HTML starting point:** `newsletter-system/template/html-scaffold.html`.
 - **Brand assets and stable destinations:** `brand/`.
 - **Final checks:** `newsletter-system/docs/qa-checklist.md`.
