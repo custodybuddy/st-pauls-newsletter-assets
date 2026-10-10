@@ -5,6 +5,33 @@ description: Guide for building modern, accessible, and composable UI components
 
 # Building Components
 
+## St. Paul's Newsletter Project Mode
+
+This repository is a static HTML email system with no React runtime, component
+framework, package manifest, or build step. Translate component guidance into
+email-safe source organization:
+
+- Treat `snippets/` as reusable, copy-neutral section fragments and
+  `newsletter-system/components/outlook-safe/` as layout primitives.
+- Keep seasonal drafts in `newsletters/drafting/<year>-<season>/`; do not turn
+  archived or older-draft HTML into active components.
+- A component must remain table-based, readable without media queries, and safe
+  when pasted into a full email. Keep critical styles inline and retain any MSO
+  conditional markup.
+- Separate layout from editorial content. Replace example wording with the
+  assigned approved copy; never let a reusable fragment become a wording source.
+- Prefer explicit section variants over a single fragment with many hidden
+  layout modes. Do not introduce React, JSX, TypeScript, client-side state,
+  JavaScript, npm packages, or a bundler unless the user explicitly changes the
+  project architecture.
+- Preserve absolute links, image URLs, alt text, width attributes, and the
+  canonical icon mapping. After edits, run `node scripts/audit-newsletter-repo.js`.
+
+For this project, read `definitions.mdx`, `principles.mdx`, `accessibility.mdx`,
+and `composition.mdx` only for transferable design ideas. The React, TypeScript,
+npm, registry, polymorphism, and state references are out of scope unless the
+user explicitly requests work in a different application.
+
 ## When to use this skill
 
 Use when the user is:

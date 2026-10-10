@@ -11,6 +11,28 @@ metadata:
 
 Review files for compliance with Web Interface Guidelines.
 
+## St. Paul's Newsletter Project Mode
+
+This repository produces static HTML email, not a browser application. When
+reviewing files here, repository `AGENTS.md` and the production sources under
+`docs/` and `newsletter-system/docs/` take precedence over general web advice.
+
+- Treat a bento-style composition as a visual arrangement of nested
+  presentation tables. Never recommend CSS Grid, Flexbox, JavaScript, forms, or
+  browser-only interaction for production email HTML.
+- Preserve approved wording, absolute public URLs, inline critical styles,
+  explicit image widths and alt text, and Outlook-safe/MSO table structure.
+- Apply fetched web rules only when they are compatible with email clients.
+  Classify incompatible rules as `not applicable to production email` instead
+  of reporting them as defects.
+- Check keyboard and focus guidance for actual links and buttons, but do not
+  invent interactive controls that cannot work reliably in email.
+- Run `node scripts/audit-newsletter-repo.js` after an edit. Use `--strict` for
+  a release audit, and report historical warnings separately from current-file
+  findings.
+- Browser screenshots can verify visual regressions at selected viewports; they
+  do not prove rendering in Outlook, Gmail, Apple Mail, or Yahoo.
+
 ## How It Works
 
 1. Fetch the latest guidelines from the source URL below
@@ -33,7 +55,8 @@ Use WebFetch to retrieve the latest rules. The fetched content contains all the 
 When a user provides a file or pattern argument:
 1. Fetch guidelines from the source URL above
 2. Read the specified files
-3. Apply all rules from the fetched guidelines
+3. Apply all compatible rules from the fetched guidelines and the project-mode
+   constraints above
 4. Output findings using the format specified in the guidelines
 
 If no files specified, ask the user which files to review.
