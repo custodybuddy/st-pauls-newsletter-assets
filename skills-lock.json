@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "brand-asset": {
+      "source": "sanky369/vibe-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/creative/brand-asset/SKILL.md",
+      "computedHash": "0fc3e67bfddd4db43e980c3d80226090f0af6bac36207ea30ad0935386da50de"
+    }
+  }
+}
