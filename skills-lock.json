@@ -6,6 +6,12 @@
       "sourceType": "github",
       "skillPath": "skills/creative/brand-asset/SKILL.md",
       "computedHash": "0fc3e67bfddd4db43e980c3d80226090f0af6bac36207ea30ad0935386da50de"
+    },
+    "building-components": {
+      "source": "vercel/components.build",
+      "sourceType": "github",
+      "skillPath": "skills/building-components/SKILL.md",
+      "computedHash": "20889af7cb9b3abca1e38824f7fffaa873eb0cc4d45187967b97bd85462cf934"
     }
   }
 }
