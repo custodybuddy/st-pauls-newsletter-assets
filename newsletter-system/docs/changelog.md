@@ -1,5 +1,9 @@
 # Newsletter Change Log
 
+## 2026-10-10 (path reference)
+
+- Added `docs/path-reference.md`, a verified local-path and GitHub Pages URL reference for assets, documentation, templates, newsletter lifecycle folders, and the repository audit.
+
 ## 2026-10-10 (architecture documentation sync)
 
 - Added `docs/newsletter-system-architecture.md`, the current system map for editorial sources, assets, templates, seasonal issue folders, validation, and verification limits.

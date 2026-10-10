@@ -43,7 +43,7 @@ scripts/audit-newsletter-repo.js ---------------------> structural and path vali
 |---|---|---|
 | `brand/assets/` | Canonical banners, icons, illustrations | Update a manifest and visual map with any asset change. Final email images use the GitHub Pages `brand/assets/` URL. |
 | `brand/resources/` | Canonical icon map, contacts, donation links, reusable URLs, visual asset reference | Use as the active asset and stable-link record. |
-| `docs/` | Current production template, architecture, and current documentation pointers | The comprehensive template is authoritative for local workflow. |
+| `docs/` | Current production template, architecture, [path reference](path-reference.md), and current documentation pointers | The comprehensive template is authoritative for local workflow. |
 | `newsletter-system/` | HTML scaffold, Outlook-safe layout primitive, production style guide and QA checklist | Layout support only; never a replacement for approved editorial copy. |
 | `snippets/` | Styled, reusable table-row fragments | Layout only. Replace inherited names, dates, figures, and Draft 11 wording with approved copy. |
 | `newsletters/drafting/` | Versioned current work by season | Create new drafts here; do not overwrite approved or historical files. |
