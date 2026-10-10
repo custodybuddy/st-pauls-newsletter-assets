@@ -46,22 +46,13 @@ The controlling production instructions are in `docs/st-pauls-comprehensive-news
 - Use rounded editorial cards, varied section treatments, and table-based bento rows only when content lengths are compatible.
 - Stack every multi-column row into a logical single-column reading order on mobile.
 
-- Use St. Paul's palette consistently:
-  - Deep navy `#0A1C2C`
-  - Dark slate/navy text `#1E293B`
-  - Body slate `#475569`
-  - Soft slate `#64748B`
-  - Gold `#D4AF37`
-  - Dark gold `#B8860B`
-  - Light gold `#F0D98C`
-  - Cream `#FDFBF7`
-  - Soft blue `#EBF4F8`
-  - White `#FFFFFF`
+- Use the canonical tokens in `newsletter-system/docs/style-guide.md` (navy `#0D1B2A`, cream `#FAF7F1`, gold text on light `#8A5C00`, and so on).
 - Typography:
-  - Headings: `Lora, Georgia, serif`
-  - Body: `Inter, Arial, sans-serif`
+  - Lead blocks: `Lora, Georgia, serif`; section headings: `Playfair Display, Georgia, serif`
+  - Body: `Source Sans 3, Arial, sans-serif`; labels and buttons: `Inter, Arial, sans-serif`
   - Desktop body copy: approximately `18-20px` minimum
   - Mobile body copy: approximately `17-18px`
+- Gold text on light backgrounds is `#8A5C00` or darker (AA). Never `#D4AF37`, `#DAA017`, `#9C6A08` or `#B8860B`.
 - Preserve visual hierarchy:
   - Small uppercase section labels
   - Large serif headings
@@ -137,6 +128,14 @@ The controlling production instructions are in `docs/st-pauls-comprehensive-news
 4. Change only requested sections.
 5. Keep St. Paul's navy/gold identity consistent.
 
+## 12) Plain Text and Outlook Hardening
+
+- A plain-text companion exists next to the HTML (`node scripts/html-to-text.js <file>.html > <file>.txt`) and reads cleanly: headings, links shown as `label (URL)`, no stray markup.
+- Section order matches the approved plan (`node scripts/audit-newsletter-repo.js --sections <file>`).
+- Permanent elements are present: hero, Greetings Friends, Our Mission, footer facts.
+- Buttons are table cells with `bgcolor` plus `background-color`; `border-radius` is on the `<td>`.
+- Every image has `alt`, `width`, `border="0"` and `display:block`.
+- 390px view: no horizontal scroll, every image loads, stacked columns read in a logical order.
 ---
 
 ## Repository Structure Reference

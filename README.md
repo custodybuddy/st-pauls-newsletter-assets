@@ -13,6 +13,17 @@ This repository contains the production system for “What’s Up, St. Paul’s?
 - **Brand assets and stable destinations:** `brand/`.
 - **Final checks:** `newsletter-system/docs/qa-checklist.md`.
 
+## Newsletter Skill (assembly workflow)
+
+Claude Code can assemble an edition from approved content using `.claude/skills/st-pauls-newsletter/`:
+
+1. Fill in `newsletter-system/template/content-template.md` as `newsletters/drafting/<year>-<season>/content.md`.
+2. Ask: "Create the next St. Paul's newsletter using our existing design system. Select appropriate components, rearrange them for visual balance, reuse our illustrations, and prepare a preview for approval." (or `/st-pauls-newsletter`).
+3. Review the proposed section order, the draft, its `.txt` plain-text version, and the checks report.
+4. Approve. The skill never sends, publishes, deploys or merges.
+
+Component list: `.claude/skills/st-pauls-newsletter/components.md`. Illustration shapes and naming: `brand/resources/illustration-specs.md`. Approved art belongs only in `brand/assets/`. The church-building illustration is pending from the church.
+
 ## Working Rules
 
 1. Create and edit new issue files only in `newsletters/drafting/<year>-<season>/`.
@@ -39,6 +50,8 @@ Run this read-only command from the repository root:
 
 ```bash
 node scripts/audit-newsletter-repo.js
+node scripts/audit-newsletter-repo.js --sections <newsletter.html>   # print section order
+node scripts/html-to-text.js <newsletter.html> > <newsletter.txt>   # plain-text companion
 ```
 
 Use `--strict` only for a release review; it also fails on retained historical warnings.

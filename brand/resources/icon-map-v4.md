@@ -82,7 +82,7 @@ Use each icon as the visual label for a section's primary purpose, not as genera
 
 ## Supplemental illustration map
 
-The canonical illustration manifest is `resources/links/st-pauls-illustrations-v1.json`.
+The canonical illustration manifest is `resources/links/st-pauls-illustrations-v1.json`. Portrait, landscape and square specifications and naming rules are in `brand/resources/illustration-specs.md`.
 
 | Use | Filename | Repository path | Canonical URL | Default alt text |
 |---|---|---|---|---|

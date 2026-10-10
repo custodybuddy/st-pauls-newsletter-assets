@@ -1,19 +1,26 @@
 # Newsletter Change Log
 
-## 2026-10-10 (documentation HTML mirrors)
+## 2026-10-08 (final refinement of the newsletter system)
 
-- Added a dependency-free renderer and browser-readable HTML mirrors for the Markdown guides in `docs/`.
-- Markdown remains the authoritative documentation; rerun `ruby scripts/render-docs-html.rb` after updating a mirrored guide.
+- Rebuilt `newsletter-system/template/html-scaffold.html` from Draft 13's `<head>` styles plus the permanent snippets. It now defines every class the snippets use (`split-col`, `heading-icon-cell`, `event-date`, `event-copy`, `masthead-cell`, `illus-slot` and others) and has OPTIONAL SECTIONS markers for assembly.
+- Reconciled brand tokens against Draft 13. Canonical table is in `newsletter-system/docs/style-guide.md`: navy `#0D1B2A`, cream `#FAF7F1`, Lora for lead blocks, Playfair Display for section headings, Source Sans 3 body, Inter labels. Gold text on light backgrounds is now `#8A5C00` (`#6D4A00` on sage); muted text `#56657B`. Retired `#0A1C2C`, `#1E293B`, `#B8860B`, `#9C6A08` and `#FDFBF7` in snippets and docs.
+- Re-extracted the hero + masthead, Greetings + Mission, Ministry Spotlight and Focus on Finances snippets from Draft 13. Removed the flex/absolute badge and the fixed `width="1100px"` table that overflowed on mobile (`did-you-know.html`), the invalid `max width` attribute, and an undefined `mobile-padding` class.
+- Added a replaceable illustration slot beside the Greetings text. It keeps the `[CHURCH ILLUSTRATION: pending approved art]` placeholder; nothing was substituted.
+- Footer website link now uses `https://www.stpaulsingersoll.ca/`.
+- Audit: undefined-class check, scaffold-sync check, placeholder checks for drafts and final issues, comment-aware image and link scans.
+- Draft 13 is unchanged.
 
-## 2026-10-10 (path reference)
+## 2026-10-08 (St. Paul's newsletter skill and assembly workflow)
 
-- Added `docs/path-reference.md`, a verified local-path and GitHub Pages URL reference for assets, documentation, templates, newsletter lifecycle folders, and the repository audit.
-
-## 2026-10-10 (architecture documentation sync)
-
-- Added `docs/newsletter-system-architecture.md`, the current system map for editorial sources, assets, templates, seasonal issue folders, validation, and verification limits.
-- Updated every tracked Markdown file with a relative architecture reference. Historical and superseded records remain non-authoritative; their existing status is unchanged.
-
+- Added the project skill `.claude/skills/st-pauls-newsletter/` (`SKILL.md`, `components.md`, `ATTRIBUTION.md`). It adapts ideas from the MIT-licensed upstream `email-newsletter` skill; nothing was copied or installed.
+- Added five reusable section snippets (layout only, placeholder text): `church-announcements.html`, `volunteer-opportunities.html`, `photo-feature.html`, `seasonal-celebration.html`, `closing-message.html`.
+- Added `newsletter-system/template/content-template.md` (content-only input for assembly) and `scripts/html-to-text.js` (plain-text companion).
+- Extended `scripts/audit-newsletter-repo.js`: snippet checks, permanent-element checks for drafts and final issues, a missing plain-text warning for final issues, and `--sections <file>` to print section order.
+- Added `brand/resources/illustration-specs.md` and a `formatSpecs` block in `resources/links/st-pauls-illustrations-v1.json` (portrait, landscape, square; church-building art pending).
+- Added `newsletter-system/docs/email-width-proposal.md` (1100px findings; proposal only, nothing changed).
+- Added test edition `newsletters/drafting/2026-test/` (two arrangements, sample text, not for sending).
+- Fixed stale pointers in `docs/st-pauls-comprehensive-newsletter-template.md` and the scaffold comment so they use `brand/resources/`.
+- No approved wording, archived issue, Draft 13, or existing artwork was changed.
 ## 2026-10-08 (brand asset visual)
 
 - Added `brand/resources/brand-assets-visual.html`: a browser reference page showing the brand colors, typography, section style, four seasonal hero banners, all 15 v4 icons (generated from `icon-map-v4.json`), and the illustrations. It is a reference page, not an email. Update it when brand assets or the icon map change.

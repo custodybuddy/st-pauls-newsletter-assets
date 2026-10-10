@@ -6,11 +6,12 @@ Reviewed against Google Doc revision `AIroW35i__mB-nJYSiOJlnArgGh6s6MNgzjzQicwB5
 
 ## Required Supporting Resources
 
-- Canonical v4 icon manifest: `resources/links/st-pauls-icons-v4.json`
-- Human-readable icon map and stable links: `resources/links/st-pauls-icons-and-important-links.md`
-- Website data and CTA destinations: `resources/links/st-pauls-website-data-and-links-v1.md`
-- View-in-browser implementation: `resources/links/st-pauls-view-in-browser-guidance-v2.md`
-- Final QA: `checklists/NEWSLETTER-QA-CHECKLIST.md`
+- Canonical v4 icon manifest: `brand/resources/icon-map-v4.json`
+- Human-readable icon map and stable links: `brand/resources/icon-map-v4.md`
+- Website data and CTA destinations: `brand/resources/website-links.md`
+- View-in-browser implementation: `brand/resources/reusable-urls.md`
+- Final QA: `newsletter-system/docs/qa-checklist.md`
+- Component catalogue and assembly skill: `.claude/skills/st-pauls-newsletter/SKILL.md`
 
 ---
 
@@ -471,8 +472,9 @@ This addendum governs HTML implementation after the seasonal Google Doc draft ha
 
 ## Accessible Typography
 
-- Headings: Lora, Georgia, serif.
-- Body: Inter, Arial, Helvetica, sans-serif.
+- Lead blocks (masthead title, Greetings Friends, Ministry Spotlight): Lora, Georgia, serif. Supporting section headings: Playfair Display, Georgia, serif.
+- Body: Source Sans 3, Arial, sans-serif. Labels and buttons: Inter, Arial, sans-serif.
+- Full token table: `newsletter-system/docs/style-guide.md`.
 - Desktop main title: approximately 48–56px.
 - Desktop major section headings: approximately 34–42px.
 - Desktop body copy: 18–20px minimum with 1.65–1.8 line height.
@@ -482,16 +484,13 @@ This addendum governs HTML implementation after the seasonal Google Doc draft ha
 
 ## Brand Colors
 
-- Deep navy: `#0A1C2C`
-- Slate navy: `#1E293B`
-- Body slate: `#475569`
-- Soft slate: `#64748B`
-- Gold: `#D4AF37`
-- Deep gold: `#B8860B`
-- Light gold: `#F0D98C`
-- Cream: `#FDFBF7`
-- Soft blue: `#EBF4F8`
-- White: `#FFFFFF`
+Canonical values are in `newsletter-system/docs/style-guide.md` (reconciled against Draft 13). Summary:
+
+- Navy `#0D1B2A`, cream `#FAF7F1`, white `#FFFFFF`, border `#E5E0D8`
+- Soft blue `#EBF4F8`, sage `#C7D6C1`, teal `#007A8A`
+- Gold `#D4AF37` (bars, buttons, rules), gold on dark `#DAA017`, light gold `#F0D98C`
+- Gold text on light backgrounds `#8A5C00` (`#6D4A00` on sage), which meets WCAG AA
+- Secondary text `#475569`, muted text `#56657B`
 
 On dark navy backgrounds, use white headings, `#E2E8F0` or `#CBD5E1` body text, and gold accents. Never use dark slate text on dark navy.
 
@@ -549,7 +548,7 @@ Avoid:
 
 ## Links and Footer
 
-- Use `resources/links/st-pauls-website-data-and-links-v1.md` for current destinations.
+- Use `brand/resources/website-links.md` for current destinations.
 - Verify time-sensitive event and bulletin links before sending.
 - Include a discreet View in browser link in the footer using the ESP’s exact merge tag.
 - Never send `[VIEW_IN_BROWSER_URL]`, `href="#"`, or a generic hard-coded browser-version URL.
