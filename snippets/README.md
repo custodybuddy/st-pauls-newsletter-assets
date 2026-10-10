@@ -24,3 +24,9 @@
 | `Support St. Paul’s component.html` | Standalone Support St. Paul’s card (already embedded in `focus-on-finances.html`) |
 | `thankful.html` | We Are So Thankful For section |
 | `newsletter-footer.html` | Footer and calls to action |
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../docs/newsletter-system-architecture.md).

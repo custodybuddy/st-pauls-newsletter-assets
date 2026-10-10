@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Newsletter System Architecture | St. Paul’s Newsletter</title>
+  <style>:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f7f8; color: #1e293b; font: 17px/1.6 Arial, sans-serif; }
+main { width: min(100% - 32px, 960px); margin: 32px auto 56px; padding: 40px; background: #fdfbf7; border: 1px solid #d9e1e6; border-radius: 18px; box-shadow: 0 8px 28px rgba(10, 28, 44, .08); }
+h1, h2, h3, h4, h5, h6 { color: #0a1c2c; font-family: Georgia, serif; line-height: 1.2; scroll-margin-top: 24px; }
+h1 { font-size: clamp(2rem, 5vw, 2.9rem); margin: 0 0 .7em; }
+h2 { margin-top: 2.25em; padding-top: .3em; border-top: 2px solid #f0d98c; }
+h3 { margin-top: 1.7em; }
+a { color: #075985; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: #0a1c2c; }
+code { padding: .12em .32em; border-radius: 4px; background: #eaf0f3; color: #0a1c2c; font: .9em ui-monospace, SFMono-Regular, Menlo, monospace; }
+pre { overflow-x: auto; padding: 18px; background: #0a1c2c; border-radius: 10px; color: #f8fafc; }
+pre code { padding: 0; background: transparent; color: inherit; }
+blockquote { margin: 1.4em 0; padding: .2em 1.2em; border-left: 4px solid #d4af37; background: #fff8df; }
+table { width: 100%; margin: 1.25em 0; border-collapse: collapse; font-size: .94em; }
+th, td { padding: .7em .8em; vertical-align: top; border: 1px solid #cbd5e1; text-align: left; }
+th { background: #eaf3f7; color: #0a1c2c; font-weight: 700; }
+tr:nth-child(even) td { background: #fffefa; }
+ul, ol { padding-left: 1.5em; }
+li + li { margin-top: .35em; }
+.doc-meta { margin: 0 0 2em; color: #64748b; font-size: .9em; }
+.doc-meta a { font-weight: 700; }
+@media (max-width: 640px) { main { width: 100%; margin: 0; padding: 24px 18px; border: 0; border-radius: 0; } table { display: block; overflow-x: auto; } }
+</style>
+</head>
+<body>
+  <main>
+    <p class="doc-meta">Browser-readable mirror. <a href="newsletter-system-architecture.md">View the authoritative Markdown source</a>.</p>
+    <h1 id="st-pauls-newsletter-system-architecture">St. Paul’s Newsletter System Architecture</h1>
+<h2 id="purpose">Purpose</h2>
+<p>This repository is a static production system for St. Paul’s “What’s Up, St. Paul’s?” email newsletters. It contains approved brand assets, reusable email-safe layout fragments, drafting and release folders, and the documentation that connects them. It is not a web application: there is no package manifest, build step, client-side runtime, database, or automatic asset transformation.</p>
+<h2 id="source-of-truth-order">Source-of-Truth Order</h2>
+<ol>
+<li>Kathy’s latest approved seasonal submission controls wording, selected modules, and their order.</li>
+<li><a href="st-pauls-comprehensive-newsletter-template.html">Seasonal Newsletter Drafting and Production Template</a> controls the local drafting structure and production rules.</li>
+<li><code>newsletter-system/template/html-scaffold.html</code> is the starting point for a new HTML email after approved copy is available.</li>
+<li>Canonical manifests under <code>brand/resources/</code> control active brand assets, public URLs, roles, alt text, and stable destinations.</li>
+<li>Historical issues, older drafts, legacy templates, and archive analysis provide context only. They never override the approved seasonal source or comprehensive template.</li>
+</ol>
+<h2 id="system-map">System Map</h2>
+<pre><code class="language-text">Approved seasonal submission
+        |
+        v
+docs/st-pauls-comprehensive-newsletter-template.md
+        |
+        +-- newsletter-system/template/html-scaffold.html
+        +-- newsletter-system/components/outlook-safe/  (layout primitives)
+        +-- snippets/                                  (styled section layouts)
+        |
+        v
+newsletters/drafting/&lt;year&gt;-&lt;season&gt;/                  (versioned work)
+        |
+        v
+newsletters/final/&lt;year&gt;-&lt;season&gt;/                     (one approved issue)
+        |
+        v
+newsletters/archive/&lt;year&gt;-&lt;season&gt;/&lt;yyyy-mm-month&gt;/   (sent, read-only issue + screenshot)
+
+brand/assets/ + brand/resources/ ---------------------&gt; images, icons, links, contact data
+scripts/audit-newsletter-repo.js ---------------------&gt; structural and path validation</code></pre>
+<h2 id="directory-responsibilities">Directory Responsibilities</h2>
+<table><thead><tr><th>Location</th><th>Responsibility</th><th>Editing boundary</th></tr></thead><tbody><tr><td><code>brand/assets/</code></td><td>Canonical banners, icons, illustrations</td><td>Update a manifest and visual map with any asset change. Final email images use the GitHub Pages <code>brand/assets/</code> URL.</td></tr><tr><td><code>brand/resources/</code></td><td>Canonical icon map, contacts, donation links, reusable URLs, visual asset reference</td><td>Use as the active asset and stable-link record.</td></tr><tr><td><code>docs/</code></td><td>Current production template, architecture, <a href="path-reference.html">path reference</a>, and current documentation pointers</td><td>The comprehensive template is authoritative for local workflow.</td></tr><tr><td><code>newsletter-system/</code></td><td>HTML scaffold, Outlook-safe layout primitive, production style guide and QA checklist</td><td>Layout support only; never a replacement for approved editorial copy.</td></tr><tr><td><code>snippets/</code></td><td>Styled, reusable table-row fragments</td><td>Layout only. Replace inherited names, dates, figures, and Draft 11 wording with approved copy.</td></tr><tr><td><code>newsletters/drafting/</code></td><td>Versioned current work by season</td><td>Create new drafts here; do not overwrite approved or historical files.</td></tr><tr><td><code>newsletters/final/</code></td><td>At most one approved ready-to-send issue per season</td><td>Keep only the currently approved unsent issue.</td></tr><tr><td><code>newsletters/archive/</code></td><td>Sent issues and screenshots</td><td>Read-only historical reference.</td></tr><tr><td><code>templates/</code> and <code>newsletters/drafting/*/older-drafts/</code></td><td>Legacy history</td><td>Read-only; paths and markup may be obsolete.</td></tr><tr><td><code>resources/</code></td><td>Historical analysis, provenance, and superseded link references</td><td>Use only when its status and date make it relevant; current resources take precedence.</td></tr><tr><td><code>scripts/</code></td><td>Repository validation and documentation rendering</td><td><code>audit-newsletter-repo.js</code> checks current guidance, assets, email HTML, and GitHub Pages paths. <code>render-docs-html.rb</code> regenerates browser-readable mirrors of <code>docs/*.md</code>; Markdown remains authoritative.</td></tr><tr><td><code>.agents/skills/</code></td><td>Project-local agent guidance</td><td>Skills supplement repository rules; they do not alter production architecture.</td></tr></tbody></table>
+<h2 id="newsletter-assembly-flow">Newsletter Assembly Flow</h2>
+<ol>
+<li>Identify the current approved seasonal content and its selected optional modules.</li>
+<li>Create a new versioned HTML file in <code>newsletters/drafting/&lt;year&gt;-&lt;season&gt;/</code> from the scaffold.</li>
+<li>Assemble only the needed table-based sections. Use Outlook-safe components and snippets for layout, then insert approved wording.</li>
+<li>Use the seasonal banner and canonical v4 icon or illustration only where the semantic role fits. Keep public image and link URLs absolute.</li>
+<li>Check responsive stacking, dark-section contrast, image alt text and widths, current footer details, and CTA destinations.</li>
+<li>Run <code>node scripts/audit-newsletter-repo.js</code>; use <code>--strict</code> for a release review. Browser screenshots are useful visual evidence, but inbox testing remains necessary for Gmail, Outlook, Apple Mail, Yahoo, and mobile email clients.</li>
+<li>After approval, copy the chosen issue to <code>newsletters/final/</code>; after sending, archive it with a screenshot.</li>
+</ol>
+<h2 id="production-constraints">Production Constraints</h2>
+<ul>
+<li>Use presentation tables, inline critical styles, explicit colors, absolute HTTPS URLs, image widths, and meaningful alt text.</li>
+<li>Keep the table structure readable when a client ignores the mobile media query.</li>
+<li>Do not introduce CSS Grid, Flexbox, JavaScript, forms, or browser-only interaction into production email HTML.</li>
+<li>Preserve approved copy unless the assigned work explicitly authorizes editorial changes.</li>
+<li>The public preview base is <code>https://custodybuddy.github.io/st-pauls-newsletter-assets/</code>; a file is available there only after it is committed and GitHub Pages has deployed it.</li>
+</ul>
+<h2 id="verification-boundaries">Verification Boundaries</h2>
+<p>The audit script proves repository-level structure and known static issues. It does not prove a delivered email’s rendering, ESP merge tags, remote link freshness, inbox filtering, or live GitHub Pages deployment. Record those checks separately when they matter.</p>
+  </main>
+</body>
+</html>

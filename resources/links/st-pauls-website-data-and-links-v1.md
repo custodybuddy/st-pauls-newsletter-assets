@@ -85,3 +85,9 @@ These themes are suitable anchors for future newsletter sections:
 - Do not reuse a dated `/contact-us/blog/entry/` bulletin URL without checking the issue.
 - Prefer the stable News, Videos, Contact, and Small Groups landing pages in reusable templates.
 - Confirm staff names, office hours, worship time, and social accounts before publishing a future issue if the website has changed.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

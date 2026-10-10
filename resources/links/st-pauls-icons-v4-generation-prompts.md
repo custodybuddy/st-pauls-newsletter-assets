@@ -30,3 +30,9 @@ Constraints: exactly one standalone icon; no text, letters, words, watermark, mo
 10. `10-prayer-care-heart-hands.png`: A warm-gold outlined heart above upward-curving deep-navy hands with teal wrist accents.
 
 The branding output received two targeted follow-up edits: checkerboard background extraction and placement on a square transparent canvas. All other symbols were accepted from their individual generation calls.
+
+---
+
+## Repository Structure Reference
+
+This historical or superseded record remains non-authoritative. For the current system map and production boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

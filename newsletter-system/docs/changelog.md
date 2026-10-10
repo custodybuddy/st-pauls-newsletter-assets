@@ -1,14 +1,18 @@
 # Newsletter Change Log
 
-## 2026-10-08 (component system v1 and gallery)
+## 2026-10-10 (documentation HTML mirrors)
 
-- Audit finding: Drafts 13 and 14 differ by about ten inline-style lines. Each draft was a hand-edited copy of the one before, `snippets/` was extracted from Draft 11, and design changes never reached a shared source. The repository has no build step.
-- Added `newsletter-system/components/` as the single source of truth for layout: a document shell, three mastheads, two Greetings variants, a standalone Our Mission band, two Ministry Spotlight variants, five illustrated feature layouts (portrait, landscape, two splits, square badge), navy and cream illustrated cards, a card pair, and reference primitives. Each file documents its placeholders, artwork shape and size, and desktop, mobile and Outlook behaviour.
-- Added `newsletter-system/tokens.json` and `tokens.md` (AGENTS.md brand only: Lora, Inter, navy, cream, gold `#D4AF37`; the mood board's teal and Playfair Display are excluded).
-- Added `newsletter-system/gallery/index.html`, a browser-only review page that renders the real component files at 1100px and 390px.
-- Added email-sized illustrations with clean filenames to `brand/assets/illustrations/email/`, listed in `resources/links/st-pauls-illustrations-v1.json` and the new readable map `st-pauls-illustrations-v1.md`. Originals are unchanged.
-- The audit now checks components, fails drafts with unfilled `{{placeholders}}`, rejects off-brand fonts and colours in components, and validates the illustration manifest.
-- Updated AGENTS.md, README.md, the comprehensive template, the style guide, and the snippets, drafting and Outlook-safe READMEs. `snippets/` and `html-scaffold.html` are kept until Draft 15 verifies the components. No drafts, archives or approved copy were changed.
+- Added a dependency-free renderer and browser-readable HTML mirrors for the Markdown guides in `docs/`.
+- Markdown remains the authoritative documentation; rerun `ruby scripts/render-docs-html.rb` after updating a mirrored guide.
+
+## 2026-10-10 (path reference)
+
+- Added `docs/path-reference.md`, a verified local-path and GitHub Pages URL reference for assets, documentation, templates, newsletter lifecycle folders, and the repository audit.
+
+## 2026-10-10 (architecture documentation sync)
+
+- Added `docs/newsletter-system-architecture.md`, the current system map for editorial sources, assets, templates, seasonal issue folders, validation, and verification limits.
+- Updated every tracked Markdown file with a relative architecture reference. Historical and superseded records remain non-authoritative; their existing status is unchanged.
 
 ## 2026-10-08 (brand asset visual)
 
@@ -129,3 +133,9 @@ Use this file to track production changes by issue and version.
 - Updated all project Markdown documentation files to reflect v12 section flow and assets.
 - Updated icon/link reference with live URLs used in v12, including banner/supporting images and active CTA endpoints.
 - Updated README/style/checklist references to point to current baseline working file.
+
+---
+
+## Repository Structure Reference
+
+This historical or superseded record remains non-authoritative. For the current system map and production boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

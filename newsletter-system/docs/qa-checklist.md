@@ -136,3 +136,9 @@ The controlling production instructions are in `docs/st-pauls-comprehensive-news
 3. Preserve email-safe table structure, links, and image URLs.
 4. Change only requested sections.
 5. Keep St. Paul's navy/gold identity consistent.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

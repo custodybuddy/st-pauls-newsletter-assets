@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Path Reference | St. Paul’s Newsletter</title>
+  <style>:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f7f8; color: #1e293b; font: 17px/1.6 Arial, sans-serif; }
+main { width: min(100% - 32px, 960px); margin: 32px auto 56px; padding: 40px; background: #fdfbf7; border: 1px solid #d9e1e6; border-radius: 18px; box-shadow: 0 8px 28px rgba(10, 28, 44, .08); }
+h1, h2, h3, h4, h5, h6 { color: #0a1c2c; font-family: Georgia, serif; line-height: 1.2; scroll-margin-top: 24px; }
+h1 { font-size: clamp(2rem, 5vw, 2.9rem); margin: 0 0 .7em; }
+h2 { margin-top: 2.25em; padding-top: .3em; border-top: 2px solid #f0d98c; }
+h3 { margin-top: 1.7em; }
+a { color: #075985; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: #0a1c2c; }
+code { padding: .12em .32em; border-radius: 4px; background: #eaf0f3; color: #0a1c2c; font: .9em ui-monospace, SFMono-Regular, Menlo, monospace; }
+pre { overflow-x: auto; padding: 18px; background: #0a1c2c; border-radius: 10px; color: #f8fafc; }
+pre code { padding: 0; background: transparent; color: inherit; }
+blockquote { margin: 1.4em 0; padding: .2em 1.2em; border-left: 4px solid #d4af37; background: #fff8df; }
+table { width: 100%; margin: 1.25em 0; border-collapse: collapse; font-size: .94em; }
+th, td { padding: .7em .8em; vertical-align: top; border: 1px solid #cbd5e1; text-align: left; }
+th { background: #eaf3f7; color: #0a1c2c; font-weight: 700; }
+tr:nth-child(even) td { background: #fffefa; }
+ul, ol { padding-left: 1.5em; }
+li + li { margin-top: .35em; }
+.doc-meta { margin: 0 0 2em; color: #64748b; font-size: .9em; }
+.doc-meta a { font-weight: 700; }
+@media (max-width: 640px) { main { width: 100%; margin: 0; padding: 24px 18px; border: 0; border-radius: 0; } table { display: block; overflow-x: auto; } }
+</style>
+</head>
+<body>
+  <main>
+    <p class="doc-meta">Browser-readable mirror. <a href="path-reference.md">View the authoritative Markdown source</a>.</p>
+    <h1 id="st-pauls-newsletter-path-reference">St. Paul’s Newsletter Path Reference</h1>
+<p>Use this page to navigate the repository and review the public files served by GitHub Pages. For source-of-truth order, editing boundaries, and the complete production flow, see the <a href="newsletter-system-architecture.html">Newsletter System Architecture</a>.</p>
+<h2 id="live-github-pages-base">Live GitHub Pages Base</h2>
+<p><code>https://custodybuddy.github.io/st-pauls-newsletter-assets/</code></p>
+<p>Append a repository-relative file path to this base to form a public URL. GitHub Pages serves files after they are committed and deployed; it does not provide a browseable directory listing for every folder.</p>
+<h2 id="live-asset-and-resource-paths">Live Asset and Resource Paths</h2>
+<table><thead><tr><th>Purpose</th><th>Repository path</th><th>Public URL or URL prefix</th><th>Notes</th></tr></thead><tbody><tr><td>All production assets</td><td><a href="../brand/assets/"><code>brand/assets/</code></a></td><td>Append <code>brand/assets/&lt;filename&gt;</code> to the base above</td><td>Use this construction for final email image paths.</td></tr><tr><td>Seasonal banners</td><td><a href="../brand/assets/banners/"><code>brand/assets/banners/</code></a></td><td>Append <code>brand/assets/banners/&lt;filename&gt;</code> to the base above</td><td>Example: <a href="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/st-pauls-fall-hero-1100px.png">Fall hero</a>.</td></tr><tr><td>Canonical v4 icons</td><td><a href="../brand/assets/icons/"><code>brand/assets/icons/</code></a></td><td>Append <code>brand/assets/icons/&lt;filename&gt;</code> to the base above</td><td>Example: <a href="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/01-branding-cross-wings.png">main branding icon</a>.</td></tr><tr><td>Supporting illustrations</td><td><a href="../brand/assets/illustrations/"><code>brand/assets/illustrations/</code></a></td><td>Append <code>brand/assets/illustrations/&lt;filename&gt;</code> to the base above</td><td>Use only a documented asset with suitable public-sharing permission.</td></tr><tr><td>Resource records</td><td><a href="../brand/resources/"><code>brand/resources/</code></a></td><td>Append <code>brand/resources/&lt;filename&gt;</code> to the base above</td><td>Use the named resources below rather than assuming a directory index.</td></tr><tr><td>Brand visual review</td><td><a href="../brand/resources/brand-assets-visual.html"><code>brand/resources/brand-assets-visual.html</code></a></td><td><a href="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/resources/brand-assets-visual.html">Open live visual map</a></td><td>Browser reference page; not email HTML.</td></tr><tr><td>Icon visual review</td><td><a href="../brand/resources/icon-map-v4-visual.html"><code>brand/resources/icon-map-v4-visual.html</code></a></td><td><a href="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/resources/icon-map-v4-visual.html">Open live icon map</a></td><td>Visual companion to the v4 manifest.</td></tr><tr><td>Canonical icon data</td><td><a href="../brand/resources/icon-map-v4.json"><code>brand/resources/icon-map-v4.json</code></a></td><td><a href="https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/resources/icon-map-v4.json">Open live JSON</a></td><td>Controls icon filenames, roles, URLs, alt text, and recommended widths.</td></tr><tr><td>Stable destinations</td><td><a href="../brand/resources/website-links.md"><code>brand/resources/website-links.md</code></a>, <a href="../brand/resources/donation-links.md"><code>donation-links.md</code></a>, <a href="../brand/resources/church-contact.md"><code>church-contact.md</code></a>, <a href="../brand/resources/reusable-urls.md"><code>reusable-urls.md</code></a></td><td>Append the resource filename to the base above</td><td>Use these local records when selecting footer and CTA destinations. Recheck time-sensitive links before sending.</td></tr></tbody></table>
+<h2 id="core-documentation-and-templates">Core Documentation and Templates</h2>
+<table><thead><tr><th>Item</th><th>Local path</th><th>Use it for</th></tr></thead><tbody><tr><td>System architecture</td><td><a href="newsletter-system-architecture.html">docs/newsletter-system-architecture.md</a></td><td>Source order, folder responsibilities, assembly flow, and verification limits.</td></tr><tr><td>Comprehensive production template</td><td><a href="st-pauls-comprehensive-newsletter-template.html">docs/st-pauls-comprehensive-newsletter-template.md</a></td><td>Local production baseline and the companion to Kathy’s approved seasonal submission.</td></tr><tr><td>Project overview</td><td><a href="../README.md">README.md</a></td><td>Fast orientation and current entry points.</td></tr><tr><td>Agent guardrails</td><td><a href="../AGENTS.md">AGENTS.md</a></td><td>Production rules, email safety, asset governance, and edit boundaries.</td></tr><tr><td>Production QA checklist</td><td><a href="../newsletter-system/docs/qa-checklist.md">newsletter-system/docs/qa-checklist.md</a></td><td>Required checks before handing off an HTML newsletter.</td></tr><tr><td>Condensed style guide</td><td><a href="style-guide.html">newsletter-system/docs/style-guide.md</a></td><td>Quick reference for colours, typography, hierarchy, links, and icons.</td></tr></tbody></table>
+<h2 id="newsletter-system-and-components">Newsletter System and Components</h2>
+<table><thead><tr><th>Item</th><th>Local path</th><th>Responsibility</th></tr></thead><tbody><tr><td>HTML starting point</td><td><a href="../newsletter-system/template/html-scaffold.html">newsletter-system/template/html-scaffold.html</a></td><td>Start a new versioned issue after approved editorial content is available.</td></tr><tr><td>Editorial-template pointer</td><td><a href="../newsletter-system/template/kathy-drafting-template.md">newsletter-system/template/kathy-drafting-template.md</a></td><td>Points to the single comprehensive template; it is not a second drafting source.</td></tr><tr><td>Outlook-safe primitives</td><td><a href="../newsletter-system/components/outlook-safe/">newsletter-system/components/outlook-safe/</a></td><td>Layout-only presentation-table fragments with inline styles and MSO support.</td></tr><tr><td>Reusable styled sections</td><td><a href="../snippets/">snippets/</a></td><td>Section layouts such as hero, greeting, ministry, events, finance, gratitude, and footer. Replace inherited wording with the approved seasonal copy.</td></tr><tr><td>Snippet usage guide</td><td><a href="../snippets/README.md">snippets/README.md</a></td><td>Host-table and responsive-class requirements for snippets.</td></tr></tbody></table>
+<h2 id="lifecycle-and-version-control-directories">Lifecycle and Version-Control Directories</h2>
+<table><thead><tr><th>Stage</th><th>Local path</th><th>Editing rule</th></tr></thead><tbody><tr><td>Work in progress</td><td><a href="../newsletters/drafting/">newsletters/drafting/</a></td><td>Create a new versioned draft in the appropriate <code>&lt;year&gt;-&lt;season&gt;/</code> folder.</td></tr><tr><td>Ready to send</td><td><a href="../newsletters/final/">newsletters/final/</a></td><td>Keep at most one approved unsent HTML issue per season.</td></tr><tr><td>Published history</td><td><a href="../newsletters/archive/">newsletters/archive/</a></td><td>Read-only sent issues and their screenshots.</td></tr><tr><td>Superseded work</td><td><a href="../newsletters/drafting/2026-fall/older-drafts/">newsletters/drafting/2026-fall/older-drafts/</a></td><td>Read-only historical drafts; do not reuse obsolete markup or <code>/assets/</code> paths.</td></tr><tr><td>Legacy templates</td><td><a href="../templates/">templates/</a></td><td>Read-only compatibility history, not a construction source.</td></tr></tbody></table>
+<h2 id="scripts-and-tooling">Scripts and Tooling</h2>
+<table><thead><tr><th>Tool</th><th>Local path</th><th>What it checks</th></tr></thead><tbody><tr><td>Repository audit</td><td><a href="../scripts/audit-newsletter-repo.js">scripts/audit-newsletter-repo.js</a></td><td>Current guidance, canonical icons, HTML structure, image/link paths, and GitHub Pages file references.</td></tr><tr><td>Documentation mirror renderer</td><td><a href="../scripts/render-docs-html.rb">scripts/render-docs-html.rb</a></td><td>Regenerates the browser-readable <code>.html</code> mirrors for the Markdown files in this directory; Markdown remains authoritative.</td></tr><tr><td>Standard audit command</td><td><code>node scripts/audit-newsletter-repo.js</code></td><td>Run after relevant newsletter, asset, or documentation work. Historical findings remain warnings in standard mode.</td></tr><tr><td>Release audit command</td><td><code>node scripts/audit-newsletter-repo.js --strict</code></td><td>Treats warnings as failures for a release review.</td></tr></tbody></table>
+<h2 id="path-rules">Path Rules</h2>
+<ul>
+<li>Final email HTML uses the live base plus the exact <code>brand/assets/&lt;filename&gt;</code> path for every image.</li>
+<li>A local file has no live URL until it is committed and GitHub Pages deploys it.</li>
+<li>Use the canonical v4 icon manifest instead of guessing filenames or substituting retired <code>/assets/</code> paths.</li>
+<li>Browser review helps with visual checks, but it does not prove final delivery rendering in Gmail, Outlook, Apple Mail, Yahoo, or mobile clients.</li>
+</ul>
+  </main>
+</body>
+</html>

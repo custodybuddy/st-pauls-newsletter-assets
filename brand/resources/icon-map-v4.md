@@ -112,3 +112,9 @@ The canonical illustration manifest is `resources/links/st-pauls-illustrations-v
 | News | `https://www.stpaulsingersoll.ca/contact-us/blog/categories/news` |
 
 Time-sensitive bulletin and event URLs must be verified before sending.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

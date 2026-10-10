@@ -30,3 +30,9 @@ Machine-readable role and filename map: `resources/links/st-pauls-icons-v5-refer
 3. Optimize the email copy to approximately 144–176px square.
 4. Add useful alt text and a stable GitHub Pages URL.
 5. Verify every URL, then mark v5 canonical and update consuming HTML.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

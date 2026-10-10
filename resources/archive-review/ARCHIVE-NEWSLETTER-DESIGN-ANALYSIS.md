@@ -50,3 +50,9 @@ The April full-length capture is included because the newsletter extends past th
 April 2026 supplied useful visual evidence for the current system: it has clear colour discipline, consistent spacing and editorial hierarchy, and a developed set of reusable newsletter modules.
 
 September 2025 contributes a useful compact-card and engagement pattern. November 2025 contributes warm, image-led storytelling for seasonal or feature-led issues. Apply those lessons only through the comprehensive template’s edition types, layout rules, accessibility requirements, and current v3 icon system.
+
+---
+
+## Repository Structure Reference
+
+This historical or superseded record remains non-authoritative. For the current system map and production boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).
