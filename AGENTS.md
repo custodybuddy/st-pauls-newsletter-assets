@@ -8,6 +8,12 @@ New work uses `brand/`, `newsletter-system/`, and `newsletters/`. Kathy’s appr
 
 Newsletters are organized by season (`<year>-<season>`, e.g. `2026-fall`) in three folders: create drafts in `newsletters/drafting/<year>-<season>/`; keep at most one approved, ready-to-send HTML file per season in `newsletters/final/<year>-<season>/`; and treat `newsletters/archive/` (published issues, each with a screenshot) as read-only. Archived issues define the sections and components readers already know: keep them consistent while improving design and visual hierarchy. See `newsletters/README.md`. `snippets/` is the active library of reusable section fragments: use them for layout only, and replace their Draft 11 wording with Kathy’s approved copy (see `snippets/README.md`). The legacy `/assets/` folder has been removed; all images live under `brand/assets/` and every image URL must use `.../st-pauls-newsletter-assets/brand/assets/...`. The older `/templates/` folder and `newsletters/drafting/*/older-drafts/` are read-only history; do not use them for new work.
 
+### Component sets and assembly
+
+- `newsletter-system/components/outlook-safe/` contains foundational presentation-table layouts. Preserve explicit widths, inline styles, table attributes, and any Outlook conditional markup present in a component. Fill structural placeholders with approved content.
+- `snippets/` contains styled table-row sections: `newsletter-hero-masthead.html` (hero), `greetings-and-mission.html` (greeting and mission), `ministry-spotlight.html` (ministry), `upcoming-event.html` (events), `focus-on-finances.html` (finance), `thankful.html` (gratitude), and `newsletter-footer.html` (footer). `did-you-know.html` and `Support St. Paul’s component.html` provide additional layouts. Replace inherited editorial content with Kathy’s approved seasonal copy.
+- Read `snippets/README.md` before assembly. Insert section rows into the scaffold’s main content table and retain its responsive classes. When using the Support St. Paul’s card inside Finance, insert its inner card table only; its outer `<tr>` is a sibling row, not a nested finance column.
+
 This file defines how AI agents, editors, and automation tools should work on the St. Paul’s newsletter codebase, Canva-friendly templates, icon libraries, and reusable email resources.
 
 The goal is to keep every newsletter:
