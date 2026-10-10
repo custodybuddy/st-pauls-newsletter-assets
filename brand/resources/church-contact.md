@@ -16,3 +16,9 @@ Phone: 519-485-3390
 For finance-specific wording or contacts, use Kathy’s approved submission rather than treating this file as editorial copy.
 
 Use this resource with `docs/st-pauls-comprehensive-newsletter-template.md`.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

@@ -140,3 +140,9 @@ results when the API key is absent.
   guide entries.
 - `references/asset-library.md` — full templates, style vocabulary, delivery
   specs, guidelines skeleton, fix-it phrases. Read before writing specs.
+
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.

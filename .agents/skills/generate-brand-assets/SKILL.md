@@ -185,3 +185,9 @@ After generating assets:
 2. Update social media preview URLs in deployment
 3. Test social sharing on each platform (links may cache old images)
 4. Monitor OG image performance in analytics
+
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.

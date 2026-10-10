@@ -62,3 +62,9 @@ Use when the user is:
 - [npm.mdx](./references/npm.mdx) - Publishing components to npm
 - [marketplaces.mdx](./references/marketplaces.mdx) - Component marketplace distribution
 - [docs.mdx](./references/docs.mdx) - Writing component documentation
+
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.

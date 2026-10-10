@@ -85,3 +85,9 @@ return (
 
 Use render props when the parent needs to provide data or state to the child.
 Use children when composing static structure.
+
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.

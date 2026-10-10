@@ -6,3 +6,9 @@ Create new versioned drafts in the season folder, for example `2026-fall/`. Kath
 - `2026-fall/older-drafts/` holds Drafts 1–12 from the earlier workflow. They are history only: several have unbalanced `<td>` tags (Drafts 8, 9, 10) and removed `/assets/` image URLs. Do not copy markup from them.
 - Start new drafts from `newsletter-system/template/html-scaffold.html`.
 - When a draft is approved, copy it to `newsletters/final/<year>-<season>/`.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

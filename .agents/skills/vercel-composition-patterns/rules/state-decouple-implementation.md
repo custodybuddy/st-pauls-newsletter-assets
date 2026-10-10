@@ -111,3 +111,9 @@ function ChannelProvider({ channelId, children }) {
 
 The same `Composer.Input` component works with both providers because it only
 depends on the context interface, not the implementation.
+
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.

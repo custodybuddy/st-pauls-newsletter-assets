@@ -189,3 +189,9 @@ lifting state into providers.
 
 The UI is reusable bits you compose together. The state is dependency-injected
 by the provider. Swap the provider, keep the UI.
+
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.

@@ -98,3 +98,9 @@ function EditComposer() {
 
 Each variant is explicit about what it renders. We can share internals without
 sharing a single monolithic parent.
+
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.

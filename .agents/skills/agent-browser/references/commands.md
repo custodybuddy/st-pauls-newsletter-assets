@@ -270,3 +270,9 @@ Common errors:
 - `'text' required for fill action` - Missing required field
 - `'target_ref' required for drag action` - Missing drag target
 - `Timeout 5000ms exceeded` - Element not found or not clickable
+
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.

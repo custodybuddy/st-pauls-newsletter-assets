@@ -45,3 +45,9 @@ The comprehensive template carries these useful historical lessons into the curr
 - Use a small uppercase label, a large serif heading, short body paragraphs, and one intentional icon per section.
 - Keep dense information in clearly titled cards; do not make readers infer the action from a long narrative.
 - Reserve the most prominent buttons for one or two meaningful actions per issue.
+
+---
+
+## Repository Structure Reference
+
+This historical or superseded record remains non-authoritative. For the current system map and production boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

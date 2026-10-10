@@ -295,3 +295,9 @@ if ! echo "$ELEMENTS" | grep -q "Logout\|Dashboard\|Welcome"; then
   exit 1
 fi
 ```
+
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.

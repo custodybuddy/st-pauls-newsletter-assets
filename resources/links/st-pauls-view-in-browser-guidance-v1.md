@@ -43,3 +43,9 @@ Recommended placement:
 1. Replace every `[VIEW_IN_BROWSER_URL]` placeholder with the ESP merge tag.
 2. Send a test email and select the link to confirm it opens the correct hosted issue.
 3. Confirm the hosted page shows the intended images, formatting, personalization, and dynamic content.
+
+---
+
+## Repository Structure Reference
+
+This historical or superseded record remains non-authoritative. For the current system map and production boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

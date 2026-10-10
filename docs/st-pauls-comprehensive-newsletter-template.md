@@ -584,3 +584,9 @@ Avoid:
 - [ ] View-in-browser merge tag verified in a delivered test.
 - [ ] Repository audit passes with no current-source errors.
 - [ ] Real email-client tests completed or their absence disclosed.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](newsletter-system-architecture.md).

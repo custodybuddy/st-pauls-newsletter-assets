@@ -307,3 +307,8 @@ npx skills add inference-sh/skills@llm-models
 - [inference.sh Sessions](https://inference.sh/docs/extend/sessions) - Session management
 - [Multi-function Apps](https://inference.sh/docs/extend/multi-function-apps) - How functions work
 
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.

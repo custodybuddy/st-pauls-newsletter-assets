@@ -632,3 +632,9 @@ When in doubt:
 The repository contains archived (published), final, and drafting HTML newsletters. Archived and older-draft files must remain unchanged unless the user explicitly requests an HTML edit.
 
 When building a new newsletter, use `docs/st-pauls-comprehensive-newsletter-template.md` for structure and use the assigned approved copy source for wording. Never treat an older generated newsletter as the current construction template.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](docs/newsletter-system-architecture.md).

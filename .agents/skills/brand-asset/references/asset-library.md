@@ -97,3 +97,9 @@ Record every approved asset in the brand guide:
 - Icon set inconsistent → generate as ONE sheet in one call; `consistent stroke weight and corner radius, same style throughout`
 - Pattern seams visible → `seamless, tileable, edge-to-edge repeating`; test-tile before accepting
 - Colors drift off-brand → words + hex in the prompt, from the Creative Direction Brief palette
+
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.

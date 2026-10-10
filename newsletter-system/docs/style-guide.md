@@ -88,3 +88,9 @@ Optional modules can be reordered, combined, or omitted when the approved draft 
 - Website: `https://stpaulsingersoll.ca/`
 - Donate / Give Now: `https://www.stpaulsingersoll.ca/contact-us/donate`
 - YouTube: `https://www.youtube.com/channel/UCCTGFWFR4Z3svvSyZ08rE_g/videos`
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

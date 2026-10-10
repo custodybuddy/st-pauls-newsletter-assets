@@ -123,3 +123,9 @@ UI itself.
 
 **Key insight:** Components that need shared state don't have to be visually
 nested inside each other—they just need to be within the same provider.
+
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.

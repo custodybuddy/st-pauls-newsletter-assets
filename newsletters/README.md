@@ -18,3 +18,9 @@ Three folders, organized by season (`<year>-<season>`, for example `2026-fall`):
 ## Why the archive matters
 
 Archived issues show the sections and components the church community already knows. New issues should keep those sections and components and improve the design and visual hierarchy, not replace them. See `archive/README.md` for the section list and `resources/archive-review/` for the design analysis.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../docs/newsletter-system-architecture.md).

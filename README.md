@@ -6,6 +6,7 @@ This repository contains the production system for “What’s Up, St. Paul’s?
 
 - **Editorial wording:** Kathy’s approved seasonal submission / the current [Seasonal Newsletter Drafting Template](https://docs.google.com/document/d/1TIgR_NbjIOMLPt0Q-g7jymQPYRLEPjK1vQTJ96vwPC8/edit) controls wording, included modules, and their order.
 - **New issue structure:** `docs/st-pauls-comprehensive-newsletter-template.md`.
+- **System architecture:** [Newsletter System Architecture](docs/newsletter-system-architecture.md).
 - **HTML starting point:** `newsletter-system/template/html-scaffold.html`.
 - **Brand assets and stable destinations:** `brand/`.
 - **Final checks:** `newsletter-system/docs/qa-checklist.md`.
@@ -39,3 +40,9 @@ node scripts/audit-newsletter-repo.js
 ```
 
 Use `--strict` only for a release review; it also fails on retained historical warnings.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](docs/newsletter-system-architecture.md).

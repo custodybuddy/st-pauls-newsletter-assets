@@ -1,5 +1,10 @@
 # Newsletter Change Log
 
+## 2026-10-10 (architecture documentation sync)
+
+- Added `docs/newsletter-system-architecture.md`, the current system map for editorial sources, assets, templates, seasonal issue folders, validation, and verification limits.
+- Updated every tracked Markdown file with a relative architecture reference. Historical and superseded records remain non-authoritative; their existing status is unchanged.
+
 ## 2026-10-08 (brand asset visual)
 
 - Added `brand/resources/brand-assets-visual.html`: a browser reference page showing the brand colors, typography, section style, four seasonal hero banners, all 15 v4 icons (generated from `icon-map-v4.json`), and the illustrations. It is a reference page, not an email. Update it when brand assets or the icon map change.
@@ -119,3 +124,9 @@ Use this file to track production changes by issue and version.
 - Updated all project Markdown documentation files to reflect v12 section flow and assets.
 - Updated icon/link reference with live URLs used in v12, including banner/supporting images and active CTA endpoints.
 - Updated README/style/checklist references to point to current baseline working file.
+
+---
+
+## Repository Structure Reference
+
+This historical or superseded record remains non-authoritative. For the current system map and production boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

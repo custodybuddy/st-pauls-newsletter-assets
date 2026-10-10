@@ -16,3 +16,9 @@ Use these stable destinations in new newsletter CTAs. Kathy’s approved submiss
 | Vision and mission | `https://www.stpaulsingersoll.ca/about-us/vision-mission-statement` |
 
 Use `docs/st-pauls-comprehensive-newsletter-template.md` for newsletter structure. The legacy `resources/links/st-pauls-website-data-and-links-v1.md` remains only for compatibility and historical detail.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

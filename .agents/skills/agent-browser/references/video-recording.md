@@ -284,3 +284,9 @@ fi
 3. **File size** - Complex pages with animations produce larger files
 4. **No audio** - Browser audio is not captured
 5. **Returned on close** - Video only available after session ends
+
+---
+
+## St. Paul’s Project Context
+
+When this skill is used in this repository, the [newsletter system architecture](../../../../docs/newsletter-system-architecture.md) and `AGENTS.md` define the production boundary; this skill supplements, but does not replace, email-safe workflow rules.
