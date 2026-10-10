@@ -29,3 +29,9 @@ The five newest fragments (announcements, volunteer, photo, celebration, closing
 | `seasonal-celebration.html` | Seasonal Celebration on a dark navy panel with light text. Placeholder text only |
 | `closing-message.html` | Closing Message with sign-off. Place just above the footer. Placeholder text only |
 | `newsletter-footer.html` | Footer and calls to action |
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../docs/newsletter-system-architecture.md).

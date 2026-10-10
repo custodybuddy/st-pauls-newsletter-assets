@@ -20,3 +20,9 @@ Every issue here was sent to the church community. Do not edit these files. Use 
 - Season placement is by publication date. September 2025 is filed under Fall 2025; move it if you count it as Summer.
 - Many of these files use the removed `/assets/` image URLs, embedded images, or unbalanced tables. The audit reports them as warnings. Do not copy their markup.
 - Design analysis: `resources/archive-review/ARCHIVE-NEWSLETTER-DESIGN-ANALYSIS.md` and `ARCHIVE-NEWSLETTER-PATTERNS-AND-THEMES.md`.
+
+---
+
+## Repository Structure Reference
+
+This historical or superseded record remains non-authoritative. For the current system map and production boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

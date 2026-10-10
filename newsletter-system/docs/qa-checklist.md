@@ -136,3 +136,8 @@ The controlling production instructions are in `docs/st-pauls-comprehensive-news
 - Buttons are table cells with `bgcolor` plus `background-color`; `border-radius` is on the `<td>`.
 - Every image has `alt`, `width`, `border="0"` and `display:block`.
 - 390px view: no horizontal scroll, every image loads, stacked columns read in a logical order.
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

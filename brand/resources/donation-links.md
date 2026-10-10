@@ -11,3 +11,9 @@ Use only when Kathy’s approved submission calls for a giving invitation. Confi
 The PayPal token is a production endpoint, not placeholder copy. Use the Outlook-safe button pattern in `newsletter-system/components/outlook-safe/` and do not alter approved giving wording.
 
 Use this resource with `docs/st-pauls-comprehensive-newsletter-template.md`.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

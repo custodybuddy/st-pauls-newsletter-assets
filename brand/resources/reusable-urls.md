@@ -10,3 +10,9 @@
 For a View in browser link, replace `[VIEW_IN_BROWSER_URL]` with the exact merge tag supplied by the sending platform and verify it in a delivered email. Never use `href="#"`.
 
 Use this resource with `docs/st-pauls-comprehensive-newsletter-template.md`. Legacy files in `resources/links/` are retained for compatibility and history, not new work.
+
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).

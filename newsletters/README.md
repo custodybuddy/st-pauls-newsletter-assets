@@ -28,3 +28,8 @@ Archived issues show the sections and components the church community already kn
 
 `drafting/2026-test/` is a layout test with sample text. It is not an issue and must not be sent.
 
+---
+
+## Repository Structure Reference
+
+For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../docs/newsletter-system-architecture.md).

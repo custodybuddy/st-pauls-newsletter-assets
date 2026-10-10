@@ -140,3 +140,9 @@ Use this file to track production changes by issue and version.
 - Updated all project Markdown documentation files to reflect v12 section flow and assets.
 - Updated icon/link reference with live URLs used in v12, including banner/supporting images and active CTA endpoints.
 - Updated README/style/checklist references to point to current baseline working file.
+
+---
+
+## Repository Structure Reference
+
+This historical or superseded record remains non-authoritative. For the current system map and production boundaries, see the [newsletter system architecture](../../docs/newsletter-system-architecture.md).
