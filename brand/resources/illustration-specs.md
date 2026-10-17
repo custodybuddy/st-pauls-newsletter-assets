@@ -54,6 +54,17 @@ Describe what the image shows and why it is there, in one sentence, without "ima
 4. Added to `st-pauls-illustrations-v1.json` with alt text and layout role.
 5. `node scripts/audit-newsletter-repo.js` shows no dead image URLs.
 
+## Fall 2026 draft illustrations
+
+These four email-size JPGs are hosted for the Fall 2026 working draft. Hosting does not mark the draft ready to send.
+
+| Draft placement | File | Public URL |
+|---|---|---|
+| Luke 10 reflection | `st-pauls-good-samaritan-fall-2026-email.jpg` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/st-pauls-good-samaritan-fall-2026-email.jpg` |
+| Prayer Shawl card | `st-pauls-prayer-shawl-fall-2026-email.jpg` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/st-pauls-prayer-shawl-fall-2026-email.jpg` |
+| Pastoral Care card | `st-pauls-pastoral-care-fall-2026-email.jpg` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/st-pauls-pastoral-care-fall-2026-email.jpg` |
+| Coats for Families event card | `st-pauls-coats-for-families-fall-2026-email.jpg` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/st-pauls-coats-for-families-fall-2026-email.jpg` |
+
 ## Fall 2026 illustrated design review candidates
 
 The four original PNG candidates in `design-review/illustrated-fall-2026/` are pending visual approval. Their filenames, intended components, alt text, dimensions and generation prompts are recorded in `design-review/illustrated-fall-2026/asset-candidates.json`; `resources/links/st-pauls-illustrations-v1.json` lists them under `candidateIllustrations`. They are not part of the approved `illustrations` or `supplementalIllustrations` lists and must not be linked from a sent newsletter yet.

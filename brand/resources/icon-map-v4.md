@@ -16,6 +16,24 @@ The canonical PNG exports were refreshed on 2026-09-09. Previous exports and alt
 - No words, letters, emoji, or decorative frames unrelated to the symbol
 - Recommended width: `88px` for the main brand icon and `72px` for section icons
 
+## Fall 2026 email accent icons
+
+These small gold line icons support the Fall 2026 draft. They are separate from the permanent v4 section icon mapping. The Bible study icon remains hosted for Draft 20 history; Draft 21 removes the October 18 event.
+
+| Role | File | Public URL |
+|---|---|---|
+| Retained for Draft 20 Bible study; not used in Draft 21 | `fall-2026-event-bible-gold-line.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-event-bible-gold-line.png` |
+| October 25 event card | `fall-2026-event-evening-gold-line.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-event-evening-gold-line.png` |
+| Coats for Families event card | `fall-2026-event-coat-gold-line.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-event-coat-gold-line.png` |
+| Online Bible Study event card | `fall-2026-event-online-gold-line.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-event-online-gold-line.png` |
+| Prayer section | `fall-2026-prayer-candle-gold-line.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-prayer-candle-gold-line.png` |
+| Footer feedback link | `fall-2026-footer-feedback-gold-line.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-feedback-gold-line.png` |
+| Footer website link | `fall-2026-footer-website-gold-line.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-website-gold-line.png` |
+| Footer YouTube link | `fall-2026-footer-youtube-gold-line.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-youtube-gold-line.png` |
+| Footer address | `fall-2026-footer-location-gold-line.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-location-gold-line.png` |
+| Footer worship time | `fall-2026-footer-worship-gold-line.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-worship-gold-line.png` |
+| Footer office hours | `fall-2026-footer-office-gold-line.png` | `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-office-gold-line.png` |
+
 ## Canonical Icon Map
 
 Use each icon as the visual label for a section's primary purpose, not as general decoration. Select icons in this order: exact section match, primary purpose, approved fallback, then no icon. Keep these boundaries strict: `04` is a featured ministry story, `06` is work beyond the church walls, and `10` is prayer or pastoral care. Use `11` for new Finance sections; `08` remains the documented historical temporary fallback in existing approved or working HTML.

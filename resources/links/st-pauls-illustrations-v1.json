@@ -30,6 +30,52 @@
       "emailFormat": "png"
     }
   ],
+  "seasonalFall2026Illustrations": [
+    {
+      "key": "fall-2026-good-samaritan",
+      "section": "The Good Samaritan",
+      "filename": "st-pauls-good-samaritan-fall-2026-email.jpg",
+      "repositoryPath": "brand/assets/illustrations/email/st-pauls-good-samaritan-fall-2026-email.jpg",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/st-pauls-good-samaritan-fall-2026-email.jpg",
+      "alt": "A traveler kneeling beside a wounded person on an autumn road, with a donkey nearby",
+      "recommendedWidth": 400,
+      "layoutRole": "Luke 10 reflection",
+      "emailFormat": "jpg"
+    },
+    {
+      "key": "fall-2026-prayer-shawl",
+      "section": "Prayer Shawl",
+      "filename": "st-pauls-prayer-shawl-fall-2026-email.jpg",
+      "repositoryPath": "brand/assets/illustrations/email/st-pauls-prayer-shawl-fall-2026-email.jpg",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/st-pauls-prayer-shawl-fall-2026-email.jpg",
+      "alt": "A knitted shawl beside yarn and autumn leaves",
+      "recommendedWidth": 320,
+      "layoutRole": "Prayer Shawl card",
+      "emailFormat": "jpg"
+    },
+    {
+      "key": "fall-2026-pastoral-care",
+      "section": "Pastoral Care",
+      "filename": "st-pauls-pastoral-care-fall-2026-email.jpg",
+      "repositoryPath": "brand/assets/illustrations/email/st-pauls-pastoral-care-fall-2026-email.jpg",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/st-pauls-pastoral-care-fall-2026-email.jpg",
+      "alt": "A handwritten card, flowers and a teacup near a doorway",
+      "recommendedWidth": 320,
+      "layoutRole": "Pastoral Care card",
+      "emailFormat": "jpg"
+    },
+    {
+      "key": "fall-2026-coats-for-families",
+      "section": "Coats for Families",
+      "filename": "st-pauls-coats-for-families-fall-2026-email.jpg",
+      "repositoryPath": "brand/assets/illustrations/email/st-pauls-coats-for-families-fall-2026-email.jpg",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/st-pauls-coats-for-families-fall-2026-email.jpg",
+      "alt": "A donation box filled with hats, scarves, mittens and a coat",
+      "recommendedWidth": 116,
+      "layoutRole": "Coats for Families event card",
+      "emailFormat": "jpg"
+    }
+  ],
   "formatSpecs": {
     "specDocument": "brand/resources/illustration-specs.md",
     "pendingAssets": [

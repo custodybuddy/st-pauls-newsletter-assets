@@ -9,6 +9,107 @@
     "repositoryPath": "brand/resources/icon-map-v4-visual.html",
     "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/resources/icon-map-v4-visual.html"
   },
+  "seasonalFall2026Icons": [
+    {
+      "key": "event-bible",
+      "filename": "fall-2026-event-bible-gold-line.png",
+      "repositoryPath": "brand/assets/icons/email/fall-2026-event-bible-gold-line.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-event-bible-gold-line.png",
+      "alt": "Open Bible",
+      "recommendedWidth": 20,
+      "useFor": "Retained for Draft 20 Bible study; not used in Draft 21"
+    },
+    {
+      "key": "event-evening",
+      "filename": "fall-2026-event-evening-gold-line.png",
+      "repositoryPath": "brand/assets/icons/email/fall-2026-event-evening-gold-line.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-event-evening-gold-line.png",
+      "alt": "Evening worship",
+      "recommendedWidth": 20,
+      "useFor": "October 25 event card"
+    },
+    {
+      "key": "event-coat",
+      "filename": "fall-2026-event-coat-gold-line.png",
+      "repositoryPath": "brand/assets/icons/email/fall-2026-event-coat-gold-line.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-event-coat-gold-line.png",
+      "alt": "Winter coat",
+      "recommendedWidth": 20,
+      "useFor": "Coats for Families event card"
+    },
+    {
+      "key": "event-online",
+      "filename": "fall-2026-event-online-gold-line.png",
+      "repositoryPath": "brand/assets/icons/email/fall-2026-event-online-gold-line.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-event-online-gold-line.png",
+      "alt": "Online Bible",
+      "recommendedWidth": 20,
+      "useFor": "Online Bible Study event card"
+    },
+    {
+      "key": "prayer-candle",
+      "filename": "fall-2026-prayer-candle-gold-line.png",
+      "repositoryPath": "brand/assets/icons/email/fall-2026-prayer-candle-gold-line.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-prayer-candle-gold-line.png",
+      "alt": "Prayer candle",
+      "recommendedWidth": 24,
+      "useFor": "Prayer section"
+    },
+    {
+      "key": "footer-feedback",
+      "filename": "fall-2026-footer-feedback-gold-line.png",
+      "repositoryPath": "brand/assets/icons/email/fall-2026-footer-feedback-gold-line.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-feedback-gold-line.png",
+      "alt": "Feedback bubble",
+      "recommendedWidth": 24,
+      "useFor": "Footer feedback link"
+    },
+    {
+      "key": "footer-website",
+      "filename": "fall-2026-footer-website-gold-line.png",
+      "repositoryPath": "brand/assets/icons/email/fall-2026-footer-website-gold-line.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-website-gold-line.png",
+      "alt": "Globe",
+      "recommendedWidth": 24,
+      "useFor": "Footer website link"
+    },
+    {
+      "key": "footer-youtube",
+      "filename": "fall-2026-footer-youtube-gold-line.png",
+      "repositoryPath": "brand/assets/icons/email/fall-2026-footer-youtube-gold-line.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-youtube-gold-line.png",
+      "alt": "Play button",
+      "recommendedWidth": 24,
+      "useFor": "Footer YouTube link"
+    },
+    {
+      "key": "footer-location",
+      "filename": "fall-2026-footer-location-gold-line.png",
+      "repositoryPath": "brand/assets/icons/email/fall-2026-footer-location-gold-line.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-location-gold-line.png",
+      "alt": "Location pin",
+      "recommendedWidth": 24,
+      "useFor": "Footer address"
+    },
+    {
+      "key": "footer-worship",
+      "filename": "fall-2026-footer-worship-gold-line.png",
+      "repositoryPath": "brand/assets/icons/email/fall-2026-footer-worship-gold-line.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-worship-gold-line.png",
+      "alt": "Cross",
+      "recommendedWidth": 24,
+      "useFor": "Footer worship time"
+    },
+    {
+      "key": "footer-office",
+      "filename": "fall-2026-footer-office-gold-line.png",
+      "repositoryPath": "brand/assets/icons/email/fall-2026-footer-office-gold-line.png",
+      "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-office-gold-line.png",
+      "alt": "Clock",
+      "recommendedWidth": 24,
+      "useFor": "Footer office hours"
+    }
+  ],
   "style": {
     "reference": "User-supplied Christian icon family reference, 2026-08-31",
     "description": "Premium dimensional Christian symbols with softened, readable geometry and transparent backgrounds",
