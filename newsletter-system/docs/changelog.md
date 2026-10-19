@@ -3,7 +3,7 @@
 ## 2026-10-19 (hosted image links in Fall 2026 Draft 15)
 
 - Added Draft 15 from Draft 14 with image sources repointed to files actually present under `brand/assets/`; preserved editorial copy and layout. Draft 14 remains unchanged.
-- Repointed the reusable snippets, HTML scaffold and visual asset page. Corrected the path reference, asset README and current working guidance; older numbered v4 records and archival issues remain historical.
+- Repointed the reusable snippets, HTML scaffold and visual asset page. Corrected the path reference, asset README and current working guidance; updated all 24 preset metadata records from Studio-local paths to hosted URLs and this repository's actual source/export paths. Older numbered v4 records and archival issues remain historical.
 - The newsletter is still a draft. A successful URL check does not establish inbox rendering or editorial approval.
 
 ## 2026-10-08 (final refinement of the newsletter system)
