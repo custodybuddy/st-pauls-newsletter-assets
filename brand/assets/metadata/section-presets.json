@@ -3,7 +3,7 @@
     "id": "insert-welcome",
     "name": "Welcome",
     "description": "Two hands warmly shaking beneath a rising golden sun.",
-    "imageUrl": "/brand-assets/icons/web/welcome.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/welcome.png",
     "altText": "Two hands warmly shaking beneath a rising golden sun framed by navy and teal leaves with gold edging.",
     "suggestedSection": "pastoral_greeting",
     "aspectRatio": "1:1",
@@ -13,11 +13,11 @@
     },
     "basePrompt": "Two hands warmly shaking beneath a rising golden sun.",
     "enhancedPrompt": "Two hands warmly shaking beneath a rising golden sun. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/welcome.png",
+    "sourceFile": "brand/assets/icons/source/welcome.png",
     "originalDimensions": [
       1254,
       1254
@@ -27,14 +27,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/welcome.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/welcome.png"
   },
   {
     "id": "insert-greetings",
     "name": "Greetings",
     "description": "Cream open envelope containing a navy heart.",
-    "imageUrl": "/brand-assets/icons/web/greetings.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/greetings.png",
     "altText": "Cream open envelope containing a navy heart framed by navy and teal leaves with gold edging.",
     "suggestedSection": "pastoral_greeting",
     "aspectRatio": "1:1",
@@ -44,11 +44,11 @@
     },
     "basePrompt": "Cream open envelope containing a navy heart.",
     "enhancedPrompt": "Cream open envelope containing a navy heart. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/greetings.png",
+    "sourceFile": "brand/assets/icons/source/greetings.png",
     "originalDimensions": [
       1254,
       1254
@@ -58,14 +58,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/greetings.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/greetings.png"
   },
   {
     "id": "insert-our-mission",
     "name": "Our Mission",
     "description": "Navy concentric target with a gold heart at its centre and one gold arrow.",
-    "imageUrl": "/brand-assets/icons/web/our-mission.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/our-mission.png",
     "altText": "Navy concentric target with a gold heart at its centre and one gold arrow framed by navy and teal leaves with gold edging.",
     "suggestedSection": "mission",
     "aspectRatio": "1:1",
@@ -75,11 +75,11 @@
     },
     "basePrompt": "Navy concentric target with a gold heart at its centre and one gold arrow.",
     "enhancedPrompt": "Navy concentric target with a gold heart at its centre and one gold arrow. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/our-mission.png",
+    "sourceFile": "brand/assets/icons/source/our-mission.png",
     "originalDimensions": [
       1254,
       1254
@@ -89,14 +89,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/our-mission.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/our-mission.png"
   },
   {
     "id": "insert-ministry-spotlight",
     "name": "Ministry Spotlight",
     "description": "Navy and gold stage spotlight casting a soft warm beam.",
-    "imageUrl": "/brand-assets/icons/web/ministry-spotlight.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/ministry-spotlight.png",
     "altText": "Navy and gold stage spotlight casting a soft warm beam framed by navy and teal leaves with gold edging.",
     "suggestedSection": "ministry_spotlight",
     "aspectRatio": "1:1",
@@ -106,11 +106,11 @@
     },
     "basePrompt": "Navy and gold stage spotlight casting a soft warm beam.",
     "enhancedPrompt": "Navy and gold stage spotlight casting a soft warm beam. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/ministry-spotlight.png",
+    "sourceFile": "brand/assets/icons/source/ministry-spotlight.png",
     "originalDimensions": [
       1254,
       1254
@@ -120,14 +120,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/ministry-spotlight.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/ministry-spotlight.png"
   },
   {
     "id": "insert-community",
     "name": "Community",
     "description": "Three navy and teal people with a cream and gold heart.",
-    "imageUrl": "/brand-assets/icons/web/community.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/community.png",
     "altText": "Three navy and teal people with a cream and gold heart framed by navy and teal leaves with gold edging.",
     "suggestedSection": "community_focus",
     "aspectRatio": "1:1",
@@ -137,11 +137,11 @@
     },
     "basePrompt": "Three navy and teal people with a cream and gold heart.",
     "enhancedPrompt": "Three navy and teal people with a cream and gold heart. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/community.png",
+    "sourceFile": "brand/assets/icons/source/community.png",
     "originalDimensions": [
       1254,
       1254
@@ -151,14 +151,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/community.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/community.png"
   },
   {
     "id": "insert-upcoming-events",
     "name": "Upcoming Events",
     "description": "Cream calendar with navy header, gold rings and a heart date marker.",
-    "imageUrl": "/brand-assets/icons/web/upcoming-events.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/upcoming-events.png",
     "altText": "Cream calendar with navy header, gold rings and a heart date marker framed by navy and teal leaves with gold edging.",
     "suggestedSection": "upcoming_events",
     "aspectRatio": "1:1",
@@ -168,11 +168,11 @@
     },
     "basePrompt": "Cream calendar with navy header, gold rings and a heart date marker.",
     "enhancedPrompt": "Cream calendar with navy header, gold rings and a heart date marker. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/upcoming-events.png",
+    "sourceFile": "brand/assets/icons/source/upcoming-events.png",
     "originalDimensions": [
       1254,
       1254
@@ -182,14 +182,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/upcoming-events.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/upcoming-events.png"
   },
   {
     "id": "insert-scripture-reflection",
     "name": "Scripture & Reflection",
     "description": "Open cream Bible with golden cross and sun rays.",
-    "imageUrl": "/brand-assets/icons/web/scripture-reflection.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/scripture-reflection.png",
     "altText": "Open cream Bible with golden cross and sun rays framed by navy and teal leaves with gold edging.",
     "suggestedSection": "scripture_panel",
     "aspectRatio": "1:1",
@@ -199,11 +199,11 @@
     },
     "basePrompt": "Open cream Bible with golden cross and sun rays.",
     "enhancedPrompt": "Open cream Bible with golden cross and sun rays. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/scripture-reflection.png",
+    "sourceFile": "brand/assets/icons/source/scripture-reflection.png",
     "originalDimensions": [
       1254,
       1254
@@ -213,14 +213,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/scripture-reflection.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/scripture-reflection.png"
   },
   {
     "id": "insert-prayer-focus",
     "name": "Prayer Focus",
     "description": "Hands folded in prayer with navy cuffs and golden rays.",
-    "imageUrl": "/brand-assets/icons/web/prayer-focus.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/prayer-focus.png",
     "altText": "Hands folded in prayer with navy cuffs and golden rays framed by navy and teal leaves with gold edging.",
     "suggestedSection": "feature_reflection",
     "aspectRatio": "1:1",
@@ -230,11 +230,11 @@
     },
     "basePrompt": "Hands folded in prayer with navy cuffs and golden rays.",
     "enhancedPrompt": "Hands folded in prayer with navy cuffs and golden rays. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/prayer-focus.png",
+    "sourceFile": "brand/assets/icons/source/prayer-focus.png",
     "originalDimensions": [
       1254,
       1254
@@ -244,14 +244,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/prayer-focus.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/prayer-focus.png"
   },
   {
     "id": "insert-volunteer",
     "name": "Volunteer",
     "description": "Open navy hand supporting a floating gold heart.",
-    "imageUrl": "/brand-assets/icons/web/volunteer.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/volunteer.png",
     "altText": "Open navy hand supporting a floating gold heart framed by navy and teal leaves with gold edging.",
     "suggestedSection": "faith_in_action",
     "aspectRatio": "1:1",
@@ -261,11 +261,11 @@
     },
     "basePrompt": "Open navy hand supporting a floating gold heart.",
     "enhancedPrompt": "Open navy hand supporting a floating gold heart. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/volunteer.png",
+    "sourceFile": "brand/assets/icons/source/volunteer.png",
     "originalDimensions": [
       1254,
       1254
@@ -275,14 +275,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/volunteer.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/volunteer.png"
   },
   {
     "id": "insert-giving",
     "name": "Giving",
     "description": "Hand places a golden heart into a navy donation box with gold cross.",
-    "imageUrl": "/brand-assets/icons/web/giving.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/giving.png",
     "altText": "Hand places a golden heart into a navy donation box with gold cross framed by navy and teal leaves with gold edging.",
     "suggestedSection": "faith_in_action",
     "aspectRatio": "1:1",
@@ -292,11 +292,11 @@
     },
     "basePrompt": "Hand places a golden heart into a navy donation box with gold cross.",
     "enhancedPrompt": "Hand places a golden heart into a navy donation box with gold cross. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/giving.png",
+    "sourceFile": "brand/assets/icons/source/giving.png",
     "originalDimensions": [
       1254,
       1254
@@ -306,14 +306,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/giving.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/giving.png"
   },
   {
     "id": "insert-testimony",
     "name": "Testimony",
     "description": "Overlapping navy and cream speech bubbles with a navy heart.",
-    "imageUrl": "/brand-assets/icons/web/testimony.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/testimony.png",
     "altText": "Overlapping navy and cream speech bubbles with a navy heart framed by navy and teal leaves with gold edging.",
     "suggestedSection": "feature_reflection",
     "aspectRatio": "1:1",
@@ -323,11 +323,11 @@
     },
     "basePrompt": "Overlapping navy and cream speech bubbles with a navy heart.",
     "enhancedPrompt": "Overlapping navy and cream speech bubbles with a navy heart. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/testimony.png",
+    "sourceFile": "brand/assets/icons/source/testimony.png",
     "originalDimensions": [
       1254,
       1254
@@ -337,14 +337,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/testimony.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/testimony.png"
   },
   {
     "id": "insert-bible-study",
     "name": "Bible Study",
     "description": "Navy coffee cup with gold cross resting on cream and navy books.",
-    "imageUrl": "/brand-assets/icons/web/bible-study.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/bible-study.png",
     "altText": "Navy coffee cup with gold cross resting on cream and navy books framed by navy and teal leaves with gold edging.",
     "suggestedSection": "spiritual_formation",
     "aspectRatio": "1:1",
@@ -354,11 +354,11 @@
     },
     "basePrompt": "Navy coffee cup with gold cross resting on cream and navy books.",
     "enhancedPrompt": "Navy coffee cup with gold cross resting on cream and navy books. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/bible-study.png",
+    "sourceFile": "brand/assets/icons/source/bible-study.png",
     "originalDimensions": [
       1254,
       1254
@@ -368,14 +368,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/bible-study.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/bible-study.png"
   },
   {
     "id": "insert-church-updates",
     "name": "Church Updates",
     "description": "Navy megaphone with gold rim and sound rays.",
-    "imageUrl": "/brand-assets/icons/web/church-updates.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/church-updates.png",
     "altText": "Navy megaphone with gold rim and sound rays framed by navy and teal leaves with gold edging.",
     "suggestedSection": "custom_article",
     "aspectRatio": "1:1",
@@ -385,11 +385,11 @@
     },
     "basePrompt": "Navy megaphone with gold rim and sound rays.",
     "enhancedPrompt": "Navy megaphone with gold rim and sound rays. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/church-updates.png",
+    "sourceFile": "brand/assets/icons/source/church-updates.png",
     "originalDimensions": [
       1254,
       1254
@@ -399,14 +399,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/church-updates.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/church-updates.png"
   },
   {
     "id": "insert-worship-music",
     "name": "Worship & Music",
     "description": "Navy musical note with gold edge and sweeping musical curves.",
-    "imageUrl": "/brand-assets/icons/web/worship-music.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/worship-music.png",
     "altText": "Navy musical note with gold edge and sweeping musical curves framed by navy and teal leaves with gold edging.",
     "suggestedSection": "ministry_spotlight",
     "aspectRatio": "1:1",
@@ -416,11 +416,11 @@
     },
     "basePrompt": "Navy musical note with gold edge and sweeping musical curves.",
     "enhancedPrompt": "Navy musical note with gold edge and sweeping musical curves. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/worship-music.png",
+    "sourceFile": "brand/assets/icons/source/worship-music.png",
     "originalDimensions": [
       1254,
       1254
@@ -430,14 +430,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/worship-music.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/worship-music.png"
   },
   {
     "id": "insert-fellowship",
     "name": "Fellowship",
     "description": "Cream coffee mug with navy heart beside a golden loaf of bread.",
-    "imageUrl": "/brand-assets/icons/web/fellowship.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/fellowship.png",
     "altText": "Cream coffee mug with navy heart beside a golden loaf of bread framed by navy and teal leaves with gold edging.",
     "suggestedSection": "community_focus",
     "aspectRatio": "1:1",
@@ -447,11 +447,11 @@
     },
     "basePrompt": "Cream coffee mug with navy heart beside a golden loaf of bread.",
     "enhancedPrompt": "Cream coffee mug with navy heart beside a golden loaf of bread. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/fellowship.png",
+    "sourceFile": "brand/assets/icons/source/fellowship.png",
     "originalDimensions": [
       1254,
       1254
@@ -461,14 +461,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/fellowship.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/fellowship.png"
   },
   {
     "id": "insert-compassionate-care",
     "name": "Compassionate Care",
     "description": "Cream and teal embracing hands inside a navy heart.",
-    "imageUrl": "/brand-assets/icons/web/compassionate-care.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/compassionate-care.png",
     "altText": "Cream and teal embracing hands inside a navy heart framed by navy and teal leaves with gold edging.",
     "suggestedSection": "community_focus",
     "aspectRatio": "1:1",
@@ -478,11 +478,11 @@
     },
     "basePrompt": "Cream and teal embracing hands inside a navy heart.",
     "enhancedPrompt": "Cream and teal embracing hands inside a navy heart. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/compassionate-care.png",
+    "sourceFile": "brand/assets/icons/source/compassionate-care.png",
     "originalDimensions": [
       1254,
       1254
@@ -492,14 +492,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/compassionate-care.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/compassionate-care.png"
   },
   {
     "id": "insert-photos",
     "name": "Photos",
     "description": "Navy and gold camera in front of two illustrated landscape photographs.",
-    "imageUrl": "/brand-assets/icons/web/photos.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/photos.png",
     "altText": "Navy and gold camera in front of two illustrated landscape photographs framed by navy and teal leaves with gold edging.",
     "suggestedSection": "custom_article",
     "aspectRatio": "1:1",
@@ -509,11 +509,11 @@
     },
     "basePrompt": "Navy and gold camera in front of two illustrated landscape photographs.",
     "enhancedPrompt": "Navy and gold camera in front of two illustrated landscape photographs. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/photos.png",
+    "sourceFile": "brand/assets/icons/source/photos.png",
     "originalDimensions": [
       1254,
       1254
@@ -523,14 +523,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/photos.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/photos.png"
   },
   {
     "id": "insert-contact-us",
     "name": "Contact Us",
     "description": "Gold at symbol on navy badge with a cream envelope.",
-    "imageUrl": "/brand-assets/icons/web/contact-us.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/contact-us.png",
     "altText": "Gold at symbol on navy badge with a cream envelope framed by navy and teal leaves with gold edging.",
     "suggestedSection": "custom_article",
     "aspectRatio": "1:1",
@@ -540,11 +540,11 @@
     },
     "basePrompt": "Gold at symbol on navy badge with a cream envelope.",
     "enhancedPrompt": "Gold at symbol on navy badge with a cream envelope. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/contact-us.png",
+    "sourceFile": "brand/assets/icons/source/contact-us.png",
     "originalDimensions": [
       1254,
       1254
@@ -554,14 +554,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/contact-us.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/contact-us.png"
   },
   {
     "id": "insert-children-youth",
     "name": "Children & Youth",
     "description": "Two simplified child figures with raised arms beneath a gold cross.",
-    "imageUrl": "/brand-assets/icons/web/children-youth.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/children-youth.png",
     "altText": "Two simplified child figures with raised arms beneath a gold cross framed by navy and teal leaves with gold edging.",
     "suggestedSection": "ministry_spotlight",
     "aspectRatio": "1:1",
@@ -571,11 +571,11 @@
     },
     "basePrompt": "Two simplified child figures with raised arms beneath a gold cross.",
     "enhancedPrompt": "Two simplified child figures with raised arms beneath a gold cross. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/children-youth.png",
+    "sourceFile": "brand/assets/icons/source/children-youth.png",
     "originalDimensions": [
       1254,
       1254
@@ -585,14 +585,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/children-youth.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/children-youth.png"
   },
   {
     "id": "insert-outreach-missions",
     "name": "Outreach & Missions",
     "description": "Navy globe with gold continents and a cream and gold cross.",
-    "imageUrl": "/brand-assets/icons/web/outreach-missions.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/outreach-missions.png",
     "altText": "Navy globe with gold continents and a cream and gold cross framed by navy and teal leaves with gold edging.",
     "suggestedSection": "faith_in_action",
     "aspectRatio": "1:1",
@@ -602,11 +602,11 @@
     },
     "basePrompt": "Navy globe with gold continents and a cream and gold cross.",
     "enhancedPrompt": "Navy globe with gold continents and a cream and gold cross. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/outreach-missions.png",
+    "sourceFile": "brand/assets/icons/source/outreach-missions.png",
     "originalDimensions": [
       1254,
       1254
@@ -616,14 +616,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/outreach-missions.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/outreach-missions.png"
   },
   {
     "id": "insert-pastoral-care",
     "name": "Pastoral Care",
     "description": "Golden shepherd’s crook with a small hanging gold heart.",
-    "imageUrl": "/brand-assets/icons/web/pastoral-care.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/pastoral-care.png",
     "altText": "Golden shepherd’s crook with a small hanging gold heart framed by navy and teal leaves with gold edging.",
     "suggestedSection": "community_focus",
     "aspectRatio": "1:1",
@@ -633,11 +633,11 @@
     },
     "basePrompt": "Golden shepherd’s crook with a small hanging gold heart.",
     "enhancedPrompt": "Golden shepherd’s crook with a small hanging gold heart. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/pastoral-care.png",
+    "sourceFile": "brand/assets/icons/source/pastoral-care.png",
     "originalDimensions": [
       1254,
       1254
@@ -647,14 +647,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/pastoral-care.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/pastoral-care.png"
   },
   {
     "id": "insert-sermons",
     "name": "Sermons",
     "description": "Navy pulpit with gold cross and open cream Bible with light rays.",
-    "imageUrl": "/brand-assets/icons/web/sermons.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/sermons.png",
     "altText": "Navy pulpit with gold cross and open cream Bible with light rays framed by navy and teal leaves with gold edging.",
     "suggestedSection": "spiritual_formation",
     "aspectRatio": "1:1",
@@ -664,11 +664,11 @@
     },
     "basePrompt": "Navy pulpit with gold cross and open cream Bible with light rays.",
     "enhancedPrompt": "Navy pulpit with gold cross and open cream Bible with light rays. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/sermons.png",
+    "sourceFile": "brand/assets/icons/source/sermons.png",
     "originalDimensions": [
       1254,
       1254
@@ -678,14 +678,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/sermons.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/sermons.png"
   },
   {
     "id": "insert-small-groups",
     "name": "Small Groups",
     "description": "Three navy figures gathered behind an open cream Bible.",
-    "imageUrl": "/brand-assets/icons/web/small-groups.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/small-groups.png",
     "altText": "Three navy figures gathered behind an open cream Bible framed by navy and teal leaves with gold edging.",
     "suggestedSection": "spiritual_formation",
     "aspectRatio": "1:1",
@@ -695,11 +695,11 @@
     },
     "basePrompt": "Three navy figures gathered behind an open cream Bible.",
     "enhancedPrompt": "Three navy figures gathered behind an open cream Bible. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/small-groups.png",
+    "sourceFile": "brand/assets/icons/source/small-groups.png",
     "originalDimensions": [
       1254,
       1254
@@ -709,14 +709,14 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/small-groups.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/small-groups.png"
   },
   {
     "id": "insert-newsletter",
     "name": "Newsletter",
     "description": "Cream newsletter page with navy rules and small teal and gold picture panels.",
-    "imageUrl": "/brand-assets/icons/web/newsletter.png",
+    "imageUrl": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/newsletter.png",
     "altText": "Cream newsletter page with navy rules and small teal and gold picture panels framed by navy and teal leaves with gold edging.",
     "suggestedSection": "custom_article",
     "aspectRatio": "1:1",
@@ -726,11 +726,11 @@
     },
     "basePrompt": "Cream newsletter page with navy rules and small teal and gold picture panels.",
     "enhancedPrompt": "Cream newsletter page with navy rules and small teal and gold picture panels. Dimensional enamel illustration matching the supplied St. Paul’s reference: glossy navy #0D1B2A and teal #007A8A, fine raised metallic gold #D4AF37 outlines, subtle bevels, cream #FAF7F1 highlights, navy-and-teal leaf framing, soft golden light. Isolated centred square emblem with safe clear margin; transparent background; no labels, text or watermark. Do not substitute watercolor, photography or flat SVG.",
-    "sourceReference": "public/brand-assets/references/section-illustration-reference.png",
+    "sourceReference": "brand/assets/references/section-illustration-reference.png",
     "provider": "OpenAI built-in image generation",
     "model": "Not exposed by tool",
     "approvalRequired": true,
-    "sourceFile": "public/brand-assets/icons/source/newsletter.png",
+    "sourceFile": "brand/assets/icons/source/newsletter.png",
     "originalDimensions": [
       1254,
       1254
@@ -740,7 +740,7 @@
     "generationStatus": "generated",
     "approvalStatus": "pending_review",
     "exportPreparation": "Contain within a transparent 320 × 320 PNG without stretching or cropping",
-    "emailHostingStatus": "Local app path; approved public HTTPS hosting required before sending",
-    "exportFile": "public/brand-assets/icons/web/newsletter.png"
+    "emailHostingStatus": "Public HTTPS image URL verified on 2026-10-19",
+    "exportFile": "brand/assets/icons/web/newsletter.png"
   }
 ]

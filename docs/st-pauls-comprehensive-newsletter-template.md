@@ -6,8 +6,8 @@ Reviewed against Google Doc revision `AIroW35i__mB-nJYSiOJlnArgGh6s6MNgzjzQicwB5
 
 ## Required Supporting Resources
 
-- Canonical v4 icon manifest: `brand/resources/icon-map-v4.json`
-- Human-readable icon map and stable links: `brand/resources/icon-map-v4.md`
+- Current section presets: `brand/assets/metadata/section-presets.json`
+- Hosted asset paths and stable links: `docs/path-reference.md`
 - Website data and CTA destinations: `brand/resources/website-links.md`
 - View-in-browser implementation: `brand/resources/reusable-urls.md`
 - Final QA: `newsletter-system/docs/qa-checklist.md`
@@ -503,17 +503,16 @@ On dark navy backgrounds, use white headings, `#E2E8F0` or `#CBD5E1` body text, 
 - Use small uppercase labels, serif headings, gold dividers, cream editorial cards, navy feature panels, and selective gold/bold skim emphasis.
 - Use bento-style pairings only where the approved modules benefit from them and the mobile reading order remains clear.
 
-## Canonical v4 Icons
+## Current section illustrations
 
-Use `brand/resources/icon-map-v4.json` as the machine-readable source and `brand/resources/icon-map-v4.md` as the human-readable role map.
+Use `brand/assets/metadata/section-presets.json` for the 24 current presets and `docs/path-reference.md` for the live base and supporting image paths.
 
-- Icon directory: `brand/assets/icons/`
-- Base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/`
-- Main branding icon: 88px.
-- Major section icons: 72px.
-- Use descriptive alt text for meaningful icons and `alt=""` only when decorative.
-- Do not use retired icons or emoji substitutes.
-- A selected story module may use the closest documented v4 role; use a text-only heading when no mapping is semantically appropriate.
+- Preset files: `brand/assets/icons/web/<slug>.png`
+- Base URL: `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/`
+- Small email icons: `brand/assets/icons/email/`
+- Use suitable explicit widths (typically 72px for a section icon) and descriptive alt text; use `alt=""` only when decorative.
+- The older numbered v4 icon paths no longer exist. Do not use them or substitute emoji.
+- If a selected story has no suitable hosted illustration, use a text-only heading.
 
 ## Images
 
@@ -560,7 +559,7 @@ Avoid:
 2. Confirm the three Core Sections and identify the selected Optional Story Modules in their approved order.
 3. Create a new versioned HTML file in `newsletters/drafting/<year>-<season>/`; never overwrite an approved or historical issue.
 4. Convert approved content to email-safe table HTML without rewriting it.
-5. Apply the current v4 icon map, brand system, responsive stacking, and accessibility rules.
+5. Apply the current hosted illustration paths, brand system, responsive stacking, and accessibility rules.
 6. Remove unused drafting scaffolding and verify all names, dates, times, links, financial figures, Scripture, images, and permissions.
 7. Run `node scripts/audit-newsletter-repo.js` and resolve every current-source error.
 8. Send real inbox tests to Gmail, Apple Mail, Outlook, Yahoo, and mobile clients when available.
@@ -578,7 +577,7 @@ Avoid:
 - [ ] Names, dates, times, links, Scripture, financial figures, and permissions verified.
 - [ ] Seasonal hero and approved photos use durable HTTPS URLs.
 - [ ] Every image has alt text and an explicit width.
-- [ ] Canonical v4 icons are mapped correctly.
+- [ ] Hosted section illustrations resolve to existing files.
 - [ ] Mobile stacking and dark-section contrast checked.
 - [ ] View-in-browser merge tag verified in a delivered test.
 - [ ] Repository audit passes with no current-source errors.
