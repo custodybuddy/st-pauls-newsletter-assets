@@ -35,3 +35,11 @@ The five newest fragments (announcements, volunteer, photo, celebration, closing
 ## Repository Structure Reference
 
 For the system map, source-of-truth order, directory responsibilities, and verification boundaries, see the [newsletter system architecture](../docs/newsletter-system-architecture.md).
+
+## Shared St. Paul’s Brand Image Library
+
+- **Visual thumbnail gallery:** [Open the selectable gallery](https://github.com/custodybuddy/st-pauls-newsletter-assets/blob/main/st-pauls-image-library.html) ([public HTML page](https://custodybuddy.github.io/st-pauls-newsletter-assets/st-pauls-image-library.html) after Pages deployment).
+- **Agent-readable index:** [Image catalog (.md)](https://github.com/custodybuddy/st-pauls-newsletter-assets/blob/main/st-pauls-image-library.md).
+- **Authoritative icon metadata:** [section-presets.json](https://github.com/custodybuddy/st-pauls-newsletter-assets/blob/main/brand/assets/metadata/section-presets.json).
+
+For new templates and components, resolve artwork against the canonical assets repository. Use complete HTTPS image links under `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/`. Never invent a filename or use retired `/st-pauls-newsletter-assets/assets/` paths. Preserve archived issues for historical reference; do not silently rewrite approved copy. Catalog entries marked `pending_review` are not automatically approved for publication.
