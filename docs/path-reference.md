@@ -70,3 +70,11 @@ Append a repository-relative file path to this base to form a public URL. GitHub
 - A local file has no live URL until it is committed and GitHub Pages deploys it.
 - Use `brand/assets/metadata/section-presets.json` and the exact hosted filenames. The old v4 numbered icon map describes removed files and is retained only as historical guidance.
 - Browser review helps with visual checks, but it does not prove final delivery rendering in Gmail, Outlook, Apple Mail, Yahoo, or mobile clients.
+
+## Shared St. Paul’s Brand Image Library
+
+- **Visual thumbnail gallery:** [Open the selectable gallery](https://github.com/custodybuddy/st-pauls-newsletter-assets/blob/main/st-pauls-image-library.html) ([public HTML page](https://custodybuddy.github.io/st-pauls-newsletter-assets/st-pauls-image-library.html) after Pages deployment).
+- **Agent-readable index:** [Image catalog (.md)](https://github.com/custodybuddy/st-pauls-newsletter-assets/blob/main/st-pauls-image-library.md).
+- **Authoritative icon metadata:** [section-presets.json](https://github.com/custodybuddy/st-pauls-newsletter-assets/blob/main/brand/assets/metadata/section-presets.json).
+
+For new templates and components, resolve artwork against the canonical assets repository. Use complete HTTPS image links under `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/`. Never invent a filename or use retired `/st-pauls-newsletter-assets/assets/` paths. Preserve archived issues for historical reference; do not silently rewrite approved copy. Catalog entries marked `pending_review` are not automatically approved for publication.
