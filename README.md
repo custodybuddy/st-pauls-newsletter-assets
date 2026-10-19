@@ -10,7 +10,7 @@ This repository contains the production system for “What’s Up, St. Paul’s?
 - **Path and live-URL reference:** [Path Reference](docs/path-reference.md).
 - **Browser-readable documentation:** Run `ruby scripts/render-docs-html.rb` after changing a file in `docs/`.
 - **HTML starting point:** `newsletter-system/template/html-scaffold.html`.
-- **Brand assets and stable destinations:** `brand/`.
+- **Brand assets and stable destinations:** [asset directory](brand/assets/), [live path reference](docs/path-reference.md), and `brand/resources/`.
 - **Final checks:** `newsletter-system/docs/qa-checklist.md`.
 
 ## Newsletter Skill (assembly workflow)
@@ -40,9 +40,13 @@ Component list: `.claude/skills/st-pauls-newsletter/components.md`. Illustration
 - `snippets/` — reusable section fragments (hero, greetings and mission, ministry spotlight, did you know, event, finances, thankful, footer).
 - `newsletters/` — `drafting/`, `final/`, and a read-only `archive/` of published issues with screenshots, all organized by season. See `newsletters/README.md`.
 
+## Current Fall 2026 draft
+
+[Draft 15](newsletters/drafting/2026-fall/st-pauls-fall-2026-newsletter-DRAFT-15.html) carries Draft 14’s editorial copy and layout with image links repointed to existing hosted assets. Draft 14 remains for comparison. Review Draft 15 before approval or sending.
+
 ## Legacy Compatibility
 
-The former `/assets/` folder was removed on 2026-10-08, so any image URL containing `/st-pauls-newsletter-assets/assets/` no longer loads. Older issues in `newsletters/archive/`, `newsletters/drafting/*/older-drafts/`, and `templates/` may show broken images and are kept for history only. New work must use `brand/assets/`. GitHub Pages does not redirect moved static files.
+The former `/assets/` folder was removed on 2026-10-08, so any image URL containing `/st-pauls-newsletter-assets/assets/` no longer loads. Older issues in `newsletters/archive/`, `newsletters/drafting/*/older-drafts/`, and `templates/` may show broken images and are kept for history only. New work must use `brand/assets/` with the exact hosted files. The numbered v4 icons in historical maps are no longer present; use `brand/assets/icons/web/` and the [24-preset metadata](brand/assets/metadata/section-presets.json). GitHub Pages does not redirect moved static files.
 
 ## Audit
 

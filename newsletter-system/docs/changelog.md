@@ -1,5 +1,11 @@
 # Newsletter Change Log
 
+## 2026-10-19 (hosted image links in Fall 2026 Draft 15)
+
+- Added Draft 15 from Draft 14 with image sources repointed to files actually present under `brand/assets/`; preserved editorial copy and layout. Draft 14 remains unchanged.
+- Repointed the reusable snippets, HTML scaffold and visual asset page. Corrected the path reference, asset README and current working guidance; older numbered v4 records and archival issues remain historical.
+- The newsletter is still a draft. A successful URL check does not establish inbox rendering or editorial approval.
+
 ## 2026-10-08 (final refinement of the newsletter system)
 
 - Rebuilt `newsletter-system/template/html-scaffold.html` from Draft 13's `<head>` styles plus the permanent snippets. It now defines every class the snippets use (`split-col`, `heading-icon-cell`, `event-date`, `event-copy`, `masthead-cell`, `illus-slot` and others) and has OPTIONAL SECTIONS markers for assembly.

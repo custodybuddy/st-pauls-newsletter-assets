@@ -228,23 +228,16 @@ We Are So Thankful For
 
 ---
 
-## 8. Canonical v4 Icon System
+## 8. Hosted illustration assets
 
-Use:
-
-```text
-brand/resources/icon-map-v4.json
-brand/resources/icon-map-v4.md
-```
-
-The manifest controls filenames, roles, URLs, alt text, and recommended widths. Assets live in `brand/assets/icons/`. Use `88px` for the main branding icon and `72px` for major section icons. Do not reuse a retired icon or substitute emoji. Run the repository audit after changing the assets or mappings.
+Use `brand/assets/metadata/section-presets.json` for the 24 current navy, teal and gold illustration presets. Their delivery files are in `brand/assets/icons/web/`; email-specific icons are in `brand/assets/icons/email/`. Use exact hosted URLs under `https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/` and descriptive alt text. The numbered v4 icon filenames refer to removed artwork; keep their records as history, not new issue sources. The email finance gauge is under `brand/assets/illustrations/email/`. Run the repository audit after changing assets or mappings.
 
 ### Documentation impact check
 
 Every meaningful Codex change must update the affected authoritative documentation in the same change. Before completing work, identify whether assets, icon filenames, roles, URLs, fallback rules, templates, email-safe requirements, validation, or workflow changed.
 
-- For icon work, update `brand/resources/icon-map-v4.json` first and mirror it in `brand/resources/icon-map-v4.md`; update the visual map when icon assets change.
-- For illustration work, update `resources/links/st-pauls-illustrations-v1.json` and the readable illustration map.
+- For current illustration presets, update `brand/assets/metadata/section-presets.json` and `brand/assets/section-presets/index.html` when files or URLs change; update `brand/resources/brand-assets-visual.html` when the review page changes.
+- For email illustrations, update the relevant active snippet and `docs/path-reference.md`; keep superseded mapping records labeled as historical.
 - For construction or workflow changes, update `docs/st-pauls-comprehensive-newsletter-template.md`, the relevant style guide or checklist, and README when repository-wide source-of-truth locations, asset roots, or workflow change.
 - After changing a Markdown guide in `docs/`, run `ruby scripts/render-docs-html.rb` to regenerate its browser-readable `.html` mirror. The Markdown guide remains authoritative; check in the updated mirror with the source change.
 
@@ -318,7 +311,7 @@ depending on hierarchy.
 Use the link library in:
 
 ```text
-brand/resources/icon-map-v4.md
+docs/path-reference.md
 brand/resources/website-links.md
 ```
 
@@ -588,8 +581,8 @@ Recommended current resources:
 
 ```text
 docs/st-pauls-comprehensive-newsletter-template.md
-brand/resources/icon-map-v4.json
-brand/resources/icon-map-v4.md
+brand/assets/metadata/section-presets.json
+docs/path-reference.md
 brand/resources/brand-assets-visual.html
 newsletter-system/docs/qa-checklist.md
 newsletter-system/docs/style-guide.md

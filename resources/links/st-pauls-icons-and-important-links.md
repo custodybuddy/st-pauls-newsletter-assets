@@ -1,3 +1,5 @@
+> Historical v4 mapping: the numbered icon files and `/assets/icons/` URLs below are retired. For new work, use the [24 current presets](../../brand/assets/metadata/section-presets.json), the [hosted path reference](../../docs/path-reference.md), and the exact email images in `brand/assets/icons/email/`. This file preserves earlier design decisions; its old image URLs are not delivery links.
+
 # St. Paul’s v4 Icon and Important Link Library
 
 Use this file with `docs/st-pauls-comprehensive-newsletter-template.md`, which controls newsletter structure, design, accessibility, and workflow.

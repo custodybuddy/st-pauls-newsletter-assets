@@ -14,12 +14,14 @@ Append a repository-relative file path to this base to form a public URL. GitHub
 |---|---|---|---|
 | All production assets | [`brand/assets/`](../brand/assets/) | Append `brand/assets/<filename>` to the base above | Use this construction for final email image paths. |
 | Seasonal banners | [`brand/assets/banners/`](../brand/assets/banners/) | Append `brand/assets/banners/<filename>` to the base above | Example: [Fall hero](https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/st-pauls-fall-hero-1100px.png). |
-| Canonical v4 icons | [`brand/assets/icons/`](../brand/assets/icons/) | Append `brand/assets/icons/<filename>` to the base above | Example: [main branding icon](https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/01-branding-cross-wings.png). |
+| Section illustration presets | [`brand/assets/icons/web/`](../brand/assets/icons/web/) | Append `brand/assets/icons/web/<slug>.png` to the base above | Example: [Welcome illustration](https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/welcome.png). |
+| Email icons | [`brand/assets/icons/email/`](../brand/assets/icons/email/) | Append `brand/assets/icons/email/<filename>` to the base above | Small email-specific images. |
 | Supporting illustrations | [`brand/assets/illustrations/`](../brand/assets/illustrations/) | Append `brand/assets/illustrations/<filename>` to the base above | Use only a documented asset with suitable public-sharing permission. |
 | Resource records | [`brand/resources/`](../brand/resources/) | Append `brand/resources/<filename>` to the base above | Use the named resources below rather than assuming a directory index. |
 | Brand visual review | [`brand/resources/brand-assets-visual.html`](../brand/resources/brand-assets-visual.html) | [Open live visual map](https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/resources/brand-assets-visual.html) | Browser reference page; not email HTML. |
-| Icon visual review | [`brand/resources/icon-map-v4-visual.html`](../brand/resources/icon-map-v4-visual.html) | [Open live icon map](https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/resources/icon-map-v4-visual.html) | Visual companion to the v4 manifest. |
-| Canonical icon data | [`brand/resources/icon-map-v4.json`](../brand/resources/icon-map-v4.json) | [Open live JSON](https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/resources/icon-map-v4.json) | Controls icon filenames, roles, URLs, alt text, and recommended widths. |
+| Preset visual review | [`brand/assets/section-presets/index.html`](../brand/assets/section-presets/index.html) | [Open live preset gallery](https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/section-presets/index.html) | Browser review page. |
+| Preset metadata | [`brand/assets/metadata/section-presets.json`](../brand/assets/metadata/section-presets.json) | [Open live JSON](https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/metadata/section-presets.json) | 24 illustrations, provenance, master and export paths. |
+| Prayer card | [`brand/assets/Power of Prayer Card.png`](../brand/assets/Power%20of%20Prayer%20Card.png) | [Open live card](https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/Power%20of%20Prayer%20Card.png) | Encode spaces in public URLs. |
 | Stable destinations | [`brand/resources/website-links.md`](../brand/resources/website-links.md), [`donation-links.md`](../brand/resources/donation-links.md), [`church-contact.md`](../brand/resources/church-contact.md), [`reusable-urls.md`](../brand/resources/reusable-urls.md) | Append the resource filename to the base above | Use these local records when selecting footer and CTA destinations. Recheck time-sensitive links before sending. |
 
 ## Core Documentation and Templates
@@ -66,5 +68,5 @@ Append a repository-relative file path to this base to form a public URL. GitHub
 
 - Final email HTML uses the live base plus the exact `brand/assets/<filename>` path for every image.
 - A local file has no live URL until it is committed and GitHub Pages deploys it.
-- Use the canonical v4 icon manifest instead of guessing filenames or substituting retired `/assets/` paths.
+- Use `brand/assets/metadata/section-presets.json` and the exact hosted filenames. The old v4 numbered icon map describes removed files and is retained only as historical guidance.
 - Browser review helps with visual checks, but it does not prove final delivery rendering in Gmail, Outlook, Apple Mail, Yahoo, or mobile clients.

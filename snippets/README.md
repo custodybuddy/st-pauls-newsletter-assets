@@ -8,7 +8,7 @@
 - Preserve the inline styles, presentation tables, Outlook conditional comments, absolute image URLs, and `alt` text.
 - The host newsletter must define every class these fragments use (`section-pad`, `inner-pad`, `split-col`, `stack-gap`, `heading-icon-cell`, `illus-slot`, `event-date`, `event-copy`, `masthead-cell` and others). `newsletter-system/template/html-scaffold.html` defines them all; the audit fails if a snippet uses an undefined class or the scaffold's permanent blocks drift from the permanent snippets.
 - All image URLs point to `brand/assets/` (icons, banners, illustrations). Do not reintroduce `/assets/` URLs.
-- Icon choices follow `brand/resources/icon-map-v4.json`.
+- Current preset choices follow `brand/assets/metadata/section-presets.json`; use exact files from `brand/assets/icons/web/`. The old numbered v4 map refers to removed assets.
 - Run `node scripts/audit-newsletter-repo.js` after building an issue; it flags image URLs that point to files missing from the repository.
 
 The five newest fragments (announcements, volunteer, photo, celebration, closing) contain bracketed placeholders only, no Draft 11 wording. The component catalogue with placement notes is `.claude/skills/st-pauls-newsletter/components.md`.

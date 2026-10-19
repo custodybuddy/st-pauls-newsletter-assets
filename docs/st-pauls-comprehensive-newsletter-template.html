@@ -350,16 +350,15 @@ li + li { margin-top: .35em; }
 <li>Use small uppercase labels, serif headings, gold dividers, cream editorial cards, navy feature panels, and selective gold/bold skim emphasis.</li>
 <li>Use bento-style pairings only where the approved modules benefit from them and the mobile reading order remains clear.</li>
 </ul>
-<h2 id="canonical-v4-icons">Canonical v4 Icons</h2>
-<p>Use <code>brand/resources/icon-map-v4.json</code> as the machine-readable source and <code>brand/resources/icon-map-v4.md</code> as the human-readable role map.</p>
+<h2 id="current-section-illustrations">Current section illustrations</h2>
+<p>Use <code>brand/assets/metadata/section-presets.json</code> for the 24 current presets and <code>docs/path-reference.md</code> for the live base and supporting image paths.</p>
 <ul>
-<li>Icon directory: <code>brand/assets/icons/</code></li>
-<li>Base URL: <code>https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/</code></li>
-<li>Main branding icon: 88px.</li>
-<li>Major section icons: 72px.</li>
-<li>Use descriptive alt text for meaningful icons and <code>alt=&quot;&quot;</code> only when decorative.</li>
-<li>Do not use retired icons or emoji substitutes.</li>
-<li>A selected story module may use the closest documented v4 role; use a text-only heading when no mapping is semantically appropriate.</li>
+<li>Preset files: <code>brand/assets/icons/web/&lt;slug&gt;.png</code></li>
+<li>Base URL: <code>https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/</code></li>
+<li>Small email icons: <code>brand/assets/icons/email/</code></li>
+<li>Use suitable explicit widths (typically 72px for a section icon) and descriptive alt text; use <code>alt=&quot;&quot;</code> only when decorative.</li>
+<li>The older numbered v4 icon paths no longer exist. Do not use them or substitute emoji.</li>
+<li>If a selected story has no suitable hosted illustration, use a text-only heading.</li>
 </ul>
 <h2 id="images">Images</h2>
 <ul>
@@ -405,7 +404,7 @@ li + li { margin-top: .35em; }
 <li>Confirm the three Core Sections and identify the selected Optional Story Modules in their approved order.</li>
 <li>Create a new versioned HTML file in <code>newsletters/drafting/&lt;year&gt;-&lt;season&gt;/</code>; never overwrite an approved or historical issue.</li>
 <li>Convert approved content to email-safe table HTML without rewriting it.</li>
-<li>Apply the current v4 icon map, brand system, responsive stacking, and accessibility rules.</li>
+<li>Apply the current hosted illustration paths, brand system, responsive stacking, and accessibility rules.</li>
 <li>Remove unused drafting scaffolding and verify all names, dates, times, links, financial figures, Scripture, images, and permissions.</li>
 <li>Run <code>node scripts/audit-newsletter-repo.js</code> and resolve every current-source error.</li>
 <li>Send real inbox tests to Gmail, Apple Mail, Outlook, Yahoo, and mobile clients when available.</li>
@@ -423,7 +422,7 @@ li + li { margin-top: .35em; }
 <li>[ ] Names, dates, times, links, Scripture, financial figures, and permissions verified.</li>
 <li>[ ] Seasonal hero and approved photos use durable HTTPS URLs.</li>
 <li>[ ] Every image has alt text and an explicit width.</li>
-<li>[ ] Canonical v4 icons are mapped correctly.</li>
+<li>[ ] Hosted section illustrations resolve to existing files.</li>
 <li>[ ] Mobile stacking and dark-section contrast checked.</li>
 <li>[ ] View-in-browser merge tag verified in a delivered test.</li>
 <li>[ ] Repository audit passes with no current-source errors.</li>
