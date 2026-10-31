@@ -47,5 +47,30 @@
       "height": 1254
     },
     "format": "PNG"
+  },
+  {
+    "assetId": "2026-proverbs-11-25-generosity-portrait",
+    "role": "scripture-card",
+    "section": "focus_on_finances",
+    "treatment": "Portrait St. Paul's navy, gold and teal scripture card with botanical framing",
+    "subjectTags": [
+      "scripture",
+      "generosity",
+      "stewardship",
+      "proverbs-11-25"
+    ],
+    "lockedText": "A generous person will prosper; whoever refreshes others will be refreshed. Proverbs 11:25",
+    "source": "Image supplied by user; regenerated in St. Paul's style 2026-10-31",
+    "sourceArchivePath": null,
+    "currentOutputPath": "brand/assets/scripture-cards/scripture-card-proverbs-11-25-generosity-portrait.png",
+    "version": 1,
+    "altText": "A generous person will prosper; whoever refreshes others will be refreshed. Proverbs 11:25.",
+    "textCheck": "Visually checked against the supplied source image; wording, punctuation, and reference match.",
+    "approvalStatus": "uploaded_pending_human_review",
+    "dimensions": {
+      "width": 1102,
+      "height": 1427
+    },
+    "format": "PNG"
   }
 ]
