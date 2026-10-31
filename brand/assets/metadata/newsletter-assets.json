@@ -1,0 +1,51 @@
+[
+  {
+    "assetId": "2026-fall-focus-on-finances-banner",
+    "role": "section-heading-banner",
+    "section": "focus_on_finances",
+    "treatment": "St. Paul's navy and gold banner with teal accents and a faded cross and heart-giving image in the background",
+    "subjectTags": [
+      "finance",
+      "stewardship",
+      "giving"
+    ],
+    "lockedText": "Focus on Finances",
+    "source": "User-provided design direction and reference images; generated 2026-10-31",
+    "sourceArchivePath": null,
+    "currentOutputPath": "brand/assets/banners/fall-2026-focus-on-finances-heading.png",
+    "version": 1,
+    "altText": "Navy and gold Focus on Finances banner with a faded cross and heart-giving image",
+    "textCheck": "Visual check completed; heading matches the requested text.",
+    "approvalStatus": "uploaded_pending_human_review",
+    "dimensions": {
+      "width": 2172,
+      "height": 724
+    },
+    "format": "PNG"
+  },
+  {
+    "assetId": "2026-proverbs-11-25-generosity-square",
+    "role": "scripture-card",
+    "section": "focus_on_finances",
+    "treatment": "Square St. Paul's navy, gold and teal scripture card with botanical framing",
+    "subjectTags": [
+      "scripture",
+      "generosity",
+      "stewardship",
+      "proverbs-11-25"
+    ],
+    "lockedText": "A generous person will prosper; whoever refreshes others will be refreshed. Proverbs 11:25",
+    "source": "Image supplied by user; regenerated in St. Paul's style 2026-10-31",
+    "sourceArchivePath": null,
+    "currentOutputPath": "brand/assets/scripture-cards/scripture-card-proverbs-11-25-generosity-square.png",
+    "version": 1,
+    "altText": "A generous person will prosper; whoever refreshes others will be refreshed. Proverbs 11:25.",
+    "textCheck": "Visually checked against the supplied source image; wording, punctuation, and reference match.",
+    "approvalStatus": "uploaded_pending_human_review",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "format": "PNG"
+  }
+]
