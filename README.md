@@ -11,6 +11,7 @@ This repository contains the production system for “What’s Up, St. Paul’s?
 - **Browser-readable documentation:** Run `ruby scripts/render-docs-html.rb` after changing a file in `docs/`.
 - **HTML starting point:** `newsletter-system/template/html-scaffold.html`.
 - **Brand assets and stable destinations:** [asset directory](brand/assets/), [live path reference](docs/path-reference.md), and `brand/resources/`.
+- **Fall 2026 section review draft:** [Upcoming Events, We Are So Thankful For, and contact footer](newsletters/drafting/2026-fall/review-drafts/README.md) (preview only; pending editorial review).
 - **Final checks:** `newsletter-system/docs/qa-checklist.md`.
 
 ## Newsletter Skill (assembly workflow)

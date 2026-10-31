@@ -13,7 +13,7 @@ Append a repository-relative file path to this base to form a public URL. GitHub
 | Purpose | Repository path | Public URL or URL prefix | Notes |
 |---|---|---|---|
 | All production assets | [`brand/assets/`](../brand/assets/) | Append `brand/assets/<filename>` to the base above | Use this construction for final email image paths. |
-| Seasonal banners | [`brand/assets/banners/`](../brand/assets/banners/) | Append `brand/assets/banners/<filename>` to the base above | Example: [Fall hero](https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/st-pauls-fall-hero-1100px.png). |
+| Seasonal and section banners | [`brand/assets/banners/`](../brand/assets/banners/) | Append `brand/assets/banners/<filename>` to the base above | Seasonal heroes plus review-stage Fall 2026 Upcoming Events and We Are So Thankful For headings; confirm deployment before using new URLs. |
 | Section illustration presets | [`brand/assets/icons/web/`](../brand/assets/icons/web/) | Append `brand/assets/icons/web/<slug>.png` to the base above | Example: [Welcome illustration](https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/welcome.png). |
 | Email icons | [`brand/assets/icons/email/`](../brand/assets/icons/email/) | Append `brand/assets/icons/email/<filename>` to the base above | Small email-specific images. |
 | Supporting illustrations | [`brand/assets/illustrations/`](../brand/assets/illustrations/) | Append `brand/assets/illustrations/<filename>` to the base above | Use only a documented asset with suitable public-sharing permission. |

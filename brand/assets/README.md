@@ -4,7 +4,7 @@ This repository publishes artwork from `brand/assets/` at `https://custodybuddy.
 
 | Path | Use |
 | --- | --- |
-| `banners/` | Four seasonal 1100 px newsletter heroes |
+| `banners/` | Four seasonal 1100 px newsletter heroes plus the Fall 2026 section heading banners |
 | `icons/web/` | 24 section illustration presets |
 | `icons/email/` | Small email icons |
 | `icons/source/` | Full-resolution masters for the presets |
@@ -13,6 +13,6 @@ This repository publishes artwork from `brand/assets/` at `https://custodybuddy.
 | `section-presets/` | Review gallery and contact sheet |
 | `references/` | Supplied illustration style reference |
 
-The 24 web exports and their source masters serve different sizes and are linked in the metadata. Use the web exports for newsletter section icons. Use an email illustration for larger feature art. Keep the source masters for provenance.
+The 24 web exports and their source masters serve different sizes and are linked in the metadata. The Fall 2026 review-draft copies of the Upcoming Events and We Are So Thankful For banners are in this folder; the self-contained review package is at `newsletters/drafting/2026-fall/review-drafts/`. Use the web exports for newsletter section icons. Use an email illustration for larger feature art. Keep the source masters for provenance.
 
 The numbered v4 icon URLs under `/assets/icons/` or `/brand/assets/icons/01-...png` point to removed files. They appear in historical maps and older newsletters only. For current work, select an existing path from this folder, verify the live URL, and use alt text that describes that file. Review the [path reference](../../docs/path-reference.md) before assembling an issue.

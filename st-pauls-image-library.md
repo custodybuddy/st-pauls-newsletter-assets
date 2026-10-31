@@ -11,6 +11,24 @@
 3. If no image fits or a URL fails, inspect the current source repository and `brand/assets/metadata/section-presets.json`; do not guess filenames. Request human approval for unapproved artwork.
 4. HTML visual gallery: [St. Paul’s selectable thumbnail gallery](https://custodybuddy.github.io/st-pauls-newsletter-assets/st-pauls-image-library.html).
 
+## Fall 2026 Section Heading Banners
+
+These generated banners are review-stage artwork. The repository paths are on the `HTML` review branch and will become public at these HTTPS URLs only after that branch is published to the GitHub Pages source.
+
+### Upcoming Events
+
+- **Repository path:** `brand/assets/banners/fall-2026-upcoming-events-heading.jpg`
+- **Full HTTPS URL after publication:** https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/fall-2026-upcoming-events-heading.jpg
+- **Alt text:** Upcoming Events
+- **Review status:** pending human review
+
+### We Are So Thankful For
+
+- **Repository path:** `brand/assets/banners/fall-2026-we-are-so-thankful-for-heading.jpg`
+- **Full HTTPS URL after publication:** https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/fall-2026-we-are-so-thankful-for-heading.jpg
+- **Alt text:** We Are So Thankful For
+- **Review status:** pending human review
+
 ## Icon Presets (24)
 
 ### Welcome
