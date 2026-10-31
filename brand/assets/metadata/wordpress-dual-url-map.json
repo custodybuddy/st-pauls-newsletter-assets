@@ -1,0 +1,73 @@
+{
+  "purpose": "Non-destructive WordPress / GitHub asset URL reconciliation. Keep both hosts; never overwrite originals.",
+  "asOf": "2026-10-31",
+  "sourceOfTruth": "Current WordPress Elementor Editable draft (not yet accessible)",
+  "status": "partial_gitHub_inventory_only",
+  "verificationNote": "GitHub URLs sourced from existing repository metadata; URLs have not been live-checked on 2026-10-31. WordPress URLs have not been retrieved.",
+  "assets": [
+    {
+      "id": "insert-welcome",
+      "name": "Welcome",
+      "section": "pastoral_greeting",
+      "wordpress": {
+        "mediaId": null,
+        "url": null,
+        "verified": false
+      },
+      "github": {
+        "repositoryPath": "brand/assets/icons/web/welcome.png",
+        "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/welcome.png",
+        "verifiedOnCurrentDate": false
+      },
+      "matchStatus": "awaiting_wordpress_inventory"
+    },
+    {
+      "id": "insert-greetings",
+      "name": "Greetings",
+      "section": "pastoral_greeting",
+      "wordpress": {
+        "mediaId": null,
+        "url": null,
+        "verified": false
+      },
+      "github": {
+        "repositoryPath": "brand/assets/icons/web/greetings.png",
+        "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/greetings.png",
+        "verifiedOnCurrentDate": false
+      },
+      "matchStatus": "awaiting_wordpress_inventory"
+    },
+    {
+      "id": "insert-our-mission",
+      "name": "Our Mission",
+      "section": "mission",
+      "wordpress": {
+        "mediaId": null,
+        "url": null,
+        "verified": false
+      },
+      "github": {
+        "repositoryPath": "brand/assets/icons/web/our-mission.png",
+        "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/our-mission.png",
+        "verifiedOnCurrentDate": false
+      },
+      "matchStatus": "awaiting_wordpress_inventory"
+    },
+    {
+      "id": "insert-ministry-spotlight",
+      "name": "Ministry Spotlight",
+      "section": "ministry_spotlight",
+      "wordpress": {
+        "mediaId": null,
+        "url": null,
+        "verified": false
+      },
+      "github": {
+        "repositoryPath": "brand/assets/icons/web/ministry-spotlight.png",
+        "url": "https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/web/ministry-spotlight.png",
+        "verifiedOnCurrentDate": false
+      },
+      "matchStatus": "awaiting_wordpress_inventory"
+    }
+  ]
+}
