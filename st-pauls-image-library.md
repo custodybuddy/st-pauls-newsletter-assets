@@ -11,6 +11,10 @@
 3. If no image fits or a URL fails, inspect the current source repository and `brand/assets/metadata/section-presets.json`; do not guess filenames. Request human approval for unapproved artwork.
 4. HTML visual gallery: [St. Paul’s selectable thumbnail gallery](https://custodybuddy.github.io/st-pauls-newsletter-assets/st-pauls-image-library.html).
 
+## Fall 2026 Preview Images
+
+The [preview image catalog](st-pauls-preview-image-catalog.md) maps all 21 finance, event, corner and footer assets to canonical public URLs, with current artwork distinguished from earlier variants. The [JSON manifest](brand/assets/metadata/fall-2026-preview-images.json) records public asset paths, dimensions and SHA256 checksums. Imports preserve the original PNG bytes and transparency.
+
 ## Fall 2026 Finance Cost Icons
 
 - **Repository path:** `brand/assets/banners/upload-cost-icons.png`
@@ -18,7 +22,7 @@
 - **Dimensions:** 564 × 192 pixels (transparent RGBA PNG)
 - **Suggested section:** Focus on Finances — Higher Than Anticipated Costs
 - **Alt text:** Cold-weather thermometer and rising costs chart.
-- **Provenance:** Exact, unedited copy of the user-selected newsletter preview asset: https://st-pauls-fall-2026-preview.custodybuddy.chatgpt.site/finance-assets/upload-cost-icons.png. Added to the banners directory at the user's request; original transparency retained.
+- **Provenance:** Added to the banners directory at the user's request as an exact, unedited PNG; original transparency retained.
 - **SHA256:** `38a4737c0693a7ea88217f6d6987bfe96b56d2e68c14d281a63dd64ed64d9f03`
 
 ## Fall 2026 Opening Banner — Clean v2
