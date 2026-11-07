@@ -11,6 +11,16 @@
 3. If no image fits or a URL fails, inspect the current source repository and `brand/assets/metadata/section-presets.json`; do not guess filenames. Request human approval for unapproved artwork.
 4. HTML visual gallery: [St. Paul’s selectable thumbnail gallery](https://custodybuddy.github.io/st-pauls-newsletter-assets/st-pauls-image-library.html).
 
+## Fall 2026 Opening Banner — Clean v2
+
+- **Repository path:** `brand/assets/banners/fall-2026-hero-greetings-banner-clean-v2.jpeg`
+- **Full HTTPS URL:** https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/fall-2026-hero-greetings-banner-clean-v2.jpeg
+- **Dimensions:** 1517 × 1037 pixels (JPEG)
+- **Alt text:** What’s Up, St. Paul’s? Faith in Every Season. Fall 2026 Newsletter — Connecting Our Church Family. Greetings Friends.
+- **Usage:** Combined newsletter hero, masthead and Greetings Friends opening; display fluidly at a maximum of 1120px wide with automatic height.
+- **Provenance:** User-requested cleanup of `fall-2026-hero-greetings-banner.jpeg` to remove its embedded black X close-button. Edited with OpenAI image generation, then encoded as JPEG. The original is retained for version history; use this clean v2 in the active HTML newsletter.
+- **SHA256:** `acef5e9535dbde4af57ef870a2fd205a89dcbc67fcd5780e112663ae5c6adb37`
+
 ## Fall 2026 Section Heading Banners
 
 These generated banners are review-stage artwork. The repository paths are on the `HTML` review branch and will become public at these HTTPS URLs only after that branch is published to the GitHub Pages source.
