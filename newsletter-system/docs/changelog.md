@@ -1,5 +1,13 @@
 # Newsletter Change Log
 
+## 2026-11-07 (hosted the remaining Fall 2026 email kit images)
+
+- Added five more exact, unedited copies from the `st-pauls-email-html-kit` newsletter preview to `brand/assets/banners/`: the Q3 Financial Snapshot donut (`editorial-income-donut.png`) and four event medallions (`upload-event-1.png` through `upload-event-4.png`). Alongside `upload-cost-icons.png`, these replace the kit's relative `finance-assets/*` paths.
+- Added six small footer icons (worship time, office hours, phone, website, YouTube, email) to `brand/assets/icons/email/` as `fall-2026-footer-*.png`, replacing the kit's relative `footer-assets/*` paths. These are visually distinct from, and do not replace, the existing `fall-2026-footer-*-gold-line.png` decorative icon set.
+- Documented all eleven in `st-pauls-image-library.md` (dimensions, alt text, provenance, SHA256) and `docs/path-reference.md`; regenerated `docs/*.html` mirrors with `scripts/render-docs-html.rb` (this also caught up `st-pauls-comprehensive-newsletter-template.html`, whose Markdown source had drifted ahead of its mirror before this change).
+- `node scripts/audit-newsletter-repo.js`: 7 error(s), 37 warning(s) — unchanged from before this change.
+- Requested by the user from the `custodybuddy/st-pauls-wordpress` session, to unblock hosting the last relative-path images in `email/fall-2026/editing-copy.html`.
+
 ## 2026-10-19 (hosted image links in Fall 2026 Draft 15)
 
 - Added Draft 15 from Draft 14 with image sources repointed to files actually present under `brand/assets/`; preserved editorial copy and layout. Draft 14 remains unchanged.
