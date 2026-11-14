@@ -29,7 +29,32 @@ The [preview image catalog](st-pauls-preview-image-catalog.md) maps all 21 finan
 - **Provenance:** Added to the banners directory at the user's request as an exact, unedited PNG; original transparency retained.
 - **SHA256:** `38a4737c0693a7ea88217f6d6987bfe96b56d2e68c14d281a63dd64ed64d9f03`
 
-## Fall 2026 Opening Banner — Original Clean v2 (superseded)
+## Fall 2026 Finance Snapshot and Event Medallions
+
+Five more exact, unedited copies from the same `st-pauls-email-html-kit` newsletter preview, added to the banners directory alongside `upload-cost-icons.png` to replace the relative paths the same preview HTML used.
+
+- **Q3 Financial Snapshot donut** — `brand/assets/banners/editorial-income-donut.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/editorial-income-donut.png — 675 × 675px transparent RGBA PNG — alt "89% of expenses covered; 11% operating gap." — SHA256 `de5aa708e3c0d51fb181043e36137d2a9a1aa4998105b56978ba73db1a5ee00c`
+- **Remembrance Day event medallion** — `brand/assets/banners/upload-event-1.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/upload-event-1.png — 234 × 234px transparent RGBA PNG — decorative, `alt=""` in the email — SHA256 `0f077c20729a017c831b304a77b8422152697233238a73c6ab9b2c0c343b29b4`
+- **Apple Pie Making event medallion** — `brand/assets/banners/upload-event-2.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/upload-event-2.png — 234 × 234px transparent RGBA PNG — decorative, `alt=""` in the email — SHA256 `b6ed5812e531fa3a583553ff3d338c0d055744f9d8f3e73959503bcc76439b02`
+- **Chicken Sale Fundraiser event medallion** — `brand/assets/banners/upload-event-3.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/upload-event-3.png — 234 × 234px transparent RGBA PNG — decorative, `alt=""` in the email — SHA256 `8e0ec22e47c7b743b70cc3257b39867963573395f676649a0f2a4d81b4999b90`
+- **Christmas Market event medallion** — `brand/assets/banners/upload-event-4.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/upload-event-4.png — 234 × 234px transparent RGBA PNG — decorative, `alt=""` in the email — SHA256 `772644e7f7730c9f4b3b8c170eccaa17153d62efb9d8b5425370ac64f6fce1af`
+- **Suggested section:** Focus on Finances (donut) and Upcoming Events (medallions).
+- **Provenance:** Exact, unedited copies from `email/fall-2026/finance-assets/` in `custodybuddy/st-pauls-wordpress`, themselves from the uploaded `st-pauls-email-html-kit` zip. Added at the user's request to replace relative paths; original transparency retained.
+
+## Fall 2026 Footer Icons
+
+Six small functional footer icons (worship time, office hours, phone, website, YouTube, email), added under `brand/assets/icons/email/` — the documented location for "small email-specific images" — to replace the same relative paths. Visually distinct from the existing `fall-2026-footer-*-gold-line.png` set (a different, decorative icon style); do not substitute one set for the other.
+
+- **Worship-time icon** — `brand/assets/icons/email/fall-2026-footer-church.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-church.png — 36 × 36px transparent RGBA PNG — decorative, `alt=""` — SHA256 `e6d3ce56d004b6e1c1d35db8370cd1b79f8491de0b6bb4032c4ab71fc78accb4`
+- **Office-hours icon** — `brand/assets/icons/email/fall-2026-footer-clock.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-clock.png — 36 × 36px transparent RGBA PNG — decorative, `alt=""` — SHA256 `c472b078fac06ede9144f549eaf28fda8d75e573b71d8b31a1c88a9e1a59d9e0`
+- **Email icon** — `brand/assets/icons/email/fall-2026-footer-email.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-email.png — 36 × 36px transparent RGBA PNG — decorative, `alt=""` — SHA256 `fbe753548a4e4276700f1603e3749fa6998d3b9654697fcb781405832bdf2386`
+- **Website (globe) icon** — `brand/assets/icons/email/fall-2026-footer-globe.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-globe.png — 36 × 36px transparent RGBA PNG — decorative, `alt=""` — SHA256 `f7d66b8f0ec973c356ef009c66c5cff7309c669fa6197877353a6b5b1eecebd7`
+- **Phone icon** — `brand/assets/icons/email/fall-2026-footer-phone.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-phone.png — 36 × 36px transparent RGBA PNG — decorative, `alt=""` — SHA256 `f5d93878ab911dfe6c534322e8fcecaa14fa8e926eaa0d2135688442f1a7f924`
+- **YouTube icon** — `brand/assets/icons/email/fall-2026-footer-youtube.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/icons/email/fall-2026-footer-youtube.png — 36 × 36px transparent RGBA PNG — decorative, `alt=""` — SHA256 `d885797b23f7d936402a8268710b4bb814a5973a939b219d12ba5520f0d9e6ec`
+- **Suggested section:** Footer — contact and worship-time details.
+- **Provenance:** Exact, unedited copies from `email/fall-2026/footer-assets/` in `custodybuddy/st-pauls-wordpress`, themselves from the uploaded `st-pauls-email-html-kit` zip. Added at the user's request to replace relative paths; original transparency retained.
+
+## Fall 2026 Opening Banner — Clean v2
 
 - **Repository path:** `brand/assets/banners/fall-2026-hero-greetings-banner-clean-v2-original.jpeg`
 - **Full HTTPS URL:** https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/banners/fall-2026-hero-greetings-banner-clean-v2-original.jpeg

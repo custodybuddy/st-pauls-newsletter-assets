@@ -38,11 +38,12 @@ li + li { margin-top: .35em; }
 <p>Reviewed against Google Doc revision <code>AIroW35i__mB-nJYSiOJlnArgGh6s6MNgzjzQicwB5KThgp2X82EfTPqC2ZvS_ed_lS8MqI3D2qdnWggj6u5F7CUKNlEgQKL8qwckywxk37k</code> on 2026-08-31.</p>
 <h2 id="required-supporting-resources">Required Supporting Resources</h2>
 <ul>
-<li>Canonical v4 icon manifest: <code>resources/links/st-pauls-icons-v4.json</code></li>
-<li>Human-readable icon map and stable links: <code>resources/links/st-pauls-icons-and-important-links.md</code></li>
-<li>Website data and CTA destinations: <code>resources/links/st-pauls-website-data-and-links-v1.md</code></li>
-<li>View-in-browser implementation: <code>resources/links/st-pauls-view-in-browser-guidance-v2.md</code></li>
-<li>Final QA: <code>checklists/NEWSLETTER-QA-CHECKLIST.md</code></li>
+<li>Current section presets: <code>brand/assets/metadata/section-presets.json</code></li>
+<li>Hosted asset paths and stable links: <code>docs/path-reference.md</code></li>
+<li>Website data and CTA destinations: <code>brand/resources/website-links.md</code></li>
+<li>View-in-browser implementation: <code>brand/resources/reusable-urls.md</code></li>
+<li>Final QA: <code>newsletter-system/docs/qa-checklist.md</code></li>
+<li>Component catalogue and assembly skill: <code>.claude/skills/st-pauls-newsletter/SKILL.md</code></li>
 </ul>
 <hr>
 <h1 id="seasonal-newsletter-drafting-template">Seasonal Newsletter Drafting Template</h1>
@@ -318,8 +319,9 @@ li + li { margin-top: .35em; }
 </ul>
 <h2 id="accessible-typography">Accessible Typography</h2>
 <ul>
-<li>Headings: Lora, Georgia, serif.</li>
-<li>Body: Inter, Arial, Helvetica, sans-serif.</li>
+<li>Lead blocks (masthead title, Greetings Friends, Ministry Spotlight): Lora, Georgia, serif. Supporting section headings: Playfair Display, Georgia, serif.</li>
+<li>Body: Source Sans 3, Arial, sans-serif. Labels and buttons: Inter, Arial, sans-serif.</li>
+<li>Full token table: <code>newsletter-system/docs/style-guide.md</code>.</li>
 <li>Desktop main title: approximately 48–56px.</li>
 <li>Desktop major section headings: approximately 34–42px.</li>
 <li>Desktop body copy: 18–20px minimum with 1.65–1.8 line height.</li>
@@ -328,17 +330,13 @@ li + li { margin-top: .35em; }
 <li>Keep paragraphs short; the approved Google Doc’s 120–200-word recommendation applies to Greetings Friends. Other module lengths are content-driven.</li>
 </ul>
 <h2 id="brand-colors">Brand Colors</h2>
+<p>Canonical values are in <code>newsletter-system/docs/style-guide.md</code> (reconciled against Draft 13). Summary:</p>
 <ul>
-<li>Deep navy: <code>#0A1C2C</code></li>
-<li>Slate navy: <code>#1E293B</code></li>
-<li>Body slate: <code>#475569</code></li>
-<li>Soft slate: <code>#64748B</code></li>
-<li>Gold: <code>#D4AF37</code></li>
-<li>Deep gold: <code>#B8860B</code></li>
-<li>Light gold: <code>#F0D98C</code></li>
-<li>Cream: <code>#FDFBF7</code></li>
-<li>Soft blue: <code>#EBF4F8</code></li>
-<li>White: <code>#FFFFFF</code></li>
+<li>Navy <code>#0D1B2A</code>, cream <code>#FAF7F1</code>, white <code>#FFFFFF</code>, border <code>#E5E0D8</code></li>
+<li>Soft blue <code>#EBF4F8</code>, sage <code>#C7D6C1</code>, teal <code>#007A8A</code></li>
+<li>Gold <code>#D4AF37</code> (bars, buttons, rules), gold on dark <code>#DAA017</code>, light gold <code>#F0D98C</code></li>
+<li>Gold text on light backgrounds <code>#8A5C00</code> (<code>#6D4A00</code> on sage), which meets WCAG AA</li>
+<li>Secondary text <code>#475569</code>, muted text <code>#56657B</code></li>
 </ul>
 <p>On dark navy backgrounds, use white headings, <code>#E2E8F0</code> or <code>#CBD5E1</code> body text, and gold accents. Never use dark slate text on dark navy.</p>
 <h2 id="card-and-visual-language">Card and Visual Language</h2>
@@ -392,7 +390,7 @@ li + li { margin-top: .35em; }
 </ul>
 <h2 id="links-and-footer">Links and Footer</h2>
 <ul>
-<li>Use <code>resources/links/st-pauls-website-data-and-links-v1.md</code> for current destinations.</li>
+<li>Use <code>brand/resources/website-links.md</code> for current destinations.</li>
 <li>Verify time-sensitive event and bulletin links before sending.</li>
 <li>Include a discreet View in browser link in the footer using the ESP’s exact merge tag.</li>
 <li>Never send <code>[VIEW_IN_BROWSER_URL]</code>, <code>href=&quot;#&quot;</code>, or a generic hard-coded browser-version URL.</li>
