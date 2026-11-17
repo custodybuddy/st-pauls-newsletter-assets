@@ -240,6 +240,7 @@ Every meaningful Codex change must update the affected authoritative documentati
 - For email illustrations, update the relevant active snippet and `docs/path-reference.md`; keep superseded mapping records labeled as historical.
 - For construction or workflow changes, update `docs/st-pauls-comprehensive-newsletter-template.md`, the relevant style guide or checklist, and README when repository-wide source-of-truth locations, asset roots, or workflow change.
 - After changing a Markdown guide in `docs/`, run `ruby scripts/render-docs-html.rb` to regenerate its browser-readable `.html` mirror. The Markdown guide remains authoritative; check in the updated mirror with the source change.
+- After adding, renaming or removing images under `brand/assets/`, commit them, then run `node scripts/build-image-dates.js` and commit `brand/assets/metadata/image-dates.json`. It powers the image library's **Newest added first** sort, which is how people tell which version is newest. Dates come from git history, so the script needs a full clone (`git fetch --unshallow`); `--check` confirms the file is current.
 
 ---
 

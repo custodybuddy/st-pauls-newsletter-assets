@@ -32,6 +32,10 @@ Notes:
 - Greetings Friends, Our Mission and Request a Prayer have no dark version yet. A dark issue needs those three made first.
 - The light cards contain approved wording in the artwork (mission statement, prayer phone number). If that wording changes, the image must be regenerated; alt text alone will not fix it.
 
+## Which version is newest?
+
+Open the [image library](../../../st-pauls-image-library.html), choose the **section-banners / light** or **section-banners / dark** chip, and leave **Sort** on *Newest added first*. Each card shows its added date. Dates come from [`image-dates.json`](../metadata/image-dates.json). They record when a file was added to the repository, not when the artwork was designed, and an exact copy keeps the date of the original it was copied from.
+
 ## Where these came from
 
 The light files are optimised from the Fall 2026 HTML kit, and `compassionate-care-light.jpg` from `banners/fall-2026-compassionate-care-spotlight-winner.jpeg`. The dark files are unchanged copies of the `banners/fall-2026-*` JPEGs. **The originals were left in place** so any URL already published keeps working.
