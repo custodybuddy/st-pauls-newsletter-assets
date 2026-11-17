@@ -8,6 +8,7 @@ This folder is the **working system** for building newsletter issues. Keep actua
 | **AI image lookup** | [assets/agent-image-selection.md](assets/agent-image-selection.md) | Canonical URLs, categories, approval checks |
 | **Asset file map** | [assets/README.md](assets/README.md) | One shared source of truth |
 | **HTML newsletter scaffold** | [template/html-scaffold.html](template/html-scaffold.html) | Starting email-safe layout |
+| **Editorial design directions** | [template/editorial/](template/editorial/) | Three comparable luxury-editorial looks, with previews; design reference, not an issue |
 | **Kathy's content template** | [template/kathy-drafting-template.md](template/kathy-drafting-template.md) | Approved-content drafting flow |
 | **Content-only template** | [template/content-template.md](template/content-template.md) | Reusable seasonal content input |
 | **Outlook-safe components** | [components/outlook-safe/](components/outlook-safe/) | Structural table blocks |

@@ -1,5 +1,13 @@
 # Newsletter Change Log
 
+## 2026-11-17 (three editorial design directions)
+
+- Added `newsletter-system/template/editorial/` with three complete, email-safe seasonal templates in different visual directions — Processional (navy page, cream plates, centred ceremonial axis, drop cap), Bound Volume (double-rule frame, left margin column, ruled finance ledger), and Gallery (white dominant, full-bleed engraved title plates, abutting colour plates). All three render the same sections and the same sample content so they can be compared directly.
+- Each is self-contained: it defines its own classes in its own `<style>` block, so none depends on or alters `html-scaffold.html` or the permanent snippets, which are unchanged.
+- Added desktop (1280px) and mobile (390px) previews under `template/editorial/previews/`, plus a README covering the seasonal hero swap, the view-in-browser merge tag, and two known tradeoffs: Gallery's title plates carry their section names as artwork and get small at 390px, and Bound Volume uses a 4px corner radius rather than the style guide's 20–22px.
+- All copy and every financial figure in the three templates is invented sample content, marked in HTML comments. Colours and type come from `newsletter-system/docs/style-guide.md`; no retired tokens are used.
+- `node scripts/audit-newsletter-repo.js`: 10 error(s), 37 warning(s) — unchanged from before this change; the new files add no findings. Verified in headless Chromium only; this does not establish inbox rendering.
+
 ## 2026-11-07 (hosted the remaining Fall 2026 email kit images)
 
 - Added five more exact, unedited copies from the `st-pauls-email-html-kit` newsletter preview to `brand/assets/banners/`: the Q3 Financial Snapshot donut (`editorial-income-donut.png`) and four event medallions (`upload-event-1.png` through `upload-event-4.png`). Alongside `upload-cost-icons.png`, these replace the kit's relative `finance-assets/*` paths.
