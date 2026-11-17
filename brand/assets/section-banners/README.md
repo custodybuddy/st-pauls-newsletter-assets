@@ -47,4 +47,4 @@ These are heavy gold 3D-lettering PNGs on transparent backgrounds, a third look.
 
 ## Other light artwork (full-size originals, not email-sized)
 
-The hosted library in [`../section-headers/`](../section-headers/) and [`../cta-cards/`](../cta-cards/) is also light style and covers sections this folder does not yet, such as Ministry Spotlight, Volunteer Opportunities, Prayer & Care and This Month. Those files are 0.3 to 2.5 MB each, so optimise one before using it in an email.
+The hosted library in [`../section-headers/`](../section-headers/) and [`../cta-cards/`](../cta-cards/) is also light style and covers sections this folder does not yet, such as Volunteer Opportunities and Prayer & Care. Those files are 0.3 to 2.5 MB each, so optimise one before using it in an email.
