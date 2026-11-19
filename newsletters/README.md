@@ -23,7 +23,7 @@ Archived issues show the sections and components the church community already kn
 
 1. Copy `newsletter-system/template/content-template.md` to `drafting/<year>-<season>/content.md` and fill it in with approved copy. Delete the sections you do not need. Reorder the rest.
 2. Ask Claude Code: "Create the next St. Paul's newsletter using our existing design system. Select appropriate components, rearrange them for visual balance, reuse our illustrations, and prepare a preview for approval. Content is in `<path>`." (or start with `/st-pauls-newsletter`).
-3. Claude proposes a section order and waits for your yes, then builds a new versioned draft plus a plain-text `.txt`.
+3. Claude proposes a section order and waits for your yes, then builds a new versioned draft plus a plain-text `.txt`. Make the `.txt` with `node scripts/html-to-text.js --alt <draft.html> > <draft.txt>`; `--alt` keeps the text that lives inside banner and card images (section headings, quotes, scripture), which would otherwise be lost.
 4. Check the preview and the report of checks run, then approve. Only after approval does the file move to `final/`.
 
 `drafting/2026-test/` is a layout test with sample text. It is not an issue and must not be sent.

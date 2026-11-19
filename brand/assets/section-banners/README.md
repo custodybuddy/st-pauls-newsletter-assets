@@ -13,22 +13,22 @@ Email-sized section banners in two styles. Pick one style per issue and use it f
 
 ## Which file, and what size to declare
 
-Declare the width and height below in the email HTML. Each file is 2x its display width where the source allows, and every file is under 160 KB. The two styles do **not** share a slot shape for Focus on Finances and Compassionate Care, so changing style means changing the height too.
+Declare the width and height below in the email HTML. They are the sizes used by the Fall 2026 layout (`newsletters/drafting/2026-fall/st-pauls-fall-2026-newsletter-DRAFT-16.html`: a 1100 px email, with full-width banners at 998 px inside their card and the two paired headings at 560 px). Each file is 2x its display width where the source allows, and every file is under 160 KB. The two styles do **not** share a slot shape for Focus on Finances and Compassionate Care, so changing style means changing the height too.
 
 | Section | Light file | Light slot (w × h) | Dark file | Dark slot (w × h) |
 |---|---|---|---|---|
-| Greetings Friends | `greetings-friends-light.jpg` | 614 × 148 | none yet | n/a |
-| Our Mission (card) | `our-mission-card-light.jpg` | 360 × 450 | none yet | n/a |
-| Request a Prayer (card) | `request-a-prayer-card-light.jpg` | 540 × 540 | none yet | n/a |
-| Did You Know? | `did-you-know-light.jpg` | 1120 × 237 | `did-you-know-dark.jpg` | 1120 × 235 |
-| Focus on Finances | `focus-on-finances-light.jpg` | 1120 × 237 | `focus-on-finances-dark.jpg` | 1120 × 259 |
-| Upcoming Events | `upcoming-events-light.jpg` | 480 × 160 | `upcoming-events-dark.jpg` | 480 × 160 |
-| We Are So Thankful For | `we-are-so-thankful-for-light.jpg` | 540 × 180 | `we-are-so-thankful-for-dark.jpg` | 540 × 180 |
-| Compassionate Care spotlight | `compassionate-care-light.jpg` | 1120 × 373 | `compassionate-care-dark.jpg` | 1120 × 259 |
+| Greetings Friends | `greetings-friends-light.jpg` | 998 × 241 | none yet | n/a |
+| Our Mission (card) | `our-mission-card-light.jpg` | 340 × 425 | none yet | n/a |
+| Request a Prayer (card) | `request-a-prayer-card-light.jpg` | 540 × 540 (not used in DRAFT-16, which sets this as live text with a call button) | none yet | n/a |
+| Did You Know? | `did-you-know-light.jpg` | 998 × 211 | `did-you-know-dark.jpg` | 998 × 210 |
+| Focus on Finances | `focus-on-finances-light.jpg` | 998 × 211 | `focus-on-finances-dark.jpg` | 998 × 231 |
+| Upcoming Events | `upcoming-events-light.jpg` | 560 × 187 | `upcoming-events-dark.jpg` | 560 × 187 |
+| We Are So Thankful For | `we-are-so-thankful-for-light.jpg` | 560 × 187 | `we-are-so-thankful-for-dark.jpg` | 560 × 187 |
+| Compassionate Care spotlight | `compassionate-care-light.jpg` | 998 × 333 | `compassionate-care-dark.jpg` | 998 × 231 |
 
 Notes:
 
-- The dark files are 1024 px wide, so at a 1120 px slot they are scaled up slightly (about 9%). Fine for flat artwork, but not retina-sharp.
+- The dark Did You Know?, Focus on Finances and Compassionate Care files are 1024 px wide, so at a 998 px slot they show at roughly native size: crisp on a normal screen, not retina-sharp.
 - Greetings Friends, Our Mission and Request a Prayer have no dark version yet. A dark issue needs those three made first.
 - The light cards contain approved wording in the artwork (mission statement, prayer phone number). If that wording changes, the image must be regenerated; alt text alone will not fix it.
 

@@ -3,13 +3,19 @@
 'use strict';
 
 // Converts a newsletter HTML file to a plain-text companion. Dependency-free.
-// Usage: node scripts/html-to-text.js <file.html> > <file.txt>
+// Usage: node scripts/html-to-text.js [--alt] <file.html> > <file.txt>
+//
+// --alt  Also write the alt text of banner and card images (width 200px or more) on their own
+//        lines. Use it when section headings, quotes or scripture live inside images, so the
+//        plain-text version does not lose them. Small icons are skipped. Off by default.
 
 const fs = require('fs');
 
-const file = process.argv[2];
+const args = process.argv.slice(2);
+const withAlt = args.includes('--alt');
+const file = args.find(function (a) { return a !== '--alt'; });
 if (!file || file === '--help' || file === '-h') {
-  console.log('Usage: node scripts/html-to-text.js <newsletter.html> > <newsletter.txt>');
+  console.log('Usage: node scripts/html-to-text.js [--alt] <newsletter.html> > <newsletter.txt>');
   process.exit(file ? 0 : 2);
 }
 
@@ -29,7 +35,12 @@ html = html
   .replace(/<!--[\s\S]*?-->/g, '')
   .replace(/<head\b[\s\S]*?<\/head>/gi, '')
   .replace(/<(script|style)\b[\s\S]*?<\/\1>/gi, '')
-  .replace(/<img\b[^>]*>/gi, '')
+  .replace(/<img\b[^>]*>/gi, function (tag) {
+    if (!withAlt) return '';
+    const alt = (tag.match(/\balt=["']([^"']*)["']/i) || [])[1];
+    const width = parseInt((tag.match(/\bwidth=["']?(\d+)/i) || [])[1] || '0', 10);
+    return alt && width >= 200 ? '\n\n' + alt + '\n\n' : '';
+  })
   .replace(/<a\b[^>]*href=["']([^"']*)["'][^>]*>([\s\S]*?)<\/a>/gi, function (m, href, inner) {
     const label = inner.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
     if (!label) return '';
