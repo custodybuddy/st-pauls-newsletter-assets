@@ -118,7 +118,7 @@ Google Fonts: `https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,5
 | button | Inter | 17px / 1.2 | 600 | Buttons |
 | caption | Inter | 15px / 1.5 | 500 | Scripture refs, captions, timestamps |
 | data | Inter | 17px / 1.4, tabular-nums | 600 | Figures in tables and stats |
-| date-day | Inter | 26px / 1, tabular-nums | 800 | Day number in the calendar date chip |
+| date-day | Lora | 28px / 1, tabular-nums | 700 | Month and day in the calendar date chip (as in the Fall 2026 preview) |
 
 Headings get `text-wrap: balance`. Keep lines under 68 characters.
 
@@ -142,10 +142,10 @@ Headings get `text-wrap: balance`. Keep lines under 68 characters.
 | Button | Primary: navy fill, white text, hover #1C2E42. Secondary: gold-tint fill, gold border, ink text. Ghost: underlined gold-text. Gold: email Give button only. 44px min, radius-md. Loading = spinner + "-ing" label. |
 | Badge | Pills. Worship = soft white / ink · Study = sage-tint / sage-deep · Community = gold-tint / gold-text · Outreach = teal-tint / teal-deep · Edition = gold / on-gold. |
 | SectionHeader | App live-text header: centred label → Lora h1 → 2px gold rule with † → subtitle. |
-| Card | Default white + 1px #E5E7EB border + radius-lg · Soft white (Greetings, and every second card or section) · **Flourish** (`sp-card-flourish`: white, gold corner flourishes top-left and top-right, centred teal Lora title, then a MicroDivider; for gratitude and feature cards) · Navy anchor (Our Mission only: text ink-on-navy, bold gold-on-navy) · Sage (optional tint). |
+| Card | Default white + 1px #E5E7EB border + radius-lg · Soft white (Greetings, and every second card or section) · **Flourish** (`sp-card-flourish`: white, gold flourishes in all four corners, centred teal Lora title, then a MicroDivider; for gratitude and feature cards) · Navy anchor (Our Mission only: text ink-on-navy, bold gold-on-navy) · Sage (optional tint). |
 | MicroDivider | `- - - † - - -`: centred dashed gold rule (three 6px dashes each side) with a Lora † between, beneath gratitude card headings. Decorative, `aria-hidden`. |
-| EventRow | Circular badge (64px, deep navy fill, 3px gold ring, gold line icon) + calendar date chip (64px, forest top bar with white uppercase month, bold navy day) + details: Lora title, teal "Sunday, November 22 · 10:30 AM", one line of ink-secondary. |
-| SectionBanner | Light Kit banner image in a white frame, alt text repeats the words, on a white or soft-white band. Standard five: Greetings Friends, Did You Know?, Focus on Finances, Upcoming Events, We Are So Thankful For. |
+| EventRow | Circular badge (64px, deep navy fill, 3px gold ring, gold line icon) + calendar date chip (64px, forest top bar with white uppercase month, bold navy day, both Lora) + details: Lora title, teal "Sunday, November 22 · 10:30 AM", one line of ink-secondary. The badge holds a per-event illustration when there is one (poppy, apple pie), else a gold line icon. Add `sp-events-zigzag` to alternate rows left and right on wide screens; phones stack. |
+| SectionBanner | Light Kit banner image in a white frame, alt text repeats the words, on a white or soft-white band. Standard five: Greetings Friends, Did You Know?, Focus on Finances, Upcoming Events (also stacked, calendar above the title, for the Upcoming Events card), We Are So Thankful For. |
 | Callout | Icon + bold first line + message. success / warning / info / danger trios. `role="status"` or `role="alert"`. |
 | DataTable | Lora caption, uppercase headers over 2px gold rule, right-aligned tabular numbers, totals on surface-sunken, negatives in status-danger with a real minus. Always "As of [date]". Wrap in a horizontal scroller. |
 | FormField | Visible label, 44px input with 1.5px border-control, hint in ink-muted with character count, error via `aria-invalid` + `aria-describedby`. |
@@ -170,9 +170,10 @@ Headings get `text-wrap: balance`. Keep lines under 68 characters.
 ## 7. Imagery and assets
 
 - **Light Kit banners** (standard): white #FFFFFF ground, illustrated gold and teal emblem, Deep Navy serif word + Liturgical Teal script word, gold cross rule. Words are in the image, so alt text repeats them.
-- **Retired:** the dark-navy banners in the repo's `banners/` folder (`2026-dyk-banner.png`, `email-dyk-banner.jpg`, `fall-2026-did-you-know-banner.*`, `fall-2026-focus-finances-banner.png`, `fall-2026-focus-on-finances-banner.*`, `fall-2026-focus-on-finances-heading.png`, `fall-2026-compassionate-care-banner.*`, `fall-2026-we-are-so-thankful-for-heading.*`, `st-pauls-thankful-banner-no-margins*.png`, `st-pauls-compassionate-care-actually-cropped.png`) and the cream-ground banners and cards (Our Mission, Ministry Spotlight, Volunteer Opportunities, Compassionate Care, Connect With Us, Need a Prayer, We'd Love Your Feedback). Reserve dark navy backgrounds for anchor panels such as Our Mission.
+- **Kit original names** (from the comparison sheet): `did-you-know-banner.png`, `upcoming-events-calendar.jpeg`, `thankful-banner.png`, `focus-on-finances-banner.png`.
+- **Retired:** the dark-navy banners in the repo's `banners/` folder (`2026-dyk-banner.png`, `email-dyk-banner.jpg`, `fall-2026-did-you-know-banner.*`, `fall-2026-upcoming-events-heading.jpg`, `fall-2026-focus-finances-banner.png`, `fall-2026-focus-on-finances-banner.*`, `fall-2026-focus-on-finances-heading.png`, `fall-2026-compassionate-care-banner.*`, `fall-2026-we-are-so-thankful-for-heading.*`, `st-pauls-thankful-banner-no-margins*.png`, `st-pauls-compassionate-care-actually-cropped.png`) and the cream-ground banners and cards (Our Mission, Ministry Spotlight, Volunteer Opportunities, Compassionate Care, Connect With Us, Need a Prayer, We'd Love Your Feedback). Reserve dark navy backgrounds for anchor panels such as Our Mission.
 - Seasonal hero banners: watercolour Ontario landscapes with the church, 1100 × 340.
-- Corner flourishes: `brand/assets/illustrations/email/email-corner-{tl,tr,bl,br}.png` (96 × 96 gold vine PNGs) for flourish cards in email.
+- Corner flourishes: `brand/assets/illustrations/email/email-corner-{tl,tr,bl,br}.png` (96 × 96 gold vine PNGs), all four on flourish cards in email.
 - Event badge icons: gold line icons from `brand/assets/icons/email/` (Bible, evening, online, coat, worship) at 36px on a navy circle.
 - Illustration style: glossy navy and teal enamel, raised gold outlines, pale highlights, leaf framing, soft golden light. Sharp, not glowing.
 - Script accent: fluid cursive in banner artwork and hero or mission emphasis (*"St. Paul's?"*, *"Jesus"*). Artwork only, never live copy.
@@ -194,5 +195,6 @@ St. Paul's Presbyterian Church · 56 Thames Street S, Ingersoll, ON N5C 2S9 · 5
 3. The church has no logo file yet.
 4. Footer: v3.0 reserves dark navy for anchor panels and does not mention the footer. This guide puts it on soft white.
 5. Banners and cards still needing a white version: Our Mission, Ministry Spotlight, Volunteer Opportunities, Compassionate Care, Connect With Us, Need a Prayer, We'd Love Your Feedback. Greetings Friends has a faint warm tint. The white Focus on Finances banner is not in the repo yet.
-6. Teal: the UI uses #0E7E7B (accent #028A96, large type only), but the illustration prompts and `newsletter-system/docs/style-guide.md` still say #007A8A.
-7. Files that still say the old thing: `AGENTS.md` and `newsletter-system/docs/style-guide.md` (cream #FAF7F1, navy #0D1B2A, Source Sans 3, navy section panels), Draft 15 (Source Sans 3, #FAF7F1), the Studio (#FAF7F1), and the app's CLAUDE.md ("Christ-centered", Playfair Display / Source Serif 4 / DM Sans, 90px).
+6. Did You Know?: the repo's clean white file has its emblem on the right; the kit original in the comparison sheet has it on the left. Pick one standard. Event badges in the Fall 2026 preview use custom illustrations (poppy, apple pie) that are not in the repo.
+7. Teal: the UI uses #0E7E7B (accent #028A96, large type only), but the illustration prompts and `newsletter-system/docs/style-guide.md` still say #007A8A.
+8. Files that still say the old thing: `AGENTS.md` and `newsletter-system/docs/style-guide.md` (cream #FAF7F1, navy #0D1B2A, Source Sans 3, navy section panels), Draft 15 (Source Sans 3, #FAF7F1), the Studio (#FAF7F1), and the app's CLAUDE.md ("Christ-centered", Playfair Display / Source Serif 4 / DM Sans, 90px).
