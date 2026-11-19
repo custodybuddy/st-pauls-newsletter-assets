@@ -1,6 +1,6 @@
 {
   "collection": "What’s Up, St. Paul’s? Newsletter Brand Assets",
-  "asset_count": 13,
+  "asset_count": 9,
   "assets": [
     {
       "filename": "brand/assets/cta-cards/connect-with-us.png",
@@ -33,16 +33,6 @@
       "notes": "Generated card; button needs HTML mailto link"
     },
     {
-      "filename": "brand/assets/section-headers/compassionate-care.png",
-      "title": "Compassionate Care",
-      "pixels": [
-        2172,
-        724
-      ],
-      "type": "PNG",
-      "notes": "Generated banner"
-    },
-    {
       "filename": "brand/assets/section-headers/did-you-know.png",
       "title": "Did You Know?",
       "pixels": [
@@ -63,38 +53,8 @@
       "notes": "User-supplied original banner"
     },
     {
-      "filename": "brand/assets/section-headers/ministry-spotlight.png",
-      "title": "Ministry Spotlight",
-      "pixels": [
-        2172,
-        724
-      ],
-      "type": "PNG",
-      "notes": "Generated banner"
-    },
-    {
-      "filename": "brand/assets/section-headers/our-mission.png",
-      "title": "Our Mission",
-      "pixels": [
-        2172,
-        724
-      ],
-      "type": "PNG",
-      "notes": "Generated banner"
-    },
-    {
       "filename": "brand/assets/section-headers/prayer-and-care.png",
       "title": "Prayer & Care",
-      "pixels": [
-        1086,
-        362
-      ],
-      "type": "PNG",
-      "notes": "Cropped and padded from four-header generated composite; lower resolution than full-size banners"
-    },
-    {
-      "filename": "brand/assets/section-headers/this-month.png",
-      "title": "This Month",
       "pixels": [
         1086,
         362
