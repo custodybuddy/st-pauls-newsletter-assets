@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17",
+  "generated": "2026-11-19",
   "meaning": "Each value is the author date of the first commit that added the image to the repository; renames and exact copies keep the original date. It is the date added, not the date the artwork was designed. Images missing from this list were added after it was generated.",
   "refresh": "node scripts/build-image-dates.js",
   "files": {
@@ -132,6 +132,15 @@
     "brand/assets/illustrations/email/events/upload-event-2.png": "2026-11-07T01:30:59-05:00",
     "brand/assets/illustrations/email/events/upload-event-3.png": "2026-11-07T01:30:59-05:00",
     "brand/assets/illustrations/email/events/upload-event-4.png": "2026-11-07T01:30:59-05:00",
+    "brand/assets/illustrations/email/fall-2026-card-colossians-3-12-email.jpg": "2026-11-19T16:09:51+00:00",
+    "brand/assets/illustrations/email/fall-2026-card-go-and-do-likewise-email.jpg": "2026-11-19T16:09:51+00:00",
+    "brand/assets/illustrations/email/fall-2026-card-kindness-mark-twain-email.jpg": "2026-11-19T16:09:51+00:00",
+    "brand/assets/illustrations/email/fall-2026-card-mercy-email.jpg": "2026-11-19T16:09:51+00:00",
+    "brand/assets/illustrations/email/fall-2026-card-power-of-prayer-email.jpg": "2026-11-19T16:09:51+00:00",
+    "brand/assets/illustrations/email/fall-2026-card-proverbs-11-25-email.jpg": "2026-11-19T16:09:51+00:00",
+    "brand/assets/illustrations/email/fall-2026-hero-autumn-email.jpg": "2026-11-19T16:09:51+00:00",
+    "brand/assets/illustrations/email/fall-2026-ministries-diagram-email.jpg": "2026-11-19T16:09:51+00:00",
+    "brand/assets/illustrations/email/fall-2026-prayer-shawls-email.jpg": "2026-11-19T16:09:51+00:00",
     "brand/assets/illustrations/email/fall-2026-upcoming-events-poster.png": "2026-11-04T09:55:53-05:00",
     "brand/assets/illustrations/email/fall-2026-weekly-giving-scenarios.png": "2026-11-04T09:59:06-05:00",
     "brand/assets/illustrations/email/finance/editorial-cost-icons.png": "2026-11-07T01:30:59-05:00",
