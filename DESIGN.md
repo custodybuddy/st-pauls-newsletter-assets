@@ -13,7 +13,7 @@
 2. **Two typefaces, one job each.** Lora for headings and pull quotes, Inter for everything else (body, labels, buttons, figures). No Source Sans 3, Playfair Display, Source Serif 4, DM Sans or Aptos in new work. Script lettering appears only inside banner artwork, never as live text.
 3. **Nothing smaller than 16px** for running text. Email body 19px / 1.75, app body 18px / 1.7.
 4. **Open every section with a Light Kit banner** (white ground, gold and teal emblem, navy serif + teal script, gold cross rule) for *Greetings Friends*, *Did You Know?*, *Focus on Finances*, *Upcoming Events* and *We Are So Thankful For*. In the app, use the centred live-text header: uppercase label → Lora title → gold rule with † → optional subtitle. Never use the retired dark-navy or cream-ground banners.
-5. **Dark navy (#0F1D3A) is for anchor panels only:** Our Mission and the masthead, not routine section banners. Everything else sits on white or soft white. Never teal text on navy (3.4:1).
+5. **Dark navy (#0F1D3A) is for anchor panels only:** Our Mission, the masthead and the footer, never routine section banners. Everything else sits on white or soft white. Never teal text on navy (3.4:1).
 6. **Status needs a word or icon, not just colour.**
 7. **Invite, don't instruct:** "Join In", "Share Your Gift", "We're Praying · 14". Never "Submit", "Sign Up", "Register", "No items found". Keep **"Christ-Centred"** on one line with both Cs capitalized (`white-space: nowrap`).
 
@@ -31,7 +31,7 @@ Three themes: **light** (default), **dark** ("Navy", for app dark mode), **print
   --surface-soft: #F7F9FB;    /* Soft White (alternate #F8F9FA): alternating bands, outer canvas */
   --surface-sunken: #EEF2F6;  /* stat boxes, comment bubbles */
   --surface-sage: #C7D6C1;    /* optional tint; gratitude now uses the white flourish card */
-  --surface-navy: #0F1D3A;    /* anchor panels only: Our Mission, masthead */
+  --surface-navy: #0F1D3A;    /* anchor panels only: Our Mission, masthead, footer */
 
   /* Text */
   --ink: #0F1D3A;             /* Deep Navy: 16.7:1 on white */
@@ -142,9 +142,9 @@ Headings get `text-wrap: balance`. Keep lines under 68 characters.
 | Button | Primary: navy fill, white text, hover #1C2E42. Secondary: gold-tint fill, gold border, ink text. Ghost: underlined gold-text. Gold: email Give button only. 44px min, radius-md. Loading = spinner + "-ing" label. |
 | Badge | Pills. Worship = soft white / ink · Study = sage-tint / sage-deep · Community = gold-tint / gold-text · Outreach = teal-tint / teal-deep · Edition = gold / on-gold. |
 | SectionHeader | App live-text header: centred label → Lora h1 → 2px gold rule with † → subtitle. |
-| Card | Default white + 1px #E5E7EB border + radius-lg · Soft white (Greetings, and every second card or section) · **Flourish** (`sp-card-flourish`: white, gold flourishes in all four corners, centred teal Lora title, then a MicroDivider; for gratitude and feature cards) · Navy anchor (Our Mission only: text ink-on-navy, bold gold-on-navy) · Sage (optional tint). |
+| Card | Default white + 1px #E5E7EB border + radius-lg · Soft white (Greetings, and every second card or section) · **Flourish** (`sp-card-flourish`: white, gold flourishes in all four corners, centred teal Lora title, then a MicroDivider; for gratitude and feature cards) · Navy anchor (Our Mission, masthead, footer: text ink-on-navy, bold gold-on-navy) · Sage (optional tint). |
 | MicroDivider | `- - - † - - -`: centred dashed gold rule (three 6px dashes each side) with a Lora † between, beneath gratitude card headings. Decorative, `aria-hidden`. |
-| EventRow | Circular badge (64px, deep navy fill, 3px gold ring, gold line icon) + calendar date chip (64px, forest top bar with white uppercase month, bold navy day, both Lora) + details: Lora title, teal "Sunday, November 22 · 10:30 AM", one line of ink-secondary. The badge holds a per-event illustration when there is one (poppy, apple pie), else a gold line icon. Add `sp-events-zigzag` to alternate rows left and right on wide screens; phones stack. |
+| EventRow | Circular badge (64px, deep navy fill, 3px gold ring, gold line icon) + calendar date chip (64px, forest top bar with white uppercase month, bold navy day, both Lora) + details: Lora title, teal "Sunday, November 22 · 10:30 AM", one line of ink-secondary. The badge holds a custom illustration per event (the standard: poppy, apple pie); a gold line icon is the stopgap when none exists yet. Add `sp-events-zigzag` to alternate rows left and right on wide screens; phones stack. |
 | SectionBanner | Light Kit banner image in a white frame, alt text repeats the words, on a white or soft-white band. Standard five: Greetings Friends, Did You Know?, Focus on Finances, Upcoming Events (also stacked, calendar above the title, for the Upcoming Events card), We Are So Thankful For. |
 | Callout | Icon + bold first line + message. success / warning / info / danger trios. `role="status"` or `role="alert"`. |
 | DataTable | Lora caption, uppercase headers over 2px gold rule, right-aligned tabular numbers, totals on surface-sunken, negatives in status-danger with a real minus. Always "As of [date]". Wrap in a horizontal scroller. |
@@ -171,10 +171,11 @@ Headings get `text-wrap: balance`. Keep lines under 68 characters.
 
 - **Light Kit banners** (standard): white #FFFFFF ground, illustrated gold and teal emblem, Deep Navy serif word + Liturgical Teal script word, gold cross rule. Words are in the image, so alt text repeats them.
 - **Kit original names** (from the comparison sheet): `did-you-know-banner.png`, `upcoming-events-calendar.jpeg`, `thankful-banner.png`, `focus-on-finances-banner.png`.
+- **Did You Know?** standard: `banners/st-pauls-ingersoll-fall-2026-newsletter-did-you-know-banner.png` (circular emblem on the right).
 - **Retired:** the dark-navy banners in the repo's `banners/` folder (`2026-dyk-banner.png`, `email-dyk-banner.jpg`, `fall-2026-did-you-know-banner.*`, `fall-2026-upcoming-events-heading.jpg`, `fall-2026-focus-finances-banner.png`, `fall-2026-focus-on-finances-banner.*`, `fall-2026-focus-on-finances-heading.png`, `fall-2026-compassionate-care-banner.*`, `fall-2026-we-are-so-thankful-for-heading.*`, `st-pauls-thankful-banner-no-margins*.png`, `st-pauls-compassionate-care-actually-cropped.png`) and the cream-ground banners and cards (Our Mission, Ministry Spotlight, Volunteer Opportunities, Compassionate Care, Connect With Us, Need a Prayer, We'd Love Your Feedback). Reserve dark navy backgrounds for anchor panels such as Our Mission.
 - Seasonal hero banners: watercolour Ontario landscapes with the church, 1100 × 340.
 - Corner flourishes: `brand/assets/illustrations/email/email-corner-{tl,tr,bl,br}.png` (96 × 96 gold vine PNGs), all four on flourish cards in email.
-- Event badge icons: gold line icons from `brand/assets/icons/email/` (Bible, evening, online, coat, worship) at 36px on a navy circle.
+- Event badge art: a custom illustration per event in a navy circle with a gold ring is the standard. Until one exists, use a gold line icon from `brand/assets/icons/email/` (Bible, evening, online, coat, worship) at 36px.
 - Illustration style: glossy navy and teal enamel, raised gold outlines, pale highlights, leaf framing, soft golden light. Sharp, not glowing.
 - Script accent: fluid cursive in banner artwork and hero or mission emphasis (*"St. Paul's?"*, *"Jesus"*). Artwork only, never live copy.
 - No logo file exists. Wordmark in type: "St. Paul's" Lora 700 + "Ingersoll" Lora italic. The Our Mission card is the brand emblem for print and social.
@@ -190,11 +191,11 @@ St. Paul's Presbyterian Church · 56 Thames Street S, Ingersoll, ON N5C 2S9 · 5
 
 ## 9. Open questions (need a human decision)
 
-1. "What's Up, St. Paul's?" (with comma) vs "What's Up St. Paul's?".
-2. Fall finance figures: Draft 15 says July 31, 84.1% covered; the preview site says September 30, 89%.
-3. The church has no logo file yet.
-4. Footer: v3.0 reserves dark navy for anchor panels and does not mention the footer. This guide puts it on soft white.
-5. Banners and cards still needing a white version: Our Mission, Ministry Spotlight, Volunteer Opportunities, Compassionate Care, Connect With Us, Need a Prayer, We'd Love Your Feedback. Greetings Friends has a faint warm tint. The white Focus on Finances banner is not in the repo yet.
-6. Did You Know?: the repo's clean white file has its emblem on the right; the kit original in the comparison sheet has it on the left. Pick one standard. Event badges in the Fall 2026 preview use custom illustrations (poppy, apple pie) that are not in the repo.
-7. Teal: the UI uses #0E7E7B (accent #028A96, large type only), but the illustration prompts and `newsletter-system/docs/style-guide.md` still say #007A8A.
-8. Files that still say the old thing: `AGENTS.md` and `newsletter-system/docs/style-guide.md` (cream #FAF7F1, navy #0D1B2A, Source Sans 3, navy section panels), Draft 15 (Source Sans 3, #FAF7F1), the Studio (#FAF7F1), and the app's CLAUDE.md ("Christ-centered", Playfair Display / Source Serif 4 / DM Sans, 90px).
+1. Fall finance figures: Draft 15 says July 31, 84.1% covered; the preview site says September 30, 89%.
+2. The church has no logo file yet.
+3. Banners and cards still needing a white version: Our Mission, Ministry Spotlight, Volunteer Opportunities, Compassionate Care, Connect With Us, Need a Prayer, We'd Love Your Feedback. Greetings Friends has a faint warm tint. The white Focus on Finances and stacked Upcoming Events banners are not in the repo yet.
+4. Event badge illustrations (poppy for Remembrance Day, apple pie) are not in the repo. Add them under `brand/assets/`.
+5. Teal: the UI uses #0E7E7B (accent #028A96, large type only). `brand/assets/metadata/section-presets.json` prompts still say #007A8A; they record how the artwork was made.
+6. Still on the old tokens: `newsletter-system/template/html-scaffold.html`, the `snippets/`, Draft 15 (Source Sans 3, #FAF7F1), the Studio (#FAF7F1), and the app's CLAUDE.md ("Christ-centered", Playfair Display / Source Serif 4 / DM Sans, 90px).
+
+Decided: the newsletter name is "What's Up, St. Paul's?" (with the comma).

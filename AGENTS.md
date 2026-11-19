@@ -138,7 +138,7 @@ Use this pattern for major email sections:
 <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td align="center" style="padding:20px 44px;">
-      <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#FAF7F1; border-radius:24px; border:1px solid #E5E0D8;">
+      <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF; border-radius:20px; border:1px solid #E5E7EB;">
         <tr>
           <td style="padding:50px 55px;">
             <!-- Section content here -->
@@ -158,7 +158,7 @@ For every new issue, include simple mobile stacking classes and a small mobile m
 
 ### 5.1 Core Colors and 5.2 Typography
 
-The canonical tokens (fonts, colours, contrast, spacing) are in `newsletter-system/docs/style-guide.md`. They were reconciled against Draft 13. In short: navy `#0D1B2A`, cream `#FAF7F1`, gold `#D4AF37` for bars and buttons, gold text on light backgrounds `#8A5C00` (AA contrast), Lora for lead blocks, Playfair Display for section headings, Source Sans 3 for body, Inter for labels. Do not use the retired `#0A1C2C`, `#B8860B` or `#9C6A08`.
+The canonical tokens (fonts, colours, contrast, spacing) are in `newsletter-system/docs/style-guide.md`, which follows The Banner Style Guide v3.0 (Light Edition, Fall 2026). `DESIGN.md` at the repository root is the portable summary to attach to any session. In short: Clean White `#FFFFFF` cards, alternating Soft White `#F7F9FB` bands, Deep Navy `#0F1D3A` for text and anchor panels (Our Mission, masthead, footer), Liturgical Teal `#0E7E7B`, gold `#D4AF37` for rules, borders and flourishes only, gold text on light backgrounds `#8A5C00` (AA contrast), Lora for headings and event titles, Inter for body, labels, dates and figures. Do not use the retired cream `#FAF7F1` or `#FAF8F5`, navy `#0D1B2A`, Source Sans 3, `#0A1C2C`, `#B8860B` or `#9C6A08`.
 
 ### 5.3 Visual hierarchy
 
@@ -167,8 +167,9 @@ Use:
 - Small uppercase section labels
 - Large serif headings
 - Gold dividers
-- Dark navy feature panels
-- Cream editorial cards
+- Light Kit white section banners
+- Dark navy anchor panels (Our Mission, masthead, footer only)
+- White cards with gold corner flourishes, on alternating white and soft white bands
 - Gold/bold emphasis for skimming
 - Spacious section padding
 
@@ -263,7 +264,7 @@ Examples:
 ```html
 <span style="color:#8A5C00; font-weight:800;">Christ-centered</span>
 <span style="color:#8A5C00; font-weight:800;">Relationships Ministry</span>
-<span style="font-weight:800; color:#1E293B;">serve, welcome, teach, prepare, and encourage</span>
+<span style="font-weight:800; color:#0F1D3A;">serve, welcome, teach, prepare, and encourage</span>
 ```
 
 Do not overuse emphasis. Highlight only the words that help a reader skim the message.
