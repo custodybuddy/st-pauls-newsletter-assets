@@ -1,5 +1,14 @@
 # Newsletter Change Log
 
+## 2026-11-20 (the church's supplied Events page, and five event illustrations)
+
+- The church supplied its Upcoming Events design as a browser page (`st_paul_s_upcoming_events_light_edition.html`). It supersedes the screenshot the previous entry was built from, and differs from it: one white card with a gold hairline border and corner flourishes, rows divided by gold hairlines (not separate soft cards), a teal-banded gold-rimmed date chip, and open illustrations with no navy badge. The five events also changed: **Advent Christmas Tree Craft (Nov 22)** replaces the Christmas Market (Dec 5).
+- Rebuilt the Light events section from it in all three Light editions, translated from flexbox and inline SVG into email tables and hosted PNGs. Added the five illustrations (Advent tree, hen, kettle, pickup basket, remembrance candle) as `brand/assets/illustrations/email/events/fall-2026-event-*-illustration.png` (222px transparent PNGs, about 6 KB each) with SVG masters in `source/`, documented in `st-pauls-image-library.md` and `docs/path-reference.md`, and regenerated `image-dates.json`. The stand-in medallions and gold-line icons are no longer used.
+- The three Bolder editions show the same five events with their own date tiles.
+- Where the supplied design departs from Style Guide v3.0 (teal chip header against Forest, `#1E293B` text, 18px radius), the templates follow the design for the chip colour and v3.0 for the text and radius; flagged in the README.
+- **The five illustrations are not live on GitHub Pages until this branch is merged and deployed**, so a test send before the merge shows them as broken. Previews load them from the checkout.
+- `node scripts/audit-newsletter-repo.js` unchanged at 10 error(s), 39 warning(s), with no findings from these files. Computed-contrast, hairline-integrity and 16px-floor checks pass on all six; every dated line matches the 2026 calendar.
+
 ## 2026-11-20 (the church's Events design and footer anchor tile)
 
 - **Upcoming Events** now follows the church's Events design in all six templates, using the church's five real fall events (Elmira Chicken Fundraiser order deadline Nov 26, Inter-Church Kettle Day Nov 27, Christmas Market Dec 5, chicken pickup Dec 12, Lights of Remembrance name deadline Dec 17). The Light editions use the design itself: soft cards that zigzag, an icon plus a gold-ringed Forest date chip (Lora month and day), a Lora title and a single details line. The Bolder editions show the same five events with date tiles in each direction's own style. The "Read Church News" button was removed from the Light events sections to match the design; Bolder keeps it.
