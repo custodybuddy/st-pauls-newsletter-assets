@@ -1,5 +1,15 @@
 # Newsletter Change Log
 
+## 2026-11-20 (Light and Bolder editions; Style Guide v3.0)
+
+- `main` adopted Style Guide v3.0 (Light Edition) while the editorial templates were in review, retiring cream `#FAF7F1`, navy `#0D1B2A`, Source Sans 3, Playfair Display, `#007A8A` and `#E5E0D8`, and the dark section banners. The decision was to keep **two styles**: **Light** (the current house style) and **Bolder** (the dark-navy banners, kept on purpose).
+- `newsletter-system/template/editorial/` now holds six templates: Processional, Bound Volume and Gallery, each in `light/` and `bolder/`. The three from the first version were moved to `bolder/` with `git mv` and retokened to v3.0 (Lora and Inter, `#0F1D3A`, soft-white neutrals, `#0E7E7B`, `#E5E7EB`, 8px CTAs). Gallery Bolder now points at the official `brand/assets/section-banners/dark/` copies, which were verified byte-identical to the legacy `banners/fall-2026-*` files it used before.
+- The three Light editions are new: white-ground Light Kit banners, navy only on the masthead, Our Mission and footer, the v3.0 `EventRow` (circular badge, Forest date chip), and v3.0 flourish cards for gratitude. Processional Light is a reinterpretation, because v3.0 disallows navy as a page ground.
+- **Fixed, from the first version:** the sample event weekdays were 2025's (Sun Dec 7, Wed Dec 10, Wed Dec 24) in a Fall 2026 edition; they are now Sun Dec 6, Wed Dec 9, Thu Dec 24, 2026. Rules sitting beside a taller cell (label flankers, folio separators, the DYK column divider) were rendering as thick blocks instead of hairlines; they are now nested, vertically centred tables. The footer copyright line was `#56657B` on navy (2.82:1) and 14px; it is now `#CBD5E1` and 16px.
+- Added Mission wording per `DESIGN.md` and Draft 16 ("Christ-Centred, worshipping community, serving…"), which disagrees with the comprehensive template; flagged in the README for leadership to confirm. Added the church phone number to the footers.
+- Asset finding: five of the six Light Kit banners sit within 1–2 levels of their frame colour and are invisible; `did-you-know-light.jpg` carries about ±5 levels of JPEG noise at its edge and should be regenerated on pure white.
+- `node scripts/audit-newsletter-repo.js` is unchanged at the post-merge baseline of 10 error(s), 39 warning(s); the new files add none. Computed-contrast audit (every text node against its resolved background) passes on all six. Verified in headless Chromium only.
+
 ## 2026-11-17 (three editorial design directions)
 
 - Added `newsletter-system/template/editorial/` with three complete, email-safe seasonal templates in different visual directions — Processional (navy page, cream plates, centred ceremonial axis, drop cap), Bound Volume (double-rule frame, left margin column, ruled finance ledger), and Gallery (white dominant, full-bleed engraved title plates, abutting colour plates). All three render the same sections and the same sample content so they can be compared directly.

@@ -21,7 +21,7 @@ Approved seasonal submission
 docs/st-pauls-comprehensive-newsletter-template.md
         |
         +-- newsletter-system/template/html-scaffold.html
-        +-- newsletter-system/template/editorial/       (design directions, reference)
+        +-- newsletter-system/template/editorial/       (3 directions x Light/Bolder, reference)
         +-- newsletter-system/components/outlook-safe/  (layout primitives)
         +-- snippets/                                  (styled section layouts)
         |
@@ -46,7 +46,7 @@ scripts/audit-newsletter-repo.js ---------------------> structural and path vali
 | `brand/resources/` | Canonical icon map, contacts, donation links, reusable URLs, visual asset reference | Use as the active asset and stable-link record. |
 | `docs/` | Current production template, architecture, [path reference](path-reference.md), and current documentation pointers | The comprehensive template is authoritative for local workflow. |
 | `newsletter-system/` | HTML scaffold, Outlook-safe layout primitive, production style guide and QA checklist | Layout support only; never a replacement for approved editorial copy. |
-| `newsletter-system/template/editorial/` | Three complete seasonal templates in different visual directions, with desktop and mobile previews | Design reference for choosing a look. They carry sample copy and sample figures; replace both before any send. The scaffold remains the canonical starting point. |
+| `newsletter-system/template/editorial/` | Three design directions (Processional, Bound Volume, Gallery), each as a Light and a Bolder edition, with desktop and mobile previews | Design reference for choosing a look. They carry sample copy and sample figures; replace both before any send. The scaffold remains the canonical starting point. |
 | `snippets/` | Styled, reusable table-row fragments | Layout only. Replace inherited names, dates, figures, and Draft 11 wording with approved copy. |
 | `newsletters/drafting/` | Versioned current work by season | Create new drafts here; do not overwrite approved or historical files. |
 | `newsletters/final/` | At most one approved ready-to-send issue per season | Keep only the currently approved unsent issue. |
