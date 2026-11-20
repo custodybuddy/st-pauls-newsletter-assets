@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19",
+  "generated": "2026-11-20",
   "meaning": "Each value is the author date of the first commit that added the image to the repository; renames and exact copies keep the original date. It is the date added, not the date the artwork was designed. Images missing from this list were added after it was generated.",
   "refresh": "node scripts/build-image-dates.js",
   "files": {
@@ -128,6 +128,16 @@
     "brand/assets/illustrations/email/email-corner-br.png": "2026-11-06T22:14:37-05:00",
     "brand/assets/illustrations/email/email-corner-tl.png": "2026-11-06T22:14:37-05:00",
     "brand/assets/illustrations/email/email-corner-tr.png": "2026-11-06T22:14:37-05:00",
+    "brand/assets/illustrations/email/events/fall-2026-event-advent-tree-illustration.png": "2026-11-20T08:13:38+00:00",
+    "brand/assets/illustrations/email/events/fall-2026-event-chicken-illustration.png": "2026-11-20T08:13:38+00:00",
+    "brand/assets/illustrations/email/events/fall-2026-event-kettle-illustration.png": "2026-11-20T08:13:38+00:00",
+    "brand/assets/illustrations/email/events/fall-2026-event-pickup-basket-illustration.png": "2026-11-20T08:13:38+00:00",
+    "brand/assets/illustrations/email/events/fall-2026-event-remembrance-candle-illustration.png": "2026-11-20T08:13:38+00:00",
+    "brand/assets/illustrations/email/events/source/fall-2026-event-advent-tree-illustration.svg": "2026-11-20T08:13:38+00:00",
+    "brand/assets/illustrations/email/events/source/fall-2026-event-chicken-illustration.svg": "2026-11-20T08:13:38+00:00",
+    "brand/assets/illustrations/email/events/source/fall-2026-event-kettle-illustration.svg": "2026-11-20T08:13:38+00:00",
+    "brand/assets/illustrations/email/events/source/fall-2026-event-pickup-basket-illustration.svg": "2026-11-20T08:13:38+00:00",
+    "brand/assets/illustrations/email/events/source/fall-2026-event-remembrance-candle-illustration.svg": "2026-11-20T08:13:38+00:00",
     "brand/assets/illustrations/email/events/upload-event-1.png": "2026-11-07T01:30:59-05:00",
     "brand/assets/illustrations/email/events/upload-event-2.png": "2026-11-07T01:30:59-05:00",
     "brand/assets/illustrations/email/events/upload-event-3.png": "2026-11-07T01:30:59-05:00",

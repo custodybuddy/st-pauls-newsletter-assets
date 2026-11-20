@@ -502,6 +502,7 @@ On dark navy backgrounds, use white headings, `#E2E8F0` or `#CBD5E1` body text, 
 - Buttons: 40–50px pill radius.
 - Use small uppercase labels, serif headings, gold dividers, cream editorial cards, navy feature panels, and selective gold/bold skim emphasis.
 - Use bento-style pairings only where the approved modules benefit from them and the mobile reading order remains clear.
+- Three complete worked examples of these rules, in different visual directions and each in a Light (current house style) and a Bolder (dark navy) edition, are in `newsletter-system/template/editorial/`. They are a design reference for choosing a look; they carry sample copy and sample figures, and they do not replace this template or the approved seasonal source.
 
 ## Current section illustrations
 
