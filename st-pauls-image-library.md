@@ -10,6 +10,7 @@
 2. Use the **Full HTTPS URL** unchanged in email-safe `<img src="..." alt="..." width="...">`; do not use relative or older `/assets/` paths.
 3. If no image fits or a URL fails, inspect the current source repository and `brand/assets/metadata/section-presets.json`; do not guess filenames. Request human approval for unapproved artwork.
 4. HTML visual gallery: [St. Paul’s selectable thumbnail gallery](https://custodybuddy.github.io/st-pauls-newsletter-assets/st-pauls-image-library.html).
+5. To tell which of several similar images is newest, read the `files` map in [`brand/assets/metadata/image-dates.json`](brand/assets/metadata/image-dates.json): each value is the date the file was added to the repository (not the date it was designed). A path missing from the map was added after it was last generated, so treat it as the newest.
 
 ## Fall 2026 Banner and Heading Pack
 
