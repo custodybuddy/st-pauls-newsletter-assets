@@ -1,5 +1,14 @@
 # Newsletter Change Log
 
+## 2026-11-20 (the church's Events design and footer anchor tile)
+
+- **Upcoming Events** now follows the church's Events design in all six templates, using the church's five real fall events (Elmira Chicken Fundraiser order deadline Nov 26, Inter-Church Kettle Day Nov 27, Christmas Market Dec 5, chicken pickup Dec 12, Lights of Remembrance name deadline Dec 17). The Light editions use the design itself: soft cards that zigzag, an icon plus a gold-ringed Forest date chip (Lora month and day), a Lora title and a single details line. The Bolder editions show the same five events with date tiles in each direction's own style. The "Read Church News" button was removed from the Light events sections to match the design; Bolder keeps it.
+- Weekdays in the event text are checked against the 2026 calendar when the Light files are generated, and were re-verified across all six files.
+- The five event icons in the design (chicken, kettle, gift, basket, candle) are not in the repository. Stand-ins are used at 72px and listed in the README; the kettle is the weakest match.
+- **Footer** replaced in all six by the church's footer anchor tile: a scripture band (Psalm 46:10), three columns (name and address, worship and office hours with phone, links), a feedback and donate band, and the copyright with an unsubscribe link. The view-in-browser link is kept in the last line, as AGENTS.md requires. The supplied code's tokens (Fraunces, `#102A43`, `#FAF8F3`, `#C7982E`) were converted to v3.0. The contact details are the ones the church supplied and differ from `brand/resources/church-contact.md` (email) and `website-links.md` (YouTube, donate host); flagged in the README to confirm before each send.
+- Fixed while building: event icons shrank and gaps opened depending on text length because the lead cell had no pinned width; all widths are now fixed. "View in browser" no longer wraps across three lines on mobile.
+- `node scripts/audit-newsletter-repo.js` unchanged at 10 error(s), 39 warning(s), with no findings from these files. Computed-contrast, hairline-integrity and 16px-floor checks pass on all six. Verified in headless Chromium only.
+
 ## 2026-11-20 (Light and Bolder editions; Style Guide v3.0)
 
 - `main` adopted Style Guide v3.0 (Light Edition) while the editorial templates were in review, retiring cream `#FAF7F1`, navy `#0D1B2A`, Source Sans 3, Playfair Display, `#007A8A` and `#E5E0D8`, and the dark section banners. The decision was to keep **two styles**: **Light** (the current house style) and **Bolder** (the dark-navy banners, kept on purpose).

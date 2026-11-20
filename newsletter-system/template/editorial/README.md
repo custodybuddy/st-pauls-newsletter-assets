@@ -25,8 +25,9 @@ These are **design references, not an issue.** The canonical starting point for 
 | Grounds | White and soft white (`#F7F9FB`) | Same neutrals, plus dark-navy grounds |
 | Navy `#0F1D3A` | Anchors only: masthead, Our Mission, footer | Also used for bands, stat tiles and, in Processional, the page itself |
 | Section banners | Light Kit banners (white ground) from `brand/assets/section-banners/light/` | Dark banners from `brand/assets/section-banners/dark/` (Gallery only; the other two are type-led) |
-| Events | Style Guide v3.0 `EventRow`: circular navy and gold badge, **Forest** date chip, Lora title | A calendar tile styled to the direction (gold and navy, letterpress, or teal) |
+| Events | The church's Events design: five soft cards that **zigzag** (text left, icon + date chip right, then mirrored), a gold-ringed **Forest** date chip with a Lora month and day | The same five events, each with a calendar tile styled to the direction (gold and navy, letterpress, or teal) |
 | Gratitude | v3.0 flourish cards: gold corner vines, teal title, `– – – † – – –` divider | Direction-specific entries or cards |
+| Footer | The church's **footer anchor tile**, identical in all six: scripture band, three-column details, feedback and donate band, copyright and unsubscribe | Same |
 
 Both editions follow the rest of **Style Guide v3.0** (`newsletter-system/docs/style-guide.md`, `DESIGN.md`): Lora for headings, Inter for everything else, Liturgical Teal `#0E7E7B`, 1px `#E5E7EB` borders, 8px CTAs, body copy never under 16px. The one sanctioned departure in Bolder is dark navy.
 
@@ -44,7 +45,7 @@ Both editions follow the rest of **Style Guide v3.0** (`newsletter-system/docs/s
 
 3. **Replace the view-in-browser tag.** Each footer has `href="[ESP_VIEW_IN_BROWSER_MERGE_TAG]"`. Swap it for the ESP's own hosted-email merge tag. Never send the bracketed placeholder, `href="#"`, or a hard-coded URL.
 4. **Replace every financial figure.** The numbers are rounded samples (`$120,000` / `$138,000` / `−$18,000` / 87%) so they cannot be mistaken for a real statement. Use the approved stewardship update or remove the module.
-5. **Check the sample dates.** The events use 2026 dates with checked weekdays (Sun Dec 6, Wed Dec 9, Thu Dec 24). Replace them with the approved events.
+5. **Replace the events with the approved ones.** The five events are the church's real fall events (Nov 26 to Dec 17, 2026), with weekdays checked against the 2026 calendar. For a new issue, change the dates, titles and details, and keep the weekday in the details line in step with the date.
 6. **Match the section mix to the approved draft.** Only Greetings Friends, Our Mission and Ministry Spotlight are core. Did You Know?, Upcoming Events, Focus on Finances and We Are So Thankful For are included to show the layout; delete any the approved draft did not select.
 7. **Rewrite the preheader** at the top of `<body>`, the hidden line email clients show beside the subject.
 8. Run `node scripts/audit-newsletter-repo.js` and resolve anything it reports against your new file.
@@ -53,6 +54,8 @@ Both editions follow the rest of **Style Guide v3.0** (`newsletter-system/docs/s
 
 - **Mission wording.** The repository's own sources disagree. `DESIGN.md` and Draft 16 (built from the approved doc copy) say **"Christ-Centred, worshipping community, serving and leading people to Jesus."** The comprehensive template says "Christ-centered, worshipping community serving…". These templates follow `DESIGN.md` and keep "Christ-Centred" on one line (`white-space:nowrap`), as Style Guide v3.0 requires. The comprehensive template on `main` was not updated, and the mission is permanent brand copy: leadership needs to confirm which is right.
 - **Church name in the footer.** The templates say "St. Paul's Church" (matches `brand/resources/church-contact.md` and Draft 16). `DESIGN.md` says "St. Paul's Presbyterian Church".
+- **Footer contact details were supplied by the church and differ from the repo's records.** The footer uses `stpauls@execulink.com` (church email, feedback and unsubscribe), `https://www.youtube.com/@stpaulsingersoll2024` (YouTube) and `https://stpaulsingersoll.ca/contact-us/donate` (no `www`). `brand/resources/church-contact.md` lists `stpaulsingersoll@outlook.com`, and `website-links.md` uses a channel-ID YouTube link and `www`. The templates follow what the church supplied; **confirm which is current before each send**, particularly the unsubscribe address, since it receives replies from readers. **Each template now shows two different church email addresses**: the footer uses the `execulink` address above, while the Focus on Finances section still gives `stpaulsingersoll@outlook.com` for e-transfers (not touched by this change). They may both be right, since an office inbox and a giving inbox can differ, but it should be a decision rather than an accident.
+- **The footer's own tokens were converted to v3.0.** The supplied layout used Fraunces, `#102A43`, `#FAF8F3` and `#C7982E`; the templates use Lora, `#0F1D3A`, white and `#D4AF37` so the footer matches the rest of the system. The scripture band is the same navy as the tile, separated by a hairline, rather than a darker shade, because v3.0 has no second navy.
 
 ## Known tradeoffs and asset findings
 
@@ -62,13 +65,15 @@ Both editions follow the rest of **Style Guide v3.0** (`newsletter-system/docs/s
 - **Gallery Bolder's dark banners are 1024px files shown at 1100px**, so they are slightly soft on high-density screens.
 - **Processional Light is a reinterpretation.** v3.0 reserves navy for anchor panels, so the navy-page inversion is not available in Light. The ceremony comes instead from the centred axis, the drop cap, white plates floating on soft white, and the navy Mission band as the one dark beat.
 - **Bound Volume uses a 4px corner radius** in both editions, not v3.0's 20px. It is the single deliberate token departure and it is what makes the direction read as letterpress. Raising it is a find-and-replace.
-- **Event badges use gold line icons** from `brand/assets/icons/email/` in a navy circle, which is the v3.0 stopgap until a per-event illustration exists. The circular shape and the gold corner vines are progressive enhancement and degrade to squares or plain cards in Outlook.
+- **The event icons are stand-ins.** The church's Events design has five flat icons (chicken, kettle, gift, basket, candle) that are **not in the repository**. The Light editions use the nearest existing assets at 72px: the chicken medallion (`upload-event-3.png`) for both chicken events, the market medallion (`upload-event-4.png`) for the Christmas Market, a gold-line candle for Lights of Remembrance, and a gold-line coat for Kettle Day, which is the weakest match because no kettle exists. Once the real icons are added under `brand/assets/`, each is a one-line `src` swap; they are flat with no circle, so drop the navy badge when swapping. Bolder shows date tiles only, so it needs no icons.
+- **The circular badges and gold corner vines are progressive enhancement** and degrade to squares or plain cards in Outlook.
 - **Rendering is verified in headless Chromium only.** The previews prove layout, stacking and contrast at 1280px and 390px, and with the style block stripped. They prove nothing about Gmail, Outlook, Apple Mail, Yahoo or mobile mail apps. Send real inbox tests before releasing an issue built on any of these.
 
 ## What they share
 
 - Section order from the comprehensive template: hero → masthead → Greetings Friends → Our Mission → Ministry Spotlight → Did You Know? → Upcoming Events → Focus on Finances → We Are So Thankful For → footer.
 - Presentation tables only, inline critical styles, absolute HTTPS URLs, explicit `width` and `alt` on every image, `role="presentation"` on layout tables. No CSS Grid, Flexbox, JavaScript, forms or base64 images.
+- The zigzag event rows mirror with `dir="rtl"` on the row, with each cell resetting `dir="ltr"`, so the HTML order never changes and the date and icon stack above the text on mobile in every row. Test it in your ESP's clients; `dir` on tables is widely supported but is the first thing to check if a row looks reversed.
 - One mobile breakpoint at 700px, as progressive enhancement. The table structure stays readable when a client ignores the media query.
 - Each template defines its own classes in its own `<style>` block, so none depends on or alters `html-scaffold.html` or the permanent snippets.
 - A rule that sits **beside a taller cell** (the flanking lines round a label, the dashes round the † cross, the folio separators) is a nested, vertically-centred table. A `td` with `height:1px` in that position is silently stretched into a block by its taller sibling. A standalone one-cell rule is fine.
