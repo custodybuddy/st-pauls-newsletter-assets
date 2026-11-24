@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19",
+  "generated": "2026-11-24",
   "meaning": "Each value is the author date of the first commit that added the image to the repository; renames and exact copies keep the original date. It is the date added, not the date the artwork was designed. Images missing from this list were added after it was generated.",
   "refresh": "node scripts/build-image-dates.js",
   "files": {
@@ -7,6 +7,10 @@
     "brand/assets/banners/2026-dyk-banner.png": "2026-11-07T13:01:35-05:00",
     "brand/assets/banners/editorial-income-donut.png": "2026-11-07T04:27:12+00:00",
     "brand/assets/banners/email-dyk-banner.jpg": "2026-11-06T22:21:40-05:00",
+    "brand/assets/banners/email-dyk-v5-large.jpg": "2026-11-24T13:17:58-05:00",
+    "brand/assets/banners/email-heading-compassionate-care-v5-large.jpg": "2026-11-24T13:17:58-05:00",
+    "brand/assets/banners/email-heading-focus-on-finances-v5-large.jpg": "2026-11-24T13:17:58-05:00",
+    "brand/assets/banners/email-heading-greetings-v5-large.jpg": "2026-11-24T13:17:58-05:00",
     "brand/assets/banners/fall-2026-compassionate-care-banner.jpg": "2026-11-07T11:28:57-05:00",
     "brand/assets/banners/fall-2026-compassionate-care-banner.webp": "2026-11-07T11:28:57-05:00",
     "brand/assets/banners/fall-2026-compassionate-care-spotlight-winner.jpeg": "2026-11-11T14:39:31-05:00",
