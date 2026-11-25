@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-20",
+  "generated": "2026-11-25",
   "meaning": "Each value is the author date of the first commit that added the image to the repository; renames and exact copies keep the original date. It is the date added, not the date the artwork was designed. Images missing from this list were added after it was generated.",
   "refresh": "node scripts/build-image-dates.js",
   "files": {
