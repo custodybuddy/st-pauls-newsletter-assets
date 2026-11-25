@@ -42,6 +42,24 @@ Five more exact, unedited copies from the same `st-pauls-email-html-kit` newslet
 - **Suggested section:** Focus on Finances (donut) and Upcoming Events (medallions).
 - **Provenance:** Exact, unedited copies from `email/fall-2026/finance-assets/` in `custodybuddy/st-pauls-wordpress`, themselves from the uploaded `st-pauls-email-html-kit` zip. Added at the user's request to replace relative paths; original transparency retained.
 
+## Fall 2026 Event Illustrations
+
+Five open, circle-free illustrations for the Upcoming Events rows, drawn at 64 × 64 units and rasterised at 222 × 222px (3× the 74px display size) with transparency, so each row shows the artwork directly on its card rather than in a navy badge. They replace the stand-in medallions and gold-line icons the editorial templates used before these were supplied. SVG masters are kept beside them in `source/`; email HTML uses the PNGs because inline SVG is not reliably supported in mail clients.
+
+- **Advent Christmas Tree Craft event illustration** — `brand/assets/illustrations/email/events/fall-2026-event-advent-tree-illustration.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/events/fall-2026-event-advent-tree-illustration.png — 222 × 222px transparent RGBA PNG — decorative, `alt=""` in the email — SHA256 `f09bbb668de74accee510ea2d8d52ea5f22e74b07eb564e1f2f978628128935b`
+  - Vector master: `brand/assets/illustrations/email/events/source/fall-2026-event-advent-tree-illustration.svg`. Suggested event: Advent Christmas Tree Craft (Sun, Nov 22, 2026).
+- **Elmira Chicken Fundraiser event illustration** — `brand/assets/illustrations/email/events/fall-2026-event-chicken-illustration.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/events/fall-2026-event-chicken-illustration.png — 222 × 222px transparent RGBA PNG — decorative, `alt=""` in the email — SHA256 `558f7764c237b1afd16e07207625b4b7c620a2f7b1b3f0cd0b2ef2b4a908add5`
+  - Vector master: `brand/assets/illustrations/email/events/source/fall-2026-event-chicken-illustration.svg`. Suggested event: Elmira Chicken Fundraiser, order deadline (Thu, Nov 26, 2026).
+- **Inter-Church Kettle Day event illustration** — `brand/assets/illustrations/email/events/fall-2026-event-kettle-illustration.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/events/fall-2026-event-kettle-illustration.png — 222 × 222px transparent RGBA PNG — decorative, `alt=""` in the email — SHA256 `ec4493e972afb3c6d6a8b0fcc94027ccce59e15725d059f60e6647a2c8a5260e`
+  - Vector master: `brand/assets/illustrations/email/events/source/fall-2026-event-kettle-illustration.svg`. Suggested event: Inter-Church Kettle Day (Fri, Nov 27, 2026).
+- **Chicken Fundraiser pickup event illustration** — `brand/assets/illustrations/email/events/fall-2026-event-pickup-basket-illustration.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/events/fall-2026-event-pickup-basket-illustration.png — 222 × 222px transparent RGBA PNG — decorative, `alt=""` in the email — SHA256 `642818ecfd498b91db8a963a75c9abe6691c59912d27fa6f22769cbcf2831cbc`
+  - Vector master: `brand/assets/illustrations/email/events/source/fall-2026-event-pickup-basket-illustration.svg`. Suggested event: Elmira Chicken Fundraiser, pickup (Sat, Dec 12, 2026).
+- **Lights of Remembrance event illustration** — `brand/assets/illustrations/email/events/fall-2026-event-remembrance-candle-illustration.png` — https://custodybuddy.github.io/st-pauls-newsletter-assets/brand/assets/illustrations/email/events/fall-2026-event-remembrance-candle-illustration.png — 222 × 222px transparent RGBA PNG — decorative, `alt=""` in the email — SHA256 `598b8dd299d5f935f1355a8a2d7c71fe4ac8444c5c71e5d8d389e28a0a2eb0c9`
+  - Vector master: `brand/assets/illustrations/email/events/source/fall-2026-event-remembrance-candle-illustration.svg`. Suggested event: Lights of Remembrance and Tree of Life, name deadline (Thu, Dec 17, 2026).
+
+- **Suggested section:** Upcoming Events, one illustration per event row, beside the date chip.
+- **Provenance:** Supplied by the church as inline SVG in `st_paul_s_upcoming_events_light_edition.html`; rasterised from that SVG unchanged (no recolouring or redrawing). Not yet reviewed for public-sharing permission beyond the church supplying them for the newsletter.
+
 ## Fall 2026 Footer Icons
 
 Six small functional footer icons (worship time, office hours, phone, website, YouTube, email), added under `brand/assets/icons/email/` — the documented location for "small email-specific images" — to replace the same relative paths. Visually distinct from the existing `fall-2026-footer-*-gold-line.png` set (a different, decorative icon style); do not substitute one set for the other.
